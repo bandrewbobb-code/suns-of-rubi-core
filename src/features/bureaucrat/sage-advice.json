@@ -1,0 +1,93 @@
+{
+  "name": "Sage Advice",
+  "type": "feat",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Beginning at 3rd level, you can spend <strong>1 minute</strong> advising up to a number of friendly creatures equal to your <strong>Charisma modifier</strong> (minimum 1) within <strong>30 feet</strong> who can hear and understand you.</p><p>Once within the next hour, when each advised creature makes an ability check using a <strong>skill or tool</strong> of your choice in which you are proficient, it can add your <strong>Proficiency Bonus</strong> to the roll if it is not already proficient in that skill or tool.</p><p>Once you use this feature, you cannot do so again until you finish a <strong>Long Rest</strong>.</p><hr /><h3>Seasoned Counsel (13th Level)</h3><p>Starting at 13th level, you regain the use of this feature when you finish a <strong>Short or Long Rest</strong>.</p><p>In addition, you gain <strong>Advantage</strong> on Constitution saving throws made to maintain <strong>Concentration</strong>.</p>"
+    },
+    "source": { "custom": "Suns of Rubi" },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Bureaucrat 3",
+    "properties": [],
+    "activities": {
+      "dnd5eactSageAd1": {
+        "_id": "dnd5eactSageAd1",
+        "type": "utility",
+        "name": "Dispense Advice",
+        "img": "",
+        "activation": {
+          "type": "minute",
+          "value": 1,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": { "mode": "", "formula": "" }
+            }
+          ],
+          "scaling": { "allowed": false }
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "@abilities.cha.mod",
+            "type": "ally",
+            "choice": false,
+            "special": "who can hear and understand you"
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": { "spent": 0, "max": "", "recovery": [] },
+        "sort": 0
+      }
+    },
+    "activation": { "type": "", "value": null, "condition": "" },
+    "duration": { "value": "", "units": "" },
+    "cover": null,
+    "target": { "value": null, "width": null, "units": "", "type": "", "prompt": true },
+    "range": { "value": null, "long": null, "units": "" },
+    "uses": { "value": 1, "max": "1", "per": "lr", "recovery": "", "prompt": false },
+    "consume": { "type": "", "target": null, "amount": null, "scale": false },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": { "threshold": null, "damage": "" },
+    "damage": { "parts": [], "versatile": "" },
+    "formula": "",
+    "save": { "ability": "", "dc": null, "scaling": "spell" }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": { "compendiumSource": null, "duplicateSource": null },
+  "_key": "!items!SageAdvice00001"
+}

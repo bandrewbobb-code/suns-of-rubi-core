@@ -1,0 +1,38 @@
+{
+  "name": "Directive: Mil-Spec Accreditation",
+  "type": "feat",
+  "img": "icons/sundries/scrolls/scroll-bound-ruby-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your Mechanical Bodyguard receives a military-grade certification upgrade, gaining proficiency in <strong>one</strong> of the following categories:</p><ul><li>Martial Melee Weapons</li><li>Light Armor</li><li>Medium Armor</li><li>Shields</li></ul><p><em>This directive may be selected more than once; choose a different category each time.</em></p>"
+    },
+    "source": { "custom": "Suns of Rubi" },
+    "type": {
+      "value": "class",
+      "subtype": "directive"
+    },
+    "requirements": "Bureaucrat 5",
+    "properties": [],
+    "activities": {},
+    "activation": { "type": "", "value": null, "condition": "" },
+    "duration": { "value": "", "units": "" },
+    "cover": null,
+    "target": { "value": null, "width": null, "units": "", "type": "", "prompt": true },
+    "range": { "value": null, "long": null, "units": "" },
+    "uses": { "value": null, "max": "", "per": null, "recovery": "", "prompt": false },
+    "consume": { "type": "", "target": null, "amount": null, "scale": false },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": { "threshold": null, "damage": "" },
+    "damage": { "parts": [], "versatile": "" },
+    "formula": "",
+    "save": { "ability": "", "dc": null, "scaling": "spell" }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": { "compendiumSource": null, "duplicateSource": null },
+  "_key": "!items!DirMilSpec00001"
+}

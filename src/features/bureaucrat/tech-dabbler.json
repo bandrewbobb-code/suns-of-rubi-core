@@ -1,0 +1,38 @@
+{
+  "name": "Directive: Tech Dabbler",
+  "type": "feat",
+  "img": "icons/sundries/scrolls/scroll-bound-ruby-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>You learn and can execute one <strong>1st-level nanoprogram</strong> from any Operating System once per <strong>Long Rest</strong> without spending Nanopool points. Charisma is your casting ability for this nanoprogram.</p><p><em>This directive may be selected more than once; choose a different nanoprogram each time.</em></p>"
+    },
+    "source": { "custom": "Suns of Rubi" },
+    "type": {
+      "value": "class",
+      "subtype": "directive"
+    },
+    "requirements": "Bureaucrat 2",
+    "properties": [],
+    "activities": {},
+    "activation": { "type": "", "value": null, "condition": "" },
+    "duration": { "value": "", "units": "" },
+    "cover": null,
+    "target": { "value": null, "width": null, "units": "", "type": "", "prompt": true },
+    "range": { "value": null, "long": null, "units": "" },
+    "uses": { "value": 1, "max": "1", "per": "lr", "recovery": "", "prompt": false },
+    "consume": { "type": "", "target": null, "amount": null, "scale": false },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": { "threshold": null, "damage": "" },
+    "damage": { "parts": [], "versatile": "" },
+    "formula": "",
+    "save": { "ability": "", "dc": null, "scaling": "spell" }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": { "compendiumSource": null, "duplicateSource": null },
+  "_key": "!items!DirTechDabb0001"
+}

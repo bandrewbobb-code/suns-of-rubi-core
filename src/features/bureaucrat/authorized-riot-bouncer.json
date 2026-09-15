@@ -1,0 +1,38 @@
+{
+  "name": "Directive: Authorized Riot Bouncer",
+  "type": "feat",
+  "img": "icons/sundries/scrolls/scroll-bound-ruby-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your Mechanical Bodyguard's detention subroutines receive a hardware upgrade.</p><ul><li>The Bodyguard can <strong>grapple up to two targets simultaneously</strong> (one per hand/servo).</li><li>Moving a grappled creature <strong>no longer halves</strong> the Bodyguard's speed.</li></ul>"
+    },
+    "source": { "custom": "Suns of Rubi" },
+    "type": {
+      "value": "class",
+      "subtype": "directive"
+    },
+    "requirements": "Bureaucrat 5",
+    "properties": [],
+    "activities": {},
+    "activation": { "type": "", "value": null, "condition": "" },
+    "duration": { "value": "", "units": "" },
+    "cover": null,
+    "target": { "value": null, "width": null, "units": "", "type": "", "prompt": true },
+    "range": { "value": null, "long": null, "units": "" },
+    "uses": { "value": null, "max": "", "per": null, "recovery": "", "prompt": false },
+    "consume": { "type": "", "target": null, "amount": null, "scale": false },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": { "threshold": null, "damage": "" },
+    "damage": { "parts": [], "versatile": "" },
+    "formula": "",
+    "save": { "ability": "", "dc": null, "scaling": "spell" }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": { "compendiumSource": null, "duplicateSource": null },
+  "_key": "!items!DirRiotBouncr01"
+}

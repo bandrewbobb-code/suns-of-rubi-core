@@ -1,0 +1,5 @@
+2026/09/15-20:56:59.087 28d8 Delete type=3 #1
+2026/09/15-20:56:59.103 2cbc Level-0 table #5: started
+2026/09/15-20:56:59.109 2cbc Level-0 table #5: 5085 bytes OK
+2026/09/15-20:56:59.110 2cbc Delete type=0 #3
+2026/09/15-20:56:59.110 2cbc Manual compaction at level-0 from '!actors!MBGuard000001' @ 72057594037927935 : 1 .. '!actors.items!MBGuard000001.StunProdSlam1' @ 0 : 0; will stop at (end)

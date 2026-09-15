@@ -1,0 +1,38 @@
+{
+  "name": "Directive: Hardened Mind",
+  "type": "feat",
+  "img": "icons/sundries/scrolls/scroll-bound-ruby-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your mental conditioning hardens against exotic interference.</p><ul><li><strong>Advantage</strong> on saving throws against illusions, psionics, and electronic deception.</li><li><strong>Advantage</strong> on Investigation checks against holograms.</li><li>You gain <strong>Resistance to psychic damage</strong>.</li></ul>"
+    },
+    "source": { "custom": "Suns of Rubi" },
+    "type": {
+      "value": "class",
+      "subtype": "directive"
+    },
+    "requirements": "Bureaucrat 9",
+    "properties": [],
+    "activities": {},
+    "activation": { "type": "", "value": null, "condition": "" },
+    "duration": { "value": "", "units": "" },
+    "cover": null,
+    "target": { "value": null, "width": null, "units": "", "type": "", "prompt": true },
+    "range": { "value": null, "long": null, "units": "" },
+    "uses": { "value": null, "max": "", "per": null, "recovery": "", "prompt": false },
+    "consume": { "type": "", "target": null, "amount": null, "scale": false },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": { "threshold": null, "damage": "" },
+    "damage": { "parts": [], "versatile": "" },
+    "formula": "",
+    "save": { "ability": "", "dc": null, "scaling": "spell" }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": { "compendiumSource": null, "duplicateSource": null },
+  "_key": "!items!DirHardenMnd001"
+}

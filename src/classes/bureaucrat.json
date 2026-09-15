@@ -1,0 +1,354 @@
+{
+  "name": "Bureaucrat",
+  "type": "class",
+  "img": "icons/skills/social/diplomacy-peace-handshake.webp",
+  "system": {
+    "description": {
+      "value": "<p>A master of administrative authority, corporate leverage, and nanoprogram-augmented leadership. The Bureaucrat commands the battlefield not through brute force, but through calculated orders, regulatory overrides, and an ever-present Mechanical Bodyguard.</p>"
+    },
+    "source": { "custom": "Suns of Rubi" },
+    "identifier": "bureaucrat",
+    "levels": 1,
+    "hd": {
+      "denomination": 6,
+      "spent": 0,
+      "additional": ""
+    },
+    "primaryAbility": {
+      "value": ["cha"],
+      "all": false
+    },
+    "spellcasting": {
+      "progression": "full",
+      "ability": "cha"
+    },
+    "advancement": [
+      {
+        "_id": "a1b2HitPnts0001",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {},
+        "level": 1,
+        "title": "Hit Points"
+      },
+      {
+        "_id": "c3d4SaveProf001",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": ["saves:cha", "saves:wis"],
+          "choices": []
+        },
+        "value": { "chosen": [] },
+        "level": 1,
+        "title": "Saving Throws"
+      },
+      {
+        "_id": "e5f6SkillPrf001",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 3,
+              "pool": [
+                "skills:per",
+                "skills:dec",
+                "skills:itm",
+                "skills:ins",
+                "skills:lor",
+                "skills:tec",
+                "skills:prc",
+                "skills:inv"
+              ]
+            }
+          ]
+        },
+        "value": { "chosen": [] },
+        "level": 1,
+        "title": "Skill Proficiencies"
+      },
+      {
+        "_id": "g7h8WeaponPr001",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": ["weapons:sim"],
+          "choices": []
+        },
+        "value": { "chosen": [] },
+        "level": 1,
+        "title": "Weapon Proficiencies"
+      },
+      {
+        "_id": "i9j0ToolsPrf001",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tools:slicer",
+                "tools:gaming"
+              ]
+            }
+          ]
+        },
+        "value": { "chosen": [] },
+        "level": 1,
+        "title": "Tool Proficiencies"
+      },
+      {
+        "_id": "k1l2AuthDieSc01",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "authority-die",
+          "type": "dice",
+          "scale": {
+            "1":  { "number": 1, "faces": 6 },
+            "5":  { "number": 1, "faces": 8 },
+            "10": { "number": 1, "faces": 10 },
+            "15": { "number": 1, "faces": 12 }
+          }
+        },
+        "value": {},
+        "level": 1,
+        "title": "Authority Die"
+      },
+      {
+        "_id": "m3n4ExecDirSv01",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "executive-directives",
+          "type": "number",
+          "scale": {
+            "2":  { "value": 2 },
+            "3":  { "value": 3 },
+            "5":  { "value": 5 },
+            "7":  { "value": 6 },
+            "9":  { "value": 7 },
+            "12": { "value": 8 },
+            "15": { "value": 9 },
+            "18": { "value": 10 }
+          }
+        },
+        "value": {},
+        "level": 2,
+        "title": "Executive Directives"
+      },
+      {
+        "_id": "A1B2ItmGrLv0101",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.NanoProgramm001",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.BatonAuthort001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Bureaucrat Features"
+      },
+      {
+        "_id": "C3D4ItmGrLv0201",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.MBGLicense00001",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.ExecDirectiv001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "Bureaucrat Features"
+      },
+      {
+        "_id": "y5z6Subclass001",
+        "type": "Subclass",
+        "configuration": {},
+        "value": {},
+        "level": 3,
+        "title": "Executive Doctrine"
+      },
+      {
+        "_id": "E5F6ItmGrLv0301",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.SageAdvice00001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Bureaucrat Features"
+      },
+      {
+        "_id": "o5p6ASILvl04001",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": { "type": "asi" },
+        "level": 4,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "G7H8ItmGrLv0501",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.FontLeadersh01",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 5,
+        "title": "Bureaucrat Features"
+      },
+      {
+        "_id": "I9J0ItmGrLv0701",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.Countercharm01",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 7,
+        "title": "Bureaucrat Features"
+      },
+      {
+        "_id": "q7r8ASILvl08001",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": { "type": "asi" },
+        "level": 8,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "s9t0ASILvl12001",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": { "type": "asi" },
+        "level": 12,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "K1L2ItmGrLv1401",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.CalmCollect001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 14,
+        "title": "Bureaucrat Features"
+      },
+      {
+        "_id": "u1v2ASILvl16001",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": { "type": "asi" },
+        "level": 16,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "w3x4ASILvl19001",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": { "type": "asi" },
+        "level": 19,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "M3N4ItmGrLv2001",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.ChairmanBrd001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 20,
+        "title": "Bureaucrat Features"
+      }
+    ],
+    "wealth": "4d4 * 10",
+    "startingEquipment": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!BureaucratCls01"
+}

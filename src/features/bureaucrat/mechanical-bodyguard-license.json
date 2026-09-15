@@ -1,0 +1,133 @@
+{
+  "name": "Mechanical Bodyguard License",
+  "type": "feat",
+  "img": "icons/creatures/magical/construct-golem-stone-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Beginning at 2nd level, your departmental clearance authorises the assignment of a certified <strong>Mechanical Bodyguard Droid</strong> asset to your person.</p><section class=\"secret\"><p><em>See the Mechanical Bodyguard Droid companion stat block.</em></p></section><h3>Combat Initiative</h3><p>The droid shares your initiative count and takes its turn immediately after yours. It can move and use its reaction independently, but on its turn it only takes the <strong>Dodge</strong> action unless you command it otherwise.</p><h3>Command Action</h3><p>You may use your <strong>Bonus Action</strong> to command the droid to execute one of the actions in its stat block, or to take the <strong>Help</strong> action.</p><h3>Rebuilding / Asset Reissue</h3><p>If the droid is destroyed, you can reconstruct it over the course of a <strong>Long Rest</strong> using slicer's tools or tech tools at zero credit cost. The rebuilt droid appears with all its hit points restored.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Bureaucrat 2",
+    "properties": [],
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "name": "Command Bodyguard",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "ally",
+            "choice": false,
+            "special": "the droid"
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crpierce": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MBGLicense00001"
+}
