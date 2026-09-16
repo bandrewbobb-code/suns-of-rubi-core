@@ -6,6 +6,8 @@
     "minimum": "12",
     "verified": "12"
   },
+  "manifest": "https://raw.githubusercontent.com/bandrewbobb-code/suns-of-rubi-core/main/module.json",
+  "download": "https://github.com/bandrewbobb-code/suns-of-rubi-core/releases/download/v1.0.0/suns-of-rubi-core.zip",
   "relationships": {
     "systems": [
       {
