@@ -1,0 +1,54 @@
+{
+  "id": "suns-of-rubi-core",
+  "title": "Suns of Rubi: Core",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "min": "3.0.0"
+        }
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "class-features",
+      "label": "Suns of Rubi - Class Features",
+      "path": "packs/class-features",
+      "type": "Item",
+      "system": "dnd5e"
+    },
+    {
+      "name": "classes",
+      "label": "Suns of Rubi - Classes",
+      "path": "packs/classes",
+      "type": "Item",
+      "system": "dnd5e"
+    },
+    {
+      "name": "nanoprograms",
+      "label": "Suns of Rubi - Nanoprograms",
+      "path": "packs/nanoprograms",
+      "type": "Item",
+      "system": "dnd5e"
+    },
+    {
+      "name": "companions",
+      "label": "Suns of Rubi - Companions",
+      "path": "packs/companions",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ]
+}
