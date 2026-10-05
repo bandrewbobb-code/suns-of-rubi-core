@@ -1,0 +1,617 @@
+{
+  "_id": "SoldierClass0001",
+  "name": "Soldier",
+  "type": "class",
+  "img": "icons/skills/combat/strike-heavy-weapon-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>Disciplined, tactical, and relentlessly effective, Soldiers are the frontline masters of weaponry, ballistic coordinates, and military-grade cybernetic nanoprogramming on Rubi-Ka. Whether clearing orbital boarding pods or securing Notum extraction corridors, a Soldier commands total dominance over the battlefield.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "identifier": "soldier",
+    "levels": 1,
+    "hd": {
+      "denomination": 10,
+      "spent": 0,
+      "additional": ""
+    },
+    "primaryAbility": {
+      "value": [
+        "str",
+        "dex"
+      ],
+      "all": false
+    },
+    "spellcasting": {
+      "progression": "third",
+      "ability": "int"
+    },
+    "advancement": [
+      {
+        "_id": "advSolHitPoints1",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {},
+        "level": 1,
+        "title": "Hit Points"
+      },
+      {
+        "_id": "advSolSavesPrf01",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "saves:str",
+            "saves:con"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Saving Throws"
+      },
+      {
+        "_id": "advSolArmorPrf01",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "armor:lgt",
+            "armor:med",
+            "armor:hvy",
+            "armor:shl"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Armor Training"
+      },
+      {
+        "_id": "advSolWeaponPr01",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "weapons:sim",
+            "weapons:mar",
+            "weapons:blaster",
+            "weapons:vibroweapon"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Weapon Proficiencies"
+      },
+      {
+        "_id": "advSolSkillPrf01",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:acr",
+                "skills:ath",
+                "skills:his",
+                "skills:ins",
+                "skills:itm",
+                "skills:med",
+                "skills:prc",
+                "skills:per",
+                "skills:ste",
+                "skills:sur"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Skill Proficiencies"
+      },
+      {
+        "_id": "advSolScNanopl01",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "nanopool-points",
+          "type": "number",
+          "scale": {
+            "1": {
+              "value": 1
+            },
+            "2": {
+              "value": 2
+            },
+            "3": {
+              "value": 3
+            },
+            "4": {
+              "value": 4
+            },
+            "5": {
+              "value": 5
+            },
+            "6": {
+              "value": 6
+            },
+            "7": {
+              "value": 7
+            },
+            "8": {
+              "value": 8
+            },
+            "9": {
+              "value": 9
+            },
+            "10": {
+              "value": 10
+            },
+            "11": {
+              "value": 11
+            },
+            "12": {
+              "value": 12
+            },
+            "13": {
+              "value": 13
+            },
+            "14": {
+              "value": 14
+            },
+            "15": {
+              "value": 15
+            },
+            "16": {
+              "value": 16
+            },
+            "17": {
+              "value": 17
+            },
+            "18": {
+              "value": 18
+            },
+            "19": {
+              "value": 19
+            },
+            "20": {
+              "value": 20
+            }
+          }
+        },
+        "value": {},
+        "level": 1,
+        "title": "Nanopool Points"
+      },
+      {
+        "_id": "advSolScWpnMst01",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "weapon-masteries",
+          "type": "number",
+          "scale": {
+            "1": {
+              "value": 3
+            },
+            "4": {
+              "value": 4
+            },
+            "10": {
+              "value": 5
+            },
+            "16": {
+              "value": 6
+            }
+          }
+        },
+        "value": {},
+        "level": 1,
+        "title": "Weapon Masteries"
+      },
+      {
+        "_id": "advSolScStratKn1",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "strategies-known",
+          "type": "number",
+          "scale": {
+            "3": {
+              "value": 2
+            },
+            "4": {
+              "value": 3
+            },
+            "5": {
+              "value": 4
+            },
+            "7": {
+              "value": 5
+            },
+            "9": {
+              "value": 6
+            },
+            "11": {
+              "value": 7
+            },
+            "13": {
+              "value": 8
+            },
+            "16": {
+              "value": 9
+            },
+            "19": {
+              "value": 10
+            }
+          }
+        },
+        "value": {},
+        "level": 3,
+        "title": "Strategies Known"
+      },
+      {
+        "_id": "advSolScSecWind1",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "second-wind-uses",
+          "type": "number",
+          "formula": "@prof",
+          "scale": {
+            "1": {
+              "value": 2,
+              "formula": "@prof"
+            },
+            "5": {
+              "value": 3,
+              "formula": "@prof"
+            },
+            "9": {
+              "value": 4,
+              "formula": "@prof"
+            },
+            "13": {
+              "value": 5,
+              "formula": "@prof"
+            },
+            "17": {
+              "value": 6,
+              "formula": "@prof"
+            }
+          }
+        },
+        "value": {},
+        "level": 1,
+        "title": "Second Wind Uses"
+      },
+      {
+        "_id": "advSolScIndom001",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "indomitable-uses",
+          "type": "number",
+          "scale": {
+            "9": {
+              "value": 1
+            },
+            "13": {
+              "value": 2
+            },
+            "17": {
+              "value": 3
+            }
+          }
+        },
+        "value": {},
+        "level": 9,
+        "title": "Indomitable Uses"
+      },
+      {
+        "_id": "advSolScActSurg1",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "action-surge-uses",
+          "type": "number",
+          "scale": {
+            "2": {
+              "value": 1
+            },
+            "17": {
+              "value": 2
+            }
+          }
+        },
+        "value": {},
+        "level": 2,
+        "title": "Action Surge Uses"
+      },
+      {
+        "_id": "advSolItmGrLvl01",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.SolCombatTrain01",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.SolNanoProg00001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Soldier Features (Level 1)"
+      },
+      {
+        "_id": "advSolItmGrLvl02",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.SolActionSurge01",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.SolTactStrikes01",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.SolStrategies001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "Soldier Features (Level 2)"
+      },
+      {
+        "_id": "advSolSubclass01",
+        "type": "Subclass",
+        "configuration": {},
+        "value": {},
+        "level": 3,
+        "title": "Soldier Specialty"
+      },
+      {
+        "_id": "advSolASILvl0401",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 4,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advSolItmGrLvl04",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.SolEyeForTalent1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 4,
+        "title": "Soldier Features (Level 4)"
+      },
+      {
+        "_id": "advSolItmGrLvl05",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.SolExtraAttack01",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.SolTactShift0001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 5,
+        "title": "Soldier Features (Level 5)"
+      },
+      {
+        "_id": "advSolASILvl0601",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 6,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advSolItmGrLvl07",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.SolStudiedAtks01",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 7,
+        "title": "Soldier Features (Level 7)"
+      },
+      {
+        "_id": "advSolASILvl0801",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 8,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advSolItmGrLvl09",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.SolTactMaster001",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.SolIndomitable01",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 9,
+        "title": "Soldier Features (Level 9)"
+      },
+      {
+        "_id": "advSolItmGrLvl11",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.SolGtrExtraAtk01",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 11,
+        "title": "Soldier Features (Level 11)"
+      },
+      {
+        "_id": "advSolASILvl1201",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 12,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advSolASILvl1401",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 14,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advSolASILvl1601",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 16,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advSolASILvl1901",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 19,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advSolItmGrLvl20",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.SolMstrOfCombat1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 20,
+        "title": "Soldier Features (Level 20)"
+      }
+    ],
+    "wealth": "5d4 * 10",
+    "startingEquipment": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!SoldierClass0001"
+}

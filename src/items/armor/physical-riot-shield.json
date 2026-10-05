@@ -1,0 +1,38 @@
+{
+  "_id": "ArmPhysRiotShld1",
+  "name": "Physical Riot Shield",
+  "type": "equipment",
+  "img": "icons/equipment/shield/heater-crystal-energy-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Curved clear polycarbonate ballistic shield equipped with a viewing viewport.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 100,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 6,
+      "units": "lb"
+    },
+    "type": {
+      "value": "shield",
+      "baseItem": "physical-riot-shield"
+    },
+    "armor": {
+      "value": 2,
+      "dex": null
+    },
+    "strength": null,
+    "properties": [],
+    "equipped": false,
+    "activities": {}
+  },
+  "_key": "!items!ArmPhysRiotShld1"
+}

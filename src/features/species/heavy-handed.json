@@ -1,0 +1,108 @@
+{
+  "_id": "SpcAtxHeavyHand1",
+  "name": "Heavy-Handed",
+  "type": "feat",
+  "img": "icons/skills/melee/unarmed-punch-fist.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your enormous fists are natural weapons that you can use to make unarmed strikes. On a hit, they deal 1d6 + your Strength modifier in kinetic (bludgeoning) damage instead of the standard unarmed strike damage.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Atrox",
+    "activities": {
+      "actHeavyHandAtk1": {
+        "_id": "actHeavyHandAtk1",
+        "type": "attack",
+        "name": "Heavy-Handed Strike",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "5"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false,
+          "count": 1,
+          "type": "creature"
+        },
+        "attack": {
+          "ability": "str",
+          "bonus": "",
+          "critical": {
+            "threshold": 20
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 6,
+              "bonus": "@abilities.str.mod",
+              "types": [
+                "bludgeoning"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "heavy-handed"
+  },
+  "_key": "!items!SpcAtxHeavyHand1"
+}

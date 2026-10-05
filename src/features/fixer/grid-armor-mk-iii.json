@@ -1,0 +1,83 @@
+{
+  "_id": "FixGridArmorMk31",
+  "name": "Grid Armor Mk III",
+  "type": "feat",
+  "img": "icons/equipment/chest/vest-leather-black.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 11th level, your multi-spatial decoys are upgraded to <strong>Mk III specifications</strong>:</p><ul><li>Your maximum active decoys increases to <strong>3</strong>.</li><li>Whenever a creature targets or destroys one of your decoys with an attack or harmful effect, it suffers blinding pixelation and telemetry lag, imposing <strong>Disadvantage on its Dexterity saving throws</strong> until the end of its next turn.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Fixer 11",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FixGridArmorMk31"
+}

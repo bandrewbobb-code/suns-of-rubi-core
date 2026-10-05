@@ -1,0 +1,135 @@
+{
+  "_id": "AnaStrikeBrkr001",
+  "name": "Analytic: The Debt Collector (Strike-Breaker)",
+  "type": "feat",
+  "img": "icons/tools/scribing/scroll-quill-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Passive Protocol</strong>: Your unarmed strike damage die increases by one size (1 &rarr; 1d4 &rarr; 1d6 &rarr; 1d8). Your unarmed strikes gain the <strong>Finesse</strong> property, and you can use your <strong>Charisma modifier</strong> in place of Strength for attack rolls, damage rolls, and grapple/shove checks.</p><p><strong>Active Exchange (Bonus Action, 1 minute)</strong>: Your unarmed strikes count as enhanced for overcoming damage resistance. When you hit with an unarmed strike, you can activate <strong>Pain Exchange</strong> to sacrifice 1d4 HP and deal maximum damage on the strike.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "analytic"
+    },
+    "requirements": "Trader 2",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactDebtColl": {
+        "_id": "dnd5eactDebtColl",
+        "type": "utility",
+        "name": "Active Exchange: Debt Collection Stance",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "1 min duration"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AnaStrikeBrkr001"
+}

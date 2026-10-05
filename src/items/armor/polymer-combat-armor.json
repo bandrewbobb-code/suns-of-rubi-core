@@ -1,0 +1,38 @@
+{
+  "_id": "ArmPolymerComb01",
+  "name": "Polymer Combat Armor",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-banded-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>State-of-the-art synthetic polymer carapace providing superior defense without noise penalty.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 800,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 20,
+      "units": "lb"
+    },
+    "type": {
+      "value": "medium",
+      "baseItem": "polymer-combat-armor"
+    },
+    "armor": {
+      "value": 14,
+      "dex": 2
+    },
+    "strength": null,
+    "properties": [],
+    "equipped": false,
+    "activities": {}
+  },
+  "_key": "!items!ArmPolymerComb01"
+}

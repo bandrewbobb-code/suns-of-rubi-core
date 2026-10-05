@@ -1,0 +1,56 @@
+{
+  "_id": "EngSparkInnov001",
+  "name": "Spark of Innovation",
+  "type": "feat",
+  "img": "icons/magic/light/bulb-glowing-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 3rd level, sudden flashes of mechanical insight let you bypass normal nanotech limitations. Once per <strong>Long Rest</strong>, you can execute any program from the Engineer OS of a tier up to <strong>1 tier higher than your current Max Power Level</strong> without expending Nanopool points and without needing to have it prepared or known.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Engineer 3",
+    "activities": {
+      "actSparkInnov001": {
+        "_id": "actSparkInnov001",
+        "type": "utility",
+        "activation": {
+          "type": "special",
+          "value": null
+        },
+        "name": "Spark of Innovation"
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EngSparkInnov001"
+}

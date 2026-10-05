@@ -1,0 +1,186 @@
+{
+  "_id": "DocCompleteHeal1",
+  "name": "Complete Healing",
+  "type": "feat",
+  "img": "icons/magic/life/heart-shield-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 20th level, you embody the pinnacle of bio-synthetic restoration.</p><h3>Wisdom Score Increase</h3><p>Your <strong>Wisdom score increases by 4</strong>, and your maximum Wisdom score is now <strong>24</strong>.</p><h3>Complete Healing</h3><p>Once per <strong>Long Rest</strong>, when you execute a nanoprogram that restores hit points, you can do so <strong>without expending Nanopool points</strong>. When you do, choose one creature within 60 feet. That creature:</p><ul><li>Regains <strong>all of its hit points</strong> up to its maximum.</li><li>Is cured of all active <strong>poisons, diseases, blindness, and deafness</strong>.</li><li>Has all levels of <strong>exhaustion</strong> completely removed.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Doctor 20",
+    "properties": [],
+    "advancement": [
+      {
+        "_id": "advDocCompleteASI",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 0,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 4,
+            "cha": 0
+          },
+          "cap": 24
+        },
+        "value": {
+          "type": "asi",
+          "wis": 4
+        },
+        "level": 20,
+        "title": "Wisdom Increase (+4, cap 24)"
+      }
+    ],
+    "activities": {
+      "dnd5eactCompleteH": {
+        "_id": "dnd5eactCompleteH",
+        "type": "heal",
+        "name": "Complete Healing Miracle",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "1/Long Rest when executing a healing nanoprogram"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "healing": {
+          "number": null,
+          "denomination": null,
+          "bonus": "@attributes.hp.max",
+          "types": [
+            "healing"
+          ],
+          "custom": {
+            "enabled": true,
+            "formula": "@attributes.hp.max"
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "lr",
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DocCompleteHeal1"
+}

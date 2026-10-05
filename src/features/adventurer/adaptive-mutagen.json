@@ -1,0 +1,41 @@
+{
+  "_id": "AdvAdaptMutagen1",
+  "name": "Adaptive Mutagen",
+  "type": "feat",
+  "img": "icons/magic/symbols/rune-sigil-horned-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 11th level, the sheer density of your altered muscle fibers and hardened bio-photons shatters physical defenses. While running any Bio-Morph protocol, your physical strikes and weapon attacks can deal <strong>Force damage</strong> instead of their normal damage type.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Adventurer 11",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AdvAdaptMutagen1"
+}

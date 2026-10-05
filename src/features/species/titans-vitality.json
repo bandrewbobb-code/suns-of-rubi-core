@@ -1,0 +1,34 @@
+{
+  "_id": "SpcAtxTitanVit01",
+  "name": "Titan's Vitality",
+  "type": "feat",
+  "img": "icons/skills/wounds/heart-beat-lifeline-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Engineered for brutal subterranean mining and structural combat, your physical durability is unmatched. Your maximum Hit Points increase by +1, and increase by an additional +1 whenever you gain a character level.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Atrox",
+    "activities": {},
+    "identifier": "titans-vitality"
+  },
+  "_key": "!items!SpcAtxTitanVit01"
+}

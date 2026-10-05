@@ -1,0 +1,41 @@
+{
+  "_id": "InscMnemonicSiph",
+  "name": "Inscription: Mnemonic Siphon",
+  "type": "feat",
+  "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Novictum Inscription (Prerequisite: Shade Level 5)</em></p><p>When you reduce a creature with an Intelligence score of 6 or higher to 0 hit points with a Sneak Attack, you instantly siphon one piece of actionable tactical knowledge from its neural network, such as a security password, an access code, a patrol schedule, or a building layout.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "inscription"
+    },
+    "requirements": "Shade 5",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!InscMnemonicSiph"
+}

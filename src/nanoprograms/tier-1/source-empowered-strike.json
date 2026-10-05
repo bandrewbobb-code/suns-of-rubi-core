@@ -1,0 +1,67 @@
+{
+  "_id": "c53f722dd47577db",
+  "name": "Source Empowered Strike",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-mattercre.webp",
+  "system": {
+    "description": {
+      "value": "<p>Trigger: Melee weapon hit. Channel raw Notum dealing +2d8 radiant/force damage (+3d8 vs Aberrations, Fiends, or Undead clones).<br><br><strong>Overclock:</strong> +1d8 damage per tier above 1st (+1 NP/tier).</p><p><strong>Operating Systems:</strong> Keeper</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "bonus",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "self"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "78dce96c0b388377": {
+        "_id": "78dce96c0b388377",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!c53f722dd47577db"
+}

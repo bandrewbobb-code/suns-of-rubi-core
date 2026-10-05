@@ -1,0 +1,41 @@
+{
+  "_id": "UpgScoutHoloRel1",
+  "name": "Upgrade: Scout Holo-Relay",
+  "type": "feat",
+  "img": "icons/skills/trades/tools-wrench-screwdriver-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Creator can cast nanoprograms originating from Automaton's position within 300 ft.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "upgrade"
+    },
+    "requirements": "Engineer 4",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!UpgScoutHoloRel1"
+}

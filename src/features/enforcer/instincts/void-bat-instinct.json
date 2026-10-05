@@ -1,0 +1,83 @@
+{
+  "_id": "InsVoidBat000001",
+  "name": "Instinct: Void Bat Instinct",
+  "type": "feat",
+  "img": "icons/skills/wounds/injury-face-scarred-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>While raging, your auditory implants and biosensors emit high-frequency acoustic pings. You gain <strong>30 ft. Blindsight</strong>, and you have <strong>Advantage on Wisdom (Perception) checks</strong> that rely on hearing.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "instinct"
+    },
+    "requirements": "Enforcer 7",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!InsVoidBat000001"
+}

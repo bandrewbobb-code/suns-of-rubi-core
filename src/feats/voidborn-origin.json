@@ -1,0 +1,24 @@
+{
+  "_id": "923ad738e1661bf9",
+  "_key": "!items!923ad738e1661bf9",
+  "name": "Voidborn Origin",
+  "type": "feat",
+  "img": "icons/magic/symbols/star-solid-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite:</strong> Deep Space Transit Fleet, Asteroid Habitat, or Zero-G Outpost</p><p>Raised in rotating habitats and unpressurized zero-gravity environments.<ul><li><strong>Zero-G Maneuvering:</strong> Moving through zero-gravity environments or vacuum does not cost you extra movement, and you gain a climbing speed equal to your walking speed when traversing exterior starship hulls or scaffolding.</li><li><strong>Recycled Metabolism:</strong> You can survive on half the normal rations and water before requiring saving throws against malnutrition or dehydration.</li><li><strong>Pressurization Resilience:</strong> When you make a Constitution saving throw against decompression, atmospheric toxicity, or Exhaustion, you can roll a 1d4 and add the number rolled to the save.</li></ul></p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "type": {
+      "value": "origin",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 1
+    },
+    "requirements": "Deep Space Transit Fleet, Asteroid Habitat, or Zero-G Outpost",
+    "activities": {}
+  }
+}

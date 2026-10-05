@@ -1,0 +1,41 @@
+{
+  "_id": "AdvSurvAdapt0001",
+  "name": "Survival Adaptations",
+  "type": "feat",
+  "img": "icons/magic/nature/leaf-glow-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 2nd level, your genetic mutations branch into specialized adaptations. You gain two Survival Adaptations of your choice.</p>\n<p>The Adaptations Known column of the Adventurer table shows when you learn more adaptations (scaling to 10 at 18th level). Whenever you gain an Adventurer level, you can replace one adaptation you know with another eligible adaptation of your choice.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Adventurer 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AdvSurvAdapt0001"
+}

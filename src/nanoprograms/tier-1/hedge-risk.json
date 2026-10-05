@@ -1,0 +1,67 @@
+{
+  "_id": "aada4c03b43a7992",
+  "name": "Hedge Risk",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/hedge-risk.webp",
+  "system": {
+    "description": {
+      "value": "<p>Trigger: You or ally within range takes damage. Liquidate escrow reserves, spending up to 10 company credits to reduce incoming damage by 1 point per credit spent.<br><br><strong>Overclock:</strong> +10 max absorption per tier above 1st (+1 NP/tier).</p><p><strong>Operating Systems:</strong> Trader</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "abj",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "reaction",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 60,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "ecd6d629d9f310ea": {
+        "_id": "ecd6d629d9f310ea",
+        "type": "utility",
+        "activation": {
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!aada4c03b43a7992"
+}

@@ -1,0 +1,41 @@
+{
+  "_id": "SolTactMaster001",
+  "name": "Tactical Master",
+  "type": "feat",
+  "img": "icons/skills/combat/blade-strike-sparks-metal.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 9th level, your mastery over weaponry reaches supreme flexibility. When you make an attack roll with a weapon whose mastery property you are using, you can replace that mastery property for that attack with the <strong>Push</strong>, <strong>Sap</strong>, or <strong>Slow</strong> property, even if you are not normally using that property on that weapon.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Soldier 9",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!SolTactMaster001"
+}

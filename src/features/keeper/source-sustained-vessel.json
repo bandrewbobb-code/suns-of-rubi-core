@@ -1,0 +1,83 @@
+{
+  "_id": "KepSustainedV001",
+  "name": "Source-Sustained Vessel",
+  "type": "feat",
+  "img": "icons/magic/life/heart-glow-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>By 13th level, your physical form is nourished directly by the internal biocircuits of the Source:</p><ul><li>You no longer require <strong>food or water</strong> to survive.</li><li>You can survive without air in hard vacuum, underwater, or within toxic atmospheres for a number of hours equal to your <strong>Charisma modifier</strong> (minimum 1 hour).</li><li>You are <strong>immune to biological and supernatural aging</strong>, and cannot be aged magically.</li><li>You require only <strong>4 hours of restful meditation</strong> to gain the full benefits of a Long Rest.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Keeper 13",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!KepSustainedV001"
+}

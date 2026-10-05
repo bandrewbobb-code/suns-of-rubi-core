@@ -1,0 +1,76 @@
+{
+  "_id": "FinSnapPunch0001",
+  "name": "Finisher: Snap Punch",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-punch-fist-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Finisher (Prerequisite: None)</em></p><p>You strike with lightning-fast snap impact. Make an unarmed strike. On a hit, the target loses its reaction until the start of your next turn. If the attack was a critical hit, the target must also succeed on a Strength saving throw against your Program DC or drop one object of your choice that it is holding, which lands at your feet.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "finisher"
+    },
+    "requirements": "Martial Artist 2",
+    "activities": {
+      "actFinSnapPunch01": {
+        "_id": "actFinSnapPunch01",
+        "type": "save",
+        "name": "Snap Punch Disarm (on Critical Hit)",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Critical hit with Finisher: Snap Punch"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FinSnapPunch0001"
+}

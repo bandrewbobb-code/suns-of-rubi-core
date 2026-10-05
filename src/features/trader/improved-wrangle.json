@@ -1,0 +1,136 @@
+{
+  "_id": "TrdImpWrangle001",
+  "name": "Improved Wrangle",
+  "type": "feat",
+  "img": "icons/magic/control/buff-flight-wings-runes-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Starting at 5th level, your neural reconfiguration techniques unlock deeper physiological reserves. As an <strong>Action</strong>, spend <strong>3 Nanopool points</strong> to touch one willing creature.</p><p>For <strong>8 hours</strong>, the target gains the following benefits:</p><ul><li>The target's effective Strength and Constitution scores are treated as <strong>+4 higher</strong> for the purposes of carrying capacity, armor requirements, and heavy weapon prerequisites.</li><li>The target's attunement / cyberware installation limit increases by <strong>+1</strong>.</li><li>Once during the 8-hour duration, the target can add your <strong>Siphon Die roll + your Charisma modifier</strong> to one ability check, attack roll, or saving throw it makes.</li></ul><p>You can have only one creature benefiting from this feature at a time.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Trader 5",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactImpWrang": {
+        "_id": "dnd5eactImpWrang",
+        "type": "utility",
+        "name": "Apply Improved Wrangle",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "Spend 3 Nanopool points"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "value": "8",
+          "units": "hour",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "units": "touch",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "willing",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TrdImpWrangle001"
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "ff15d310907685f9",
+  "name": "Ransack",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-biomet.webp",
+  "system": {
+    "description": {
+      "value": "<p>Upload an entropic siphon to a quarry: deal +1d6 necrotic/force damage on hits and impose Disadvantage on ability checks using one chosen ability. Move as Bonus Action on target death.</p><p><strong>Operating Systems:</strong> Doctor, Shade, Trader</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "nec",
+    "properties": [
+      "concentration",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "bonus",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 90,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "e19b9477ef1df459": {
+        "_id": "e19b9477ef1df459",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!ff15d310907685f9"
+}

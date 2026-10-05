@@ -1,0 +1,55 @@
+{
+  "_id": "PersOfGrifter001",
+  "name": "Persona of the Grifter",
+  "type": "feat",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Passive Alias:</strong> You gain proficiency in Deception and Persuasion. You add half your Wisdom modifier (minimum of +1) to any check you make with either skill.</p>\n<p><strong>Active Burn:</strong> As an <strong>Action</strong>, you project a hard-light disguise for <strong>1 hour</strong>, perfectly mimicking the clothing, physical appearance, and voiceprint of a humanoid creature you have observed within the last 24 hours.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "persona"
+    },
+    "requirements": "Agent 2",
+    "activities": {
+      "actBurnGrifter01": {
+        "_id": "actBurnGrifter01",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour"
+        },
+        "name": "Active Burn: Hard-Light Disguise"
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!PersOfGrifter001"
+}

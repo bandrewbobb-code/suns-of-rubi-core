@@ -1,0 +1,41 @@
+{
+  "_id": "StratCunningStr1",
+  "name": "Strategy: Cunning Strategist",
+  "type": "feat",
+  "img": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your quick thinking enables rapid tactical execution. Choose two of the following actions; you can now perform those actions as a <strong>Bonus Action</strong> on your turn:</p>\n<ul>\n  <li>Applying a coating or poison to a weapon</li>\n  <li>Dash</li>\n  <li>Disengage</li>\n  <li>Guard</li>\n  <li>Help</li>\n  <li>Hide</li>\n  <li>Search</li>\n  <li>Throwing a grenade or deploying a mine</li>\n  <li>Issuing a command attack to a beast or companion</li>\n  <li>Operating an installed vehicle system or turret</li>\n</ul>\n<p>Whenever you finish a <strong>Long Rest</strong>, you can swap one of your chosen actions for another action on the list.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "strategy"
+    },
+    "requirements": "Soldier 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!StratCunningStr1"
+}

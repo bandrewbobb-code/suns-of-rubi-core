@@ -1,0 +1,119 @@
+{
+  "_id": "BgEntertainer001",
+  "name": "Entertainer",
+  "type": "background",
+  "img": "icons/equipment/head/mask-carved-wood-gilded-white.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Ability Scores:</strong> DEX, WIS, CHA</p>\n<p><strong>Feat:</strong> @UUID[Compendium.suns-of-rubi-core.feats.FeatActorOrigin1]{Actor}</p>\n<p><strong>Skill Proficiencies:</strong> Choose 2 from ACR, INS, PRF, SLT</p>\n<h3>Feature: By Popular Demand</h3>\n<p>You can always find a place to perform, whether in a high-end corporate orbital lounge, a packed cantina in a mining town, or a pirate hollow in deep space. At such a place, you receive free lodging and food of a modest or comfortable standard (depending on the quality of the establishment), as long as you perform each evening. In addition, your performance makes you something of a local figure. When strangers recognize you in a town or orbital station where you have performed, they typically take a liking to you.</p>\n<hr/>\n<h3>Roleplay Characteristics</h3>\n<h4>Personality Traits</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I love a good insult battle, even if it might escalate into a tavern brawl.</td></tr>\n    <tr><td><strong>2</strong></td><td>Nobody stays angry at me or around me for long once I turn on the charm.</td></tr>\n    <tr><td><strong>3</strong></td><td>I change my holographic hair and vocal presets depending on who I am trying to impress.</td></tr>\n    <tr><td><strong>4</strong></td><td>I constantly observe crowd reactions and take notes for my next public composition.</td></tr>\n    <tr><td><strong>5</strong></td><td>I treat every social encounter as an improvised stage performance.</td></tr>\n    <tr><td><strong>6</strong></td><td>I cannot stand silence; I hum, tap beats, or spin stories whenever things quiet down.</td></tr>\n  </tbody>\n</table>\n<h4>Ideals</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>Beauty. Art and joy are the only things that keep human spirits alive under planetary domes. (Good)</td></tr>\n    <tr><td><strong>2</strong></td><td>Tradition. Ancient acoustic ballads and heritage stories must never be forgotten in the digital age. (Lawful)</td></tr>\n    <tr><td><strong>3</strong></td><td>Creativity. The world is a blank canvas, and convention is made to be broken. (Chaotic)</td></tr>\n    <tr><td><strong>4</strong></td><td>Greed. Holographic fame leads directly to corporate sponsorships and private shuttles. (Evil)</td></tr>\n    <tr><td><strong>5</strong></td><td>Honesty. The best art is visceral, raw, and completely unvarnished truth. (Neutral)</td></tr>\n    <tr><td><strong>6</strong></td><td>Inspiration. Through song and spectacle, we can ignite planetary revolutions. (Any)</td></tr>\n  </tbody>\n</table>\n<h4>Bonds</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>My instrument or holo-projector is a priceless heirloom from an extinct planetary biosphere.</td></tr>\n    <tr><td><strong>2</strong></td><td>I would do anything to protect the members of my traveling performance troupe.</td></tr>\n    <tr><td><strong>3</strong></td><td>An Omni-Tek media magnate ruined my career after I refused to sign an exclusive servitude contract.</td></tr>\n    <tr><td><strong>4</strong></td><td>My songs keep alive the memories of heroes who perished resisting tyranny.</td></tr>\n    <tr><td><strong>5</strong></td><td>A fan once saved my life from an assassin; I will never turn my back on them.</td></tr>\n    <tr><td><strong>6</strong></td><td>I seek the lost sonic frequencies rumored to harmonize with Notum fields.</td></tr>\n  </tbody>\n</table>\n<h4>Flaws</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I crave applause and center-stage attention; I sulk when ignored.</td></tr>\n    <tr><td><strong>2</strong></td><td>I am terrible at keeping secrets if they could make for a sensational story.</td></tr>\n    <tr><td><strong>3</strong></td><td>I cannot resist a pretty face or someone who flatters my artistic genius.</td></tr>\n    <tr><td><strong>4</strong></td><td>I am easily scandalized and insulted by anyone with poor taste.</td></tr>\n    <tr><td><strong>5</strong></td><td>My reckless hedonism has left me with debts across half a dozen planetary colonies.</td></tr>\n    <tr><td><strong>6</strong></td><td>Underneath my charismatic persona, I am terrified of being forgotten.</td></tr>\n  </tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "identifier": "entertainer",
+    "advancement": [
+      {
+        "_id": "BgEntertaineAsi1",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "con",
+            "int"
+          ],
+          "points": 3
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "Ability Score Improvement",
+        "hint": "Your background allows you to increase your DEX, WIS, CHA scores: increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      {
+        "_id": "BgEntertaineSkl1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:acr",
+                "skills:ins",
+                "skills:prf",
+                "skills:slt"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Skill Proficiencies",
+        "hint": "Choose 2 skills from: acr, ins, prf, slt."
+      },
+      {
+        "_id": "BgEntertaineTol1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "tool:disg"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:music:*",
+                "tools:holo-rig",
+                "tool:art:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Tool Proficiencies",
+        "hint": "Your background grants you tool proficiency options."
+      },
+      {
+        "_id": "BgEntertaineFgt1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.suns-of-rubi-core.feats.FeatActorOrigin1"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Origin Feat",
+        "hint": "Your background grants you the Actor origin feat."
+      }
+    ]
+  },
+  "_key": "!items!BgEntertainer001"
+}

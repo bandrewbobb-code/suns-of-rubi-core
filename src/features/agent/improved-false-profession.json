@@ -1,0 +1,52 @@
+{
+  "_id": "AgtImpFalsePrf01",
+  "name": "Improved False Profession",
+  "type": "feat",
+  "img": "icons/magic/control/silhouette-aura-energy-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 9th level, your emulation deck becomes vastly more sophisticated:</p>\n<ul>\n  <li><strong>Identity Hijack:</strong> You can spend <strong>3 Nanopool points</strong> as a Bonus Action to activate one 1st-level active class feature of your emulated class. For the purpose of that feature's scaling and formulas, treat your level in that class as equal to your <strong>Proficiency Bonus</strong> (`@prof`).</li>\n  <li><strong>Rapid Recalibration:</strong> You can change your chosen False Profession whenever you finish a <strong>Short or Long Rest</strong>.</li>\n  <li><strong>Expanded Emulation:</strong> You know <strong>four nanoprograms</strong> (instead of two) from your emulated class's OS.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Agent 9",
+    "activities": {
+      "actIdentityHijack": {
+        "_id": "actIdentityHijack",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "Spend 3 Nanopool points"
+        },
+        "name": "Identity Hijack"
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AgtImpFalsePrf01"
+}

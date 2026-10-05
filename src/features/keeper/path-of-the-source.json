@@ -1,0 +1,83 @@
+{
+  "_id": "KepPathSource001",
+  "name": "Path of the Source",
+  "type": "feat",
+  "img": "icons/magic/light/beam-rays-yellow-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 2nd level, you irrevocably swear yourself to a faction doctrine and neural frequency known as your <strong>Path of the Source</strong>. Choose one of the following paths: <strong>The Faithful</strong>, <strong>The Chosen</strong>, or <strong>The Watcher</strong>.</p><h3>Channel the Source</h3><p>Your path grants you the ability to channel raw cosmic bio-frequencies to fuel supernatural effects. You can use your Channel the Source a number of times equal to your <strong>Proficiency Bonus</strong> (`@scale.keeper.channel-uses`).</p><p>You regain <strong>one expended use</strong> when you finish a <strong>Short Rest</strong>, and you regain <strong>all expended uses</strong> when you finish a <strong>Long Rest</strong>.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Keeper 2",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": "@prof",
+      "max": "@prof",
+      "per": "lr",
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!KepPathSource001"
+}

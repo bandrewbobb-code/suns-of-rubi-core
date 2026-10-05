@@ -1,0 +1,151 @@
+{
+  "_id": "EnfRelentlRage01",
+  "name": "Relentless Rage",
+  "type": "feat",
+  "img": "icons/magic/life/heart-cross-strong-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Starting at 11th level, your rage keeps you fighting through catastrophic trauma. If you drop to 0 hit points while raging and don't die outright, you can make a <strong>DC 10 Constitution saving throw</strong>.</p><p>If you succeed, your hit points drop to a number equal to <strong>twice your Enforcer level</strong> instead.</p><p>Each time you use this feature after the first, the DC increases by 5. When you finish a <strong>Short or Long Rest</strong>, the DC resets to 10.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Enforcer 11",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactRelentless": {
+        "_id": "dnd5eactRelentless",
+        "type": "save",
+        "name": "Relentless Surge",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "When dropped to 0 HP while raging"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "10"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": []
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EnfRelentlRage01"
+}

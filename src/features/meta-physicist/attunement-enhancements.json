@@ -1,0 +1,41 @@
+{
+  "_id": "MpAttunementEnh1",
+  "name": "Attunement Enhancements",
+  "type": "feat",
+  "img": "icons/magic/symbols/star-solid-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your Crystallized Source Vessels receive signature upgrades based on your 2nd-level Paracausal Attunement:</p><ul><li><strong>Creation Infusion:</strong> When you shatter a vessel, your Creation Weapon deals an extra 1d8 Force damage on hits for 1 minute, and your Novictum Bulwark grants +1 additional AC.</li><li><strong>Noospheric Flush:</strong> As a Bonus Action, you can shatter a vessel to immediately regain Nanopool points equal to your Proficiency Bonus. The next nanoprogram you execute ignores half and three-quarters cover and does not suffer Disadvantage from ranged proximity.</li><li><strong>Crucible Capacity:</strong> You can carry up to 2 Crystallized Source Vessels simultaneously instead of 1.</li></ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Meta-Physicist 7",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MpAttunementEnh1"
+}

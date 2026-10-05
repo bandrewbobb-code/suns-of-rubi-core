@@ -1,0 +1,65 @@
+{
+  "_id": "8cefc2bd0106ca5a",
+  "_key": "!items!8cefc2bd0106ca5a",
+  "name": "Galahad Form (Relentless) [Replaces Vaapad Form]",
+  "type": "feat",
+  "img": "icons/weapons/swords/sword-energy-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>You can forgo Advantage on one melee weapon attack this turn. If you do so and the attack hits, you can immediately make one additional melee weapon attack against the same target. Limit: Once per turn.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "form",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Source Weapon Proficiency",
+    "activities": {
+      "75e5f0a5b1f8bfcd": {
+        "_id": "75e5f0a5b1f8bfcd",
+        "type": "utility",
+        "name": "Adopt Galahad Form",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "galahad-form"
+  }
+}

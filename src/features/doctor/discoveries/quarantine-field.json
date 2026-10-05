@@ -1,0 +1,164 @@
+{
+  "_id": "DiscQuarantineF1",
+  "name": "Discovery: Quarantine Field",
+  "type": "feat",
+  "img": "icons/tools/laboratory/test-tube-rack-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>You can deploy a specialized bio-stasis field to immobilize a hostile target. Once per <strong>Short or Long Rest</strong>, you can cast <em>Hold Person / Stasis</em> targeting a humanoid or synthetic creature without expending Nanopool points.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "discovery"
+    },
+    "requirements": "Doctor 12",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactQuarantine": {
+        "_id": "dnd5eactQuarantine",
+        "type": "save",
+        "name": "Deploy Quarantine Stasis",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "1/Short or Long Rest"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute",
+          "concentration": true,
+          "override": false
+        },
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": "humanoid or synthetic"
+          },
+          "prompt": true,
+          "override": false
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": []
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "sr",
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DiscQuarantineF1"
+}

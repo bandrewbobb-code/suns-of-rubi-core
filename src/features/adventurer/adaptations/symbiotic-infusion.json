@@ -1,0 +1,41 @@
+{
+  "_id": "AdptSymbInfusion",
+  "name": "Adaptation: Symbiotic Infusion",
+  "type": "feat",
+  "img": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Innate Adaptation (Req: Level 5):</em> Whenever you expend Field Triage dice to heal another creature, you immediately regain hit points equal to the number of dice rolled.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "adaptation"
+    },
+    "requirements": "Adventurer 5",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AdptSymbInfusion"
+}

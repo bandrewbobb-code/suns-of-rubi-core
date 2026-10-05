@@ -1,0 +1,67 @@
+{
+  "_id": "f7d4d319a46113ed",
+  "name": "Grav-Chute",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/grav-chute.webp",
+  "system": {
+    "description": {
+      "value": "<p>Trigger: Up to 5 creatures within range fall. Repulsor anchors slow descent to 60 feet per round; targets take no falling damage and land safely on feet.</p><p><strong>Operating Systems:</strong> Adventurer, Agent, Engineer, Fixer</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "trs",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "reaction",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 60,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "4cc88d72a10f0564": {
+        "_id": "4cc88d72a10f0564",
+        "type": "utility",
+        "activation": {
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!f7d4d319a46113ed"
+}

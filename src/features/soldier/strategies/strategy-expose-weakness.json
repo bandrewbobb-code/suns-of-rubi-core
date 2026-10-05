@@ -1,0 +1,41 @@
+{
+  "_id": "StratExposeWeak1",
+  "name": "Strategy: Expose Weakness",
+  "type": "feat",
+  "img": "icons/magic/death/skull-energy-glowing-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Tactical Strike Enhancement</em></p>\n<p>When you hit a target with a weapon attack as part of the Attack action, the target <strong>loses resistance to kinetic and energy damage</strong> until the start of your next turn.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "strategy"
+    },
+    "requirements": "Soldier 5",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!StratExposeWeak1"
+}

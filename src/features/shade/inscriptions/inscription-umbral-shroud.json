@@ -1,0 +1,41 @@
+{
+  "_id": "InscUmbralShroud",
+  "name": "Inscription: Umbral Shroud",
+  "type": "feat",
+  "img": "icons/magic/defensive/armor-stone-skin.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Novictum Inscription (Prerequisite: None)</em></p><p>Your skin takes on a dull, light-absorbing obsidian sheen. While you are not wearing armor and not wielding a shield, your base Armor Class equals 10 + your Dexterity modifier + your Wisdom modifier.</p><p>Additionally, your lungs and epidermal layers become hermetically sealed: you are immune to the environmental hazards of hard vacuum, rapid decompression, and extreme planetary radiation, surviving without an EVA environmental suit.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "inscription"
+    },
+    "requirements": "Shade 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!InscUmbralShroud"
+}

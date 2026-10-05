@@ -1,0 +1,41 @@
+{
+  "_id": "SolGtrExtraAtk01",
+  "name": "Greater Extra Attack",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-polearm-glowing-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 11th level, you can attack three times, instead of twice, whenever you take the <strong>Attack action</strong> on your turn.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Soldier 11",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!SolGtrExtraAtk01"
+}

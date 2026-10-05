@@ -1,0 +1,75 @@
+{
+  "_id": "60b114bd7c37fc99",
+  "name": "Shrapnel Burst",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-mattercre.webp",
+  "system": {
+    "description": {
+      "value": "<p>Trigger: Ranged hit. Target and each creature within 5 ft make a Dexterity save, taking 2d4 piercing + 2d4 piercing if moving before your next turn on failure (half damage, no move penalty on success).<br><br><strong>Overclock:</strong> Both initial and move damage increase by 2d4 per tier above 1st (+1 NP/tier).</p><p><strong>Operating Systems:</strong> Adventurer, Agent, Fixer, Soldier</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "con",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "bonus",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "self"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "54187bf3128236ae": {
+        "_id": "54187bf3128236ae",
+        "type": "save",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting"
+          }
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!60b114bd7c37fc99"
+}

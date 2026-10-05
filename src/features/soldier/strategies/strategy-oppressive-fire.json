@@ -1,0 +1,41 @@
+{
+  "_id": "StratOppressFire",
+  "name": "Strategy: Oppressive Fire",
+  "type": "feat",
+  "img": "icons/skills/ranged/projectile-impact-bullet-smoke-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Tactical Strike Enhancement</em></p>\n<p>Whenever you trigger a <strong>Natural Even Roll</strong> on a weapon attack as part of your Tactical Strikes, you can choose to push a Large or smaller target <strong>5 feet away from you in any horizontal direction</strong> in addition to or in place of Tactical Reposition.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "strategy"
+    },
+    "requirements": "Soldier 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!StratOppressFire"
+}

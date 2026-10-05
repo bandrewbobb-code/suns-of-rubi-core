@@ -1,0 +1,206 @@
+{
+  "_id": "DocCritAnalysis1",
+  "name": "Critical Analysis",
+  "type": "feat",
+  "img": "icons/skills/awareness/eye-open-silhouette-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 1st level, you can rapidly diagnose structural, biological, or behavioral vulnerabilities. As a <strong>Bonus Action</strong>, choose one creature you can see within <strong>60 feet</strong>. That creature becomes your analyzed target for <strong>1 minute</strong> (or until you analyze another target).</p><h3>Hostile Target</h3><p>When attacking your analyzed hostile target, you can use your <strong>Wisdom modifier</strong> in place of Strength or Dexterity for attack rolls and damage rolls with weapons that have the <strong>Finesse</strong> property or <strong>Blaster</strong> weapons.</p><h3>Friendly Target</h3><p>When you analyze a friendly creature, that creature can end the analysis at any time (no action required) to add your <strong>Wisdom modifier</strong> to one attack roll, ability check, or saving throw it makes. A friendly creature can benefit from this once per <strong>Short or Long Rest</strong>.</p><h3>Diagnostic Healing</h3><p>Alternatively, you or a friendly analyzed creature can end the analysis (no action required) by spending Nanopool points up to your <strong>Proficiency Bonus</strong> (`@prof`). The target immediately regains <strong>2d4 hit points per Nanopool point spent</strong>.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Doctor 1",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactAnalyze": {
+        "_id": "dnd5eactAnalyze",
+        "type": "utility",
+        "name": "Analyze Target",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      },
+      "dnd5eactDiagHeal": {
+        "_id": "dnd5eactDiagHeal",
+        "type": "heal",
+        "name": "Targeted Analysis Healing",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "End analysis on friendly target; spend Nanopool up to PB"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "ally",
+            "choice": false,
+            "special": "friendly analyzed target"
+          },
+          "prompt": true,
+          "override": false
+        },
+        "healing": {
+          "number": 2,
+          "denomination": 4,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "whole",
+            "number": 2,
+            "formula": ""
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 1
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DocCritAnalysis1"
+}

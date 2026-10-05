@@ -1,0 +1,24 @@
+{
+  "_id": "a270ee07de01a8fd",
+  "name": "Doctor OS Directory",
+  "pages": [
+    {
+      "_id": "390517e8d8e67387",
+      "name": "Doctor OS Catalog",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Doctor Operating System</h1><p>This directory catalogs all compiled nano-formulas available to the <strong>Doctor</strong> OS. Click any entry to inspect its telemetry, or drag the link directly onto your character sheet to install the routine into your NCU.</p><h2>Tier 0: At-Will Routines (9)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.da9ecef363f75cc2]{Culling}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.6c812c1e7194c7a6]{Guidance}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.a7f2fd8bae2ad087]{Ion Lasing}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.0002e80c124ad7a0]{Leech}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.99a238bae3d32f09]{Minor Terraform}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.38e972974e6ea220]{Poison Dart}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.d5b838cae26c26d4]{Resistance}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.e5c0cc48ad1a0cae]{Thermal Cauterizer}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.91f99b410bd016d7]{Trauma Defibrillation}</li></ul><h2>Tier 1: Leveled Nanoprograms (16)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.51df744954007a0a]{Animal Friendship}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.6f41ed0bbb8d4676]{Bio-Scan}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.7ead785bb1bafdfd]{Bio-Shield}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.db1ed1d8d49bd352]{Bio-Transceiver}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.3a0e4001db892786]{Biotoxin}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.54a9a880a54cfd71]{Cellular Rupture}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.0394b8304007cf07]{Create or Destroy Water}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.0a22ae47e5c1151a]{Decontaminate}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.bf588c58edd366d7]{Emergency Stim}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.332957125a551855]{Motivational Speech}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.4816cc3635b74bdc]{Nano Bandage}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.ff15d310907685f9]{Ransack}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.291ef5b39e391ad0]{Sleep}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.2ab577be075d3703]{Suppression Gas}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.4823d2a85b5678f0]{Surgical Laser}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.a72683717ed77ae9]{Toxin Scan}</li></ul>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "_key": "!journal.pages!a270ee07de01a8fd.390517e8d8e67387"
+    }
+  ],
+  "ownership": {
+    "default": 2
+  },
+  "_key": "!journal!a270ee07de01a8fd"
+}

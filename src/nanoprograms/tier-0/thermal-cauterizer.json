@@ -1,0 +1,71 @@
+{
+  "_id": "e5c0cc48ad1a0cae",
+  "name": "Thermal Cauterizer",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-mattercre.webp",
+  "system": {
+    "description": {
+      "value": "<p>A thermal flame appears in your hand shedding bright light in a 10-foot radius. As an action upon casting or on a later turn, hurl it up to 60 feet as a ranged attack for 1d8 fire damage.<br><br><strong>Overclock:</strong> 2d8 at 5th, 3d8 at 11th, 4d8 at 17th.</p><p><strong>Operating Systems:</strong> Doctor</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 0 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 0,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 60,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "eada71ad85e18505": {
+        "_id": "eada71ad85e18505",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "attack": {
+          "type": "ranged",
+          "classification": "spell"
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": "@scaling.cantrip * 1d8"
+              },
+              "types": [
+                "fire"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!e5c0cc48ad1a0cae"
+}

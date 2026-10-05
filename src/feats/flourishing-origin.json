@@ -1,0 +1,24 @@
+{
+  "_id": "4de3001b516186eb",
+  "_key": "!items!4de3001b516186eb",
+  "name": "Flourishing Origin",
+  "type": "feat",
+  "img": "icons/magic/symbols/star-solid-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite:</strong> Verdant, Overgrown, or Untamed Jungle Homeworld</p><p>Tuned to the relentless, aggressive bio-rhythms of wild frontier biospheres.<ul><li><strong>Cellular Regrowth:</strong> The first time you would expend a Hit Point Die during a Short Rest to regain Hit Points, that die is not expended. You regain this benefit after a Long Rest.</li><li><strong>Sure Step:</strong> When you take the Dash action, moving through Difficult Terrain does not cost you extra movement until the end of that turn.</li></ul></p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "type": {
+      "value": "origin",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 1
+    },
+    "requirements": "Verdant, Overgrown, or Untamed Jungle Homeworld",
+    "activities": {}
+  }
+}

@@ -1,0 +1,15 @@
+2026/09/24-16:17:09.383 10b58 Recovering log #20
+2026/09/24-16:17:09.389 10b58 Delete type=0 #20
+2026/09/24-16:17:09.389 10b58 Delete type=3 #18
+2026/09/24-16:17:09.562 11f14 Level-0 table #26: started
+2026/09/24-16:17:09.567 11f14 Level-0 table #26: 31390 bytes OK
+2026/09/24-16:17:09.569 11f14 Delete type=0 #24
+2026/09/24-16:17:09.570 11f14 Manual compaction at level-0 from '!items!WpnAutoRifle0001' @ 72057594037927935 : 1 .. '!items!WpnWarhammer0001' @ 0 : 0; will stop at (end)
+2026/09/24-16:17:09.570 11f14 Manual compaction at level-1 from '!items!WpnAutoRifle0001' @ 72057594037927935 : 1 .. '!items!WpnWarhammer0001' @ 0 : 0; will stop at '!items!WpnWarhammer0001' @ 300 : 1
+2026/09/24-16:17:09.570 11f14 Compacting 1@1 + 1@2 files
+2026/09/24-16:17:09.577 11f14 Generated table #27@1: 60 keys, 31390 bytes
+2026/09/24-16:17:09.577 11f14 Compacted 1@1 + 1@2 files => 31390 bytes
+2026/09/24-16:17:09.577 11f14 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/09/24-16:17:09.577 11f14 Delete type=2 #22
+2026/09/24-16:17:09.577 11f14 Delete type=2 #26
+2026/09/24-16:17:09.577 11f14 Manual compaction at level-1 from '!items!WpnWarhammer0001' @ 300 : 1 .. '!items!WpnWarhammer0001' @ 0 : 0; will stop at (end)

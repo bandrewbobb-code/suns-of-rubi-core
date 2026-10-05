@@ -1,0 +1,65 @@
+{
+  "_id": "c48a30dd6a04d251",
+  "_key": "!items!c48a30dd6a04d251",
+  "name": "Arashi Form [Replaces Ataru Form]",
+  "type": "feat",
+  "img": "icons/weapons/swords/sword-energy-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>As a part of the bonus action to adopt this form, you can leap up to 15 feet to an unoccupied space you can see without provoking opportunity attacks.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "form",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Source Weapon Proficiency",
+    "activities": {
+      "481a083ed0896033": {
+        "_id": "481a083ed0896033",
+        "type": "utility",
+        "name": "Adopt Arashi Form",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "arashi-form"
+  }
+}

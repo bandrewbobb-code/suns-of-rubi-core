@@ -1,0 +1,67 @@
+{
+  "_id": "InscAcousticDiss",
+  "name": "Inscription: Acoustic Dissonance",
+  "type": "feat",
+  "img": "icons/magic/sonic/scream-wail-shout-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Novictum Inscription (Prerequisite: None)</em></p><p>When an electronic ping, motion sensor, radar sweep, or detection nanoprogram attempts to locate you, you can use your reaction to scramble the return telemetry. You can choose to appear on their sensors as background static, an inanimate piece of machinery, or a harmless local fauna.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "inscription"
+    },
+    "requirements": "Shade 2",
+    "activities": {
+      "actInscAcoustDis": {
+        "_id": "actInscAcoustDis",
+        "type": "utility",
+        "name": "Scramble Sensor Ping",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "Targeted by sensor scan, electronic ping, or detection program"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!InscAcousticDiss"
+}

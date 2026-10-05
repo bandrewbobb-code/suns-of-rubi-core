@@ -1,0 +1,41 @@
+{
+  "_id": "StratCoverStrat1",
+  "name": "Strategy: Cover Strategist",
+  "type": "feat",
+  "img": "icons/magic/defensive/barrier-shield-dome-blue-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>You are an expert in tactical geometry and ballistic cover:</p>\n<ul>\n  <li>Whenever you benefit from partial cover, treat it as one step higher: quarter cover (+1) becomes half cover (+2 AC and Dexterity saving throws), and half cover (+2) becomes three-quarters cover (+5 AC and Dexterity saving throws).</li>\n  <li>Whenever you make an attack roll against a target while you are benefiting from cover, the target's partial cover benefits against that attack are reduced by one step (three-quarters cover becomes half cover, and half cover becomes quarter cover).</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "strategy"
+    },
+    "requirements": "Soldier 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!StratCoverStrat1"
+}

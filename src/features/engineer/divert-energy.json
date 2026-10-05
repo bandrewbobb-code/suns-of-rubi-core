@@ -1,0 +1,56 @@
+{
+  "_id": "EngDivertEnergy1",
+  "name": "Divert Energy",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 7th level, you can re-route your nanite power grid to shield allies in peril. When you or an ally within <strong>30 feet</strong> fails a saving throw or is hit by an attack roll, you can use your <strong>Reaction</strong> to expend 1 Rapid Repair die and add the roll result to the saving throw or AC against that attack, potentially turning a failure into a success or a hit into a miss.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Engineer 7",
+    "activities": {
+      "actDivertEnergy1": {
+        "_id": "actDivertEnergy1",
+        "type": "utility",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "When self or ally within 30 ft fails a save or is hit"
+        },
+        "range": {
+          "value": "30",
+          "units": "ft"
+        },
+        "name": "Divert Energy (Reaction Boost)"
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EngDivertEnergy1"
+}

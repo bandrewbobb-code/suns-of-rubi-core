@@ -1,0 +1,78 @@
+{
+  "_id": "InscNovictCarapa",
+  "name": "Inscription: Novictum Carapace",
+  "type": "feat",
+  "img": "icons/magic/defensive/armor-stone-skin.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Novictum Inscription (Prerequisite: Shade Level 7)</em></p><p>When you reduce a hostile creature to 0 hit points, you can use your reaction to solidify a sheath of crystallized Novictum armor over yourself, gaining temporary hit points equal to <code>1d8 + @abilities.wis.mod + @classes.shade.levels</code>.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "inscription"
+    },
+    "requirements": "Shade 7",
+    "activities": {
+      "actInscNovictCar": {
+        "_id": "actInscNovictCar",
+        "type": "heal",
+        "name": "Carapace Temp HP",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "On reducing a hostile creature to 0 HP"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "healing": {
+          "types": [
+            "temphp"
+          ],
+          "custom": {
+            "enabled": true,
+            "formula": "1d8 + @abilities.wis.mod + @classes.shade.levels"
+          },
+          "scaling": {
+            "mode": "whole",
+            "number": null,
+            "formula": ""
+          },
+          "bonus": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!InscNovictCarapa"
+}

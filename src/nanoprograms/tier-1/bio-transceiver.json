@@ -1,0 +1,68 @@
+{
+  "_id": "db1ed1d8d49bd352",
+  "name": "Bio-Transceiver",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-sensoryimp.webp",
+  "system": {
+    "description": {
+      "value": "<p>Modulate acoustic frequencies and pheromone sensors to comprehend and verbally communicate with planetary fauna, gleaning info on predators, hazards, and locations.</p><p><strong>Operating Systems:</strong> Adventurer, Doctor</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "div",
+    "properties": [
+      "ritual",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "self"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "04a0de0586598f4f": {
+        "_id": "04a0de0586598f4f",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!db1ed1d8d49bd352"
+}

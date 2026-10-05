@@ -1,0 +1,79 @@
+{
+  "_id": "AdvFieldTriage01",
+  "name": "Field Triage",
+  "type": "feat",
+  "img": "icons/magic/life/cross-worn-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 2nd level, you carry a reserve of regenerative biomonitors and triage nanites. You have a pool of healing dice represented by a number of <strong>d8s equal to your Adventurer level</strong>.</p>\n<p>As a <strong>Bonus Action</strong>, you can heal yourself or one willing creature you can see within <strong>30 feet</strong>. Spend any number of dice from your pool up to your <strong>Proficiency Bonus</strong> (`@prof`). Roll the dice: the target immediately regains hit points equal to the total rolled.</p>\n<p>You regain all expended Field Triage dice when you finish a <strong>Long Rest</strong>.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "@scale.adventurer.field-triage-dice"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Adventurer 2",
+    "activities": {
+      "actFieldTriage01": {
+        "_id": "actFieldTriage01",
+        "type": "heal",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "range": {
+          "value": "30",
+          "units": "ft"
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "special": "Self or willing creature"
+          }
+        },
+        "healing": {
+          "number": 1,
+          "denomination": 8,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "custom": {
+            "enabled": true,
+            "formula": "1d8"
+          }
+        },
+        "name": "Field Triage"
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AdvFieldTriage01"
+}

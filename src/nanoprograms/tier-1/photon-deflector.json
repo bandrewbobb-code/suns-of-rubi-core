@@ -1,0 +1,75 @@
+{
+  "_id": "e07029c73cd0be59",
+  "name": "Photon Deflector",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-biomet.webp",
+  "system": {
+    "description": {
+      "value": "<p>Optical flash blinding 33 (6d10) Hit Points of creatures in a 15-foot cone until the end of your next turn (lowest current HP first, no saving throw).<br><br><strong>Overclock:</strong> +11 (2d10) HP pool per tier above 1st (+1 NP/tier).</p><p><strong>Operating Systems:</strong> Engineer, Nano-Technician</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "ill",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "round"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "self"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "7dbb7c0931767644": {
+        "_id": "7dbb7c0931767644",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting"
+          }
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!e07029c73cd0be59"
+}

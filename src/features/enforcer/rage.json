@@ -1,0 +1,145 @@
+{
+  "_id": "EnfRage000000001",
+  "name": "Rage",
+  "type": "feat",
+  "img": "icons/skills/melee/unarmed-punch-fist-fire-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>In battle, you fight with primal ferocity. On your turn, you can enter a <strong>Rage</strong> as a <strong>Bonus Action</strong>.</p><p>While raging, you gain the following benefits if you aren't wearing heavy armor:</p><ul><li><strong>Advantage on Strength Checks and Saving Throws</strong>: You have Advantage on all Strength checks and Strength saving throws.</li><li><strong>Rage Damage</strong>: When you make a melee attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as an Enforcer (+2 to +5), as shown in the Rage Damage column of the Enforcer table.</li><li><strong>Damage Resistance</strong>: You gain resistance to <strong>two damage types</strong> of your choice chosen when you enter the Rage from: <strong>Kinetic, Energy, Fire, Lightning, Ion, Force, or Cold</strong>.</li></ul><h3>Extending Your Rage</h3><p>Your Rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn, taken damage since then, or used a Bonus Action to extend your Rage. You can also end your Rage on your turn as a Bonus Action.</p><h3>Rage Uses</h3><p>You can enter a Rage a number of times shown in the Rages column of the Enforcer table. You regain all expended uses when you finish a <strong>Long Rest</strong>.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Enforcer 1",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactEnfRage1": {
+        "_id": "dnd5eactEnfRage1",
+        "type": "utility",
+        "name": "Enter Rage",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "Not wearing heavy armor"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": "@scale.enforcer.rages",
+      "max": "@scale.enforcer.rages",
+      "per": "lr",
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EnfRage000000001"
+}

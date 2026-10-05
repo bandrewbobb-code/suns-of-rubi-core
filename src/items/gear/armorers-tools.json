@@ -1,0 +1,37 @@
+{
+  "_id": "ToolArmorers0001",
+  "name": "Armorer's Tools",
+  "type": "tool",
+  "img": "icons/tools/instruments/multitool-electronic.webp",
+  "system": {
+    "description": {
+      "value": "<p>Heavy riveting hammers, alloy plates, and heating clamps required to forge and service powered and heavy armor.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 100,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 10,
+      "units": "lb"
+    },
+    "quantity": 1,
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "activities": {},
+    "type": {
+      "value": "specialist",
+      "baseItem": "armorers-tools"
+    }
+  },
+  "_key": "!items!ToolArmorers0001"
+}

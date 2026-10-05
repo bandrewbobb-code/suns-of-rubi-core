@@ -1,0 +1,38 @@
+{
+  "_id": "ArmTactCombatR01",
+  "name": "Tactical Combat Rig",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-banded-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>Segmented ballistic plates mounted on load-bearing tactical webbing.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 250,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 18,
+      "units": "lb"
+    },
+    "type": {
+      "value": "medium",
+      "baseItem": "tactical-combat-rig"
+    },
+    "armor": {
+      "value": 13,
+      "dex": 2
+    },
+    "strength": null,
+    "properties": [],
+    "equipped": false,
+    "activities": {}
+  },
+  "_key": "!items!ArmTactCombatR01"
+}

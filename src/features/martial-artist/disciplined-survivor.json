@@ -1,0 +1,83 @@
+{
+  "_id": "MaDisciplinedS01",
+  "name": "Disciplined Survivor",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-flaming-diamond-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your absolute discipline grants you proficiency in all saving throws.</p><p>Additionally, whenever you make a saving throw and fail, you can spend 1 Nanopool point to roll your Martial Arts die and add the result to the saving throw, potentially turning the failure into a success.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Martial Artist 14",
+    "activities": {
+      "actMaDiscipSurv01": {
+        "_id": "actMaDiscipSurv01",
+        "type": "utility",
+        "name": "Disciplined Survivor Reroll",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "When you fail a saving throw"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "value",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "roll": {
+          "formula": "1@scale.martial-artist.martial-arts-die",
+          "name": "Save Bonus"
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MaDisciplinedS01"
+}

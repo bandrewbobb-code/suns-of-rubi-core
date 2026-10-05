@@ -1,0 +1,75 @@
+{
+  "_id": "6c82676baf7f00cc",
+  "name": "Command",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-psychmod.webp",
+  "system": {
+    "description": {
+      "value": "<p>Transmit an authoritative neural override word (Drop, Flee, Halt, Grovel). Target makes a Wisdom save or follows instruction on its next turn.<br><br><strong>Overclock:</strong> +1 additional creature within 30 ft per tier above 1st (+1 NP/tier).</p><p><strong>Operating Systems:</strong> Bureaucrat, Enforcer, Trader</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "enc",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "round"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 60,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "4746cf45150ba13f": {
+        "_id": "4746cf45150ba13f",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting"
+          }
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!6c82676baf7f00cc"
+}

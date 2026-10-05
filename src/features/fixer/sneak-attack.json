@@ -1,0 +1,159 @@
+{
+  "_id": "FixSneakAttack01",
+  "name": "Sneak Attack",
+  "type": "feat",
+  "img": "icons/weapons/daggers/dagger-curved-glowing-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Beginning at 1st level, you know how to exploit a target's momentary distractions. Once per turn, you can deal an extra <strong>1d6 damage</strong> to one creature you hit with an attack if you have <strong>Advantage on the attack roll</strong>. The attack must use a <strong>Finesse weapon or a Ranged weapon</strong>.</p><p>You don't need Advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have Disadvantage on the attack roll.</p><p>Additionally, you can deal Sneak Attack damage to a target that fails a Dexterity saving throw with <strong>Disadvantage</strong> against one of your nanoprograms or features.</p><p>The extra damage increases as you gain levels in this class, scaling to <strong>5d6</strong> at 17th level (`@scale.fixer.sneak-attack`).</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Fixer 1",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactSneakAtk": {
+        "_id": "dnd5eactSneakAtk",
+        "type": "damage",
+        "name": "Sneak Attack Damage",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Once per turn with Finesse/Ranged weapon on Advantage or adjacent ally"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "@scale.fixer.sneak-attack",
+              "types": [
+                "kinetic"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.fixer.sneak-attack"
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FixSneakAttack01"
+}

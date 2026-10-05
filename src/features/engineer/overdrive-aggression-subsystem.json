@@ -1,0 +1,41 @@
+{
+  "_id": "EngOverdriveAggr",
+  "name": "Overdrive Aggression Subsystem",
+  "type": "feat",
+  "img": "icons/skills/combat/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 5th level, your Automaton's weapon attacks and signature attacks deal <strong>1 additional damage die</strong>. This increases to <strong>2 additional damage dice at 11th level</strong>, and <strong>3 additional damage dice at 17th level</strong>.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Engineer 5",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EngOverdriveAggr"
+}

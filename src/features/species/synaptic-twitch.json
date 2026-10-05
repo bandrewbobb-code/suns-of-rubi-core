@@ -1,0 +1,65 @@
+{
+  "_id": "SpcOpiSynapTwit1",
+  "name": "Synaptic Twitch",
+  "type": "feat",
+  "img": "icons/magic/lightning/bolt-strike-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your hyper-accelerated nervous system allows you to surge across distances in sudden bursts of speed. Once during your turn, you can double your walking speed until the end of that turn. Once you use this trait, you can't use it again until you move 0 feet on one of your subsequent turns.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Opifex",
+    "activities": {
+      "actSynapTwitch01": {
+        "_id": "actSynapTwitch01",
+        "type": "utility",
+        "name": "Synaptic Twitch",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "On your turn; recharges when moving 0 ft"
+        },
+        "duration": {
+          "units": "turn",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "synaptic-twitch"
+  },
+  "_key": "!items!SpcOpiSynapTwit1"
+}

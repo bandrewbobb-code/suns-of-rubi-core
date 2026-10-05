@@ -1,0 +1,83 @@
+{
+  "_id": "InsPrimalKnow001",
+  "name": "Instinct: Primal Knowledge Instinct",
+  "type": "feat",
+  "img": "icons/skills/wounds/injury-face-scarred-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>You gain proficiency in <strong>one skill</strong> of your choice from the Enforcer skill list (Acrobatics, Animal Handling, Athletics, Intimidation, Nature, Perception, Survival).</p><p>Additionally, while raging, whenever you make an ability check using <strong>Acrobatics, Intimidation, Perception, Stealth, or Survival</strong>, you can use your <strong>Strength modifier</strong> in place of the standard ability modifier.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "instinct"
+    },
+    "requirements": "Enforcer 2",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!InsPrimalKnow001"
+}

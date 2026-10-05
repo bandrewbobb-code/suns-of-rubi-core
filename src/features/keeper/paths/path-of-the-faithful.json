@@ -1,0 +1,227 @@
+{
+  "_id": "PathFaithful0001",
+  "name": "Path of the Faithful",
+  "type": "feat",
+  "img": "icons/magic/light/beam-rays-yellow-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>You swear fealty to the benevolent, order-affirming harmonics of the Source, fighting as an armored protector of civil society.</p><h3>Source Affinity</h3><p>Your Source Affinity damage type is <strong>Force</strong>.</p><h3>Diagnostic Empathy</h3><p>You gain proficiency in <strong>Insight or Medicine</strong> (your choice). By touching a creature for 1 minute, you discern its emotional state, if it is charmed or coerced, and whether it suffers from diseases or toxins. By touching a synthetic machine, you identify its programmed function and active malfunctions.</p><h3>Channel the Source: Righteous Wrath</h3><ul><li><strong>Smite (Bonus Action)</strong>: When you hit a creature with a melee weapon attack, expend 1 Channel use. The target takes extra Force damage equal to your <strong>Keeper level + your Charisma modifier</strong> (minimum +1), and <strong>loses its Reaction</strong> until the start of its next turn.</li><li><strong>Sustain (Bonus Action)</strong>: Touch an ally within reach and expend 1 Channel use. The ally regains hit points equal to your <strong>Keeper level + your Charisma modifier</strong> (minimum +1) and neutralizes one active poison or disease.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "path"
+    },
+    "requirements": "Keeper 2",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactSmiteFth": {
+        "_id": "dnd5eactSmiteFth",
+        "type": "damage",
+        "name": "Righteous Wrath: Smite",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "On melee weapon hit; spend 1 Channel use"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "@classes.keeper.levels + @abilities.cha.mod",
+              "types": [
+                "force"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "@classes.keeper.levels + @abilities.cha.mod"
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      },
+      "dnd5eactSustain": {
+        "_id": "dnd5eactSustain",
+        "type": "heal",
+        "name": "Righteous Wrath: Sustain",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "Spend 1 Channel use"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "units": "touch",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "ally",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "healing": {
+          "number": null,
+          "denomination": null,
+          "bonus": "@classes.keeper.levels + @abilities.cha.mod",
+          "types": [
+            "healing"
+          ],
+          "custom": {
+            "enabled": true,
+            "formula": "@classes.keeper.levels + @abilities.cha.mod"
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 1
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!PathFaithful0001"
+}

@@ -1,0 +1,223 @@
+{
+  "_id": "PathWatcher00001",
+  "name": "Path of the Watcher",
+  "type": "feat",
+  "img": "icons/magic/light/beam-rays-yellow-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>You align with the cold, objective equilibrium of archival intelligence, acting as an impartial observer and enforcer of cosmic balance.</p><h3>Source Affinity</h3><p>Your Source Affinity damage type is <strong>Psychic or Ion</strong> (chosen when you select this path).</p><h3>Impartial Guardian</h3><p>You gain proficiency in <strong>Investigation or Lore</strong> (your choice).</p><ul><li><strong>Digital Sentinel</strong>: You can interface with terminals and local networks without triggering alarm triggers or audit trails, though you cannot alter or erase data while unauthenticated.</li><li><strong>Biometric Polygraph</strong>: You have <strong>Advantage on Wisdom (Insight) checks</strong> made to determine if a creature is speaking a deliberate falsehood.</li></ul><h3>Channel the Source: Spectator's Wrath</h3><ul><li><strong>Stasis Wave (Action)</strong>: Expend 1 Channel use to broadcast a 30-foot cone of temporal deceleration. Each creature in the area must make a <strong>Wisdom saving throw</strong> against your Program Save DC. On a failed save, a creature is <strong>Incapacitated and has its speed reduced to 0</strong> until the end of its next turn. This effect ends early if the target takes damage.</li><li><strong>Null Damping (Reaction)</strong>: As a Reaction when a creature within 30 feet casts a nanoprogram or spell, spend 1 Channel use. The target must make a <strong>Constitution saving throw</strong> against your Program Save DC. On a failure, the nanoprogram fails and its action and Nanopool are wasted. The creature has Advantage on this save if the program's tier exceeds your Max Power Level.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "path"
+    },
+    "requirements": "Keeper 2",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactStasisWav": {
+        "_id": "dnd5eactStasisWav",
+        "type": "save",
+        "name": "Stasis Wave",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "Spend 1 Channel use"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "round",
+          "value": "1",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "1",
+            "contiguous": false,
+            "type": "cone",
+            "size": "30",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": []
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      },
+      "dnd5eactNullDamp": {
+        "_id": "dnd5eactNullDamp",
+        "type": "save",
+        "name": "Null Damping",
+        "img": "",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "When a creature within 30 ft casts a nanoprogram; spend 1 Channel use"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": "the caster"
+          },
+          "prompt": true,
+          "override": false
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": []
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 1
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!PathWatcher00001"
+}

@@ -1,0 +1,154 @@
+{
+  "_id": "WpnLmgOrdnance01",
+  "name": "Light Machine Gun",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-blaster-laser-silver.webp",
+  "system": {
+    "description": {
+      "value": "<p>Heavy squad automatic weapon with belt-fed ammunition for sustained fire suppression.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 1400,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 16,
+      "units": "lb"
+    },
+    "type": {
+      "value": "martialR",
+      "baseItem": "lmg"
+    },
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": 10,
+        "types": [
+          "piercing"
+        ]
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": []
+      }
+    },
+    "range": {
+      "value": 80,
+      "long": 320,
+      "units": "ft"
+    },
+    "mastery": "graze",
+    "properties": [
+      "hvy",
+      "two",
+      "auto-5",
+      "continuous-fire",
+      "high-recoil-str-15",
+      "reload-10"
+    ],
+    "activities": {
+      "mainAttack000001": {
+        "_id": "mainAttack000001",
+        "type": "attack",
+        "name": "Strike",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "range": {
+          "value": "80",
+          "long": "320",
+          "units": "ft"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false,
+          "count": 1,
+          "type": "creature"
+        },
+        "attack": {
+          "ability": "dex",
+          "bonus": "",
+          "critical": {
+            "threshold": 20
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      },
+      "auxActivity00001": {
+        "_id": "auxActivity00001",
+        "type": "save",
+        "name": "Auto Suppression",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "Expend 5 rounds"
+        },
+        "target": {
+          "template": {
+            "type": "cube",
+            "size": "10",
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "str",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 10,
+              "types": [
+                "piercing"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!WpnLmgOrdnance01"
+}

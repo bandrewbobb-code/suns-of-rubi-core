@@ -1,0 +1,41 @@
+{
+  "_id": "AdptBrutalStalk1",
+  "name": "Adaptation: Brutal Stalker",
+  "type": "feat",
+  "img": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Innate Adaptation (Req: Level 7):</em> Once per turn, when you score a critical hit with a weapon attack or reduce a hostile creature to 0 HP, you can make one additional weapon attack immediately (no action required).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "adaptation"
+    },
+    "requirements": "Adventurer 7",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AdptBrutalStalk1"
+}

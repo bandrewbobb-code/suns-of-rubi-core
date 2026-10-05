@@ -1,0 +1,41 @@
+{
+  "_id": "AdvCalliasBio001",
+  "name": "Callias's Bio-Morph",
+  "type": "feat",
+  "img": "icons/magic/nature/wolf-paw-glow-large-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 5th level, your bio-morph triggers synchronize with your nanite reservoirs:</p>\n<ul>\n  <li>Once per turn, if you have no uses of Bio-Morph remaining, you can expend <strong>2 Nanopool points</strong> to gain one use of Bio-Morph (no action required).</li>\n  <li>Whenever you finish a Long Rest, you can convert any unexpended uses of Bio-Morph into Nanopool points at a rate of <strong>2 Nanopool points per use</strong>.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Adventurer 5",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AdvCalliasBio001"
+}

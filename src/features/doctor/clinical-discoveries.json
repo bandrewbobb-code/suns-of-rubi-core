@@ -1,0 +1,83 @@
+{
+  "_id": "DocClinicDisc001",
+  "name": "Clinical Discoveries",
+  "type": "feat",
+  "img": "icons/tools/laboratory/test-tube-rack-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 2nd level, your clinical breakthroughs yield specialized medical paradigms and surgical protocols known as <strong>Clinical Discoveries</strong>.</p><p>You learn <strong>two Clinical Discoveries</strong> of your choice from the Clinical Discoveries compendium. You learn additional discoveries as shown in the Discoveries Known column of the Doctor table (`@scale.doctor.discoveries-known`), scaling to 10 discoveries at 18th level.</p><p>Whenever you gain a level in this class, you can choose one of the discoveries you know and replace it with another discovery for which you qualify.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Doctor 2",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DocClinicDisc001"
+}

@@ -1,0 +1,83 @@
+{
+  "_id": "TrdNanoProg00001",
+  "name": "Nanoprogramming",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-star-pentagon-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 1st level, you possess a specialized trade-deck neural implant loaded with economic and utility nanoprograms. As a <strong>2/3 nanocaster</strong>, your power level scales smoothly from 1st up to Tier 7 nanoprograms at higher levels.</p><h3>Charisma Nanocasting</h3><p><strong>Charisma</strong> is your nanocasting ability for your Trader nanoprograms, reflecting your negotiation power and market dominance.</p><ul><li><strong>Program Save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</li><li><strong>Program Attack Modifier</strong> = your proficiency bonus + your Charisma modifier</li></ul><h3>Programs Known</h3><p>You know <strong>6 nanoprograms</strong> of your choice from the Trader Operating System at 1st level, and learn additional programs as shown on the class table.</p><h3>Nanopool Formula</h3><p>Your maximum Nanopool points equal <strong>(Trader level &times; 3) + your Charisma modifier</strong> (minimum 1 point). You regain all expended Nanopool points when you finish a <strong>Long Rest</strong>.</p><h3>Free Hand Requirement</h3><p>Executing nanoprograms requires at least <strong>one free hand</strong> to operate wristpads, ledger interfaces, or biometric injectors.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Trader 1",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TrdNanoProg00001"
+}

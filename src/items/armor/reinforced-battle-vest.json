@@ -1,0 +1,40 @@
+{
+  "_id": "ArmReinfBattle01",
+  "name": "Reinforced Battle Vest",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-banded-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>Heavy ballistic-plated vest with shoulder and throat gorgets; noisy under quick movements.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 500,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 25,
+      "units": "lb"
+    },
+    "type": {
+      "value": "medium",
+      "baseItem": "reinforced-battle-vest"
+    },
+    "armor": {
+      "value": 14,
+      "dex": 2
+    },
+    "strength": null,
+    "properties": [
+      "stealthDisadvantage"
+    ],
+    "equipped": false,
+    "activities": {}
+  },
+  "_key": "!items!ArmReinfBattle01"
+}

@@ -1,0 +1,104 @@
+{
+  "_id": "CstFlicker000001",
+  "name": "Cunning Strike: Flicker",
+  "type": "feat",
+  "img": "icons/magic/movement/trail-streak-zigzag-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Cunning Strike (Cost: 4d6 Sneak Attack Dice, Prerequisite: Shade Level 11)</em></p><p>You phase out of existence immediately upon hitting your primary target, gaining the Invisible condition and teleporting up to 30 feet to an unoccupied space adjacent to a second creature. You can immediately make one melee weapon attack against that second creature; on a hit, it deals the weapon's damage plus the 4d6 Sneak Attack damage you forgone on the initial strike.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "cunning-strike"
+    },
+    "requirements": "Shade 11",
+    "activities": {
+      "actCstFlicker001": {
+        "_id": "actCstFlicker001",
+        "type": "attack",
+        "name": "Flicker Secondary Strike",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "On dealing Sneak Attack damage (Cost: 4d6)"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "range": {
+          "value": "30",
+          "units": "ft"
+        },
+        "attack": {
+          "ability": "dex",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "allow": true,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "4d6"
+              },
+              "number": null,
+              "denomination": 0,
+              "bonus": "",
+              "types": [
+                "piercing"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!CstFlicker000001"
+}

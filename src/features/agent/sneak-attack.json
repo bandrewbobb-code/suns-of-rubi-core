@@ -1,0 +1,41 @@
+{
+  "_id": "AgtSneakAttack01",
+  "name": "Sneak Attack",
+  "type": "feat",
+  "img": "icons/skills/targeting/crosshair-arrow-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Beginning at 1st level, you know how to strike subtly and exploit an enemy's distraction. Once per turn, you can deal an extra <strong>1d6 damage</strong> to one creature you hit with an attack if you have Advantage on the attack roll. The attack must use a <strong>Finesse weapon or a Ranged weapon</strong>.</p>\n<p>You don't need Advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't Incapacitated, and you don't have Disadvantage on the attack roll. Alternatively, you can apply your Sneak Attack damage against a target that has Disadvantage on Dexterity saving throws and fails a saving throw against one of your nanoprograms or features.</p>\n<p>The extra damage increases as you gain levels in this class: <strong>2d6 at 5th level</strong>, <strong>3d6 at 11th level</strong>, and <strong>4d6 at 17th level</strong> (`@scale.agent.sneak-attack`).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Agent 1",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AgtSneakAttack01"
+}

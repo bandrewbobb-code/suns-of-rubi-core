@@ -1,0 +1,68 @@
+{
+  "_id": "087182f47f688efb",
+  "name": "6,000,000,000 Forms of Communication",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-sensoryimp.webp",
+  "system": {
+    "description": {
+      "value": "<p>You understand the literal meaning of any spoken language you hear and decipher written text on any surface or terminal you touch (reading at approximately 1 page per minute). Does not decode encrypted military ciphers.</p><p><strong>Operating Systems:</strong> Agent, Bureaucrat, Engineer, Meta-Physicist, Trader</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "div",
+    "properties": [
+      "ritual",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "self"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "e14c0cc1ed67abb7": {
+        "_id": "e14c0cc1ed67abb7",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!087182f47f688efb"
+}

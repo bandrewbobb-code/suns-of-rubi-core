@@ -1,0 +1,76 @@
+{
+  "_id": "0cbf972637ac96ae",
+  "name": "Neuro-Spasm",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/neuro-spasm.webp",
+  "system": {
+    "description": {
+      "value": "<p>Wisdom save or falls Prone and gains Incapacitated condition, unable to stand. Repeats save at end of turns and when taking damage.</p><p><strong>Operating Systems:</strong> Agent, Bureaucrat, Meta-Physicist, Trader</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "enc",
+    "properties": [
+      "concentration",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 30,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "92c8e32e428d0891": {
+        "_id": "92c8e32e428d0891",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting"
+          }
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!0cbf972637ac96ae"
+}

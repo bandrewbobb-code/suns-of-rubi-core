@@ -1,0 +1,194 @@
+{
+  "_id": "FixGridArmor0001",
+  "name": "Grid Armor",
+  "type": "feat",
+  "img": "icons/equipment/chest/vest-leather-strapped-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>Starting at 2nd level, you deploy a personal <strong>Multi-Spatial Phasing Beacon</strong> that projects digital decoy projections into reality.</p><h3>Active Decoys</h3><p>You have a maximum number of active decoys determined by your Fixer level: <strong>1 at 2nd level, 2 at 5th level, 3 at 11th level, and 4 at 17th level</strong> (`@scale.fixer.grid-decoys`). You regain all expended decoys when you finish a <strong>Short or Long Rest</strong>.</p><h3>Decoy Interception</h3><p>Whenever you are hit by an attack roll while you have at least one active decoy, roll a <strong>1d6</strong>. On a <strong>3 or higher</strong>, the attack hits one of your decoys instead of you. The decoy is instantly destroyed and vanishes into static, leaving you completely unharmed by the attack.</p><h3>Tactical Slipstream</h3><p>While you have at least one active decoy deployed, you can take the <strong>Dash or Disengage</strong> action as a <strong>Bonus Action</strong> on each of your turns.</p><h3>Kinetic Reconstitution</h3><p>Whenever you move <strong>40 feet or more</strong> during your turn, the sheer kinetic displacement immediately reconstructs <strong>1 destroyed decoy</strong> (up to your maximum).</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Fixer 2",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactDecoy": {
+        "_id": "dnd5eactDecoy",
+        "type": "utility",
+        "name": "Decoy Intercept Roll",
+        "img": "",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "When hit by an attack roll while a decoy is active (1d6: 3+ destroys decoy, negates hit)"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      },
+      "dnd5eactGridDash": {
+        "_id": "dnd5eactGridDash",
+        "type": "utility",
+        "name": "Tactical Slipstream (Dash / Disengage)",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "While at least one decoy is active"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 1
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": "@scale.fixer.grid-decoys",
+      "max": "@scale.fixer.grid-decoys",
+      "per": "sr",
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FixGridArmor0001"
+}

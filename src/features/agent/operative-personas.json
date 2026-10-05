@@ -1,0 +1,41 @@
+{
+  "_id": "AgtOperPersonas1",
+  "name": "Operative Personas",
+  "type": "feat",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 2nd level, you install modular identity templates known as <strong>Operative Personas</strong> into your behavioral matrix. You load two Personas of your choice from the available options.</p>\n<p>The Personas Known column of the Agent table shows when you learn more Personas (scaling up to 10 at 19th level). Whenever you gain an Agent level, you can replace one Persona you know with another Persona of your choice.</p>\n<h3>Passive Alias & Active Burn</h3>\n<p>Each Persona grants you a continuous <strong>Passive Alias</strong> (skills, physical abilities, or sensory enhancements) and an <strong>Active Burn</strong> (an overclocked emergency subroutine).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Agent 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AgtOperPersonas1"
+}

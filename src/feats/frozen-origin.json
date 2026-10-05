@@ -1,0 +1,24 @@
+{
+  "_id": "efb4ede260c75071",
+  "_key": "!items!efb4ede260c75071",
+  "name": "Frozen Origin",
+  "type": "feat",
+  "img": "icons/magic/symbols/star-solid-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite:</strong> Glacial, Cryo-Tundra, or Outer Belt Icefield Homeworld</p><p>Conditioned by sub-zero survival drills, permafrost, and glacial drifts.<ul><li><strong>Thermal Insulation:</strong> You have Resistance to Cold damage.</li><li><strong>Glacial Stride:</strong> You ignore Difficult Terrain caused by snow, ice, or loose cryo-gravel. While in physical contact with ice or frozen ground, you gain Tremorsense out to a range of 30 feet.</li></ul></p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "type": {
+      "value": "origin",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 1
+    },
+    "requirements": "Glacial, Cryo-Tundra, or Outer Belt Icefield Homeworld",
+    "activities": {}
+  }
+}

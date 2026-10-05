@@ -1,0 +1,24 @@
+{
+  "_id": "31beb659f8a728b1",
+  "_key": "!items!31beb659f8a728b1",
+  "name": "Tenebrous Origin",
+  "type": "feat",
+  "img": "icons/magic/symbols/star-solid-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite:</strong> Tidally Locked Eclipse World, Void Wreck, or Shadow Moon</p><p>Acclimated to absolute light deprivation and the dim fringes of dead sectors.<ul><li><strong>Necrotic Insulator:</strong> You have Resistance to Necrotic damage.</li><li><strong>Shadow Stalker:</strong> You have Advantage on Death Saving Throws, and you can attempt to take the Hide action while in a Lightly Obscured area, even while in a creature's line of sight.</li></ul></p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "type": {
+      "value": "origin",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 1
+    },
+    "requirements": "Tidally Locked Eclipse World, Void Wreck, or Shadow Moon",
+    "activities": {}
+  }
+}

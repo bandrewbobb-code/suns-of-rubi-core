@@ -1,0 +1,207 @@
+{
+  "_id": "TrdMogul00000001",
+  "name": "Mogul",
+  "type": "feat",
+  "img": "icons/commodities/currency/crown-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 20th level, you are an untouchable financial titan and master of combat liquidity.</p><h3>Charisma Increase</h3><p>Your <strong>Charisma score increases by 4</strong>, and your maximum Charisma score is now <strong>24</strong>.</p><h3>Combat Liquidity</h3><ul><li>Whenever you roll your Siphon Die, you can spend <strong>1 Expense Point</strong> (no action required) to take the <strong>maximum possible roll</strong> on the die instead of rolling.</li><li>As a <strong>Bonus Action</strong>, you can convert up to <strong>3 Expense Points</strong> into Nanopool points on a 1-to-1 ratio.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Trader 20",
+    "properties": [],
+    "advancement": [
+      {
+        "_id": "advTrdMogulASI01",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 0,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 4
+          },
+          "cap": 24
+        },
+        "value": {
+          "type": "asi",
+          "cha": 4
+        },
+        "level": 20,
+        "title": "Charisma Increase (+4, cap 24)"
+      }
+    ],
+    "activities": {
+      "dnd5eactMaxSiphon": {
+        "_id": "dnd5eactMaxSiphon",
+        "type": "utility",
+        "name": "Maximize Siphon Die",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Spend 1 Expense Point when rolling Siphon Die"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      },
+      "dnd5eactExpToNP": {
+        "_id": "dnd5eactExpToNP",
+        "type": "utility",
+        "name": "Convert Expense Points to Nanopool",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "Convert up to 3 Expense Points to Nanopool 1:1"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 1
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TrdMogul00000001"
+}

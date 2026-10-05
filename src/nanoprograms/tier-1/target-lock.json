@@ -1,0 +1,68 @@
+{
+  "_id": "e64e1336af47205b",
+  "name": "Target Lock",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/target-lock.webp",
+  "system": {
+    "description": {
+      "value": "<p>Telemetry lock deals +1d6 weapon damage to quarry and grants Advantage on Perception/Survival to track it. Move as Bonus Action when target drops to 0 HP.</p><p><strong>Operating Systems:</strong> Adventurer, Agent, Soldier</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "div",
+    "properties": [
+      "concentration",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "bonus",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 90,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "dafc21dfbff9b8bc": {
+        "_id": "dafc21dfbff9b8bc",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!e64e1336af47205b"
+}

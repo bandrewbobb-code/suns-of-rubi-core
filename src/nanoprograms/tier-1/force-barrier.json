@@ -1,0 +1,67 @@
+{
+  "_id": "1c9090db506a374d",
+  "name": "Force Barrier",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/force-barrier.webp",
+  "system": {
+    "description": {
+      "value": "<p>Form-fitting kinetic shield wraps an unarmored willing creature, setting its base Armor Class to 13 + its Dexterity modifier. Ends if armor is donned.</p><p><strong>Operating Systems:</strong> Meta-Physicist, Nano-Technician</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "abj",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "8",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "touch"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "50f90d4214efa29a": {
+        "_id": "50f90d4214efa29a",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!1c9090db506a374d"
+}

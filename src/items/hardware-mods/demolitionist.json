@@ -1,0 +1,32 @@
+{
+  "_id": "ModDemolition001",
+  "name": "Demolitionist",
+  "type": "equipment",
+  "img": "icons/commodities/tech/chip-integrated-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Type:</strong> Weapon Mod (Recycler Mod, 1 slot)</p><p>Whenever you reduce a hostile creature to 0 HP with this weapon, you regain 1 Nanopool point, or your next grenade/payload attack deals an extra 1d8 damage.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 250,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 0.1,
+      "units": "lb"
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": "hardware-mod"
+    },
+    "equipped": false,
+    "activities": {}
+  },
+  "_key": "!items!ModDemolition001"
+}

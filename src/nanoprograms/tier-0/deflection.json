@@ -1,0 +1,59 @@
+{
+  "_id": "c7418787345d9bd6",
+  "name": "Deflection",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-mattermet.webp",
+  "system": {
+    "description": {
+      "value": "<p>Whenever a creature hits you with an attack roll before the program ends, you roll a 1d4 and subtract the number rolled from the attack roll, potentially turning a hit into a miss.<br><br><strong>Overclock:</strong> Can cast as a Reaction at 5th; die subtracted increases to 1d6 at 11th; 1d8 at 17th.</p><p><strong>Operating Systems:</strong> Adventurer, Enforcer, Keeper, Soldier</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 0 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 0,
+    "school": "abj",
+    "properties": [
+      "concentration",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "self"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "cb8bc5f5a3952271": {
+        "_id": "cb8bc5f5a3952271",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "roll": {
+          "formula": "1d4",
+          "name": "Deflection Roll"
+        }
+      }
+    }
+  },
+  "_key": "!items!c7418787345d9bd6"
+}

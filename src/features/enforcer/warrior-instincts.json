@@ -1,0 +1,83 @@
+{
+  "_id": "EnfWarInstinct01",
+  "name": "Warrior Instincts",
+  "type": "feat",
+  "img": "icons/skills/wounds/injury-face-scarred-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 2nd level, your combat conditioning and raw survival reflexes awaken as <strong>Warrior Instincts</strong> — specialized physiological adaptations and combat doctrines.</p><p>You gain <strong>two Warrior Instincts</strong> of your choice from the Warrior Instincts compendium. You gain additional instincts as you gain Enforcer levels, as shown in the Warrior Instincts column of the Enforcer table (scaling to 10 instincts at level 18).</p><p>Additionally, when you gain a level in this class, you can choose one of the instincts you know and replace it with another instinct for which you qualify.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Enforcer 2",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EnfWarInstinct01"
+}

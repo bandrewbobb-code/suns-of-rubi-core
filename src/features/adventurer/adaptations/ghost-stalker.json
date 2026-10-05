@@ -1,0 +1,41 @@
+{
+  "_id": "AdptGhostStalker",
+  "name": "Adaptation: Ghost Stalker",
+  "type": "feat",
+  "img": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Innate Adaptation (Req: Level 7):</em> Moving through difficult terrain costs you no extra movement, and you leave no physical tracks, trail, or scent unless you choose to.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "adaptation"
+    },
+    "requirements": "Adventurer 7",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AdptGhostStalker"
+}

@@ -1,0 +1,565 @@
+{
+  "_id": "KeeperClass00001",
+  "name": "Keeper",
+  "type": "class",
+  "img": "icons/weapons/swords/sword-holy-glowing-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>A paladin of the bio-synthetic era, ideological champion, and master of Source frequencies. The Keeper projects protective harmonic auras, channels supernatural faction wrath, and smites heretical hostiles with devastating Source-empowered strikes.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "identifier": "keeper",
+    "levels": 1,
+    "hd": {
+      "denomination": 10,
+      "spent": 0,
+      "additional": ""
+    },
+    "primaryAbility": {
+      "value": [
+        "str",
+        "cha"
+      ],
+      "all": false
+    },
+    "spellcasting": {
+      "progression": "half",
+      "ability": "cha"
+    },
+    "advancement": [
+      {
+        "_id": "advKepHitPoints1",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {},
+        "level": 1,
+        "title": "Hit Points"
+      },
+      {
+        "_id": "advKepSavesPrf01",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "saves:con",
+            "saves:cha"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Saving Throws"
+      },
+      {
+        "_id": "advKepArmorPrf01",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "armor:lgt",
+            "armor:med",
+            "armor:hvy",
+            "armor:shl"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Armor Training"
+      },
+      {
+        "_id": "advKepWeaponPr01",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "weapons:sim",
+            "weapons:mar",
+            "weapons:sourceweapon",
+            "weapons:vibroweapon"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Weapon Proficiencies"
+      },
+      {
+        "_id": "advKepSkillPrf01",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:acr",
+                "skills:ath",
+                "skills:dec",
+                "skills:ins",
+                "skills:itm",
+                "skills:lor",
+                "skills:prc",
+                "skills:per",
+                "skills:pil"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Skill Proficiencies"
+      },
+      {
+        "_id": "advKepScResonnc1",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "resonance-strikes",
+          "type": "dice",
+          "scale": {
+            "2": {
+              "number": 2,
+              "faces": 8
+            },
+            "5": {
+              "number": 3,
+              "faces": 8
+            },
+            "9": {
+              "number": 4,
+              "faces": 8
+            },
+            "13": {
+              "number": 5,
+              "faces": 8
+            },
+            "17": {
+              "number": 6,
+              "faces": 8
+            }
+          }
+        },
+        "value": {},
+        "level": 2,
+        "title": "Resonance Strikes"
+      },
+      {
+        "_id": "advKepScAurasKn1",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "auras-known",
+          "type": "number",
+          "scale": {
+            "3": {
+              "value": 1
+            },
+            "10": {
+              "value": 2
+            },
+            "18": {
+              "value": 3
+            }
+          }
+        },
+        "value": {},
+        "level": 3,
+        "title": "Auras Known"
+      },
+      {
+        "_id": "advKepScAuraRad1",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "aura-radius",
+          "type": "distance",
+          "scale": {
+            "3": {
+              "value": 15
+            },
+            "17": {
+              "value": 30
+            }
+          }
+        },
+        "value": {},
+        "level": 3,
+        "title": "Aura Radius"
+      },
+      {
+        "_id": "advKepScChannel1",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "channel-uses",
+          "type": "number",
+          "formula": "@prof",
+          "scale": {
+            "2": {
+              "value": 2,
+              "formula": "@prof"
+            },
+            "5": {
+              "value": 3,
+              "formula": "@prof"
+            },
+            "9": {
+              "value": 4,
+              "formula": "@prof"
+            },
+            "13": {
+              "value": 5,
+              "formula": "@prof"
+            },
+            "17": {
+              "value": 6,
+              "formula": "@prof"
+            }
+          }
+        },
+        "value": {},
+        "level": 2,
+        "title": "Channel Uses"
+      },
+      {
+        "_id": "advKepScNanopl01",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "nanopool-points",
+          "type": "number",
+          "scale": {
+            "1": {
+              "value": 2
+            },
+            "2": {
+              "value": 4
+            },
+            "3": {
+              "value": 6
+            },
+            "4": {
+              "value": 8
+            },
+            "5": {
+              "value": 10
+            },
+            "6": {
+              "value": 12
+            },
+            "7": {
+              "value": 14
+            },
+            "8": {
+              "value": 16
+            },
+            "9": {
+              "value": 18
+            },
+            "10": {
+              "value": 20
+            },
+            "11": {
+              "value": 22
+            },
+            "12": {
+              "value": 24
+            },
+            "13": {
+              "value": 26
+            },
+            "14": {
+              "value": 28
+            },
+            "15": {
+              "value": 30
+            },
+            "16": {
+              "value": 32
+            },
+            "17": {
+              "value": 34
+            },
+            "18": {
+              "value": 36
+            },
+            "19": {
+              "value": 38
+            },
+            "20": {
+              "value": 40
+            }
+          }
+        },
+        "value": {},
+        "level": 1,
+        "title": "Nanopool Points"
+      },
+      {
+        "_id": "advKepItmGrLvl01",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.KepNanocasting01",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.KepWpnMastery001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Keeper Features (Level 1)"
+      },
+      {
+        "_id": "advKepItmGrLvl02",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.KepFightStyle001",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.KepPathSource001",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.KepEmpoweredSt01",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "Keeper Features (Level 2)"
+      },
+      {
+        "_id": "advKepSubclass01",
+        "type": "Subclass",
+        "configuration": {},
+        "value": {},
+        "level": 3,
+        "title": "Keeper Creed"
+      },
+      {
+        "_id": "advKepItmGrLvl03",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.KepKeeperAura001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Keeper Features (Level 3)"
+      },
+      {
+        "_id": "advKepASILvl0401",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 4,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advKepItmGrLvl05",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.KepExtraAttack01",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 5,
+        "title": "Keeper Features (Level 5)"
+      },
+      {
+        "_id": "advKepItmGrLvl06",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.KepSystemPurity1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "Keeper Features (Level 6)"
+      },
+      {
+        "_id": "advKepASILvl0801",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 8,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advKepItmGrLvl10",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.KepEnvoy00000001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 10,
+        "title": "Keeper Features (Level 10)"
+      },
+      {
+        "_id": "advKepItmGrLvl11",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.KepImpEmpowrSt01",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 11,
+        "title": "Keeper Features (Level 11)"
+      },
+      {
+        "_id": "advKepASILvl1201",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 12,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advKepItmGrLvl13",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.KepSustainedV001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 13,
+        "title": "Keeper Features (Level 13)"
+      },
+      {
+        "_id": "advKepItmGrLvl14",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.KepCleanseTouch1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 14,
+        "title": "Keeper Features (Level 14)"
+      },
+      {
+        "_id": "advKepASILvl1601",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 16,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advKepASILvl1901",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 19,
+        "title": "Ability Score Improvement"
+      }
+    ],
+    "wealth": "5d4 * 10",
+    "startingEquipment": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!KeeperClass00001"
+}

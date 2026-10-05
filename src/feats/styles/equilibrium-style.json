@@ -1,0 +1,34 @@
+{
+  "_id": "f38eb7aac3c7cd37",
+  "_key": "!items!f38eb7aac3c7cd37",
+  "name": "Equilibrium Style",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>While wearing no armor and not wielding a medium or heavy shield: you gain a +1 bonus to Armor Class; you gain a +1 bonus to attack rolls made with unarmed strikes and melee weapons.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "fightingStyle",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {},
+    "identifier": "equilibrium-style"
+  }
+}

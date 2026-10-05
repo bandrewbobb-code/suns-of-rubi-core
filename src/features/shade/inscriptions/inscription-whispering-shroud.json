@@ -1,0 +1,41 @@
+{
+  "_id": "InscWhisperShrou",
+  "name": "Inscription: Whispering Shroud",
+  "type": "feat",
+  "img": "icons/skills/targeting/crosshair-pointed-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Novictum Inscription (Prerequisite: None)</em></p><p>Your gear and footsteps produce zero ambient acoustic noise. Thermal scanners, acoustic sensors, and biometric detectors cannot perceive you, and you have Advantage on Dexterity (Stealth) checks made against security cameras and sensor grids.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "inscription"
+    },
+    "requirements": "Shade 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!InscWhisperShrou"
+}

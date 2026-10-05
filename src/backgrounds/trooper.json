@@ -1,0 +1,139 @@
+{
+  "_id": "BgTrooper0000001",
+  "name": "Trooper",
+  "type": "background",
+  "img": "icons/equipment/shield/heater-steel-cross-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Ability Scores:</strong> STR, DEX, CON</p>\n<p><strong>Feat:</strong> @UUID[Compendium.suns-of-rubi-core.feats.FeatSavageAttak1]{Savage Attacker}</p>\n<p><strong>Skill Proficiencies:</strong> Choose 2 from ATH, ITM, PER, PLT</p>\n<h3>Feature: Military Standing</h3>\n<p>You have served in a recognized regular army, corporate defense regiment (such as Omni-Pol or the Armed Forces of Omni-Tek), or organized planetary militia. Soldiers, veterans, and military quartermasters recognize your rank, tactical bearing, and service credentials. You can gain access to friendly military encampments, vehicle depots, and armories where you can requisition standard field rations, simple medical supplies, and temporary billeting. In peacetime or civilian areas, veterans of your regiment will offer assistance and shelter out of respect for shared service.</p>\n<hr/>\n<h3>Roleplay Characteristics</h3>\n<h4>Personality Traits</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I stand at parade rest when receiving orders and maintain perfect posture.</td></tr>\n    <tr><td><strong>2</strong></td><td>I check and double-check my gear, ammo counts, and power cells every evening.</td></tr>\n    <tr><td><strong>3</strong></td><td>I address commanders with crisp formal titles and expect soldiers to show proper respect.</td></tr>\n    <tr><td><strong>4</strong></td><td>I follow orders to the letter until tactical conditions make initiative necessary.</td></tr>\n    <tr><td><strong>5</strong></td><td>I am fiercely protective of the vulnerable, viewing my strength as a shield for civilians.</td></tr>\n    <tr><td><strong>6</strong></td><td>I find comfort in military hierarchy, routine drill, and standardized standard-issue rations.</td></tr>\n  </tbody>\n</table>\n<h4>Ideals</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>Duty. Discipline and adherence to command keep societies standing against chaos. (Lawful)</td></tr>\n    <tr><td><strong>2</strong></td><td>Honor. A soldier is defined by how they conduct themselves when victory seems impossible. (Good)</td></tr>\n    <tr><td><strong>3</strong></td><td>Survival. Battlefield heroics are foolish; the objective is to eliminate the enemy and survive. (Neutral)</td></tr>\n    <tr><td><strong>4</strong></td><td>Freedom. I fought to defend our liberty from hostile oppressors, and I will do so again. (Chaotic)</td></tr>\n    <tr><td><strong>5</strong></td><td>Dominance. Force of arms is the only absolute law recognized across the stars. (Evil)</td></tr>\n    <tr><td><strong>6</strong></td><td>Sacrifice. The safety of the squad and homeland is worth any personal sacrifice. (Any)</td></tr>\n  </tbody>\n</table>\n<h4>Bonds</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>My combat dogtags carry the names of every fallen comrade from my original fireteam.</td></tr>\n    <tr><td><strong>2</strong></td><td>I obey the orders of my former commanding officer, believing in their strategic vision.</td></tr>\n    <tr><td><strong>3</strong></td><td>My battle-worn sidearm was presented to me for valor during an orbital drop assault.</td></tr>\n    <tr><td><strong>4</strong></td><td>I survived a brutal siege; I will never let another settlement fall while I draw breath.</td></tr>\n    <tr><td><strong>5</strong></td><td>I fight to protect the frontier civilian settlement where my spouse and family reside.</td></tr>\n    <tr><td><strong>6</strong></td><td>I am determined to uncover the truth behind a suicidal command that slaughtered my regiment.</td></tr>\n  </tbody>\n</table>\n<h4>Flaws</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I struggle to function without clear orders or established chain of command hierarchy.</td></tr>\n    <tr><td><strong>2</strong></td><td>I harbor deep prejudice against opposing faction troops and insurgent militia forces.</td></tr>\n    <tr><td><strong>3</strong></td><td>I have recurring nightmares of shell fire, bombardment, and fallen comrades.</td></tr>\n    <tr><td><strong>4</strong></td><td>I am harsh and demanding with civilian companions who don't understand combat urgency.</td></tr>\n    <tr><td><strong>5</strong></td><td>I find it difficult to show mercy to an enemy who has raised weapons against my squad.</td></tr>\n    <tr><td><strong>6</strong></td><td>My pride in my military service prevents me from admitting vulnerability or fear.</td></tr>\n  </tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "identifier": "trooper",
+    "advancement": [
+      {
+        "_id": "BgTrooper000Asi1",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "int",
+            "wis",
+            "cha"
+          ],
+          "points": 3
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "Ability Score Improvement",
+        "hint": "Your background allows you to increase your STR, DEX, CON scores: increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      {
+        "_id": "BgTrooper000Skl1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:ath",
+                "skills:itm",
+                "skills:per",
+                "skills:plt"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Skill Proficiencies",
+        "hint": "Choose 2 skills from: ath, itm, per, plt."
+      },
+      {
+        "_id": "BgTrooper000Tol1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:game:*",
+                "tool:vehicle:land"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Tool Proficiencies",
+        "hint": "Your background grants you tool proficiency options."
+      },
+      {
+        "_id": "BgTrooper000Lng1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Languages",
+        "hint": "Choose 1 language(s)."
+      },
+      {
+        "_id": "BgTrooper000Fgt1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.suns-of-rubi-core.feats.FeatSavageAttak1"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Origin Feat",
+        "hint": "Your background grants you the Savage Attacker origin feat."
+      }
+    ]
+  },
+  "_key": "!items!BgTrooper0000001"
+}

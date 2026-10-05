@@ -1,0 +1,144 @@
+{
+  "_id": "FixGridBeacon001",
+  "name": "Grid Beacon",
+  "type": "feat",
+  "img": "icons/magic/symbols/rune-sigil-teleport-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 14th level, you can anchor an emergency quantum beacon to any terminal or location. As an <strong>Action</strong>, you designate a digital node where you are standing.</p><p>Subsequently, as an <strong>Action</strong> costing <strong>7 Nanopool points</strong>, you instantly teleport yourself and up to <strong>5 willing allies within 5 feet</strong> directly to the marked node, regardless of distance on the same planet.</p><p>This sudden transit imposes <strong>1 level of exhaustion</strong> on each teleported creature. Once you execute this emergency recall, you cannot do so again until you finish a <strong>Long Rest</strong>.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Fixer 14",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactGridBeacon": {
+        "_id": "dnd5eactGridBeacon",
+        "type": "utility",
+        "name": "Emergency Grid Teleport",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "Spend 7 Nanopool points (1/Long Rest)"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "6",
+            "type": "willing",
+            "choice": false,
+            "special": "self + 5 allies within 5 ft"
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "lr",
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FixGridBeacon001"
+}

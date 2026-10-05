@@ -1,0 +1,76 @@
+{
+  "_id": "bc5750107969dcb7",
+  "name": "Tether Shot",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-mattercre.webp",
+  "system": {
+    "description": {
+      "value": "<p>Next weapon hit restrains target with micro-grapple (Strength save). While restrained, takes 1d6 piercing at start of turns (action to make Strength check vs DC to detach).<br><br><strong>Overclock:</strong> +1d6 piercing damage per tier above 1st (+1 NP/tier).</p><p><strong>Operating Systems:</strong> Adventurer, Enforcer, Soldier</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "con",
+    "properties": [
+      "concentration",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "bonus",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "self"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "687aacdd8309b040": {
+        "_id": "687aacdd8309b040",
+        "type": "save",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting"
+          }
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!bc5750107969dcb7"
+}

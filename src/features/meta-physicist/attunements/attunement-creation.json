@@ -1,0 +1,67 @@
+{
+  "_id": "MpAttuneCreation",
+  "name": "Attunement of Creation",
+  "type": "feat",
+  "img": "icons/weapons/swords/sword-broad-crystal-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Paracausal Attunement</em></p><p>You focus on shaping dense, hard-light matter and defensive matrices:</p><ul><li><strong>Creation Weapon:</strong> As a Bonus Action, you can materialize a weapon made of solid Notum. It can take the form of a one-handed weapon dealing 1d8 Force damage (Versatile 1d10) or two light finesse source blades dealing 1d6 Force damage each. You can use your Wisdom modifier for its attack and damage rolls, and it counts as an NCU focus.</li><li><strong>Novictum Bulwark:</strong> Alternatively, you can materialize a shimmering shield (+2 AC). When a creature within 30 feet that is orbited by one of your manifestations is attacked, you can use your reaction to project a defensive hard-light flare, granting that ally a +2 bonus to AC against the triggering attack.</li></ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "attunement"
+    },
+    "requirements": "Meta-Physicist 2",
+    "activities": {
+      "actMpMaterializeW": {
+        "_id": "actMpMaterializeW",
+        "type": "utility",
+        "name": "Materialize Creation Weapon / Bulwark",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MpAttuneCreation"
+}

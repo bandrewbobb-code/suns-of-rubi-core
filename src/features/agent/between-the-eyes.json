@@ -1,0 +1,41 @@
+{
+  "_id": "AgtBetweenEyes01",
+  "name": "Between the Eyes",
+  "type": "feat",
+  "img": "icons/weapons/ammunition/bullet-hole-penetration-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 11th level, your critical shots inflict devastating neuro-trauma. When you score a critical hit against a creature with a weapon attack, the target <strong>cannot take Reactions</strong> and has <strong>Disadvantage on Constitution saving throws to maintain Concentration</strong> until the end of your next turn.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Agent 11",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AgtBetweenEyes01"
+}

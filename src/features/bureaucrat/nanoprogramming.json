@@ -1,0 +1,82 @@
+{
+  "name": "Nanoprogramming",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-star-pentagon-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 1st level, your neural implant is loaded with a suite of <strong>nanoprograms</strong> — microscopic machines that execute on biological and digital substrates alike.</p><h3>Programs Known</h3><p>You know <strong>9 nanoprograms</strong> of your choice from the Bureaucrat nanoprogram list. The Nanoprograms Known column of the Bureaucrat table shows when you learn additional nanoprograms.</p><h3>Nanopool</h3><p>You have an internal reservoir of nanomachines measured in <strong>Nanopool points</strong>. Your total is shown in the Nanopool Points column of the Bureaucrat table. You regain all expended Nanopool points when you finish a <strong>Long Rest</strong>.</p><h3>Nanocasting Ability</h3><p><strong>Charisma</strong> is your nanocasting ability. Your nanoprograms draw on your force of personality and executive presence.</p><ul><li><strong>Program Save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</li><li><strong>Program Attack Modifier</strong> = your proficiency bonus + your Charisma modifier</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Bureaucrat 1",
+    "properties": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!NanoProgramm001",
+  "_id": "NanoProgramm001"
+}

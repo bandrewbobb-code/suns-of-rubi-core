@@ -1,0 +1,34 @@
+{
+  "_id": "SpcCybComposPlt1",
+  "name": "Composite Plating",
+  "type": "feat",
+  "img": "icons/equipment/chest/breastplate-metal-banded-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your dermal layers are reinforced with subcutaneous titanium mesh and ballistic composite ceramic. You gain a permanent +1 bonus to Armor Class.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Cyborg",
+    "activities": {},
+    "identifier": "composite-plating"
+  },
+  "_key": "!items!SpcCybComposPlt1"
+}

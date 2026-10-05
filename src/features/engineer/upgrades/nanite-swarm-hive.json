@@ -1,0 +1,41 @@
+{
+  "_id": "UpgNaniteSwarmH1",
+  "name": "Upgrade: Nanite Swarm Hive",
+  "type": "feat",
+  "img": "icons/skills/trades/tools-wrench-screwdriver-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Automaton releases defensive cloud: creatures ending turn adjacent take 1d6 poison.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "upgrade"
+    },
+    "requirements": "Engineer 4",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!UpgNaniteSwarmH1"
+}

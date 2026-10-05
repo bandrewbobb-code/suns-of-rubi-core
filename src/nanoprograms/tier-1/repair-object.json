@@ -1,0 +1,67 @@
+{
+  "_id": "8c358653a9c620c3",
+  "name": "Repair Object",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-mattermet.webp",
+  "system": {
+    "description": {
+      "value": "<p>Deploy micro-welders directly to a damaged Droid, Cyber-Construct, or vehicle within range, restoring 2d8 + your nanocasting ability modifier Hit Points.<br><br><strong>Overclock:</strong> +2d8 repair per tier above 1st (+1 NP/tier).</p><p><strong>Operating Systems:</strong> Engineer</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "trs",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 30,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "287336166267f146": {
+        "_id": "287336166267f146",
+        "type": "heal",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!8c358653a9c620c3"
+}

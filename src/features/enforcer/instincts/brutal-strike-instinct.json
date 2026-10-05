@@ -1,0 +1,83 @@
+{
+  "_id": "InsBrutalStrk001",
+  "name": "Instinct: Brutal Strike Instinct",
+  "type": "feat",
+  "img": "icons/skills/wounds/injury-face-scarred-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>You gain two additional specialized options when using your <strong>Brutal Strikes</strong> feature:</p><ul><li><strong>Concussive Rattle</strong>: The target must succeed on a <strong>Strength saving throw</strong> against your Program Save DC or <strong>lose its Reaction</strong> until the start of its next turn.</li><li><strong>Seismic Impact</strong>: Shockwaves blast out from your strike. Each creature of your choice within <strong>5 feet</strong> of the target takes damage equal to <strong>twice your Rage Damage bonus</strong>.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "instinct"
+    },
+    "requirements": "Enforcer 9, Brutal Strikes",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!InsBrutalStrk001"
+}

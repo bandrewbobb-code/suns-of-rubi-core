@@ -1,0 +1,71 @@
+{
+  "_id": "9a3de0f6f11b8899",
+  "name": "Frost Slivers",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-timespace.webp",
+  "system": {
+    "description": {
+      "value": "<p>Make a ranged program attack against a target within range. On a hit, the target takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.<br><br><strong>Overclock:</strong> 2d8 at 5th, 3d8 at 11th, 4d8 at 17th level.</p><p><strong>Operating Systems:</strong> Meta-Physicist</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 0 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 0,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 60,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "0d50ce98c07fd5c5": {
+        "_id": "0d50ce98c07fd5c5",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "attack": {
+          "type": "ranged",
+          "classification": "spell"
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": "@scaling.cantrip * 1d8"
+              },
+              "types": [
+                "cold"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!9a3de0f6f11b8899"
+}

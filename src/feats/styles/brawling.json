@@ -1,0 +1,65 @@
+{
+  "_id": "d9b9377c4b532f9f",
+  "_key": "!items!d9b9377c4b532f9f",
+  "name": "Brawling",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>You utilize brute mass and close-quarters leverage: gain proficiency with improvised weapons; unarmed strike damage die increases by one step (1 -> 1d4 -> 1d6 -> 1d8 -> 1d10 -> 1d12); when you hit a creature with an unarmed strike, natural weapon, or one-handed improvised weapon, or attempt to grapple/shove on your turn, you can use a Bonus Action to make an additional unarmed strike, grapple, or shove against the same target.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "fightingStyle",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {
+      "3b1cb8ea66d47375": {
+        "_id": "3b1cb8ea66d47375",
+        "type": "utility",
+        "name": "Bonus Action Strike / Grapple / Shove",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "After hitting with unarmed strike, natural weapon, 1H improvised weapon, or grapple/shove"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "brawling"
+  }
+}

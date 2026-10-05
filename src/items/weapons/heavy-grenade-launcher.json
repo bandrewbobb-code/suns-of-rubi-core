@@ -1,0 +1,153 @@
+{
+  "_id": "WpnHvyGrenadeLn1",
+  "name": "Heavy Grenade Launcher",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-blaster-laser-silver.webp",
+  "system": {
+    "description": {
+      "value": "<p>Revolving magazine launcher hurling volatile explosive or thermal cannisters.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 1600,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 14,
+      "units": "lb"
+    },
+    "type": {
+      "value": "martialR",
+      "baseItem": "heavy-grenade-launcher"
+    },
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": 10,
+        "types": [
+          "bludgeoning"
+        ]
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": []
+      }
+    },
+    "range": {
+      "value": 60,
+      "long": 180,
+      "units": "ft"
+    },
+    "mastery": "topple",
+    "properties": [
+      "hvy",
+      "two",
+      "lod",
+      "payload-5",
+      "reload-4"
+    ],
+    "activities": {
+      "mainAttack000001": {
+        "_id": "mainAttack000001",
+        "type": "attack",
+        "name": "Strike",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "range": {
+          "value": "60",
+          "long": "180",
+          "units": "ft"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false,
+          "count": 1,
+          "type": "creature"
+        },
+        "attack": {
+          "ability": "dex",
+          "bonus": "",
+          "critical": {
+            "threshold": 20
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      },
+      "auxActivity00001": {
+        "_id": "auxActivity00001",
+        "type": "save",
+        "name": "Payload Blast",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "target": {
+          "template": {
+            "type": "sphere",
+            "size": "5",
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "dex",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 10,
+              "types": [
+                "fire"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!WpnHvyGrenadeLn1"
+}

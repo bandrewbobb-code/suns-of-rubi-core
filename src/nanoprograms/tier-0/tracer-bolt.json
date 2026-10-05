@@ -1,0 +1,71 @@
+{
+  "_id": "93db65303b54eee1",
+  "name": "Tracer Bolt",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-mattercre.webp",
+  "system": {
+    "description": {
+      "value": "<p>Make a ranged program attack against a target within range. On a hit, target takes 1d8 radiant damage, sheds dim light in a 10-foot radius, and cannot benefit from Invisible until the end of its next turn.<br><br><strong>Overclock:</strong> 2d8 at 5th, 3d8 at 11th, 4d8 at 17th.</p><p><strong>Operating Systems:</strong> Adventurer, Agent, Fixer</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 0 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 0,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 60,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "dd743fce44d7dfbd": {
+        "_id": "dd743fce44d7dfbd",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "attack": {
+          "type": "ranged",
+          "classification": "spell"
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": "@scaling.cantrip * 1d8"
+              },
+              "types": [
+                "radiant"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!93db65303b54eee1"
+}

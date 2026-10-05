@@ -1,0 +1,267 @@
+{
+  "_id": "TrdExpenseAcc001",
+  "name": "Expense Account",
+  "type": "feat",
+  "img": "icons/commodities/currency/coin-embossed-gold-crown.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 2nd level, your corporate credit limit and liquidity reserves grant you an <strong>Expense Account</strong>. You have a pool of Expense Points equal to your <strong>Trader level + your Charisma modifier</strong> (`@classes.trader.levels + @abilities.cha.mod`).</p><p>You regain all expended Expense Points when you finish a <strong>Long Rest</strong> in a civilized port, orbital station, or connected planetary Grid.</p><h3>Expense Protocols</h3><ul><li><strong>Emergency Requisition</strong>: As an Action, spend 1 Expense Point to immediately fabricate or replicate weapons, ammunition, tech tools, or consumable gear worth up to 50 credits. Requisitioned items remain operational for 24 hours before degrading.</li><li><strong>Corporate Bribe</strong>: When making a Charisma check (Deception, Intimidation, or Persuasion), spend 1 Expense Point to add your <strong>Siphon Die</strong> to the roll.</li><li><strong>Cover the Tab</strong>: As a Reaction when an ally within 30 feet fails a Charisma check against a non-hostile creature, spend 2 Expense Points to allow that ally to reroll the check.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Trader 2",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactEmergReq": {
+        "_id": "dnd5eactEmergReq",
+        "type": "utility",
+        "name": "Emergency Requisition",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "Spend 1 Expense Point"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "value": "24",
+          "units": "hour",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": "fabricates gear <= 50 credits"
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      },
+      "dnd5eactCorpBribe": {
+        "_id": "dnd5eactCorpBribe",
+        "type": "utility",
+        "name": "Corporate Bribe",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "On Charisma check; spend 1 Expense Point"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": "adds Siphon Die to Cha check"
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 1
+      },
+      "dnd5eactCoverTab": {
+        "_id": "dnd5eactCoverTab",
+        "type": "utility",
+        "name": "Cover the Tab",
+        "img": "",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "Ally within 30 ft fails Cha check with non-hostile; spend 2 Expense Points"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "2",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "ally",
+            "choice": false,
+            "special": "rerolls failed Cha check"
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 2
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": "@classes.trader.levels + @abilities.cha.mod",
+      "max": "@classes.trader.levels + @abilities.cha.mod",
+      "per": "lr",
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TrdExpenseAcc001"
+}

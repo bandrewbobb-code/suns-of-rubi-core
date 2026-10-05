@@ -1,0 +1,140 @@
+{
+  "_id": "BgIroncladClan01",
+  "name": "Ironclad Clansman",
+  "type": "background",
+  "img": "icons/equipment/chest/breastplate-metal-banded-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Ability Scores:</strong> STR, CON, DEX</p>\n<p><strong>Feat:</strong> @UUID[Compendium.suns-of-rubi-core.feats.FeatToughOrigin1]{Tough}</p>\n<p><strong>Skill Proficiencies:</strong> Choose 2 from ATH, ITM, PLT, SUR</p>\n<h3>Feature: Clan Camaraderie</h3>\n<p>Among the Clan settlements, mining outposts, and rebel redoubts across the canyons of Rubi-Ka, you are recognized as a brother-in-arms. You can find free shelter, communal rations, and mechanical maintenance for your gear at any Clan settlement or nomad camp. Clan fighters, blacksmiths, and miners will share news of Omni-Tek patrol schedules, hazardous Notum sinkholes, and safe traversal routes through contested frontier zones.</p>\n<hr/>\n<h3>Roleplay Characteristics</h3>\n<h4>Personality Traits</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I judge people by the calluses on their hands and whether they pull their own weight.</td></tr>\n    <tr><td><strong>2</strong></td><td>I never complain about freezing frontier weather, dry rations, or exhaust fumes.</td></tr>\n    <tr><td><strong>3</strong></td><td>A firm handshake and shared slug of harsh rotgut seal an agreement better than any datapad contract.</td></tr>\n    <tr><td><strong>4</strong></td><td>I sing boisterous clan work anthems while hammering armor or servicing heavy machinery.</td></tr>\n    <tr><td><strong>5</strong></td><td>I am fiercely loyal to anyone who stands shoulder-to-shoulder with me under enemy fire.</td></tr>\n    <tr><td><strong>6</strong></td><td>I speak bluntly, without the deceptive polished manners of corporate suits.</td></tr>\n  </tbody>\n</table>\n<h4>Ideals</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>Solidarity. The clan survives only when every member protects the collective. (Lawful)</td></tr>\n    <tr><td><strong>2</strong></td><td>Freedom. We were born free on this soil; no mega-corporation owns our lives or labor. (Chaotic)</td></tr>\n    <tr><td><strong>3</strong></td><td>Strength. In a brutal frontier world, weakness is an invitation to subjugation. (Neutral)</td></tr>\n    <tr><td><strong>4</strong></td><td>Brotherhood. An injury to one clansman is an injury to the entire family. (Good)</td></tr>\n    <tr><td><strong>5</strong></td><td>Vengeance. Omni-Tek has made us bleed for generations; every debt will be repaid in blood. (Evil)</td></tr>\n    <tr><td><strong>6</strong></td><td>Honor. Stand tall, keep your word, and die with your boots on. (Any)</td></tr>\n  </tbody>\n</table>\n<h4>Bonds</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>My heavy reinforced chestplate was forged from the salvaged plating of my father's mining mech.</td></tr>\n    <tr><td><strong>2</strong></td><td>I would level an entire corporate forward base to free an imprisoned clansman.</td></tr>\n    <tr><td><strong>3</strong></td><td>The elders of my clan entrusted me with our ancient muster roll and sacred banner.</td></tr>\n    <tr><td><strong>4</strong></td><td>I fight to secure a fertile valley where the next generation of clansmen can live in peace.</td></tr>\n    <tr><td><strong>5</strong></td><td>A comrade took a sniper round intended for me; their surviving children are my responsibility.</td></tr>\n    <tr><td><strong>6</strong></td><td>My home settlement was bombed by corporate gunships; I will make them answer for it.</td></tr>\n  </tbody>\n</table>\n<h4>Flaws</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I harbor an instant, boiling hatred for anyone wearing an Omni-Tek uniform or executive pin.</td></tr>\n    <tr><td><strong>2</strong></td><td>I settle disputes with my fists before considering peaceful compromise.</td></tr>\n    <tr><td><strong>3</strong></td><td>My stubborn pride makes it nearly impossible for me to admit when my plan has failed.</td></tr>\n    <tr><td><strong>4</strong></td><td>I am distrustful of advanced ungrounded tech and highbrow corporate academia.</td></tr>\n    <tr><td><strong>5</strong></td><td>I drink heavily to drown out the screams of lost skirmishes.</td></tr>\n    <tr><td><strong>6</strong></td><td>I refuse to surrender or retreat, even when tactically overwhelmed.</td></tr>\n  </tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "identifier": "ironclad-clansman",
+    "advancement": [
+      {
+        "_id": "BgIroncladClAsi1",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "int",
+            "wis",
+            "cha"
+          ],
+          "points": 3
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "Ability Score Improvement",
+        "hint": "Your background allows you to increase your STR, CON, DEX scores: increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      {
+        "_id": "BgIroncladClSkl1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:ath",
+                "skills:itm",
+                "skills:plt",
+                "skills:sur"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Skill Proficiencies",
+        "hint": "Choose 2 skills from: ath, itm, plt, sur."
+      },
+      {
+        "_id": "BgIroncladClTol1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:smith",
+                "tool:tinkers",
+                "tools:armorer-tools"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Tool Proficiencies",
+        "hint": "Your background grants you tool proficiency options."
+      },
+      {
+        "_id": "BgIroncladClLng1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Languages",
+        "hint": "Choose 1 language(s)."
+      },
+      {
+        "_id": "BgIroncladClFgt1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.suns-of-rubi-core.feats.FeatToughOrigin1"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Origin Feat",
+        "hint": "Your background grants you the Tough origin feat."
+      }
+    ]
+  },
+  "_key": "!items!BgIroncladClan01"
+}

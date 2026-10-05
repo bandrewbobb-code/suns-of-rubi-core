@@ -1,0 +1,41 @@
+{
+  "_id": "StratInterceptSc",
+  "name": "Strategy: Intercept Screen",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Tactical Strike Enhancement</em></p>\n<p>Whenever you trigger a <strong>Natural Odd Roll</strong> on a weapon attack as part of your Tactical Strikes, you can deploy a deflecting sensor lock. One ally of your choice within <strong>30 feet</strong> who can see or hear you gains a <strong>+2 bonus to AC</strong> against the next attack roll made against them before the start of your next turn.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "strategy"
+    },
+    "requirements": "Soldier 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!StratInterceptSc"
+}

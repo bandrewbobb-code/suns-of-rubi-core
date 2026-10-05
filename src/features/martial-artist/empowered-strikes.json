@@ -1,0 +1,41 @@
+{
+  "_id": "MaEmpoweredStr01",
+  "name": "Empowered Strikes",
+  "type": "feat",
+  "img": "icons/magic/light/hand-sparks-glow-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your unarmed strikes are infused with resonant paracybernetic energy. Whenever you hit with an unarmed strike, you can cause it to deal Force damage instead of its normal damage type.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Martial Artist 6",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MaEmpoweredStr01"
+}

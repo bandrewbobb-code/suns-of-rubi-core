@@ -1,0 +1,75 @@
+{
+  "_id": "9921790a85deaa13",
+  "name": "Ego Taunt",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/ego-taunt.webp",
+  "system": {
+    "description": {
+      "value": "<p>Broadcast a humiliating target lock. Target makes a Wisdom save or has Disadvantage on attack rolls against anyone other than you. Requires no concentration. Ends if you attack another creature.</p><p><strong>Operating Systems:</strong> Enforcer, Soldier</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "enc",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "bonus",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 30,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "0b4f135077216274": {
+        "_id": "0b4f135077216274",
+        "type": "save",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting"
+          }
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!9921790a85deaa13"
+}

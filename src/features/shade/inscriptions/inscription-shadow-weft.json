@@ -1,0 +1,41 @@
+{
+  "_id": "InscShadowWeft01",
+  "name": "Inscription: Shadow Weft",
+  "type": "feat",
+  "img": "icons/magic/movement/trail-streak-zigzag-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Novictum Inscription (Prerequisite: Shade Level 5)</em></p><p>Your Shadow Step feature's teleportation distance increases by 15 feet, allowing you to teleport up to 30 feet in dim light or darkness.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "inscription"
+    },
+    "requirements": "Shade 5",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!InscShadowWeft01"
+}

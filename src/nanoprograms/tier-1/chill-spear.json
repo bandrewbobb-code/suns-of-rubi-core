@@ -1,0 +1,71 @@
+{
+  "_id": "18597fa348539a25",
+  "name": "Chill Spear",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-mattercre.webp",
+  "system": {
+    "description": {
+      "value": "<p>Ranged program attack dealing 1d10 piercing damage on a hit. Hit or miss, the spear detonates: each creature within 5 ft makes a Dexterity save or takes 2d6 cold damage.<br><br><strong>Overclock:</strong> +1d6 cold damage per tier above 1st (+1 NP/tier).</p><p><strong>Operating Systems:</strong> Meta-Physicist</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "con",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 60,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "06b981bfc867d700": {
+        "_id": "06b981bfc867d700",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "attack": {
+          "type": "ranged",
+          "classification": "spell"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!18597fa348539a25"
+}

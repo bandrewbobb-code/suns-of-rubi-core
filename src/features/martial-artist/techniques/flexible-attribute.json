@@ -1,0 +1,41 @@
+{
+  "_id": "TechFlexibleAttr",
+  "name": "Flexible Attribute",
+  "type": "feat",
+  "img": "icons/magic/control/buff-strength-muscle-damage.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Martial Technique</em></p><p>You can substitute your Wisdom modifier in place of Strength, Constitution, or Intelligence for your class features, saving throw DCs, nanocasting, and Unarmored Defense calculations.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "technique"
+    },
+    "requirements": "Martial Artist 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TechFlexibleAttr"
+}

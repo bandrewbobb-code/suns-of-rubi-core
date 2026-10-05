@@ -1,0 +1,92 @@
+{
+  "_id": "SpcCybBioHarvest",
+  "name": "Bio-Tech Harvesting",
+  "type": "feat",
+  "img": "icons/commodities/biological/organ-heart-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>You can harvest mechanical components, fluid recyclers, or biological tissue from fallen organic or construct creatures:</p>\n<ul>\n  <li>As an Action, you can scavenge a corpse within 5 feet to gain Temporary Hit Points equal to 1d8 + your Constitution modifier + your Character Level.</li>\n  <li>During a Short Rest, harvesting a fresh corpse allows you to regain 1d8 Hit Points without expending a Hit Die.</li>\n  <li>You can use this trait a number of times equal to your Proficiency Bonus, regaining all expended uses when you finish a Long Rest.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "@prof"
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Cyborg",
+    "activities": {
+      "actBioHarvest001": {
+        "_id": "actBioHarvest001",
+        "type": "heal",
+        "name": "Bio-Tech Harvesting",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "Corpse of organic/construct within 5 ft"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "5"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false,
+          "count": 1,
+          "type": "creature"
+        },
+        "healing": {
+          "number": null,
+          "denomination": null,
+          "types": [
+            "temphp"
+          ],
+          "custom": {
+            "enabled": true,
+            "formula": "1d8 + @abilities.con.mod + @details.level"
+          },
+          "scaling": {
+            "mode": "whole",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "bio-tech-harvesting"
+  },
+  "_key": "!items!SpcCybBioHarvest"
+}

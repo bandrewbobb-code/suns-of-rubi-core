@@ -1,0 +1,141 @@
+{
+  "_id": "WpnSrcTwinBlade1",
+  "name": "Source Twin-Blade",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-blade-energy-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Long two-handed staff weapon projecting full-length radiant energy blades from both ends.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 1000,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 7,
+      "units": "lb"
+    },
+    "type": {
+      "value": "martialM",
+      "baseItem": "source-twin-blade"
+    },
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": 8,
+        "types": [
+          "radiant"
+        ]
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": []
+      }
+    },
+    "range": {
+      "value": 5,
+      "long": null,
+      "units": "ft"
+    },
+    "mastery": "cleave",
+    "properties": [
+      "two",
+      "double-1d8",
+      "source-resonance"
+    ],
+    "activities": {
+      "mainAttack000001": {
+        "_id": "mainAttack000001",
+        "type": "attack",
+        "name": "Strike",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "range": {
+          "value": "5",
+          "long": "",
+          "units": "ft"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false,
+          "count": 1,
+          "type": "creature"
+        },
+        "attack": {
+          "ability": "str",
+          "bonus": "",
+          "critical": {
+            "threshold": 20
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      },
+      "auxActivity00001": {
+        "_id": "auxActivity00001",
+        "type": "attack",
+        "name": "Secondary Blade Strike",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "attack": {
+          "ability": "str",
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 8,
+              "types": [
+                "radiant"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!WpnSrcTwinBlade1"
+}

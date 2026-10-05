@@ -1,0 +1,41 @@
+{
+  "_id": "ShdElusive000001",
+  "name": "Elusive",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-flaming-diamond-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll can have Advantage against you if you aren't Incapacitated.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Shade 18",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ShdElusive000001"
+}

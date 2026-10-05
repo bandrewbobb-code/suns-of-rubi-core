@@ -1,0 +1,176 @@
+.suns-notum-hud {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin: 6px 0 10px 0;
+  padding: 8px;
+  background: #0b1118;
+  border: 1px solid #1f2f45;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  font-family: var(--dnd5e-font-roboto, "Roboto", sans-serif);
+  box-sizing: border-box;
+}
+
+.suns-notum-hud .notum-card {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: rgba(15, 23, 35, 0.8);
+  border: 1px solid #1a2736;
+  border-radius: 3px;
+  padding: 6px 8px;
+  position: relative;
+}
+
+.suns-notum-hud .notum-card.ncu-overflow {
+  border-color: #ff1744;
+  background: rgba(40, 10, 15, 0.6);
+}
+
+.suns-notum-hud .notum-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.suns-notum-hud .notum-nanopool .notum-card-title {
+  color: #00e5ff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.suns-notum-hud .notum-ncu .notum-card-title {
+  color: #d500f9;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.suns-notum-hud .notum-np-cycle {
+  background: transparent;
+  border: 1px solid rgba(0, 229, 255, 0.4);
+  color: #00e5ff;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.suns-notum-hud .notum-np-cycle:hover {
+  background: rgba(0, 229, 255, 0.2);
+  border-color: #00e5ff;
+  box-shadow: 0 0 6px #00e5ff;
+}
+
+.suns-notum-hud .ncu-avail-badge {
+  font-size: 10px;
+  color: #8c9ba5;
+  background: rgba(30, 45, 65, 0.7);
+  padding: 1px 5px;
+  border-radius: 2px;
+}
+
+.suns-notum-hud .ncu-overflow-badge {
+  font-size: 10px;
+  font-weight: 800;
+  color: #fff;
+  background: #ff1744;
+  padding: 1px 5px;
+  border-radius: 2px;
+  animation: pulse-alert 1.5s infinite;
+}
+
+@keyframes pulse-alert {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+.suns-notum-hud .notum-meter-container {
+  width: 100%;
+  height: 6px;
+  background: #06090e;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #121c29;
+}
+
+.suns-notum-hud .meter-bar {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.suns-notum-hud .nanopool-bar {
+  background: linear-gradient(90deg, #00b0ff, #00e5ff);
+  box-shadow: 0 0 6px rgba(0, 229, 255, 0.6);
+}
+
+.suns-notum-hud .ncu-bar {
+  background: linear-gradient(90deg, #aa00ff, #d500f9);
+  box-shadow: 0 0 6px rgba(213, 0, 249, 0.6);
+}
+
+.suns-notum-hud .ncu-bar.bar-overflow {
+  background: linear-gradient(90deg, #ff1744, #ff5252);
+  box-shadow: 0 0 6px rgba(255, 23, 68, 0.8);
+}
+
+.suns-notum-hud .notum-card-readout {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #cfd8dc;
+}
+
+.suns-notum-hud .notum-np-current {
+  width: 42px;
+  height: 18px;
+  padding: 0 2px;
+  text-align: right;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #1f2f45;
+  border-radius: 2px;
+  color: #00e5ff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.suns-notum-hud .notum-np-current:focus {
+  border-color: #00e5ff;
+  box-shadow: 0 0 4px #00e5ff;
+  outline: none;
+}
+
+.suns-notum-hud .readout-divider {
+  color: #546e7a;
+}
+
+.suns-notum-hud .notum-np-max,
+.suns-notum-hud .notum-ncu-max {
+  color: #90a4ae;
+}
+
+.suns-notum-hud .notum-ncu-used {
+  color: #d500f9;
+  font-weight: bold;
+}
+
+.suns-notum-hud .notum-card.ncu-overflow .notum-ncu-used {
+  color: #ff1744;
+}

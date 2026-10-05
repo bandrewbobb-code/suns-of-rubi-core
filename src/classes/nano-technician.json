@@ -1,0 +1,500 @@
+{
+  "_id": "NanoTechClass001",
+  "name": "Nano-Technician",
+  "type": "class",
+  "img": "icons/magic/symbols/circuit-board-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>The premier master of matter compilation and runtime code modification. The Nano-Technician commands the fundamental building blocks of the physical world through cutting-edge cyberdecks, overclocking nanoprograms on the fly and weaving impenetrable electromagnetic nullity spheres.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "identifier": "nano-technician",
+    "levels": 1,
+    "hd": {
+      "denomination": 6,
+      "spent": 0,
+      "additional": ""
+    },
+    "primaryAbility": {
+      "value": [
+        "int"
+      ],
+      "all": false
+    },
+    "spellcasting": {
+      "progression": "full",
+      "ability": "int"
+    },
+    "advancement": [
+      {
+        "_id": "advNtHitPoints01",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {},
+        "level": 1,
+        "title": "Hit Points"
+      },
+      {
+        "_id": "advNtSavesPrf001",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "saves:int",
+            "saves:con"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Saving Throws"
+      },
+      {
+        "_id": "advNtArmorPrf001",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Armor Training"
+      },
+      {
+        "_id": "advNtWeaponPr001",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "weapons:pistol",
+            "weapons:simple-sourceweapon",
+            "weapons:simple-vibro"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Weapon Proficiencies"
+      },
+      {
+        "_id": "advNtToolPrf0001",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tools:slicers-tools",
+                "tools:cybertech-tools"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Tool Proficiencies"
+      },
+      {
+        "_id": "advNtSkillPrf001",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:tec",
+                "skills:pil",
+                "skills:lor",
+                "skills:inv",
+                "skills:prc",
+                "skills:ins"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Skill Proficiencies"
+      },
+      {
+        "_id": "advNtScNanopl001",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "nanopool-points",
+          "type": "number",
+          "scale": {
+            "1": {
+              "value": 4
+            },
+            "2": {
+              "value": 8
+            },
+            "3": {
+              "value": 12
+            },
+            "4": {
+              "value": 16
+            },
+            "5": {
+              "value": 20
+            },
+            "6": {
+              "value": 24
+            },
+            "7": {
+              "value": 28
+            },
+            "8": {
+              "value": 32
+            },
+            "9": {
+              "value": 36
+            },
+            "10": {
+              "value": 40
+            },
+            "11": {
+              "value": 44
+            },
+            "12": {
+              "value": 48
+            },
+            "13": {
+              "value": 52
+            },
+            "14": {
+              "value": 56
+            },
+            "15": {
+              "value": 60
+            },
+            "16": {
+              "value": 64
+            },
+            "17": {
+              "value": 68
+            },
+            "18": {
+              "value": 72
+            },
+            "19": {
+              "value": 76
+            },
+            "20": {
+              "value": 80
+            }
+          }
+        },
+        "value": {},
+        "level": 1,
+        "title": "Nanopool Points"
+      },
+      {
+        "_id": "advNtScOvercl001",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "overclock-options",
+          "type": "number",
+          "scale": {
+            "2": {
+              "value": 2
+            },
+            "3": {
+              "value": 2
+            },
+            "4": {
+              "value": 2
+            },
+            "5": {
+              "value": 2
+            },
+            "6": {
+              "value": 2
+            },
+            "7": {
+              "value": 2
+            },
+            "8": {
+              "value": 2
+            },
+            "9": {
+              "value": 3
+            },
+            "10": {
+              "value": 3
+            },
+            "11": {
+              "value": 3
+            },
+            "12": {
+              "value": 3
+            },
+            "13": {
+              "value": 3
+            },
+            "14": {
+              "value": 3
+            },
+            "15": {
+              "value": 3
+            },
+            "16": {
+              "value": 3
+            },
+            "17": {
+              "value": 4
+            },
+            "18": {
+              "value": 4
+            },
+            "19": {
+              "value": 4
+            },
+            "20": {
+              "value": 4
+            }
+          }
+        },
+        "value": {},
+        "level": 2,
+        "title": "Overclock Options"
+      },
+      {
+        "_id": "advNtScNullity01",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "nullity-sphere-uses",
+          "type": "number",
+          "scale": {
+            "2": {
+              "value": 2
+            },
+            "5": {
+              "value": 3
+            },
+            "9": {
+              "value": 4
+            },
+            "13": {
+              "value": 5
+            },
+            "17": {
+              "value": 6
+            }
+          }
+        },
+        "value": {},
+        "level": 2,
+        "title": "Nullity Sphere Uses"
+      },
+      {
+        "_id": "advNtItmGrLvl001",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.NtNanoProg000001",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.NtHumidExtract01",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Nano-Technician Features (Level 1)"
+      },
+      {
+        "_id": "advNtItmGrLvl002",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.NtCompOverclock1",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.NtScholar0000001",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.NtNullitySphere1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "Nano-Technician Features (Level 2)"
+      },
+      {
+        "_id": "advNtSubclass001",
+        "type": "Subclass",
+        "configuration": {},
+        "value": {},
+        "level": 3,
+        "title": "Nanotechnic Specialization"
+      },
+      {
+        "_id": "advNtItmGrLvl003",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.NtMCTuning000001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Nano-Technician Features (Level 3)"
+      },
+      {
+        "_id": "advNtASILvl04001",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 4,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advNtItmGrLvl005",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.NtSupHumidExtr01",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 5,
+        "title": "Nano-Technician Features (Level 5)"
+      },
+      {
+        "_id": "advNtASILvl08001",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 8,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advNtASILvl12001",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 12,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advNtASILvl16001",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 16,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advNtASILvl19001",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 19,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advNtItmGrLvl020",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.NtTechnoWizard01",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 20,
+        "title": "Nano-Technician Features (Level 20)"
+      }
+    ],
+    "wealth": "4d4 * 10",
+    "startingEquipment": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!NanoTechClass001"
+}

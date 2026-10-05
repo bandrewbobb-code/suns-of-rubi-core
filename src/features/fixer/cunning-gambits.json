@@ -1,0 +1,338 @@
+{
+  "_id": "FixCunningGamb01",
+  "name": "Cunning Gambits",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-blade-slashing-cyan.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 2nd level, you can sacrifice Sneak Attack dice to execute tactical gambits that disrupt enemy hardware and positioning:</p><ul><li><strong>Snare (Cost: 1d6)</strong>: The target must make a <strong>Strength saving throw</strong> against your Program Save DC. On a failure, its speed is <strong>halved</strong> and it has <strong>Disadvantage on Dexterity saving throws</strong> until the start of your next turn.</li><li><strong>Trace (Cost: 1d6)</strong>: You plant a digital beacon on the target lasting <strong>8 hours</strong>. For the duration, the target cannot benefit from being invisible or obscured against you, cannot take the Hide action against you, and you have <strong>Advantage on Intelligence (Technology) and Intelligence (Investigation) checks</strong> made to track it anywhere on the same planet.</li><li><strong>Steal (Cost: 1d6)</strong>: The target must make a <strong>Dexterity saving throw</strong> against your Program Save DC. On a failure, one accessible item it is holding or wearing (such as a sidearm, datapad, or keycard) drops to the ground in an unoccupied space within 5 feet of it.</li><li><strong>Root (Cost: 2d6)</strong>: The target must make a <strong>Strength saving throw</strong> against your Program Save DC. On a failure, it is <strong>Restrained</strong> by micro-monofilament wires until the end of its next turn.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Fixer 2",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactGmbSnare": {
+        "_id": "dnd5eactGmbSnare",
+        "type": "save",
+        "name": "Gambit: Snare (1d6)",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Forgo 1d6 Sneak Attack damage"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "round",
+          "value": "1",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": []
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      },
+      "dnd5eactGmbTrace": {
+        "_id": "dnd5eactGmbTrace",
+        "type": "utility",
+        "name": "Gambit: Trace (1d6)",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Forgo 1d6 Sneak Attack damage"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "value": "8",
+          "units": "hour",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 1
+      },
+      "dnd5eactGmbSteal": {
+        "_id": "dnd5eactGmbSteal",
+        "type": "save",
+        "name": "Gambit: Steal (1d6)",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Forgo 1d6 Sneak Attack damage"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": []
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 2
+      },
+      "dnd5eactGmbRoot": {
+        "_id": "dnd5eactGmbRoot",
+        "type": "save",
+        "name": "Gambit: Root (2d6)",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Forgo 2d6 Sneak Attack damage"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "round",
+          "value": "1",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": []
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 3
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FixCunningGamb01"
+}

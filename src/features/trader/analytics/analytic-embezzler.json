@@ -1,0 +1,136 @@
+{
+  "_id": "AnaEmbezzler0001",
+  "name": "Analytic: The Resource Skimmer (Embezzler)",
+  "type": "feat",
+  "img": "icons/tools/scribing/scroll-quill-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Passive Protocol</strong>: Whenever you finish a Short or Long Rest, you gain <strong>Temporary Nanopool points equal to half your Charisma modifier</strong> (minimum 1).</p><p><strong>Active Exchange (Action)</strong>: Resource Liquidation. You can expend up to <strong>2 unspent Hit Dice</strong> to immediately restore an equal number of Nanopool points to an allied nanocaster within 30 feet.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "analytic"
+    },
+    "requirements": "Trader 2",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactEmbezzle": {
+        "_id": "dnd5eactEmbezzle",
+        "type": "utility",
+        "name": "Active Exchange: Resource Liquidation",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "Expend up to 2 Hit Dice to grant equal Nanopool to ally within 30 ft"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "ally",
+            "choice": false,
+            "special": "allied nanocaster"
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AnaEmbezzler0001"
+}

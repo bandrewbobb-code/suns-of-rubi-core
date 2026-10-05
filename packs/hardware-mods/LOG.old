@@ -1,0 +1,15 @@
+2026/09/24-16:13:25.647 8610 Recovering log #15
+2026/09/24-16:13:25.653 8610 Delete type=0 #15
+2026/09/24-16:13:25.653 8610 Delete type=3 #13
+2026/09/24-16:13:25.709 b9c0 Level-0 table #21: started
+2026/09/24-16:13:25.712 b9c0 Level-0 table #21: 4994 bytes OK
+2026/09/24-16:13:25.713 b9c0 Delete type=0 #19
+2026/09/24-16:13:25.714 b9c0 Manual compaction at level-0 from '!items!ModAblativeWeav1' @ 72057594037927935 : 1 .. '!items!ModVorpalCore001' @ 0 : 0; will stop at (end)
+2026/09/24-16:13:25.714 b9c0 Manual compaction at level-1 from '!items!ModAblativeWeav1' @ 72057594037927935 : 1 .. '!items!ModVorpalCore001' @ 0 : 0; will stop at '!items!ModVorpalCore001' @ 76 : 1
+2026/09/24-16:13:25.714 b9c0 Compacting 1@1 + 1@2 files
+2026/09/24-16:13:25.718 b9c0 Generated table #22@1: 19 keys, 4994 bytes
+2026/09/24-16:13:25.718 b9c0 Compacted 1@1 + 1@2 files => 4994 bytes
+2026/09/24-16:13:25.718 b9c0 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/09/24-16:13:25.719 b9c0 Delete type=2 #17
+2026/09/24-16:13:25.719 b9c0 Delete type=2 #21
+2026/09/24-16:13:25.719 b9c0 Manual compaction at level-1 from '!items!ModVorpalCore001' @ 76 : 1 .. '!items!ModVorpalCore001' @ 0 : 0; will stop at (end)

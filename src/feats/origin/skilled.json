@@ -1,0 +1,61 @@
+{
+  "_id": "FeatSkilledOrig1",
+  "name": "Skilled",
+  "type": "feat",
+  "img": "icons/commodities/treasure/medal-ribbon-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>You gain proficiency in any combination of three skills or tools of your choice.</p>\n<p><strong>Repeatable.</strong> You can take this feat more than once.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": true
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {},
+    "identifier": "skilled",
+    "advancement": [
+      {
+        "_id": "advSkilledTrait1",
+        "type": "Trait",
+        "configuration": {
+          "allowReplacements": false,
+          "choices": [
+            {
+              "count": 3,
+              "pool": [
+                "skills:*",
+                "tool:*"
+              ]
+            }
+          ],
+          "grants": [],
+          "mode": "default"
+        },
+        "level": 0,
+        "title": "Skilled Proficiencies",
+        "hint": "Choose any combination of 3 skills or tools.",
+        "value": {
+          "chosen": []
+        }
+      }
+    ]
+  },
+  "_key": "!items!FeatSkilledOrig1"
+}

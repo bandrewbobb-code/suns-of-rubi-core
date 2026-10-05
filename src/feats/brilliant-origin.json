@@ -1,0 +1,34 @@
+{
+  "_id": "5b97a357cb78679e",
+  "_key": "!items!5b97a357cb78679e",
+  "name": "Brilliant Origin",
+  "type": "feat",
+  "img": "icons/magic/symbols/star-solid-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite:</strong> Luminous, Binary-Star, or High-Albedo Homeworld</p><p>Raised on tidally locked worlds of blinding light or radiant crystal fields.<ul><li><strong>Radiant Deflection:</strong> When you take Radiant damage, you can use your Reaction to gain Resistance to Radiant damage until the end of the turn. You can use this reaction a number of times equal to your Proficiency Bonus, regaining all uses after a Long Rest.</li><li><strong>Soothing Radiance:</strong> As an Action, you can modulate a light source you are holding to emit a calming frequency. One friendly creature that rests in the light for 1 minute gains Heroic Inspiration. Once you use this feature, you cannot do so again until you finish a Short or Long Rest.</li></ul></p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "type": {
+      "value": "origin",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 1
+    },
+    "requirements": "Luminous, Binary-Star, or High-Albedo Homeworld",
+    "activities": {
+      "b35466cf914ed315": {
+        "_id": "b35466cf914ed315",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "name": "Brilliant Origin"
+      }
+    }
+  }
+}

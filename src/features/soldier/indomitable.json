@@ -1,0 +1,89 @@
+{
+  "_id": "SolIndomitable01",
+  "name": "Indomitable",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-flaming-diamond-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 9th level, you possess an iron will and nanotech safeguards that reject failure. When you fail a saving throw, you can spend <strong>4 Nanopool points</strong> to turn the failed roll into a <strong>success</strong> instead.</p>\n<p>You can use this feature once per <strong>Long Rest</strong>. You gain an additional use of this feature at <strong>13th level</strong> (2 uses) and again at <strong>17th level</strong> (3 uses).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "@scale.soldier.indomitable-uses"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Soldier 9",
+    "activities": {
+      "actIndomitable01": {
+        "_id": "actIndomitable01",
+        "type": "utility",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "When you fail a saving throw (spend 4 Nanopool)"
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": 0,
+            "contiguous": false,
+            "type": "",
+            "size": 0,
+            "width": 0,
+            "height": 0,
+            "units": "ft"
+          }
+        },
+        "range": {
+          "units": "self",
+          "special": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "name": "Indomitable (Save Success)",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!SolIndomitable01"
+}

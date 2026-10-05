@@ -1,0 +1,41 @@
+{
+  "_id": "MpAttuneNoospher",
+  "name": "Attunement of the Noosphere",
+  "type": "feat",
+  "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Paracausal Attunement</em></p><p>You tap into the planetary consciousness network and wide-band sensory arrays:</p><ul><li><strong>Omniscience Cache:</strong> You learn three At-Will nanoprograms of your choice from any Operating System.</li><li><strong>Dynamic Recalibration:</strong> When you finish a Short Rest, you can replace one prepared nanoprogram with another program from your OS.</li><li><strong>Telepathic Hub:</strong> You establish a telepathic network with a number of willing creatures within 60 feet equal to your Wisdom modifier.</li><li><strong>Relay Array:</strong> You can originate nanoprograms from the space of any of your active manifestations. Furthermore, Triangulated Targeting ensures your ranged attacks ignore half and three-quarters cover against targets within 10 feet of a node, and Noospheric Relay extends your Noetic Pulse command range to 120 feet.</li></ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "attunement"
+    },
+    "requirements": "Meta-Physicist 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MpAttuneNoospher"
+}

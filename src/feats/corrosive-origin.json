@@ -1,0 +1,24 @@
+{
+  "_id": "2c4ea9bce1119d11",
+  "_key": "!items!2c4ea9bce1119d11",
+  "name": "Corrosive Origin",
+  "type": "feat",
+  "img": "icons/magic/symbols/star-solid-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite:</strong> Acidic, Radioactive, or Toxic Wasteland Homeworld</p><p>Conditioned by chemical plumes, slag yards, and irradiated atmosphere filters.<ul><li><strong>Contaminant Resistance:</strong> You have Resistance to the damage type that matches your homeworld: Acid (Acidic), Necrotic (Radioactive), or Poison (Toxic).</li><li><strong>Bio-Filter Prowess:</strong> You have Advantage on saving throws to avoid or end the Poisoned condition.</li></ul></p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "type": {
+      "value": "origin",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 1
+    },
+    "requirements": "Acidic, Radioactive, or Toxic Wasteland Homeworld",
+    "activities": {}
+  }
+}

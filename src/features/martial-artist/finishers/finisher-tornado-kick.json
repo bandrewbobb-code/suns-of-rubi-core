@@ -1,0 +1,67 @@
+{
+  "_id": "FinTornadoKick01",
+  "name": "Finisher: Tornado Kick",
+  "type": "feat",
+  "img": "icons/skills/movement/body-turn-twist-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Finisher (Prerequisite: None)</em></p><p>You launch into an explosive spinning kick that sends your foe flying. Make an unarmed strike. On a hit against a Large or smaller creature, the target is pushed up to 15 feet straight away from you, and you can immediately move up to 15 feet toward the target without provoking opportunity attacks.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "finisher"
+    },
+    "requirements": "Martial Artist 2",
+    "activities": {
+      "actFinTornadoKick": {
+        "_id": "actFinTornadoKick",
+        "type": "utility",
+        "name": "Tornado Kick Push & Follow-Up",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Hit with Finisher: Tornado Kick"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FinTornadoKick01"
+}

@@ -1,0 +1,40 @@
+{
+  "_id": "ArmCeramicCara01",
+  "name": "Ceramic-Plated Carapace",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-banded-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>Dense interlocking heat-resistant ceramic plates designed to absorb blaster fire.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 1500,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 30,
+      "units": "lb"
+    },
+    "type": {
+      "value": "medium",
+      "baseItem": "ceramic-plated-carapace"
+    },
+    "armor": {
+      "value": 15,
+      "dex": 2
+    },
+    "strength": null,
+    "properties": [
+      "stealthDisadvantage"
+    ],
+    "equipped": false,
+    "activities": {}
+  },
+  "_key": "!items!ArmCeramicCara01"
+}

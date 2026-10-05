@@ -1,0 +1,67 @@
+{
+  "_id": "267a15988af2459f",
+  "name": "Micro Flechette",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/micro-flechette.webp",
+  "system": {
+    "description": {
+      "value": "<p>Launch three guidance-locked micro-flechettes dealing 1d4 + 1 force damage each automatically to targets within range.<br><br><strong>Overclock:</strong> +1 flechette per tier above 1st (+1 NP/tier).</p><p><strong>Operating Systems:</strong> Nano-Technician</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 120,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "599ca44aac4b3f3e": {
+        "_id": "599ca44aac4b3f3e",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!267a15988af2459f"
+}

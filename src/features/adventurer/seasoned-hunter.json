@@ -1,0 +1,41 @@
+{
+  "_id": "AdvSeasonHunt001",
+  "name": "Seasoned Hunter",
+  "type": "feat",
+  "img": "icons/skills/targeting/crosshair-arrow-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 6th level, your instincts against predatory xenofauna and apex threats sharpen significantly. You have <strong>Advantage on saving throws against poison, disease, and being Frightened</strong>, and hostile creatures cannot gain Advantage on attack rolls against you simply by being hidden or unseen.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Adventurer 6",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AdvSeasonHunt001"
+}

@@ -1,0 +1,144 @@
+{
+  "_id": "EnfPersistRage01",
+  "name": "Persistent Rage",
+  "type": "feat",
+  "img": "icons/magic/fire/flame-burning-skeleton-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Beginning at 15th level, your rage is so relentless that it ends early only if you fall <strong>Unconscious</strong> or don <strong>Heavy Armor</strong>. It lasts for the full <strong>10 minutes</strong> without requiring round-by-round extension.</p><p>In addition, once per <strong>Long Rest</strong>, when you roll Initiative and have no uses of Rage remaining, you immediately <strong>regain all expended uses of Rage</strong>.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Enforcer 15",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactPersistInit": {
+        "_id": "dnd5eactPersistInit",
+        "type": "utility",
+        "name": "Recover Rages on Initiative",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "When rolling initiative with 0 Rages"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "lr",
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EnfPersistRage01"
+}

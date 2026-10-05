@@ -1,0 +1,65 @@
+{
+  "_id": "5bf0b97d07d47d40",
+  "_key": "!items!5bf0b97d07d47d40",
+  "name": "Sharpshooting Mastery",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite:</strong> Level 4</p>\n<ul>\n  <li><strong>Ability Score Increase:</strong> Increase your Dexterity score by 1, to a maximum of 20.</li>\n  <li><strong>Sniper's Optics:</strong> Attacking at long range doesn’t impose disadvantage on your ranged weapon attack rolls.</li>\n  <li><strong>Cover Penetration:</strong> Your ranged weapon attacks ignore half cover and three-quarters cover.</li>\n  <li><strong>Tactical Precision:</strong> Once per turn, when you hit a target with a ranged weapon attack that had Advantage, you can add 1d8 to the weapon’s damage roll.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "mastery",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Level 4",
+    "activities": {},
+    "identifier": "sharpshooting-mastery",
+    "advancement": [
+      {
+        "_id": "c3868d533d418db9",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "points": 1
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "Ability Score Improvement",
+        "hint": "Increase your Dexterity score by 1, to a maximum of 20."
+      }
+    ]
+  }
+}

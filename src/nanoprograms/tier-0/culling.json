@@ -1,0 +1,75 @@
+{
+  "_id": "da9ecef363f75cc2",
+  "name": "Culling",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-biomet.webp",
+  "system": {
+    "description": {
+      "value": "<p>You point at one creature you can see within range. The target must succeed on a Wisdom saving throw or take 1d8 necrotic damage. If the target is missing any of its Hit Points, it instead takes 1d12 necrotic damage.<br><br><strong>Overclock:</strong> 2d8/2d12 at 5th, 3d8/3d12 at 11th, 4d8/4d12 at 17th level.</p><p><strong>Operating Systems:</strong> Doctor, Shade</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 0 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 0,
+    "school": "nec",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 60,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "0ebeea95805c1098": {
+        "_id": "0ebeea95805c1098",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting"
+          }
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": "@scaling.cantrip * 1d8"
+              },
+              "types": [
+                "necrotic"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!da9ecef363f75cc2"
+}

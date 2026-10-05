@@ -1,0 +1,65 @@
+{
+  "_id": "15929acc3e9c4a2a",
+  "_key": "!items!15929acc3e9c4a2a",
+  "name": "Sipius Form [Replaces Vonil Form]",
+  "type": "feat",
+  "img": "icons/weapons/swords/sword-energy-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>If you took the Attack action before adopting this form, choose a friendly creature that can see or hear you within 5 feet of a target you hit. That ally can immediately use its Reaction to make one weapon attack against the same target.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "form",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Source Weapon Proficiency",
+    "activities": {
+      "104d58871bacd40b": {
+        "_id": "104d58871bacd40b",
+        "type": "utility",
+        "name": "Adopt Sipius Form",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "sipius-form"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "_id": "38e972974e6ea220",
+  "name": "Poison Dart",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-biomet.webp",
+  "system": {
+    "description": {
+      "value": "<p>You launch a pressurized micro-flechette coated in neurotoxin. The target must succeed on a Constitution saving throw or take 1d12 poison damage.<br><br><strong>Overclock:</strong> 2d12 at 5th, 3d12 at 11th, 4d12 at 17th.</p><p><strong>Operating Systems:</strong> Agent, Bureaucrat, Doctor</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 0 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 0,
+    "school": "nec",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 30,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "cc0eee5cf092ac10": {
+        "_id": "cc0eee5cf092ac10",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting"
+          }
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": "@scaling.cantrip * 1d12"
+              },
+              "types": [
+                "poison"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!38e972974e6ea220"
+}

@@ -1,0 +1,41 @@
+{
+  "_id": "StratSkilledStr1",
+  "name": "Strategy: Skilled Strategist",
+  "type": "feat",
+  "img": "icons/tools/scribal/magnifying-glass.webp",
+  "system": {
+    "description": {
+      "value": "<p>You gain proficiency in one skill and one tool of your choice, or in two tools of your choice.</p>\n<p><em>Special:</em> You can select this Strategy multiple times. Each time you select it, choose different proficiencies.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "strategy"
+    },
+    "requirements": "Soldier 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!StratSkilledStr1"
+}

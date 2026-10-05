@@ -1,0 +1,140 @@
+{
+  "_id": "BgMercenary00001",
+  "name": "Mercenary",
+  "type": "background",
+  "img": "icons/skills/melee/blade-halberd-steel-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Ability Scores:</strong> STR, CON, CHA</p>\n<p><strong>Feat:</strong> @UUID[Compendium.suns-of-rubi-core.feats.FeatSavageAttak1]{Savage Attacker}</p>\n<p><strong>Skill Proficiencies:</strong> Choose 2 from ATH, ITM, PER, PLT</p>\n<h3>Feature: Mercenary Network</h3>\n<p>You are a veteran of the private military contractor market. You know how to identify fellow contractors, PMC liaisons, and weapon quartermasters in any spaceport or border garrison. You can secure access to mercenary guildhalls, shooting ranges, and black-market repair depots where contractors trade military surplus, compare combat reports, and recruit firepower. Fellow mercenaries treat you as a comrade of the trade and will rarely attack you unless bound by an active contract.</p>\n<hr/>\n<h3>Roleplay Characteristics</h3>\n<h4>Personality Traits</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I keep my weapons immaculately cleaned, oiled, and calibrated at all times.</td></tr>\n    <tr><td><strong>2</strong></td><td>I evaluate tactical cover and firing angles in every conference room or barroom.</td></tr>\n    <tr><td><strong>3</strong></td><td>I tell bawdy, dark-humored war stories from forgotten border skirmishes.</td></tr>\n    <tr><td><strong>4</strong></td><td>I never fight without a signed voucher or clear confirmation of combat pay.</td></tr>\n    <tr><td><strong>5</strong></td><td>I treat military discipline and unit coordination as sacred necessities.</td></tr>\n    <tr><td><strong>6</strong></td><td>I can sleep peacefully through blaster fire, artillery detonations, and sirens.</td></tr>\n  </tbody>\n</table>\n<h4>Ideals</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>Contract. A signed mercenary agreement is my sacred bond; I never break contract. (Lawful)</td></tr>\n    <tr><td><strong>2</strong></td><td>Independence. I choose who I fight for and what causes I bleed for. (Chaotic)</td></tr>\n    <tr><td><strong>3</strong></td><td>Professionalism. Emotions have no place on the battlefield; efficiency is paramount. (Neutral)</td></tr>\n    <tr><td><strong>4</strong></td><td>Camaraderie. Gold is sweet, but coming home with all squadmates alive is the real victory. (Good)</td></tr>\n    <tr><td><strong>5</strong></td><td>Ruthlessness. Bloodshed is simply the cost of doing business in this galaxy. (Evil)</td></tr>\n    <tr><td><strong>6</strong></td><td>Mastery. War is an art form, and I strive to be its supreme master. (Any)</td></tr>\n  </tbody>\n</table>\n<h4>Bonds</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>The standard and patch of my former mercenary company is pinned inside my armor.</td></tr>\n    <tr><td><strong>2</strong></td><td>I am tracking a traitorous contractor who abandoned our unit during an orbital drop.</td></tr>\n    <tr><td><strong>3</strong></td><td>My combat pay supports a field hospital for wounded veterans and disabled soldiers.</td></tr>\n    <tr><td><strong>4</strong></td><td>I saved a high-ranking corporate commander who still owes me an unrestricted clearance favor.</td></tr>\n    <tr><td><strong>5</strong></td><td>My customized assault rifle has been by my side across three planetary campaigns.</td></tr>\n    <tr><td><strong>6</strong></td><td>I fight to earn enough capital to retire to a paradise world far from the conflict zones.</td></tr>\n  </tbody>\n</table>\n<h4>Flaws</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I value my combat fee above humanitarian considerations.</td></tr>\n    <tr><td><strong>2</strong></td><td>I have intense combat flashbacks triggered by sudden explosions or siren claxons.</td></tr>\n    <tr><td><strong>3</strong></td><td>I find civilian life dull, meaningless, and hopelessly bureaucratic.</td></tr>\n    <tr><td><strong>4</strong></td><td>I have a quick temper when civilians disrespect the sacrifices of combat troops.</td></tr>\n    <tr><td><strong>5</strong></td><td>I am overly confident in my physical prowess and weapon proficiency.</td></tr>\n    <tr><td><strong>6</strong></td><td>I am reluctant to engage in any fight where profit or loot is not explicitly assured.</td></tr>\n  </tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "identifier": "mercenary",
+    "advancement": [
+      {
+        "_id": "BgMercenary0Asi1",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "dex",
+            "int",
+            "wis"
+          ],
+          "points": 3
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "Ability Score Improvement",
+        "hint": "Your background allows you to increase your STR, CON, CHA scores: increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      {
+        "_id": "BgMercenary0Skl1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:ath",
+                "skills:itm",
+                "skills:per",
+                "skills:plt"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Skill Proficiencies",
+        "hint": "Choose 2 skills from: ath, itm, per, plt."
+      },
+      {
+        "_id": "BgMercenary0Tol1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:game:*",
+                "tool:vehicle:land",
+                "tool:vehicle:air"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Tool Proficiencies",
+        "hint": "Your background grants you tool proficiency options."
+      },
+      {
+        "_id": "BgMercenary0Lng1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Languages",
+        "hint": "Choose 1 language(s)."
+      },
+      {
+        "_id": "BgMercenary0Fgt1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.suns-of-rubi-core.feats.FeatSavageAttak1"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Origin Feat",
+        "hint": "Your background grants you the Savage Attacker origin feat."
+      }
+    ]
+  },
+  "_key": "!items!BgMercenary00001"
+}

@@ -1,0 +1,142 @@
+{
+  "_id": "BgVoidSpacer0001",
+  "name": "Void Spacer",
+  "type": "background",
+  "img": "icons/equipment/head/helmet-horned-visor-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Ability Scores:</strong> DEX, CON, INT</p>\n<p><strong>Feat:</strong> @UUID[Compendium.suns-of-rubi-core.feats.FeatToughOrigin1]{Tough}</p>\n<p><strong>Skill Proficiencies:</strong> Choose 2 from INS, INV, PLT, TEC</p>\n<h3>Feature: Deep-Space Acclimation</h3>\n<p>Having spent countless months in the cold corridors of starships, deep-space mining platforms, and low-gravity orbital stations, you are intimately familiar with vacuum hazards. You suffer no penalties to balance or coordination in zero-gravity or high-G environments. You can easily detect micro-meteorite hull stress, failing atmospheric scrubbers, and subtle vacuum pressure drops before station sensors register a breach. In addition, void-dock workers and station engineers welcome you as a fellow void-dog, sharing docking berths and scrap alloys at fair rates.</p>\n<hr/>\n<h3>Roleplay Characteristics</h3>\n<h4>Personality Traits</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I instinctively check the seal on my pressure collar and air gauge several times an hour.</td></tr>\n    <tr><td><strong>2</strong></td><td>I move with the fluid, cautious grace of someone used to zero-gravity maneuvering.</td></tr>\n    <tr><td><strong>3</strong></td><td>Planetary gravity fields feel oppressive, heavy, and unnatural to my spine and legs.</td></tr>\n    <tr><td><strong>4</strong></td><td>I prefer the constant hum of life-support scrubbers to the unsettling silence of nature.</td></tr>\n    <tr><td><strong>5</strong></td><td>I have a practical repair fix for every malfunctioning hydraulic line or oxygen valve.</td></tr>\n    <tr><td><strong>6</strong></td><td>I treat every breath of pressurized air as a precious commodity that shouldn't be wasted on chatter.</td></tr>\n  </tbody>\n</table>\n<h4>Ideals</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>Self-Reliance. In the void of space, a single mistake will vent you into vacuum; rely on your own competence. (Neutral)</td></tr>\n    <tr><td><strong>2</strong></td><td>Community. A ship's crew is a single organism; if the hull breaches, everyone drowns in the void together. (Good)</td></tr>\n    <tr><td><strong>3</strong></td><td>Order. Safety protocols, airlock checks, and maintenance schedules must be followed religiously. (Lawful)</td></tr>\n    <tr><td><strong>4</strong></td><td>Curiosity. The uncharted deep darkness between star systems holds mysteries we must unlock. (Chaotic)</td></tr>\n    <tr><td><strong>5</strong></td><td>Ruthlessness. Life support reserves are finite; dead weight must be jettisoned when survival is on the line. (Evil)</td></tr>\n    <tr><td><strong>6</strong></td><td>Endurance. Space is cold and indifferent, but the human will to explore is indestructible. (Any)</td></tr>\n  </tbody>\n</table>\n<h4>Bonds</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I survived a catastrophic decompression event that destroyed my previous hauler; I owe my life to its captain.</td></tr>\n    <tr><td><strong>2</strong></td><td>My customized EVA suit has kept me alive through solar flares and vacuum leaks; it is my armor and life.</td></tr>\n    <tr><td><strong>3</strong></td><td>I have a deep-space charting datapad detailing unknown navigational corridors through the rim.</td></tr>\n    <tr><td><strong>4</strong></td><td>My family has worked the orbital orbital refineries for four generations without ever walking on a planet.</td></tr>\n    <tr><td><strong>5</strong></td><td>I am saving credits to buy an independent mining scout and strike rich in the deep asteroid belts.</td></tr>\n    <tr><td><strong>6</strong></td><td>I carry a piece of hull debris from a legendary derelict vessel I explored in deep space.</td></tr>\n  </tbody>\n</table>\n<h4>Flaws</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I feel intense agoraphobia under open planetary skies with no ceilings or bulkheads.</td></tr>\n    <tr><td><strong>2</strong></td><td>I am overly protective of fresh water, oxygen reserves, and battery power, hoarding resources obsessively.</td></tr>\n    <tr><td><strong>3</strong></td><td>I judge planet-dwellers as soft, wasteful, and ignorant of cosmic reality.</td></tr>\n    <tr><td><strong>4</strong></td><td>I am slow to trust ground-pounders who don't know how to operate an emergency vacuum patch kit.</td></tr>\n    <tr><td><strong>5</strong></td><td>My emotional responses are flat and muted from years of isolation in long-haul shipping.</td></tr>\n    <tr><td><strong>6</strong></td><td>I get irritable and anxious when sub-light engines shut down and artificial gravity fluctuates.</td></tr>\n  </tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "identifier": "void-spacer",
+    "advancement": [
+      {
+        "_id": "BgVoidSpacerAsi1",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "wis",
+            "cha"
+          ],
+          "points": 3
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "Ability Score Improvement",
+        "hint": "Your background allows you to increase your DEX, CON, INT scores: increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      {
+        "_id": "BgVoidSpacerSkl1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:ins",
+                "skills:inv",
+                "skills:plt",
+                "skills:tec"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Skill Proficiencies",
+        "hint": "Choose 2 skills from: ins, inv, plt, tec."
+      },
+      {
+        "_id": "BgVoidSpacerTol1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tools:tinkers",
+                "tools:medkit",
+                "tool:game:*",
+                "tools:bio-med-kit",
+                "tools:mechanics-kit"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Tool Proficiencies",
+        "hint": "Your background grants you tool proficiency options."
+      },
+      {
+        "_id": "BgVoidSpacerLng1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Languages",
+        "hint": "Choose 1 language(s)."
+      },
+      {
+        "_id": "BgVoidSpacerFgt1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.suns-of-rubi-core.feats.FeatToughOrigin1"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Origin Feat",
+        "hint": "Your background grants you the Tough origin feat."
+      }
+    ]
+  },
+  "_key": "!items!BgVoidSpacer0001"
+}

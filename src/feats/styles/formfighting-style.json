@@ -1,0 +1,34 @@
+{
+  "_id": "1728a5b25d40356f",
+  "_key": "!items!1728a5b25d40356f",
+  "name": "Formfighting Style",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>You master the basics of enhanced weapon stances: you learn three Forms from the Fighting Forms directory; once on each of your turns, you can draw or stow a melee weapon without using an object interaction.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "fightingStyle",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {},
+    "identifier": "formfighting-style"
+  }
+}

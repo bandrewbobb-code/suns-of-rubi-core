@@ -1,0 +1,96 @@
+{
+  "_id": "cc6e2acd57bf7fff",
+  "_key": "!items!cc6e2acd57bf7fff",
+  "name": "Great Weapon Mastery",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite:</strong> Level 4</p>\n<ul>\n  <li><strong>Ability Score Increase:</strong> Increase your Strength score by 1, to a maximum of 20.</li>\n  <li><strong>Momentum Cleave:</strong> On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 Hit Points with one, you can make one melee weapon attack as a Bonus Action.</li>\n  <li><strong>Devastating Strike:</strong> Once per turn, when you hit a creature with a Heavy melee weapon, you can add extra damage equal to your Proficiency Bonus.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "mastery",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Level 4",
+    "activities": {
+      "9b2e4439b7e8de35": {
+        "_id": "9b2e4439b7e8de35",
+        "type": "utility",
+        "name": "Momentum Cleave Attack",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "On your turn when scoring a crit or dropping a creature to 0 HP"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "great-weapon-mastery",
+    "advancement": [
+      {
+        "_id": "35c2cab21d2ea3e5",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "points": 1
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "Ability Score Improvement",
+        "hint": "Increase your Strength score by 1, to a maximum of 20."
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "PersOfContend001",
+  "name": "Persona of the Contender",
+  "type": "feat",
+  "img": "icons/skills/melee/unarmed-punch-fist-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Passive Alias:</strong> You gain proficiency with Medium Armor, and your Unarmed Strikes deal <strong>1d6 kinetic damage</strong> and have the Finesse property.</p>\n<p><strong>Active Burn:</strong> As a <strong>Bonus Action</strong>, you harden your subdermal frame for <strong>1 minute</strong>: you gain temporary hit points equal to your <strong>Agent level + your Wisdom modifier</strong>, and you have Advantage on checks made to grapple, shove, or resist forced movement.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "persona"
+    },
+    "requirements": "Agent 2",
+    "activities": {
+      "actBurnContender": {
+        "_id": "actBurnContender",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "name": "Active Burn: Subdermal Reinforcement"
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!PersOfContend001"
+}

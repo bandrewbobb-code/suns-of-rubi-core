@@ -1,0 +1,41 @@
+{
+  "_id": "ShdNovictumInsc1",
+  "name": "Novictum Inscriptions",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-carved-stone-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Through specialized alchemical rituals and biological cyber-etching, you carve void-resonant Novictum runes directly onto your flesh and neuromuscular pathways. At 2nd level, you gain two Novictum Inscriptions of your choice. You gain additional inscriptions as shown in the Inscriptions Known column of the Shade table (up to 10 at 18th level).</p><p>Whenever you gain a level in this class, you can choose one of the inscriptions you know and replace it with another inscription that you could learn at that level.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Shade 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ShdNovictumInsc1"
+}

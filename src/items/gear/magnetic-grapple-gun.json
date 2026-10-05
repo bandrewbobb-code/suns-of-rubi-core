@@ -1,0 +1,33 @@
+{
+  "_id": "GearMagGrappleG1",
+  "name": "Magnetic Grapple Gun",
+  "type": "loot",
+  "img": "icons/commodities/tech/sensor-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Pneumatic launcher equipped with 100 feet of high-tensile monofilament line and magnetic clamp head.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 100,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "quantity": 1,
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "activities": {}
+  },
+  "_key": "!items!GearMagGrappleG1"
+}

@@ -1,0 +1,56 @@
+{
+  "_id": "GearBioticStim01",
+  "name": "Biotic Stim Injector",
+  "type": "consumable",
+  "img": "icons/consumables/potions/vial-cork-liquid-glowing-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>High-potency epinephrine and antitoxin auto-injector. Heals 2d4 + 2 HP and cleanses the Poisoned condition.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 75,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "quantity": 1,
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": "1"
+    },
+    "activities": {
+      "actGearPrimary01": {
+        "_id": "actGearPrimary01",
+        "type": "heal",
+        "name": "Inject Stim",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "healing": {
+          "types": [
+            "healing"
+          ],
+          "custom": {
+            "enabled": true,
+            "formula": "2d4 + 2"
+          }
+        }
+      }
+    },
+    "type": {
+      "value": "potion"
+    }
+  },
+  "_key": "!items!GearBioticStim01"
+}

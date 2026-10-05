@@ -1,0 +1,41 @@
+{
+  "_id": "InscLeechFang001",
+  "name": "Inscription: Leeching Fang",
+  "type": "feat",
+  "img": "icons/magic/life/cross-beam-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Novictum Inscription (Prerequisite: Shade Level 5)</em></p><p>When you score a critical hit with a Sneak Attack and apply the <em>Vital Siphon</em> Cunning Strike, you do not need to spend a Nanopool point to activate it.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "inscription"
+    },
+    "requirements": "Shade 5",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!InscLeechFang001"
+}

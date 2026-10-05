@@ -1,0 +1,41 @@
+{
+  "_id": "MaSuperiorDef001",
+  "name": "Superior Defense",
+  "type": "feat",
+  "img": "icons/magic/defensive/armor-stone-skin.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your rooted defensive posture becomes nearly impenetrable. While you are NOT in Flow State (such as while in Neutral State or Finisher Ready), you gain Resistance to all damage except Force damage.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Martial Artist 18",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MaSuperiorDef001"
+}

@@ -1,0 +1,135 @@
+{
+  "_id": "FixFixerGrid0001",
+  "name": "Fixer Grid: The Node",
+  "type": "feat",
+  "img": "icons/magic/symbols/triangle-glow-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 6th level, you construct an extradimensional subnet lounge anchored to your cyberdeck known as <strong>The Node</strong>.</p><ul><li>As an <strong>Action</strong>, you step into The Node. You can remain inside for up to <strong>2 &times; your Proficiency Bonus hours</strong> before being gently displaced to your entry point.</li><li>You can exit The Node at any time as a <strong>Bonus Action</strong>.</li><li>The Node includes a secure storage locker that can hold up to <strong>500 lbs</strong> of cargo and contraband.</li><li><strong>High-Bandwidth Expansion (11th Level)</strong>: You can bring a number of willing allies equal to your <strong>Intelligence modifier</strong> into The Node with you. While inside, your team completes a <strong>Short Rest in just 10 minutes</strong>.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Fixer 6",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactEnterNode": {
+        "_id": "dnd5eactEnterNode",
+        "type": "utility",
+        "name": "Enter The Node",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "hour",
+          "value": "4",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FixFixerGrid0001"
+}

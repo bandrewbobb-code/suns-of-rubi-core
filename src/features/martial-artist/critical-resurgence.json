@@ -1,0 +1,67 @@
+{
+  "_id": "MaCritResurg0001",
+  "name": "Critical Resurgence",
+  "type": "feat",
+  "img": "icons/magic/fire/projectile-fireball-smoke-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>Whenever you score a critical hit against a hostile creature while in Initiative, you immediately regain 1 expended Nanopool point (up to your maximum).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Martial Artist 17",
+    "activities": {
+      "actMaCritResurg01": {
+        "_id": "actMaCritResurg01",
+        "type": "utility",
+        "name": "Restore Nanopool Point",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "On scoring a critical hit against a hostile creature while in Initiative"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MaCritResurg0001"
+}

@@ -1,0 +1,56 @@
+{
+  "_id": "GearTraumaMedpc1",
+  "name": "Trauma Medpac",
+  "type": "consumable",
+  "img": "icons/consumables/potions/vial-cork-liquid-glowing-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Emergency field surgery kit containing sterile coagulation foam, sutures, and stims. 3 uses.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 50,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "quantity": 1,
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": "3"
+    },
+    "activities": {
+      "actGearPrimary01": {
+        "_id": "actGearPrimary01",
+        "type": "heal",
+        "name": "Stabilize and Treat",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "healing": {
+          "types": [
+            "healing"
+          ],
+          "custom": {
+            "enabled": true,
+            "formula": "1d4 + 2"
+          }
+        }
+      }
+    },
+    "type": {
+      "value": "potion"
+    }
+  },
+  "_key": "!items!GearTraumaMedpc1"
+}

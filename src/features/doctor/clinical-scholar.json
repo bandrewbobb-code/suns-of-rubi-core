@@ -1,0 +1,83 @@
+{
+  "_id": "DocClinicSchol01",
+  "name": "Clinical Scholar",
+  "type": "feat",
+  "img": "icons/tools/laboratory/microscope.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 2nd level, your exhaustive training in xenobiology and surgery sets you apart from amateur field medics.</p><ul><li><strong>Medical Expertise</strong>: You gain proficiency in the <strong>Medicine</strong> skill if you do not already have it. Your proficiency bonus is <strong>doubled</strong> for any ability check you make that uses Medicine.</li><li><strong>Diagnostic Intuition</strong>: Choose one of the following skills: <strong>Investigation, Nature, or Lore</strong>. Whenever you make an ability check with the chosen skill relating to medicine, anatomy, xenobiology, diseases, or organic specimens, you can use your <strong>Wisdom modifier</strong> in place of Intelligence.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Doctor 2",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DocClinicSchol01"
+}

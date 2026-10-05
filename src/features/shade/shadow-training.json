@@ -1,0 +1,41 @@
+{
+  "_id": "ShdShadowTrain01",
+  "name": "Shadow Training",
+  "type": "feat",
+  "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your conditioning in the cold void and forgotten underworld sectors sharpens your nocturnal prowess:</p><ul><li><strong>Voidwalker Sight:</strong> You gain Darkvision out to a range of 60 feet. If you already have Darkvision from your species or another feature, its range increases by 30 feet instead.</li><li><strong>Fighting Style:</strong> You adopt a particular style of fighting as your specialty. Choose one Fighting Style feature from Chapter 6.</li><li><strong>Weapon Mastery:</strong> Your training with arms allows you to use the Mastery properties of two kinds of weapons of your choice with which you are proficient. Whenever you finish a Long Rest, you can practice weapon katas and change the kinds of weapons you chose.</li></ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Shade 1",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ShdShadowTrain01"
+}

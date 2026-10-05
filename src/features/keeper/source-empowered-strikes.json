@@ -1,0 +1,159 @@
+{
+  "_id": "KepEmpoweredSt01",
+  "name": "Source-Empowered Strikes",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-blade-slashing-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>Starting at 2nd level, when you hit a creature with a melee weapon attack, you can channel internal Nanopool energy directly into the blow.</p><p>Once per turn, you can expend <strong>Nanopool points</strong> to deal an extra <strong>1d8 damage per point spent</strong>. The maximum points you can expend on a single strike scales with your Keeper level, as shown in the Resonance Strikes column of the Keeper table (capped at <strong>2d8 at 2nd level, 3d8 at 5th, 4d8 at 9th, 5d8 at 13th, and 6d8 at 17th level</strong>, `@scale.keeper.resonance-strikes`).</p><p>The extra damage is either of your weapon's normal damage type or matches your <strong>Source Affinity</strong> damage type (Force, Necrotic, Psychic, or Ion).</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Keeper 2",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactEmpower": {
+        "_id": "dnd5eactEmpower",
+        "type": "damage",
+        "name": "Source-Empowered Smite",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Once per turn on melee weapon hit; expend Nanopool points"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "@scale.keeper.resonance-strikes",
+              "types": [
+                "force"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.keeper.resonance-strikes"
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!KepEmpoweredSt01"
+}

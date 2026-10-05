@@ -1,0 +1,70 @@
+{
+  "_id": "SpcAtxMongoRage1",
+  "name": "Mongo Blood Rage",
+  "type": "feat",
+  "img": "icons/skills/wounds/blood-splatter-spray-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>When you are reduced to 0 Hit Points, your autonomic combat stim-glands rupture, triggering a 1-minute blind adrenaline rage instead of falling unconscious:</p>\n<ul>\n  <li>Your concentration on nanoprograms immediately ends.</li>\n  <li>You are immune to the Charmed and Frightened conditions.</li>\n  <li>On your turns, you can only take the Attack action or Dash action.</li>\n  <li>You still make death saving throws at the start of your turns as normal; however, rolled successes remove existing death save failures.</li>\n  <li>The rage ends early if you regain hit points, if you neither make an attack roll nor take damage during your turn, or after 1 minute has elapsed. If you have accumulated 4 or more death saving throw failures when the rage ends, you die.</li>\n  <li>Once you enter a Mongo Blood Rage, you can't do so again until you finish a Long Rest.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Atrox",
+    "activities": {
+      "actMongoBloodRg1": {
+        "_id": "actMongoBloodRg1",
+        "type": "utility",
+        "name": "Mongo Blood Rage",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "When reduced to 0 HP"
+        },
+        "duration": {
+          "units": "minute",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "mongo-blood-rage"
+  },
+  "_key": "!items!SpcAtxMongoRage1"
+}

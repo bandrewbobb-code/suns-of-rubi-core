@@ -1,0 +1,25 @@
+{
+  "name": "suns-of-rubi-core",
+  "version": "1.0.0",
+  "description": "Suns of Rubi Core system module for Foundry VTT (v12/v14, dnd5e)",
+  "main": "src/modules/notum-hud.mjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bandrewbobb-code/suns-of-rubi-core.git"
+  },
+  "homepage": "https://github.com/bandrewbobb-code/suns-of-rubi-core#readme",
+  "author": "bandrewbobb",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx fvtt package pack -n class-features -t Item --in src/features --out packs -r && npx fvtt package pack -n classes -t Item --in src/classes --out packs && npx fvtt package pack -n nanoprograms -t Item --in src/nanoprograms --out packs -r && npx fvtt package pack -n journals -t JournalEntry --in src/journals --out packs && npx fvtt package pack -n companions -t Actor --in src/actors --out packs && npx fvtt package pack -n feats -t Item --in src/feats --out packs -r && npx fvtt package pack -n backgrounds -t Item --in src/backgrounds --out packs && npx fvtt package pack -n species-features -t Item --in src/features/species --out packs -r && npx fvtt package pack -n species -t Item --in src/species --out packs && npx fvtt package pack -n weapons -t Item --in src/items/weapons --out packs -r && npx fvtt package pack -n armor -t Item --in src/items/armor --out packs -r && npx fvtt package pack -n gear -t Item --in src/items/gear --out packs -r && npx fvtt package pack -n hardware-mods -t Item --in src/items/hardware-mods --out packs -r"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^3.0.4",
+    "sharp": "^0.35.4"
+  }
+}

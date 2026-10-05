@@ -1,0 +1,171 @@
+{
+  "_id": "InsLeapStalkr001",
+  "name": "Instinct: Leap Stalker Instinct",
+  "type": "feat",
+  "img": "icons/skills/wounds/injury-face-scarred-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>As a <strong>Bonus Action</strong>, you can leap up to <strong>30 feet</strong> to an unoccupied space you can see. When you land, each hostile creature within 5 feet of your landing space takes kinetic damage equal to your <strong>Strength modifier</strong>.</p><p>You can use this feature a number of times equal to your <strong>Proficiency Bonus</strong>, and you regain all expended uses when you finish a <strong>Long Rest</strong>.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "instinct"
+    },
+    "requirements": "Enforcer 2",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactLeapStalk": {
+        "_id": "dnd5eactLeapStalk",
+        "type": "damage",
+        "name": "Leap Stalker Impact",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "1",
+            "contiguous": false,
+            "type": "radius",
+            "size": "5",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "enemy",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "@abilities.str.mod",
+              "types": [
+                "kinetic"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "@abilities.str.mod"
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": "@prof",
+      "max": "@prof",
+      "per": "lr",
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!InsLeapStalkr001"
+}

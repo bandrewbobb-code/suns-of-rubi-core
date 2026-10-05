@@ -1,0 +1,24 @@
+{
+  "_id": "b80881b2f8f15450",
+  "name": "Martial Artist OS Directory",
+  "pages": [
+    {
+      "_id": "0fd139fe8ff08748",
+      "name": "Martial Artist OS Catalog",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Martial Artist Operating System</h1><p>This directory catalogs all compiled nano-formulas available to the <strong>Martial Artist</strong> OS. Click any entry to inspect its telemetry, or drag the link directly onto your character sheet to install the routine into your NCU.</p><h2>Tier 0: At-Will Routines (5)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.4a5093a48add1c7e]{Imbue Weapon}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.28816a2e217c81b4]{Minor Telekinesis}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.99a238bae3d32f09]{Minor Terraform}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.6615e4571ddd30ad]{Sonic Boom}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.91f99b410bd016d7]{Trauma Defibrillation}</li></ul><h2>Tier 1: Leveled Nanoprograms (8)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.68f9149e1713ec96]{Concussive Strike}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.57ec5068ea0b6eab]{Localized Faultline}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.4816cc3635b74bdc]{Nano Bandage}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.13fa7102be04d8a9]{Rocket Leap}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.d13178ad021cf737]{Slipstream}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.085eaa5e18cba810]{Sprint}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.32d352ffae905262]{Terrain Knowledge}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.0c86fa94277ace20]{Thicken Skin}</li></ul>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "_key": "!journal.pages!b80881b2f8f15450.0fd139fe8ff08748"
+    }
+  ],
+  "ownership": {
+    "default": 2
+  },
+  "_key": "!journal!b80881b2f8f15450"
+}

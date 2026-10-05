@@ -1,0 +1,41 @@
+{
+  "_id": "AdptEmergRevital",
+  "name": "Adaptation: Emergency Revitalize",
+  "type": "feat",
+  "img": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Innate Adaptation (Req: Level 9):</em> When you heal a creature that has 0 HP with Field Triage, the target can use its Reaction to stand up without expending movement and gains temporary hit points equal to twice your Adventurer level.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "adaptation"
+    },
+    "requirements": "Adventurer 9",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AdptEmergRevital"
+}

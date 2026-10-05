@@ -1,0 +1,33 @@
+{
+  "_id": "GearThermCloak01",
+  "name": "Thermal Field Cloak",
+  "type": "equipment",
+  "img": "icons/commodities/tech/sensor-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Insulating thermal cloak granting Advantage on saving throws against extreme hot or cold environmental weather.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 150,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "quantity": 1,
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "activities": {}
+  },
+  "_key": "!items!GearThermCloak01"
+}

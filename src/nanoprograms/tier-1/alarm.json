@@ -1,0 +1,68 @@
+{
+  "_id": "59dd7af0bd7ad476",
+  "name": "Alarm",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/alarm.webp",
+  "system": {
+    "description": {
+      "value": "<p>Set an invisible laser boundary or proximity tripwire across a door, window, or 20-foot cube. Breaching perimeter triggers an audible siren (60 ft) or a silent mental ping to your HUD within 1 mile.</p><p><strong>Operating Systems:</strong> Agent, Engineer, Fixer, Soldier</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "abj",
+    "properties": [
+      "ritual",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "minute",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "8",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 30,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "689692497e43785a": {
+        "_id": "689692497e43785a",
+        "type": "utility",
+        "activation": {
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!59dd7af0bd7ad476"
+}

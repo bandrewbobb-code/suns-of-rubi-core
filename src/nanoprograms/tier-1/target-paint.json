@@ -1,0 +1,76 @@
+{
+  "_id": "753cb27cd0a18d3e",
+  "name": "Target Paint",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/target-paint.webp",
+  "system": {
+    "description": {
+      "value": "<p>20-ft cube bioluminescent chaff: Dexterity save or outlined in light. Attacks against outlined targets have Advantage, and targets cannot benefit from Invisible.</p><p><strong>Operating Systems:</strong> Adventurer, Agent, Fixer, Soldier</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "evo",
+    "properties": [
+      "concentration",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 60,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "02ef4ba5b10d9697": {
+        "_id": "02ef4ba5b10d9697",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting"
+          }
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!753cb27cd0a18d3e"
+}

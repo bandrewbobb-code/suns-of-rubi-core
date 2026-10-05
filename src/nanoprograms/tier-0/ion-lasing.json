@@ -1,0 +1,75 @@
+{
+  "_id": "a7f2fd8bae2ad087",
+  "name": "Ion Lasing",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-mattercre.webp",
+  "system": {
+    "description": {
+      "value": "<p>Flame-like radiance descends on a creature you see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant/ion damage (gains no benefit from Half Cover or Three-Quarters Cover).<br><br><strong>Overclock:</strong> 2d8 at 5th, 3d8 at 11th, 4d8 at 17th level.</p><p><strong>Operating Systems:</strong> Doctor, Keeper</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 0 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 0,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 60,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "4599a979c494f931": {
+        "_id": "4599a979c494f931",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting"
+          }
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": "@scaling.cantrip * 1d8"
+              },
+              "types": [
+                "radiant"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!a7f2fd8bae2ad087"
+}

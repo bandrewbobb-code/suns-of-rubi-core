@@ -1,0 +1,24 @@
+{
+  "_id": "f8e2ac4ac6db8d0e",
+  "_key": "!items!f8e2ac4ac6db8d0e",
+  "name": "Awakened Mind Origin",
+  "type": "feat",
+  "img": "icons/magic/symbols/star-solid-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite:</strong> High-Notum Anomaly, Eldritch, or Psychic Homeworld</p><p>Exposure to planetary Notum resonance or psionic fauna has expanded your neural conduits.<ul><li><strong>Psychic Shielding:</strong> You have Resistance to Psychic damage.</li><li><strong>Mental Bastion:</strong> You have Advantage on saving throws made to avoid or end the Charmed or Frightened conditions.</li></ul></p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "type": {
+      "value": "origin",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 1
+    },
+    "requirements": "High-Notum Anomaly, Eldritch, or Psychic Homeworld",
+    "activities": {}
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "_id": "f67ee6a255b15bc4",
+  "name": "Intensify Stress",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/intensify-stress.webp",
+  "system": {
+    "description": {
+      "value": "<p>Flood an enemy's neural net with cognitive dissonance. Wisdom save: takes 3d6 psychic damage and uses Reaction to move away on failure (half damage and no move on success).<br><br><strong>Overclock:</strong> +1d6 damage per tier above 1st (+1 NP/tier).</p><p><strong>Operating Systems:</strong> Bureaucrat, Meta-Physicist, Shade</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "enc",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 60,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "8f25bf3d30351c0e": {
+        "_id": "8f25bf3d30351c0e",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting"
+          }
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!f67ee6a255b15bc4"
+}

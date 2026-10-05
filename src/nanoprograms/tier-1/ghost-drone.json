@@ -1,0 +1,68 @@
+{
+  "_id": "a9db968240766789",
+  "name": "Ghost Drone",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-biomet.webp",
+  "system": {
+    "description": {
+      "value": "<p>Compile an invisible, formless utility drone (AC 10, 1 HP, Str 2) to fetch items, clean gear, haul freight, and cook rations. Cannot attack.</p><p><strong>Operating Systems:</strong> Bureaucrat, Engineer, Trader</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "con",
+    "properties": [
+      "ritual",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 60,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "28d689e4f4ac299f": {
+        "_id": "28d689e4f4ac299f",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!a9db968240766789"
+}

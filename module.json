@@ -4,8 +4,20 @@
   "version": "1.0.0",
   "compatibility": {
     "minimum": "12",
-    "verified": "12"
+    "verified": "14"
   },
+  "authors": [
+    {
+      "name": "bandrewbobb",
+      "url": "https://github.com/bandrewbobb-code"
+    }
+  ],
+  "url": "https://github.com/bandrewbobb-code/suns-of-rubi-core",
+  "manifest": "https://raw.githubusercontent.com/bandrewbobb-code/suns-of-rubi-core/main/module.json",
+  "download": "https://github.com/bandrewbobb-code/suns-of-rubi-core/releases/latest/download/suns-of-rubi-core.zip",
+  "readme": "https://github.com/bandrewbobb-code/suns-of-rubi-core/blob/main/README.md",
+  "bugs": "https://github.com/bandrewbobb-code/suns-of-rubi-core/issues",
+  "license": "MIT",
   "relationships": {
     "systems": [
       {
@@ -34,9 +46,16 @@
     },
     {
       "name": "nanoprograms",
-      "label": "Suns of Rubi - Nanoprograms",
+      "label": "SoR Nanoprograms",
       "path": "packs/nanoprograms",
       "type": "Item",
+      "system": "dnd5e"
+    },
+    {
+      "name": "journals",
+      "label": "SoR Class OS Directories",
+      "path": "packs/journals",
+      "type": "JournalEntry",
       "system": "dnd5e"
     },
     {
@@ -49,6 +68,72 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "feats",
+      "label": "SoR Feats & Talents",
+      "path": "packs/feats",
+      "type": "Item",
+      "system": "dnd5e"
+    },
+    {
+      "name": "backgrounds",
+      "label": "Suns of Rubi - Backgrounds",
+      "path": "packs/backgrounds",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "species",
+      "label": "SoR Species",
+      "path": "packs/species",
+      "type": "Item",
+      "system": "dnd5e"
+    },
+    {
+      "name": "species-features",
+      "label": "SoR Species Features",
+      "path": "packs/species-features",
+      "type": "Item",
+      "system": "dnd5e"
+    },
+    {
+      "name": "weapons",
+      "label": "SoR Weapons",
+      "path": "packs/weapons",
+      "type": "Item",
+      "system": "dnd5e"
+    },
+    {
+      "name": "armor",
+      "label": "SoR Armor & Shields",
+      "path": "packs/armor",
+      "type": "Item",
+      "system": "dnd5e"
+    },
+    {
+      "name": "gear",
+      "label": "SoR Field Gear & Ammo",
+      "path": "packs/gear",
+      "type": "Item",
+      "system": "dnd5e"
+    },
+    {
+      "name": "hardware-mods",
+      "label": "SoR Hardware Mods",
+      "path": "packs/hardware-mods",
+      "type": "Item",
+      "system": "dnd5e"
     }
+  ],
+  "esmodules": [
+    "src/modules/notum-hud.mjs"
+  ],
+  "styles": [
+    "styles/notum-hud.css"
   ]
 }

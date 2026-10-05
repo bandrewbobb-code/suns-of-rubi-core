@@ -1,0 +1,78 @@
+{
+  "_id": "CstLeech00000001",
+  "name": "Cunning Strike: Leech",
+  "type": "feat",
+  "img": "icons/magic/life/heart-hand-gold-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Cunning Strike (Cost: 1d6 Sneak Attack Die)</em></p><p>You harvest kinetic residue and somatic bio-energy from the wound. You gain temporary hit points equal to your Wisdom modifier + your Shade level (minimum 1).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "cunning-strike"
+    },
+    "requirements": "Shade 2",
+    "activities": {
+      "actCstLeech00001": {
+        "_id": "actCstLeech00001",
+        "type": "heal",
+        "name": "Leech Temporary HP",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "On dealing Sneak Attack damage (Cost: 1d6)"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "healing": {
+          "types": [
+            "temphp"
+          ],
+          "custom": {
+            "enabled": true,
+            "formula": "@abilities.wis.mod + @classes.shade.levels"
+          },
+          "scaling": {
+            "mode": "whole",
+            "number": null,
+            "formula": ""
+          },
+          "bonus": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!CstLeech00000001"
+}

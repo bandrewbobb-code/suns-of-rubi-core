@@ -1,0 +1,41 @@
+{
+  "_id": "InscEntropicSing",
+  "name": "Inscription: Entropic Singularity",
+  "type": "feat",
+  "img": "icons/magic/death/skull-energy-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Novictum Inscription (Prerequisite: Shade Level 17)</em></p><p>When you roll Initiative and have 0 banked Sneak Attack dice in your Siphon Banking reserve, you immediately gain 2 banked dice in your reserve.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "inscription"
+    },
+    "requirements": "Shade 17",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!InscEntropicSing"
+}

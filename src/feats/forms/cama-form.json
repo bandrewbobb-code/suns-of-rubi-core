@@ -1,0 +1,65 @@
+{
+  "_id": "0ad79d9d627aef07",
+  "_key": "!items!0ad79d9d627aef07",
+  "name": "Cama Form [Replaces Ishu Form]",
+  "type": "feat",
+  "img": "icons/weapons/swords/sword-energy-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>If there is a friendly creature within 15 feet of you, you can move up to 10 feet without provoking opportunity attacks, provided you end this movement within 5 feet of that ally.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "form",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Source Weapon Proficiency",
+    "activities": {
+      "2ee564f13f95d785": {
+        "_id": "2ee564f13f95d785",
+        "type": "utility",
+        "name": "Adopt Cama Form",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "cama-form"
+  }
+}

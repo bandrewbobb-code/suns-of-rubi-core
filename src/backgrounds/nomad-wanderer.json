@@ -1,0 +1,141 @@
+{
+  "_id": "BgNomadWander001",
+  "name": "Nomad Wanderer",
+  "type": "background",
+  "img": "icons/equipment/feet/boots-leather-fur-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Ability Scores:</strong> STR, CON, WIS</p>\n<p><strong>Feat:</strong> @UUID[Compendium.suns-of-rubi-core.feats.FeatToughOrigin1]{Tough}</p>\n<p><strong>Skill Proficiencies:</strong> Choose 2 from ANI, ATH, MED, SUR</p>\n<h3>Feature: Planetary Pathfinder</h3>\n<p>You have an innate memory for planetary topography, seasonal weather patterns, migratory fauna, and water tables. You can always recall the general layout of planetary terrain, settlements, mountain passes, and hazardous radiation zones within a 500-kilometer radius. In addition, you can forage fresh water and organic nourishment for yourself and up to five other people each day, provided the planetary ecosystem is not completely barren or toxic vacuum.</p>\n<hr/>\n<h3>Roleplay Characteristics</h3>\n<h4>Personality Traits</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I feel claustrophobic and suffocated inside artificial corporate domes and starship corridors.</td></tr>\n    <tr><td><strong>2</strong></td><td>I communicate with beasts and alien fauna with patient whistles, clicks, and soft clicks.</td></tr>\n    <tr><td><strong>3</strong></td><td>I look to cloud formations, wind shifts, and dust spirals to forecast impending peril.</td></tr>\n    <tr><td><strong>4</strong></td><td>I carry a dried pouch of soil from each planet I have traversed across the cosmos.</td></tr>\n    <tr><td><strong>5</strong></td><td>I value possessions only by their utility and weight on long planetary treks.</td></tr>\n    <tr><td><strong>6</strong></td><td>I am quiet and reflective, listening to the hum of the wild landscape before speaking.</td></tr>\n  </tbody>\n</table>\n<h4>Ideals</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>Harmony. Nature and organic life must be respected; industrial greed poisons worlds. (Good)</td></tr>\n    <tr><td><strong>2</strong></td><td>Freedom. Fences, dome walls, and corporate borders are artificial illusions. (Chaotic)</td></tr>\n    <tr><td><strong>3</strong></td><td>Tradition. The ancestral survival methods passed down through generations will never fail. (Lawful)</td></tr>\n    <tr><td><strong>4</strong></td><td>Survival. The harsh wilderness weeds out the soft; only the adaptable endure. (Neutral)</td></tr>\n    <tr><td><strong>5</strong></td><td>Dominion. The untamed frontier belongs to those ruthless enough to master it. (Evil)</td></tr>\n    <tr><td><strong>6</strong></td><td>Discovery. The horizon is an endless call that must be answered with wandering steps. (Any)</td></tr>\n  </tbody>\n</table>\n<h4>Bonds</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>My caravan family roams the barren plains; I journey to ensure their seasonal survival.</td></tr>\n    <tr><td><strong>2</strong></td><td>A sacred natural canyon holding pristine Notum crystals is threatened by corporate strip-mines.</td></tr>\n    <tr><td><strong>3</strong></td><td>My loyal riding beast has journeyed with me through dust storms, cold fronts, and firefights.</td></tr>\n    <tr><td><strong>4</strong></td><td>I carry a tribal talisman blessed by our wanderer shamans to ward off hostile fauna.</td></tr>\n    <tr><td><strong>5</strong></td><td>I was raised by an eccentric hermit after corporate raiders destroyed our frontier train.</td></tr>\n    <tr><td><strong>6</strong></td><td>I seek a mythical planetary oasis whispered to heal any plague or nanite degeneration.</td></tr>\n  </tbody>\n</table>\n<h4>Flaws</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I am deeply suspicious of urban high technology, artificial synthetic food, and holo-vids.</td></tr>\n    <tr><td><strong>2</strong></td><td>I struggle to comprehend civilized customs regarding property ownership and deeds.</td></tr>\n    <tr><td><strong>3</strong></td><td>I am fiercely territorial when strangers camp uninvited near my party's perimeter.</td></tr>\n    <tr><td><strong>4</strong></td><td>I place more faith in the instincts of alien beasts than in the promises of civilized people.</td></tr>\n    <tr><td><strong>5</strong></td><td>I refuse to abandon a wounded animal or companion, even when military sense dictates retreat.</td></tr>\n    <tr><td><strong>6</strong></td><td>I become irritable, restless, and quick-tempered when confined indoors for too long.</td></tr>\n  </tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "identifier": "nomad-wanderer",
+    "advancement": [
+      {
+        "_id": "BgNomadWandeAsi1",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "dex",
+            "int",
+            "cha"
+          ],
+          "points": 3
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "Ability Score Improvement",
+        "hint": "Your background allows you to increase your STR, CON, WIS scores: increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      {
+        "_id": "BgNomadWandeSkl1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:ani",
+                "skills:ath",
+                "skills:med",
+                "skills:sur"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Skill Proficiencies",
+        "hint": "Choose 2 skills from: ani, ath, med, sur."
+      },
+      {
+        "_id": "BgNomadWandeTol1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tools:medkit",
+                "tool:music:*",
+                "tools:bio-med-kit",
+                "tool:herbalism"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Tool Proficiencies",
+        "hint": "Your background grants you tool proficiency options."
+      },
+      {
+        "_id": "BgNomadWandeLng1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Languages",
+        "hint": "Choose 1 language(s)."
+      },
+      {
+        "_id": "BgNomadWandeFgt1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.suns-of-rubi-core.feats.FeatToughOrigin1"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Origin Feat",
+        "hint": "Your background grants you the Tough origin feat."
+      }
+    ]
+  },
+  "_key": "!items!BgNomadWander001"
+}

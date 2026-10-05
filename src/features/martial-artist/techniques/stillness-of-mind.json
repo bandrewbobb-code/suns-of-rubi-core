@@ -1,0 +1,67 @@
+{
+  "_id": "TechStillnessMnd",
+  "name": "Stillness of Mind",
+  "type": "feat",
+  "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Martial Technique</em></p><p>You can use a Bonus Action on your turn to end one effect on yourself that is causing you to be Charmed or Frightened.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "technique"
+    },
+    "requirements": "Martial Artist 2",
+    "activities": {
+      "actTechStillMind1": {
+        "_id": "actTechStillMind1",
+        "type": "utility",
+        "name": "End Charmed or Frightened",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TechStillnessMnd"
+}

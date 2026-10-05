@@ -1,0 +1,71 @@
+{
+  "_id": "fa0234002fa7f7aa",
+  "name": "Unstable Burst",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-biomet.webp",
+  "system": {
+    "description": {
+      "value": "<p>Choose Acid, Cold, Fire, Force, Lightning, Poison, Psychic, Radiant, or Thunder. Make a ranged program attack dealing 1d8 damage of that type. Rolling an 8 allows rolling an additional d8 (up to 3 bonus dice).<br><br><strong>Overclock:</strong> 2d8 at 5th, 3d8 at 11th, 4d8 at 17th.</p><p><strong>Operating Systems:</strong> Nano-Technician</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 0 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 0,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 120,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "8eb7b45e4351d607": {
+        "_id": "8eb7b45e4351d607",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "attack": {
+          "type": "ranged",
+          "classification": "spell"
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": "@scaling.cantrip * 1d8"
+              },
+              "types": [
+                "force"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!fa0234002fa7f7aa"
+}

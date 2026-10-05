@@ -1,0 +1,107 @@
+{
+  "_id": "RaceSolitus00001",
+  "name": "Solitus",
+  "type": "race",
+  "img": "icons/commodities/biological/eye-blue-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>The <strong>Solitus</strong> represent the unspecialized, standard genetic template of baseline humanity. Without radical physical alterations or environmental nanite acclimation, Solitus thrive through sheer grit, adaptability, and versatility.</p>\n<h3>Biology &amp; Cybernetic Harmony</h3>\n<p>Because their cellular physiology is unmodified by extreme gene-tailoring, Solitus bodies never reject artificial cybernetics, prosthetic limbs, or experimental nanotech implants. Their deep biological reserves allow them to push through exhaustion where specialized breeds falter.</p>\n<h3>Solitus Names</h3>\n<p>Solitus naming conventions span ancient Earth lineage names, corporate-assigned designations, and frontier colonist monikers.</p>\n<ul>\n  <li><em>Male Names:</em> Sean, Marcus, Jack, Aaron, Viktor, Dennis, Kevin.</li>\n  <li><em>Female Names:</em> Elena, Sarah, Chloe, Maya, Valerie, Jennifer, Rebecca.</li>\n  <li><em>Family/Clan Names:</em> Bradley, Mercer, Thorne, Ross, Vance, Sterling.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "identifier": "solitus",
+    "movement": {
+      "burrow": null,
+      "climb": null,
+      "fly": null,
+      "swim": null,
+      "walk": 30,
+      "units": "ft",
+      "hover": false
+    },
+    "senses": {
+      "darkvision": null,
+      "blindsight": null,
+      "tremorsense": null,
+      "truesight": null,
+      "units": "ft",
+      "special": ""
+    },
+    "type": {
+      "value": "humanoid",
+      "subtype": "Solitus",
+      "custom": ""
+    },
+    "advancement": [
+      {
+        "_id": "RaceSolitus0Siz1",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "level": 0,
+        "title": "Size",
+        "hint": "Your size is Medium.",
+        "value": {}
+      },
+      {
+        "_id": "RaceSolitus0Lng1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Languages",
+        "hint": "You speak Galactic Trade (Common) and one additional language such as Solitus trade dialects."
+      },
+      {
+        "_id": "RaceSolitus0Fgt1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.species-features.SpcSolDeepReser1",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.species-features.SpcSolBloodSwt01",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.species-features.SpcSolUnmodEqui1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Solitus Traits",
+        "hint": "Grants the innate traits of the Solitus."
+      }
+    ]
+  },
+  "_key": "!items!RaceSolitus00001"
+}

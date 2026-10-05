@@ -1,0 +1,38 @@
+{
+  "_id": "ArmHardLightShl1",
+  "name": "Hard-Light Shield Emitter",
+  "type": "equipment",
+  "img": "icons/equipment/shield/heater-crystal-energy-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Forearm-mounted projector that deploys a solid-energy hard-light buckler instantly.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 350,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "type": {
+      "value": "shield",
+      "baseItem": "hard-light-shield-emitter"
+    },
+    "armor": {
+      "value": 2,
+      "dex": null
+    },
+    "strength": null,
+    "properties": [],
+    "equipped": false,
+    "activities": {}
+  },
+  "_key": "!items!ArmHardLightShl1"
+}

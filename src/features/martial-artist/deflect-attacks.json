@@ -1,0 +1,136 @@
+{
+  "_id": "MaDeflectAttak01",
+  "name": "Deflect Attacks",
+  "type": "feat",
+  "img": "icons/skills/melee/parry-block-shield-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>You can use your reaction to deflect or catch attacks when you are hit by an attack that deals kinetic or energy damage. When you do so, the damage you take from the attack is reduced by <code>1d10 + @abilities.dex.mod + @classes.martial-artist.levels</code>.</p><p>If you reduce the damage to 0, you can redirect the deflected kinetic energy against a creature within 5 feet of you. That creature must succeed on a Dexterity saving throw against your Program DC or take damage equal to two rolls of your Martial Arts die + your unarmed strike modifier (<code>2@scale.martial-artist.martial-arts-die + @abilities.dex.mod</code>) of the triggering damage type.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Martial Artist 3",
+    "activities": {
+      "actMaDeflectAttak": {
+        "_id": "actMaDeflectAttak",
+        "type": "heal",
+        "name": "Deflect Attacks (Damage Reduction)",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "Hit by an attack dealing kinetic or energy damage"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "healing": {
+          "number": 1,
+          "denomination": 10,
+          "types": [
+            "healing"
+          ],
+          "custom": {
+            "enabled": true,
+            "formula": "1d10 + @abilities.dex.mod + @classes.martial-artist.levels"
+          },
+          "scaling": {
+            "mode": "whole",
+            "number": null,
+            "formula": ""
+          },
+          "bonus": ""
+        }
+      },
+      "actMaRedirectAtk1": {
+        "_id": "actMaRedirectAtk1",
+        "type": "save",
+        "name": "Redirect Deflected Attack",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "When damage is reduced to 0"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "range": {
+          "value": "5",
+          "units": "ft"
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "2@scale.martial-artist.martial-arts-die + @abilities.dex.mod"
+              },
+              "number": null,
+              "denomination": 0,
+              "bonus": "",
+              "types": [
+                "kinetic"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MaDeflectAttak01"
+}

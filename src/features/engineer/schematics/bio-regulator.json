@@ -1,0 +1,41 @@
+{
+  "_id": "SchmBioRegulat01",
+  "name": "Schematic: Bio-Regulator",
+  "type": "feat",
+  "img": "icons/skills/trades/tools-wrench-screwdriver-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Installed on gear: wearer is immune to disease and has advantage on saves against poison and paralysis.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "schematic"
+    },
+    "requirements": "Engineer 5",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!SchmBioRegulat01"
+}

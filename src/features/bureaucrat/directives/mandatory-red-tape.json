@@ -1,0 +1,150 @@
+{
+  "name": "Directive: Mandatory Red Tape",
+  "type": "feat",
+  "img": "icons/sundries/scrolls/scroll-bound-ruby-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Action — 4 Nanopool points.</em></p><p>You project a bureaucratic compliance field in a <strong>30-foot radius</strong>. Each hostile creature in the area must make a <strong>Wisdom saving throw</strong> against your <strong>Program Save DC</strong>.</p><p>On a failure, the creature <strong>loses its Reaction</strong> and has its <strong>Initiative reduced by 10</strong> (minimum 1) until the start of your next turn.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "directive"
+    },
+    "requirements": "Bureaucrat 5",
+    "properties": [],
+    "activities": {
+      "dnd5eactSavMRT": {
+        "_id": "dnd5eactSavMRT",
+        "type": "save",
+        "name": "Mandatory Red Tape",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "4 Nanopool points"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "1",
+            "contiguous": false,
+            "type": "sphere",
+            "size": "30",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "enemy",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": []
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DirMandRedTp001",
+  "_id": "DirMandRedTp001"
+}

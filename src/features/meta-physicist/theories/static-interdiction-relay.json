@@ -1,0 +1,41 @@
+{
+  "_id": "MpTheoStaticInter",
+  "name": "Static Interdiction Relay",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-carved-stone-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Metaphysical Theory (Prerequisite: Meta-Physicist Level 7)</em></p><p>Hostile creatures treat the area within 15 feet of your Bewilderment node as difficult terrain. Teleportation into or out of this aura requires a successful Wisdom save against your Program Save DC.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "theory"
+    },
+    "requirements": "Meta-Physicist 7",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MpTheoStaticInter"
+}

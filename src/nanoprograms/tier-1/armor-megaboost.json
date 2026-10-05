@@ -1,0 +1,68 @@
+{
+  "_id": "149b699cf13e38e4",
+  "name": "Armor Megaboost",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/armor-megaboost.webp",
+  "system": {
+    "description": {
+      "value": "<p>Overclock a shimmering deflector shield around an ally within range. The target gains a +2 bonus to Armor Class for the duration.</p><p><strong>Operating Systems:</strong> Engineer, Keeper, Soldier</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "abj",
+    "properties": [
+      "concentration",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "bonus",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 60,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "3ecacb98cb5ee7f5": {
+        "_id": "3ecacb98cb5ee7f5",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!149b699cf13e38e4"
+}

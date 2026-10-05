@@ -1,0 +1,69 @@
+{
+  "_id": "b102b24e674e85d7",
+  "name": "Detect Notum",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-sensoryimp.webp",
+  "system": {
+    "description": {
+      "value": "<p>Sensors detect Notum energy and active nanoprograms within 30 feet, discerning operational Tier and discipline.</p><p><strong>Operating Systems:</strong> Engineer, Meta-Physicist, Nano-Technician, Shade</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "div",
+    "properties": [
+      "ritual",
+      "concentration",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "self"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "32a24f4073eabb62": {
+        "_id": "32a24f4073eabb62",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!b102b24e674e85d7"
+}

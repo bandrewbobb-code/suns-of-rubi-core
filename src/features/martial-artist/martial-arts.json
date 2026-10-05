@@ -1,0 +1,67 @@
+{
+  "_id": "MaMartialArts001",
+  "name": "Martial Arts",
+  "type": "feat",
+  "img": "icons/skills/melee/unarmed-punch-fist.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your practice of martial arts gives you mastery of combat styles that use unarmed strikes and Martial Artist weapons, which are proficient weapons with the Light or Finesse properties.</p><p>You gain the following benefits while you are unarmed or wielding only Martial Artist weapons and you aren't wearing armor or wielding a shield:</p><ul><li><strong>Dexterous Attacks:</strong> You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and Martial Artist weapons. You can also use your Dexterity modifier to determine the DC for Grapple and Shove attempts.</li><li><strong>Martial Arts Die:</strong> You can roll a d6 in place of the normal damage of your unarmed strike or Martial Artist weapon. This die changes as you gain Martial Artist levels: 1d6 at 1st level, 1d8 at 5th level, 1d10 at 11th level, and 1d12 at 17th level (@scale.martial-artist.martial-arts-die).</li><li><strong>Bonus Strike:</strong> When you use the Attack action on your turn with an unarmed strike or a Martial Artist weapon, you can make one unarmed strike as a Bonus Action.</li><li><strong>Unarmored Defense:</strong> While you are not wearing armor and not wielding a shield, your base Armor Class equals 10 + your Dexterity or Strength modifier + your Wisdom modifier.</li></ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Martial Artist 1",
+    "activities": {
+      "actMaBonusStrike": {
+        "_id": "actMaBonusStrike",
+        "type": "utility",
+        "name": "Bonus Strike",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "After taking the Attack action with an unarmed strike or Martial Artist weapon"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MaMartialArts001"
+}

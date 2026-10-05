@@ -1,0 +1,41 @@
+{
+  "_id": "StratMasteryStr1",
+  "name": "Strategy: Mastery Strategist",
+  "type": "feat",
+  "img": "icons/skills/combat/strike-hammer-destructive-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>You expand your specialized weapon mastery. Choose one <strong>Fighting Mastery</strong> option from Chapter 6.</p>\n<p><em>Special:</em> You can select this Strategy multiple times. Each time you take it, you choose a different Fighting Mastery.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "strategy"
+    },
+    "requirements": "Soldier 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!StratMasteryStr1"
+}

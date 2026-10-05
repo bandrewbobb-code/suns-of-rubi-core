@@ -1,0 +1,32 @@
+{
+  "_id": "ModTransmatTeth1",
+  "name": "Transmat Tether",
+  "type": "equipment",
+  "img": "icons/commodities/tech/chip-integrated-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Type:</strong> Weapon Mod (Micro-Beacon, 1 slot)</p><p>As a Free Object Interaction, you can remotely transmat this weapon back into your open hand if it is within 60 feet and you have line of sight to it.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 250,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 0.1,
+      "units": "lb"
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": "hardware-mod"
+    },
+    "equipped": false,
+    "activities": {}
+  },
+  "_key": "!items!ModTransmatTeth1"
+}

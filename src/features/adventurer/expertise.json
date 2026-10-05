@@ -1,0 +1,41 @@
+{
+  "_id": "AdvExpertise0001",
+  "name": "Expertise",
+  "type": "feat",
+  "img": "icons/tools/scribal/magnifying-glass.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 6th level, choose two of your skill or tool proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p>\n<p>At <strong>14th level</strong>, you choose two more of your proficiencies to gain this benefit.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Adventurer 6",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AdvExpertise0001"
+}

@@ -1,0 +1,76 @@
+{
+  "_id": "5afedabc6a22bb0d",
+  "name": "Demotivational Speech",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/demotivational-speech.webp",
+  "system": {
+    "description": {
+      "value": "<p>Broadcast demoralizing reprimands: up to 3 creatures must make Charisma saves. Whenever an affected target makes an attack roll or saving throw, it subtracts 1d4 from the result.<br><br><strong>Overclock:</strong> +1 additional creature per tier above 1st (+1 NP/tier).</p><p><strong>Operating Systems:</strong> Bureaucrat, Trader</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "enc",
+    "properties": [
+      "concentration",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 30,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "0d48ba3add679b68": {
+        "_id": "0d48ba3add679b68",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "save": {
+          "ability": [
+            "cha"
+          ],
+          "dc": {
+            "calculation": "spellcasting"
+          }
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!5afedabc6a22bb0d"
+}

@@ -1,0 +1,41 @@
+{
+  "_id": "TechSelfDiscipl1",
+  "name": "Self-Disciplined",
+  "type": "feat",
+  "img": "icons/magic/defensive/armor-stone-skin.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Martial Technique (Prerequisite: Martial Artist Level 7)</em></p><p>Your internal bio-currents purge alien disruptions. At the end of each of your turns, you automatically end one condition on yourself from among Charmed, Frightened, or Poisoned. Additionally, you do not suffer exhaustion from going without food or water.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "technique"
+    },
+    "requirements": "Martial Artist 7",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TechSelfDiscipl1"
+}

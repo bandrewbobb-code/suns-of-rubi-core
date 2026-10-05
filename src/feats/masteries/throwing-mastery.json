@@ -1,0 +1,64 @@
+{
+  "_id": "ed59508d10629f33",
+  "_key": "!items!ed59508d10629f33",
+  "name": "Throwing Mastery",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite:</strong> Level 4</p>\n<ul>\n  <li><strong>Ability Score Increase:</strong> Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>\n  <li><strong>Deadly Trajectory:</strong> You gain a +1 bonus to ranged attack rolls you make with thrown weapons, and attacking at long range doesn’t impose disadvantage.</li>\n  <li><strong>Flowing Strike:</strong> When you hit a creature with a ranged weapon attack using a thrown weapon, you have advantage on your next melee weapon attack against that creature before the end of your next turn.</li>\n  <li><strong>Heavy Throw:</strong> You can engage in Two-Weapon Fighting even when the melee weapons you are wielding aren’t Light, provided at least one of them has the Thrown property.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "mastery",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Level 4",
+    "activities": {},
+    "identifier": "throwing-mastery",
+    "advancement": [
+      {
+        "_id": "67843be47e36106c",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "points": 1
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "Ability Score Improvement",
+        "hint": "Increase your Strength or Dexterity score by 1, to a maximum of 20."
+      }
+    ]
+  }
+}

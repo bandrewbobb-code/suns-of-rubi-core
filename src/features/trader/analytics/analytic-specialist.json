@@ -1,0 +1,135 @@
+{
+  "_id": "AnaSpecialist001",
+  "name": "Analytic: The Consultant (Specialist)",
+  "type": "feat",
+  "img": "icons/tools/scribing/scroll-quill-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Passive Protocol</strong>: Choose one skill or tool kit in which you are proficient. You add <strong>half your Charisma modifier</strong> (rounded down, minimum +1) to checks you make using that skill or tool.</p><p><strong>Active Exchange (Bonus Action, 10 minutes)</strong>: As a Reaction when an ally within 30 feet makes an ability check, you can grant that ally a bonus equal to your full <strong>Charisma modifier</strong>. However, you subtract that same amount from the next ability check you make before the stance ends.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "analytic"
+    },
+    "requirements": "Trader 2",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactConsult": {
+        "_id": "dnd5eactConsult",
+        "type": "utility",
+        "name": "Active Exchange: Specialist Advice",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "10 min duration"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "value": "10",
+          "units": "minute",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AnaSpecialist001"
+}

@@ -1,0 +1,168 @@
+{
+  "_id": "FixGhostInGrid01",
+  "name": "Ghost in the Grid",
+  "type": "feat",
+  "img": "icons/magic/control/buff-flight-wings-runes-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 20th level, you transcend biological limits:</p><ul><li>Your <strong>Dexterity and Intelligence scores increase by 2</strong>, and your maximum for those scores increases to <strong>22</strong>.</li><li><strong>Reality Override</strong>: Once per <strong>Short or Long Rest</strong>, when you fail a d20 Test (attack roll, ability check, or saving throw), you can turn the roll into a <strong>20</strong>.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Fixer 20",
+    "properties": [],
+    "advancement": [
+      {
+        "_id": "advFixGhostASI01",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 0,
+          "fixed": {
+            "str": 0,
+            "dex": 2,
+            "con": 0,
+            "int": 2,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 22
+        },
+        "value": {
+          "type": "asi",
+          "dex": 2,
+          "int": 2
+        },
+        "level": 20,
+        "title": "Dexterity & Intelligence Increase (+2, cap 22)"
+      }
+    ],
+    "activities": {
+      "dnd5eactTurnTo20": {
+        "_id": "dnd5eactTurnTo20",
+        "type": "utility",
+        "name": "Reality Override (Turn to 20)",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "When failing a d20 Test (1/Short or Long Rest)"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "sr",
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FixGhostInGrid01"
+}

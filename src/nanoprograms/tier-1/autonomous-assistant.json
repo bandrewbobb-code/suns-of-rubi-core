@@ -1,0 +1,68 @@
+{
+  "_id": "a356679a35af45c4",
+  "name": "Autonomous Assistant",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-mattercre.webp",
+  "system": {
+    "description": {
+      "value": "<p>Compile a persistent micro-drone or synthetic bio-familiar. Acts on its own initiative in combat (cannot attack). Within 100 ft, communicate telepathically and see through sensors. Can deliver Touch programs with its reaction.</p><p><strong>Operating Systems:</strong> Agent, Engineer, Fixer, Shade</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "con",
+    "properties": [
+      "ritual",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "hour",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 10,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "1dd8ef47c45779ce": {
+        "_id": "1dd8ef47c45779ce",
+        "type": "utility",
+        "activation": {
+          "type": "hour",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!a356679a35af45c4"
+}

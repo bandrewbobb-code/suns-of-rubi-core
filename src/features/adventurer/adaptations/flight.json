@@ -1,0 +1,41 @@
+{
+  "_id": "AdptFlight000001",
+  "name": "Adaptation: Flight",
+  "type": "feat",
+  "img": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Bio-Morph Mutation (Req: Level 9, Swift Form):</em> While running Swift Form, you sprout membranous wings, gaining a flying speed equal to your walking speed.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "adaptation"
+    },
+    "requirements": "Adventurer 9",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AdptFlight000001"
+}

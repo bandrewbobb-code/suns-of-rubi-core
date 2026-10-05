@@ -1,0 +1,34 @@
+{
+  "_id": "SpcKreKeenHear01",
+  "name": "Keen Hearing and Smell",
+  "type": "feat",
+  "img": "icons/creatures/eyes/feline-cat-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have Advantage on Wisdom (Perception) checks that rely on hearing or smell.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Krenari",
+    "activities": {},
+    "identifier": "keen-hearing-smell"
+  },
+  "_key": "!items!SpcKreKeenHear01"
+}

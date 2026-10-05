@@ -1,0 +1,34 @@
+{
+  "_id": "SpcOpiZeroGAcc01",
+  "name": "Zero-G Acclimation",
+  "type": "feat",
+  "img": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Engineered for high-altitude orbital shipyards, microgravity construction rigs, and narrow conduits, you possess extraordinary kinetic balance:</p>\n<ul>\n  <li>You have a Climbing speed equal to your walking speed, and you can climb magnetic or metallic surfaces vertically and across ceilings without an ability check.</li>\n  <li>You ignore movement penalties, difficult terrain, and disadvantage on attacks or checks caused by zero-gravity or microgravity environments.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Opifex",
+    "activities": {},
+    "identifier": "zero-g-acclimation"
+  },
+  "_key": "!items!SpcOpiZeroGAcc01"
+}

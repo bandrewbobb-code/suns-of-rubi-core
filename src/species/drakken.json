@@ -1,0 +1,129 @@
+{
+  "_id": "RaceDrakken00001",
+  "name": "Drakken",
+  "type": "race",
+  "img": "icons/creatures/reptiles/lizard-horned-striped-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>The <strong>Drakken</strong> are reptilian humanoid warriors engineered for extreme planetary environments, volcanic mining calderas, and atmospheric orbital re-entry zones.</p>\n<h3>Plasma Glands &amp; Gliding Patagia</h3>\n<p>Covered in heat-dissipating scales, Drakken can unleash bursts of volatile bio-plasma from internal thermal glands. Their hollow-bone anatomy and flexible skin membranes allow them to glide gracefully across wide chasms and drop safely from immense heights.</p>\n<h3>Drakken Names</h3>\n<p>Drakken names feature harsh consonants, hissed sibilants, and volcanic descriptors.</p>\n<ul>\n  <li><em>Names:</em> Kaelis, Vraxis, Skarren, Ignis, Thrax, Zhar, Pyra, Ashor.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "identifier": "drakken",
+    "movement": {
+      "burrow": null,
+      "climb": null,
+      "fly": null,
+      "swim": null,
+      "walk": 30,
+      "units": "ft",
+      "hover": false
+    },
+    "senses": {
+      "darkvision": 60,
+      "blindsight": null,
+      "tremorsense": null,
+      "truesight": null,
+      "units": "ft",
+      "special": "Thermal Optics"
+    },
+    "type": {
+      "value": "humanoid",
+      "subtype": "Drakken",
+      "custom": ""
+    },
+    "advancement": [
+      {
+        "_id": "RaceDrakken0Siz1",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "level": 0,
+        "title": "Size",
+        "hint": "Your size is Medium.",
+        "value": {}
+      },
+      {
+        "_id": "RaceDrakken0Sen1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "senses:darkvision"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Darkvision",
+        "hint": "You have Darkvision with a range of 60 feet."
+      },
+      {
+        "_id": "RaceDrakken0Lng1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Languages",
+        "hint": "You speak Galactic Trade (Common) and one additional language such as Draconic-Trade cant."
+      },
+      {
+        "_id": "RaceDrakken0Fgt1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.species-features.SpcDraBioPlasma1",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.species-features.SpcDraUltraGlid1",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.species-features.SpcDraThermInsu1",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.species-features.SpcDraSkelDisso1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Drakken Traits",
+        "hint": "Grants the innate traits of the Drakken."
+      }
+    ]
+  },
+  "_key": "!items!RaceDrakken00001"
+}

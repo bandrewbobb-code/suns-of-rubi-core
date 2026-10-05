@@ -1,0 +1,88 @@
+{
+  "_id": "FinRoundhouseKk1",
+  "name": "Finisher: Roundhouse Kick",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-punch-fist-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Finisher (Prerequisite: None)</em></p><p>You unleash a devastating rotational kick. Make an unarmed strike against a target. On a hit, you do not roll your base Unarmed Strike die; it automatically deals its maximum possible damage. If the attack is a critical hit, roll your Bad Medicine dice normally.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "finisher"
+    },
+    "requirements": "Martial Artist 2",
+    "activities": {
+      "actFinRoundhouseK": {
+        "_id": "actFinRoundhouseK",
+        "type": "damage",
+        "name": "Roundhouse Kick Max Damage",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Hit with Finisher: Roundhouse Kick"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "damage": {
+          "critical": {
+            "allow": true,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.martial-artist.martial-arts-die"
+              },
+              "number": null,
+              "denomination": 0,
+              "bonus": "",
+              "types": [
+                "bludgeoning"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FinRoundhouseKk1"
+}

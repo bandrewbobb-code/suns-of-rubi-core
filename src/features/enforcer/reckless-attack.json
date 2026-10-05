@@ -1,0 +1,135 @@
+{
+  "_id": "EnfRecklessAtk01",
+  "name": "Reckless Attack",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-blade-slashing-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly.</p><p>Doing so gives you <strong>Advantage on Strength-based weapon attack rolls and unarmed strikes</strong> during this turn, but attack rolls against you have <strong>Advantage</strong> until the start of your next turn.</p><h3>Brutal Tactics</h3><p>When you attack recklessly, you can apply one of the following tactical riders to your attacks on that turn:</p><ul><li><strong>Repelling Force</strong>: When you hit a creature with a Reckless Attack, you can push it up to 15 feet straight away from you. You can immediately move up to half your speed toward the target without provoking opportunity attacks.</li><li><strong>Library of Foul Language</strong>: You unleash a barrage of vile threats and psychological abuse. The target must subtract 10 feet from its speed until the start of your next turn and has Disadvantage on the next attack roll it makes against any creature other than you before then.</li><li><strong>Disrupt Momentum</strong>: A punishing strike shatters the target's footing. The target's speed is reduced by 15 feet until the start of your next turn.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Enforcer 2",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactReckless": {
+        "_id": "dnd5eactReckless",
+        "type": "utility",
+        "name": "Attack Recklessly",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "On your first attack roll of your turn"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "round",
+          "value": "1",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EnfRecklessAtk01"
+}

@@ -1,0 +1,737 @@
+{
+  "_id": "MartialArtCls001",
+  "name": "Martial Artist",
+  "type": "class",
+  "img": "icons/skills/melee/unarmed-punch-fist.webp",
+  "system": {
+    "description": {
+      "value": "<p>Masters of biomechanical body-optimization and somatic nanocasting, Martial Artists fuse traditional hand-to-hand disciplines with high-frequency kinetic overclocking. Through dynamic momentum loops of Neutral flow and devastating Finishers, they control the tempo of battle with lightning agility and absolute physical discipline.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "identifier": "martial-artist",
+    "levels": 1,
+    "hd": {
+      "denomination": 8,
+      "spent": 0,
+      "additional": ""
+    },
+    "primaryAbility": {
+      "value": [
+        "dex",
+        "wis"
+      ],
+      "all": false
+    },
+    "spellcasting": {
+      "progression": "third",
+      "ability": "wis"
+    },
+    "advancement": [
+      {
+        "_id": "advMaHitPoints001",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {},
+        "level": 1,
+        "title": "Hit Points"
+      },
+      {
+        "_id": "advMaSavesPrf0001",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "saves:dex",
+            "saves:str"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Saving Throws"
+      },
+      {
+        "_id": "advMaArmorPrf0001",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "armor:lgt"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Armor Training"
+      },
+      {
+        "_id": "advMaWeaponPrf001",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "weapons:simple-blaster",
+            "weapons:simple-vibro",
+            "weapons:martial-vibro-light",
+            "weapons:sourceweapon"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Weapon Proficiencies"
+      },
+      {
+        "_id": "advMaToolProf0001",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tools:artisan",
+                "tools:gaming"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Tool Proficiencies"
+      },
+      {
+        "_id": "advMaSkillPrf0001",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 3,
+              "pool": [
+                "skills:acr",
+                "skills:ath",
+                "skills:his",
+                "skills:ins",
+                "skills:med",
+                "skills:prc",
+                "skills:ste",
+                "skills:sur"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Skill Proficiencies"
+      },
+      {
+        "_id": "advMaScArtsDie001",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "martial-arts-die",
+          "type": "dice",
+          "scale": {
+            "1": {
+              "number": 1,
+              "faces": 6
+            },
+            "5": {
+              "number": 1,
+              "faces": 8
+            },
+            "11": {
+              "number": 1,
+              "faces": 10
+            },
+            "17": {
+              "number": 1,
+              "faces": 12
+            }
+          }
+        },
+        "value": {},
+        "level": 1,
+        "title": "Martial Arts Die"
+      },
+      {
+        "_id": "advMaScNanopl0001",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "nanopool-points",
+          "type": "number",
+          "scale": {
+            "1": {
+              "value": 1
+            },
+            "2": {
+              "value": 2
+            },
+            "3": {
+              "value": 3
+            },
+            "4": {
+              "value": 4
+            },
+            "5": {
+              "value": 5
+            },
+            "6": {
+              "value": 6
+            },
+            "7": {
+              "value": 7
+            },
+            "8": {
+              "value": 8
+            },
+            "9": {
+              "value": 9
+            },
+            "10": {
+              "value": 10
+            },
+            "11": {
+              "value": 11
+            },
+            "12": {
+              "value": 12
+            },
+            "13": {
+              "value": 13
+            },
+            "14": {
+              "value": 14
+            },
+            "15": {
+              "value": 15
+            },
+            "16": {
+              "value": 16
+            },
+            "17": {
+              "value": 17
+            },
+            "18": {
+              "value": 18
+            },
+            "19": {
+              "value": 19
+            },
+            "20": {
+              "value": 20
+            }
+          }
+        },
+        "value": {},
+        "level": 1,
+        "title": "Nanopool Points"
+      },
+      {
+        "_id": "advMaScBadMed0001",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "bad-medicine-dice",
+          "type": "number",
+          "formula": "@prof",
+          "scale": {
+            "1": {
+              "value": 2,
+              "formula": "@prof"
+            },
+            "5": {
+              "value": 3,
+              "formula": "@prof"
+            },
+            "9": {
+              "value": 4,
+              "formula": "@prof"
+            },
+            "13": {
+              "value": 5,
+              "formula": "@prof"
+            },
+            "17": {
+              "value": 6,
+              "formula": "@prof"
+            }
+          }
+        },
+        "value": {},
+        "level": 1,
+        "title": "Bad Medicine Dice"
+      },
+      {
+        "_id": "advMaScTechKn0001",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "techniques-known",
+          "type": "number",
+          "scale": {
+            "2": {
+              "value": 2
+            },
+            "3": {
+              "value": 3
+            },
+            "4": {
+              "value": 4
+            },
+            "5": {
+              "value": 4
+            },
+            "6": {
+              "value": 5
+            },
+            "7": {
+              "value": 5
+            },
+            "8": {
+              "value": 6
+            },
+            "9": {
+              "value": 6
+            },
+            "10": {
+              "value": 7
+            },
+            "11": {
+              "value": 7
+            },
+            "12": {
+              "value": 8
+            },
+            "13": {
+              "value": 8
+            },
+            "14": {
+              "value": 8
+            },
+            "15": {
+              "value": 9
+            },
+            "16": {
+              "value": 9
+            },
+            "17": {
+              "value": 9
+            },
+            "18": {
+              "value": 10
+            },
+            "19": {
+              "value": 10
+            },
+            "20": {
+              "value": 10
+            }
+          }
+        },
+        "value": {},
+        "level": 2,
+        "title": "Techniques Known"
+      },
+      {
+        "_id": "advMaItmGrLvl0101",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.MaNanoProg000001",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.MaMartialArts001",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.MaBadMedicine001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Level 1 Features"
+      },
+      {
+        "_id": "advMaItmGrLvl0201",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.MaKineticCombo01",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.MaTechniques0001",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.FinRoundhouseKk1",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.FinDiscombobulat",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.FinSnapPunch0001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "Level 2 Features"
+      },
+      {
+        "_id": "advMaSubclass0001",
+        "type": "Subclass",
+        "configuration": {
+          "identifier": "martial-artist-order"
+        },
+        "value": {},
+        "level": 3,
+        "title": "Martial Artist Order"
+      },
+      {
+        "_id": "advMaItmGrLvl0301",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.MaDeflectAttak01",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Level 3 Features"
+      },
+      {
+        "_id": "advMaASILvl040001",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 4,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advMaItmGrLvl0401",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.MaSlowfall000001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 4,
+        "title": "Level 4 Features"
+      },
+      {
+        "_id": "advMaItmGrLvl0501",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.MaExtraAttack001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 5,
+        "title": "Level 5 Features"
+      },
+      {
+        "_id": "advMaItmGrLvl0601",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.MaEmpoweredStr01",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "Level 6 Features"
+      },
+      {
+        "_id": "advMaItmGrLvl0701",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.MaEvasion0000001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 7,
+        "title": "Level 7 Features"
+      },
+      {
+        "_id": "advMaASILvl080001",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 8,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advMaASILvl100001",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 10,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advMaItmGrLvl1001",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.MaHeightFocus001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 10,
+        "title": "Level 10 Features"
+      },
+      {
+        "_id": "advMaItmGrLvl1101",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.MaFeedbackRhyth1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 11,
+        "title": "Level 11 Features"
+      },
+      {
+        "_id": "advMaASILvl120001",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 12,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advMaItmGrLvl1301",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.MaSelfRestorat01",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 13,
+        "title": "Level 13 Features"
+      },
+      {
+        "_id": "advMaItmGrLvl1401",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.MaDisciplinedS01",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 14,
+        "title": "Level 14 Features"
+      },
+      {
+        "_id": "advMaItmGrLvl1501",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.MaSlipperyMind01",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 15,
+        "title": "Level 15 Features"
+      },
+      {
+        "_id": "advMaASILvl160001",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 16,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advMaItmGrLvl1701",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.MaCritResurg0001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 17,
+        "title": "Level 17 Features"
+      },
+      {
+        "_id": "advMaItmGrLvl1801",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.MaSuperiorDef001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 18,
+        "title": "Level 18 Features"
+      },
+      {
+        "_id": "advMaASILvl190001",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 19,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advMaItmGrLvl2001",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.MaBodyAndMind001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 20,
+        "title": "Level 20 Features"
+      }
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MartialArtCls001"
+}

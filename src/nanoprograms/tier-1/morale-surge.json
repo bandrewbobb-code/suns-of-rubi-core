@@ -1,0 +1,68 @@
+{
+  "_id": "d8da4bcde7bb68a3",
+  "name": "Morale Surge",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-psychmod.webp",
+  "system": {
+    "description": {
+      "value": "<p>Target is immune to the Frightened condition and gains Temporary Hit Points equal to your nanocasting ability modifier at the start of each of its turns.</p><p><strong>Operating Systems:</strong> Bureaucrat, Enforcer, Soldier</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "enc",
+    "properties": [
+      "concentration",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "touch"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "e3e010c383714184": {
+        "_id": "e3e010c383714184",
+        "type": "heal",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!d8da4bcde7bb68a3"
+}

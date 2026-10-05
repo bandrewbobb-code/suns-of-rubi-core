@@ -1,0 +1,104 @@
+{
+  "_id": "c6c4306bd4399736",
+  "_key": "!items!c6c4306bd4399736",
+  "name": "Disruption Style",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>You specialize in breaking enemy casting routines: when you force a creature to make a Constitution saving throw to maintain concentration and it succeeds, you can use a Bonus Action to force it to reroll the save, using the new result; once per round, when an enemy within 5 feet attempts to execute a nanoprogram, it must succeed on a Constitution save (DC = 10 + program tier) or the program fails and its Nanopool points are wasted.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "fightingStyle",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {
+      "6672acee9528075a": {
+        "_id": "6672acee9528075a",
+        "type": "utility",
+        "name": "Bonus Action Concentration Reroll",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "When a target succeeds on a concentration save you forced"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      },
+      "f617408a5ebfda48": {
+        "_id": "f617408a5ebfda48",
+        "type": "save",
+        "name": "Nanoprogram Disruption",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "When an enemy within 5 ft attempts to execute a nanoprogram"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "10 + @tier"
+          }
+        }
+      }
+    },
+    "identifier": "disruption-style"
+  }
+}

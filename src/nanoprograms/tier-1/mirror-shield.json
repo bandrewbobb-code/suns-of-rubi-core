@@ -1,0 +1,71 @@
+{
+  "_id": "e36706f4abcc6503",
+  "name": "Mirror Shield",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/mirror-shield.webp",
+  "system": {
+    "description": {
+      "value": "<p>Gain 5 Temporary Hit Points. While active, any creature that hits you with a melee attack takes 5 cold (or radiant) damage.<br><br><strong>Overclock:</strong> Both Temp HP and damage increase by 5 per tier above 1st (+1 NP/tier).</p><p><strong>Operating Systems:</strong> Engineer, Nano-Technician, Soldier</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "abj",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "self"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "c6b47fc76717297b": {
+        "_id": "c6b47fc76717297b",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "attack": {
+          "type": "melee",
+          "classification": "spell"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!e36706f4abcc6503"
+}

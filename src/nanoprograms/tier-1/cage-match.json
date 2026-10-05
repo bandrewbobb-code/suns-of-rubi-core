@@ -1,0 +1,76 @@
+{
+  "_id": "035dee9a7d47c55a",
+  "name": "Cage Match",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-mattermet.webp",
+  "system": {
+    "description": {
+      "value": "<p>Erect a hard-light perimeter locking you and a target together. Wisdom save or cannot move >30 ft away from you, and has Disadvantage on attack rolls against any target other than you.</p><p><strong>Operating Systems:</strong> Enforcer</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "abj",
+    "properties": [
+      "concentration",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "bonus",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 30,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "ded7d8abf0d1b9dc": {
+        "_id": "ded7d8abf0d1b9dc",
+        "type": "save",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting"
+          }
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!035dee9a7d47c55a"
+}

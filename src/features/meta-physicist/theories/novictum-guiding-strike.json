@@ -1,0 +1,41 @@
+{
+  "_id": "MpTheoNovictumGu",
+  "name": "Novictum Guiding Strike",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-carved-stone-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Metaphysical Theory (Prerequisite: Meta-Physicist Level 5)</em></p><p>When your Wrath Strike hits a target, the next attack roll made against that target by an ally before the start of your next turn has Advantage.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "theory"
+    },
+    "requirements": "Meta-Physicist 5",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MpTheoNovictumGu"
+}

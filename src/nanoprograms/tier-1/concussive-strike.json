@@ -1,0 +1,71 @@
+{
+  "_id": "68f9149e1713ec96",
+  "name": "Concussive Strike",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-mattercre.webp",
+  "system": {
+    "description": {
+      "value": "<p>Trigger: After melee hit. Unleashes a pneumatic sonic blast dealing +2d6 thunder damage, pushing the target up to 10 feet away, and forcing a Strength save or knocked Prone.</p><p><strong>Operating Systems:</strong> Enforcer, Keeper, Martial Artist</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "bonus",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "self"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "01eafdfe640f99d3": {
+        "_id": "01eafdfe640f99d3",
+        "type": "attack",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "attack": {
+          "type": "melee",
+          "classification": "spell"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!68f9149e1713ec96"
+}

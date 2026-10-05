@@ -1,0 +1,82 @@
+{
+  "name": "Directive: Resolute Authority",
+  "type": "feat",
+  "img": "icons/sundries/scrolls/scroll-bound-ruby-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your force of personality reinforces your mental defences. You add your <strong>Charisma modifier</strong> to saving throws made to resist being <strong>Charmed</strong>, <strong>Frightened</strong>, or <strong>Stunned</strong>.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "directive"
+    },
+    "requirements": "Bureaucrat 5",
+    "properties": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DirResoluteA001",
+  "_id": "DirResoluteA001"
+}

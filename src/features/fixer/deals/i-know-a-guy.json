@@ -1,0 +1,83 @@
+{
+  "_id": "DealIKnowAGuy001",
+  "name": "Deal: I Know a Guy",
+  "type": "feat",
+  "img": "icons/commodities/materials/scrap-circuit-board.webp",
+  "system": {
+    "description": {
+      "value": "<p>By spending 1 hour in any populated settlement, orbital station, or corporate colony, you can establish contact with one underworld asset:</p><ul><li><strong>Forger</strong>: Supplies forged planetary visas, crew manifests, or corporate IDs within 24 hours.</li><li><strong>Chop-Doc</strong>: Provides black-market medical treatment, restoring hit points and neutralizing diseases/toxins for reasonable credit fees.</li><li><strong>Fence</strong>: Liquidates stolen goods and illicit cargo at 60% of original value with zero questions asked.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "deal"
+    },
+    "requirements": "Fixer 5",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DealIKnowAGuy001"
+}

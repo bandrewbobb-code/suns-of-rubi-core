@@ -1,0 +1,34 @@
+{
+  "_id": "ee78707960c2d660",
+  "_key": "!items!ee78707960c2d660",
+  "name": "Akimbo Style",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>While wielding separate ranged weapons in each hand with which you are proficient: when you engage in Two-Weapon Fighting, you add your ability modifier to the extra attack granted by the Light property; reloading a sidearm or ranged weapon no longer requires a free hand.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "fightingStyle",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {},
+    "identifier": "akimbo-style"
+  }
+}

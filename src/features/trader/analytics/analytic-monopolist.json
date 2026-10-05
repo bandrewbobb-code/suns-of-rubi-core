@@ -1,0 +1,135 @@
+{
+  "_id": "AnaMonopolist001",
+  "name": "Analytic: The Asset Tank (Monopolist)",
+  "type": "feat",
+  "img": "icons/tools/scribing/scroll-quill-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Passive Protocol</strong>: You gain proficiency with <strong>Medium Armor and Shields</strong>.</p><p><strong>Active Exchange (Bonus Action, 1 minute)</strong>: You initiate Bailout Protocols. You have Advantage on saving throws and checks against being moved or knocked prone. Furthermore, as a Reaction when an adjacent ally takes damage, you can absorb the impact, taking half the damage yourself while the ally takes the remaining half.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "analytic"
+    },
+    "requirements": "Trader 2",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactMonopoly": {
+        "_id": "dnd5eactMonopoly",
+        "type": "utility",
+        "name": "Active Exchange: Monopoly Stance",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "1 min duration"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AnaMonopolist001"
+}

@@ -1,0 +1,83 @@
+{
+  "_id": "KepEnvoy00000001",
+  "name": "Envoy",
+  "type": "feat",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 10th level, you represent the highest authority of your ideological faction, unlocking social privileges across the galaxy based on your <strong>Path of the Source</strong>:</p><ul><li><strong>Faithful (Sanctuary)</strong>: By conducting a 10-minute consecration ritual, you establish a 60-foot secure perimeter. The Perception DC to detect approaching hostiles is reduced by 5, occupants are immune to extreme cold, heat, and radiation, and you can demand free rest and basic medical supplies from civil order groups and monasteries.</li><li><strong>Chosen (Black Market Fealty)</strong>: You have <strong>Advantage on Charisma checks</strong> made to demand safe transit, negotiate terms, or gain admittance to black-market auctions and private syndicate conclaves among cartels, smugglers, and corrupt planetary authorities.</li><li><strong>Watcher (Archival Infiltration)</strong>: By interfacing with any network console for 10 minutes, you access surveillance feeds and public survey archives dating back up to 100 years. Automated defense turrets and patrol AIs automatically evaluate you as an authorized observer.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Keeper 10",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!KepEnvoy00000001"
+}

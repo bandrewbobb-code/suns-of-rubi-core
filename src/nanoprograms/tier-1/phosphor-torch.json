@@ -1,0 +1,75 @@
+{
+  "_id": "9fe07ff9bd5ed2e9",
+  "name": "Phosphor Torch",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/phosphor-torch.webp",
+  "system": {
+    "description": {
+      "value": "<p>15-ft cone of incandescent white phosphorus. Dexterity save: 3d6 fire damage on failure (half on success). Flammable objects ignite.<br><br><strong>Overclock:</strong> +1d6 fire damage per tier above 1st (+1 NP/tier).</p><p><strong>Operating Systems:</strong> Nano-Technician</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "self"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "043839f908dae815": {
+        "_id": "043839f908dae815",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting"
+          }
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!9fe07ff9bd5ed2e9"
+}

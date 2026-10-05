@@ -1,0 +1,33 @@
+{
+  "_id": "GearPlasmaFlare1",
+  "name": "Plasma Flare Pack",
+  "type": "consumable",
+  "img": "icons/commodities/tech/sensor-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Pack of 4 high-intensity magnesium-plasma flares illuminating a 100-foot radius for 1 hour.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 20,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "quantity": 1,
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": "4"
+    },
+    "activities": {}
+  },
+  "_key": "!items!GearPlasmaFlare1"
+}

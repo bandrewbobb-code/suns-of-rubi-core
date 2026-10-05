@@ -1,0 +1,78 @@
+{
+  "_id": "MaHeightFocus001",
+  "name": "Heightened Focus",
+  "type": "feat",
+  "img": "icons/magic/perception/eye-tendril-web-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 10th level, your Flow State reaches unmatched kinetic refinement, granting enhanced benefits to your Flow Bonus Actions:</p><ul><li><strong>Flurry of Blows:</strong> When you activate Flurry of Blows, you can make three unarmed strikes instead of two.</li><li><strong>Patient Defense:</strong> When you activate Patient Defense, you gain temporary hit points equal to two rolls of your Martial Arts die (<code>2@scale.martial-artist.martial-arts-die</code>).</li><li><strong>Step of the Wind:</strong> When you activate Step of the Wind, you can bring one willing creature of Large size or smaller that is within 5 feet of you along with your movement until the end of your turn without provoking opportunity attacks.</li></ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Martial Artist 10",
+    "activities": {
+      "actMaHeightFocusH": {
+        "_id": "actMaHeightFocusH",
+        "type": "heal",
+        "name": "Patient Defense Temp HP",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "When activating Patient Defense in Flow State"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "healing": {
+          "types": [
+            "temphp"
+          ],
+          "custom": {
+            "enabled": true,
+            "formula": "2@scale.martial-artist.martial-arts-die"
+          },
+          "scaling": {
+            "mode": "whole",
+            "number": null,
+            "formula": ""
+          },
+          "bonus": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MaHeightFocus001"
+}

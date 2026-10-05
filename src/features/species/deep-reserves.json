@@ -1,0 +1,70 @@
+{
+  "_id": "SpcSolDeepReser1",
+  "name": "Deep Reserves",
+  "type": "feat",
+  "img": "icons/skills/wounds/heart-beat-lifeline-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>You possess a pool of bonus Hit Dice (d8s) equal to your Proficiency Bonus. You can expend these Hit Dice during a Short Rest to regain hit points just like your class Hit Dice, or use them to fuel specific Solitus lineage abilities.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "@prof"
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Solitus",
+    "activities": {
+      "actDeepReserves1": {
+        "_id": "actDeepReserves1",
+        "type": "utility",
+        "name": "Deep Reserves",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "During Short Rest or when spending bonus Hit Dice"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "deep-reserves"
+  },
+  "_key": "!items!SpcSolDeepReser1"
+}

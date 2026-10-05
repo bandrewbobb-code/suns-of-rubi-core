@@ -1,0 +1,67 @@
+{
+  "_id": "d1e5be6a2c69c549",
+  "name": "Shield",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/shield.webp",
+  "system": {
+    "description": {
+      "value": "<p>Trigger: Hit by an attack roll or targeted by Micro Flechette. Gain +5 bonus to AC until start of next turn and take no damage from Micro Flechette.</p><p><strong>Operating Systems:</strong> Nano-Technician</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "abj",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "reaction",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "round"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "self"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "b8d9b00a48345d62": {
+        "_id": "b8d9b00a48345d62",
+        "type": "utility",
+        "activation": {
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!d1e5be6a2c69c549"
+}

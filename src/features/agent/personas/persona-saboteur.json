@@ -1,0 +1,84 @@
+{
+  "_id": "PersOfSaboteur01",
+  "name": "Persona of the Saboteur",
+  "type": "feat",
+  "img": "icons/weapons/ammunition/mine-grenade-spiked.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Passive Alias:</strong> You gain proficiency with Demolitions Kits and Sleight of Hand. You have Advantage on saving throws against traps, environmental hazards, and explosive area-of-effect abilities.</p>\n<p><strong>Active Burn:</strong> As a <strong>Bonus Action</strong>, you toss a proximity mine to an unoccupied space within <strong>20 feet</strong>. The mine arms immediately. When a hostile creature moves within 5 feet of it, the mine detonates: each creature within a 10-foot radius must make a Dexterity saving throw against your Nanoprogram Save DC, taking <strong>2d8 energy damage</strong> and being <strong>Stunned until the start of its next turn</strong> on a failure, or half damage and no stun on a success.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "persona"
+    },
+    "requirements": "Agent 2",
+    "activities": {
+      "actBurnSaboteur1": {
+        "_id": "actBurnSaboteur1",
+        "type": "save",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "range": {
+          "value": "20",
+          "units": "ft"
+        },
+        "target": {
+          "template": {
+            "type": "radius",
+            "size": "10",
+            "units": "ft"
+          }
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "2d8"
+              },
+              "types": [
+                "energy"
+              ]
+            }
+          ]
+        },
+        "name": "Active Burn: Proximity Mine"
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!PersOfSaboteur01"
+}

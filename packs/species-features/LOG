@@ -1,0 +1,15 @@
+2026/09/24-16:17:05.236 1d34 Recovering log #25
+2026/09/24-16:17:05.244 1d34 Delete type=0 #25
+2026/09/24-16:17:05.244 1d34 Delete type=3 #23
+2026/09/24-16:17:05.381 7260 Level-0 table #31: started
+2026/09/24-16:17:05.393 7260 Level-0 table #31: 20289 bytes OK
+2026/09/24-16:17:05.394 7260 Delete type=0 #29
+2026/09/24-16:17:05.395 7260 Manual compaction at level-0 from '!items!SpcAtxHeavyHand1' @ 72057594037927935 : 1 .. '!items!SpcYutPrecognit1' @ 0 : 0; will stop at (end)
+2026/09/24-16:17:05.395 7260 Manual compaction at level-1 from '!items!SpcAtxHeavyHand1' @ 72057594037927935 : 1 .. '!items!SpcYutPrecognit1' @ 0 : 0; will stop at '!items!SpcYutPrecognit1' @ 199 : 1
+2026/09/24-16:17:05.395 7260 Compacting 1@1 + 1@2 files
+2026/09/24-16:17:05.399 7260 Generated table #32@1: 35 keys, 20289 bytes
+2026/09/24-16:17:05.399 7260 Compacted 1@1 + 1@2 files => 20289 bytes
+2026/09/24-16:17:05.400 7260 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/09/24-16:17:05.400 7260 Delete type=2 #27
+2026/09/24-16:17:05.401 7260 Delete type=2 #31
+2026/09/24-16:17:05.401 7260 Manual compaction at level-1 from '!items!SpcYutPrecognit1' @ 199 : 1 .. '!items!SpcYutPrecognit1' @ 0 : 0; will stop at (end)

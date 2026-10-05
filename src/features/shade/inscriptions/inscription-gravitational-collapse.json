@@ -1,0 +1,80 @@
+{
+  "_id": "InscGravitCollap",
+  "name": "Inscription: Gravitational Collapse",
+  "type": "feat",
+  "img": "icons/magic/space/black-hole-cosmos-star-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Novictum Inscription (Prerequisite: Shade Level 13)</em></p><p>When you trigger your <em>In All This Confusion</em> reaction, the space you vacated implodes in a localized micro-singularity. Each creature within 5 feet of that vacated space must make a Strength saving throw against your Program Save DC. On a failed save, a creature is pulled into the vacated space and knocked Prone.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "inscription"
+    },
+    "requirements": "Shade 13",
+    "activities": {
+      "actInscGravitCol": {
+        "_id": "actInscGravitCol",
+        "type": "save",
+        "name": "Micro-Singularity Pull & Prone",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "When triggering In All This Confusion"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "range": {
+          "value": "5",
+          "units": "ft"
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!InscGravitCollap"
+}

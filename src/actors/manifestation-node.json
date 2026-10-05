@@ -1,0 +1,402 @@
+{
+  "_id": "MetaManifestNode",
+  "name": "Manifestation Node",
+  "type": "npc",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 14,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 0
+      },
+      "con": {
+        "value": 14,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": null,
+        "calc": "custom",
+        "formula": "10 + @prof + @abilities.wis.mod"
+      },
+      "hp": {
+        "value": 15,
+        "max": 15,
+        "formula": "10 + (5 * @classes.meta-physicist.levels)"
+      },
+      "movement": {
+        "walk": 0,
+        "fly": 30,
+        "burrow": 0,
+        "climb": 0,
+        "swim": 0,
+        "units": "ft",
+        "hover": true
+      },
+      "senses": {
+        "darkvision": 60,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0,
+        "units": "ft",
+        "special": "Darkvision 60 ft"
+      }
+    },
+    "details": {
+      "biography": {
+        "value": "<p>A floating, crystalline-plasmic sphere of materialized Notum energy woven from the Meta-Physicist's consciousness. Manifestation Nodes channel destructive wrath, somatic mending, or psionic bewilderment according to their creator's noetic pulses.</p>",
+        "public": ""
+      },
+      "alignment": "Unaligned",
+      "cr": null,
+      "spellLevel": 0,
+      "type": {
+        "value": "aberration",
+        "subtype": "Notum Valence",
+        "swarm": "",
+        "custom": ""
+      },
+      "source": {
+        "custom": "Suns of Rubi"
+      }
+    },
+    "traits": {
+      "size": "sm",
+      "di": {
+        "value": [
+          "poison",
+          "psychic"
+        ],
+        "bypasses": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "bypasses": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "bypasses": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhaustion",
+          "frightened",
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Understands creator's languages but cannot speak"
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Manifestation Node",
+    "displayName": 20,
+    "displayBars": 20,
+    "actorLink": true,
+    "disposition": 1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "sight": {
+      "enabled": true,
+      "range": 60,
+      "visionMode": "darkvision"
+    },
+    "depth": 1
+  },
+  "items": [
+    {
+      "_id": "NodeTraitSharedC1",
+      "name": "Shared Paracausal Conduit",
+      "type": "feat",
+      "img": "icons/magic/symbols/circle-outer-ring-cyan.webp",
+      "system": {
+        "description": {
+          "value": "<p>All active manifestations share a single unified hit point reserve called the <strong>Conduit Pool</strong> (<code>10 + 5 * @classes.meta-physicist.levels</code>). When an area-of-effect spell or hazard damages multiple manifestations at once, damage is deducted from the Conduit Pool only once for that instance. If the Conduit Pool drops to 0 HP, all active manifestations immediately destabilize and dissipate.</p>"
+        },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "monster",
+          "subtype": "Trait"
+        },
+        "requirements": "",
+        "activities": {}
+      },
+      "effects": [],
+      "flags": {},
+      "sort": 100000,
+      "_key": "!actors.items!MetaManifestNode.NodeTraitSharedC1"
+    },
+    {
+      "_id": "NodeTraitSymbOrb1",
+      "name": "Symbiotic Orbit",
+      "type": "feat",
+      "img": "icons/magic/movement/trail-streak-zigzag-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>The manifestation can enter and occupy the space of a willing allied creature. While orbiting in an ally's space, it moves along with that ally automatically and does not provoke opportunity attacks from movement.</p>"
+        },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "monster",
+          "subtype": "Trait"
+        },
+        "requirements": "",
+        "activities": {}
+      },
+      "effects": [],
+      "flags": {},
+      "sort": 200000,
+      "_key": "!actors.items!MetaManifestNode.NodeTraitSymbOrb1"
+    },
+    {
+      "_id": "NodeActWrathStrk1",
+      "name": "Wrath Strike",
+      "type": "feat",
+      "img": "icons/magic/fire/projectile-fireball-smoke-orange.webp",
+      "system": {
+        "description": {
+          "value": "<p><em>Commanded via Creator's Bonus Action Noetic Pulse</em></p><p>The Wrath manifestation projects a beam of compressed paracausal energy at a target within 60 feet of the node. Make a ranged program attack using your creator's attack modifier (<code>@prof + @abilities.wis.mod</code>). On a hit, the target takes Force or Psychic damage equal to the Noetic Pulse roll (<code>1d8 + @abilities.wis.mod</code>).</p>"
+        },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "monster",
+          "subtype": "Action"
+        },
+        "requirements": "",
+        "activities": {
+          "actWrathStrike01": {
+            "_id": "actWrathStrike01",
+            "type": "attack",
+            "name": "Wrath Strike Attack",
+            "activation": {
+              "type": "special",
+              "value": null,
+              "condition": "Commanded via Creator's Noetic Pulse"
+            },
+            "duration": {
+              "units": "inst",
+              "value": ""
+            },
+            "target": {
+              "template": {
+                "contiguous": false,
+                "units": "ft"
+              },
+              "affix": false
+            },
+            "range": {
+              "value": "60",
+              "units": "ft"
+            },
+            "attack": {
+              "ability": "wis",
+              "bonus": "",
+              "critical": {
+                "threshold": null
+              },
+              "flat": false,
+              "type": {
+                "value": "ranged",
+                "classification": "spell"
+              }
+            },
+            "damage": {
+              "critical": {
+                "allow": true,
+                "bonus": ""
+              },
+              "parts": [
+                {
+                  "custom": {
+                    "enabled": true,
+                    "formula": "1d8 + @abilities.wis.mod"
+                  },
+                  "number": null,
+                  "denomination": 0,
+                  "bonus": "",
+                  "types": [
+                    "force"
+                  ],
+                  "scaling": {
+                    "mode": "whole",
+                    "number": null,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "sort": 300000,
+      "_key": "!actors.items!MetaManifestNode.NodeActWrathStrk1"
+    },
+    {
+      "_id": "NodeActCurativeP1",
+      "name": "Curative Pulse",
+      "type": "feat",
+      "img": "icons/magic/life/cross-beam-green.webp",
+      "system": {
+        "description": {
+          "value": "<p><em>Commanded via Creator's Bonus Action Noetic Pulse</em></p><p>The Curative manifestation radiates regenerative Notum harmonics. Choose one ally within 60 feet of the node. That ally gains temporary hit points equal to the Noetic Pulse roll (<code>1d8 + @abilities.wis.mod</code>), which persist until the start of your creator's next turn.</p>"
+        },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "monster",
+          "subtype": "Action"
+        },
+        "requirements": "",
+        "activities": {
+          "actCurativePulse": {
+            "_id": "actCurativePulse",
+            "type": "heal",
+            "name": "Curative Pulse Temp HP",
+            "activation": {
+              "type": "special",
+              "value": null,
+              "condition": "Commanded via Creator's Noetic Pulse"
+            },
+            "duration": {
+              "units": "round",
+              "value": "1"
+            },
+            "target": {
+              "template": {
+                "contiguous": false,
+                "units": "ft"
+              },
+              "affix": false
+            },
+            "range": {
+              "value": "60",
+              "units": "ft"
+            },
+            "healing": {
+              "types": [
+                "temphp"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "1d8 + @abilities.wis.mod"
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              },
+              "bonus": ""
+            }
+          }
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "sort": 400000,
+      "_key": "!actors.items!MetaManifestNode.NodeActCurativeP1"
+    },
+    {
+      "_id": "NodeActBewilderP1",
+      "name": "Bewilderment Pulse",
+      "type": "feat",
+      "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p><em>Commanded via Creator's Bonus Action Noetic Pulse</em></p><p>The Bewilderment manifestation projects a mind-warping psychic dissonance at one creature within 60 feet of the node. Calculate the Bewilderment Threshold: <code>1d8 + @abilities.wis.mod + (2 * @classes.meta-physicist.levels)</code>.</p><ul><li><strong>Target Current HP &le; Threshold:</strong> The target is <strong>Mesmerized</strong> (Incapacitated with speed 0) until it takes damage or until the end of its next turn.</li><li><strong>Target Current HP &gt; Threshold:</strong> The target is <strong>Dazed</strong> until the end of its next turn (its speed is halved, it cannot take reactions, and on its turn it can take either an Action or a Bonus Action, but not both).</li></ul>"
+        },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "monster",
+          "subtype": "Action"
+        },
+        "requirements": "",
+        "activities": {
+          "actBewilderPulse": {
+            "_id": "actBewilderPulse",
+            "type": "utility",
+            "name": "Bewilderment Threshold Check",
+            "activation": {
+              "type": "special",
+              "value": null,
+              "condition": "Commanded via Creator's Noetic Pulse"
+            },
+            "duration": {
+              "units": "round",
+              "value": "1"
+            },
+            "target": {
+              "template": {
+                "contiguous": false,
+                "units": "ft"
+              },
+              "affix": false
+            },
+            "range": {
+              "value": "60",
+              "units": "ft"
+            },
+            "roll": {
+              "formula": "1d8 + @abilities.wis.mod + (2 * @classes.meta-physicist.levels)",
+              "name": "Bewilderment Threshold"
+            }
+          }
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "sort": 500000,
+      "_key": "!actors.items!MetaManifestNode.NodeActBewilderP1"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!actors!MetaManifestNode"
+}

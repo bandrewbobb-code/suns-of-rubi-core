@@ -1,0 +1,67 @@
+{
+  "_id": "0c86fa94277ace20",
+  "name": "Thicken Skin",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-mattermet.webp",
+  "system": {
+    "description": {
+      "value": "<p>Dermal nanites reinforce muscle and bone density, granting 2d4 + 4 Temporary Hit Points.<br><br><strong>Overclock:</strong> +5 Temporary Hit Points per tier above 1st (+1 NP/tier).</p><p><strong>Operating Systems:</strong> Adventurer, Enforcer, Keeper, Martial Artist, Soldier</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "nec",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "self"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "eaf222563ff66859": {
+        "_id": "eaf222563ff66859",
+        "type": "heal",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!0c86fa94277ace20"
+}

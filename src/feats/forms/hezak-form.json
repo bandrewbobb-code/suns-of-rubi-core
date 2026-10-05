@@ -1,0 +1,65 @@
+{
+  "_id": "77169c232316ce1e",
+  "_key": "!items!77169c232316ce1e",
+  "name": "Hezak Form [Replaces Bakuuni Hand Form]",
+  "type": "feat",
+  "img": "icons/weapons/swords/sword-energy-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>If you took the Attack action, you can make one Unarmed Strike as part of the bonus action to adopt this form. Whenever you hit a target with an Unarmed Strike or a weapon utilizing the Graze mastery while in this form, the target takes additional kinetic damage equal to your Proficiency Bonus.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "form",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Source Weapon Proficiency",
+    "activities": {
+      "dafe42c3b683664d": {
+        "_id": "dafe42c3b683664d",
+        "type": "utility",
+        "name": "Adopt Hezak Form",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "hezak-form"
+  }
+}

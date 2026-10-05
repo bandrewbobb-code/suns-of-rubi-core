@@ -1,0 +1,65 @@
+{
+  "_id": "8b57021c9d78ba08",
+  "_key": "!items!8b57021c9d78ba08",
+  "name": "Akimbo Mastery",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite:</strong> Level 4</p>\n<ul>\n  <li><strong>Ability Score Increase:</strong> Increase your Dexterity score by 1, to a maximum of 20.</li>\n  <li><strong>Suppressing Fire:</strong> When you roll maximum damage on a weapon damage die against a creature, that creature suffers a 1d4 penalty on the first attack roll it makes before the start of your next turn.</li>\n  <li><strong>Heavy Akimbo:</strong> You can engage in Two-Weapon Fighting even when the weapons you are wielding lack the Light property. (Note: You cannot benefit from the Nick weapon mastery unless both weapons possess the Light property).</li>\n  <li><strong>Synchronized Reload:</strong> You can reload two weapons simultaneously when you would normally only be able to reload one.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "mastery",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Level 4",
+    "activities": {},
+    "identifier": "akimbo-mastery",
+    "advancement": [
+      {
+        "_id": "674aa7025aa797d3",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "points": 1
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "Ability Score Improvement",
+        "hint": "Increase your Dexterity score by 1, to a maximum of 20."
+      }
+    ]
+  }
+}

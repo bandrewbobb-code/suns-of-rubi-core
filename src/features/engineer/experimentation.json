@@ -1,0 +1,52 @@
+{
+  "_id": "EngExperiment001",
+  "name": "Experimentation",
+  "type": "feat",
+  "img": "icons/magic/symbols/rune-sigil-horned-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 6th level, you can adapt your installed schematics on the fly. As an <strong>Action</strong>, you spend <strong>4 Nanopool points</strong> to uninstall one active Tradeskill Schematic and instantly install another schematic of an eligible tier onto a target within reach without taking a rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Engineer 6",
+    "activities": {
+      "actExperiment001": {
+        "_id": "actExperiment001",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "Spend 4 Nanopool points"
+        },
+        "name": "Instant Schematic Swap"
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EngExperiment001"
+}

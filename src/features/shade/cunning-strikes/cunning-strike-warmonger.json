@@ -1,0 +1,67 @@
+{
+  "_id": "CstWarmonger0001",
+  "name": "Cunning Strike: Warmonger Strike",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-sword-blood-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Cunning Strike (Cost: 2d6 Sneak Attack Dice, Prerequisite: Shade Level 5)</em></p><p>You mark the target for lethal retribution. If the target attacks you or an ally within 5 feet of you before the start of your next turn, you can use your reaction to make a melee weapon attack against the target.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "cunning-strike"
+    },
+    "requirements": "Shade 5",
+    "activities": {
+      "actCstWarmonger1": {
+        "_id": "actCstWarmonger1",
+        "type": "utility",
+        "name": "Warmonger Retribution Trigger",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "On dealing Sneak Attack damage (Cost: 2d6)"
+        },
+        "duration": {
+          "units": "round",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!CstWarmonger0001"
+}

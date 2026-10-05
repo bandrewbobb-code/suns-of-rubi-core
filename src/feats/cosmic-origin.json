@@ -1,0 +1,34 @@
+{
+  "_id": "b4736494fabb784f",
+  "_key": "!items!b4736494fabb784f",
+  "name": "Cosmic Origin",
+  "type": "feat",
+  "img": "icons/magic/symbols/star-solid-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite:</strong> Deep Orbit, Pulsar Station, or Temporal Rift Homeworld</p><p>You grew up along the fringe of galactic space where gravitational and temporal distortions bleed into everyday life.<ul><li><strong>Telemetry Aptitude:</strong> You gain proficiency in the Lore, Technology, or Insight skill.</li><li><strong>Telemetry Forecast:</strong> You can execute the <em>Telemetry Forecast</em> (Augury) program once without an NCU deck or expending Nanopool points, regaining the ability after a Long Rest. Intelligence, Wisdom, or Charisma is your nanocasting ability for it.</li></ul></p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "type": {
+      "value": "origin",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 1
+    },
+    "requirements": "Deep Orbit, Pulsar Station, or Temporal Rift Homeworld",
+    "activities": {
+      "02d85178074c0707": {
+        "_id": "02d85178074c0707",
+        "type": "utility",
+        "activation": {
+          "type": "minute",
+          "value": 1
+        },
+        "name": "Cosmic Origin"
+      }
+    }
+  }
+}

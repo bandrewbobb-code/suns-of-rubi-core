@@ -1,0 +1,24 @@
+{
+  "_id": "09947844e4a40c2a",
+  "name": "Meta-Physicist OS Directory",
+  "pages": [
+    {
+      "_id": "dbcfe3f4cf0f5c88",
+      "name": "Meta-Physicist OS Catalog",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Meta-Physicist Operating System</h1><p>This directory catalogs all compiled nano-formulas available to the <strong>Meta-Physicist</strong> OS. Click any entry to inspect its telemetry, or drag the link directly onto your character sheet to install the routine into your NCU.</p><h2>Tier 0: At-Will Routines (4)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.9a3de0f6f11b8899]{Frost Slivers}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.4a5093a48add1c7e]{Imbue Weapon}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.b8aa6a5b2c19a2e1]{Mind Pain}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.28816a2e217c81b4]{Minor Telekinesis}</li></ul><h2>Tier 1: Leveled Nanoprograms (12)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.087182f47f688efb]{6,000,000,000 Forms of Communication}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.223521b271689331]{Accelerate Fall}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.18597fa348539a25]{Chill Spear}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.585c68353decaca0]{Deep Scan}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.b102b24e674e85d7]{Detect Notum}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.1c9090db506a374d]{Force Barrier}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.832ba0cacbc269a1]{Grav Tendrils}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.c0fc6cfe3066e0e4]{Horrific Demise}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.f67ee6a255b15bc4]{Intensify Stress}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.0cbf972637ac96ae]{Neuro-Spasm}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.ab6db64e36e4b154]{Prism Pulse}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.18772fc9cf97967e]{Rail Toss}</li></ul>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "_key": "!journal.pages!09947844e4a40c2a.dbcfe3f4cf0f5c88"
+    }
+  ],
+  "ownership": {
+    "default": 2
+  },
+  "_key": "!journal!09947844e4a40c2a"
+}

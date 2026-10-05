@@ -1,0 +1,41 @@
+{
+  "_id": "AgtJackTrades001",
+  "name": "Jack of All Trades",
+  "type": "feat",
+  "img": "icons/tools/scribal/magnifying-glass.webp",
+  "system": {
+    "description": {
+      "value": "<p>Starting at 1st level, you can add half your Proficiency Bonus (rounded down) to any ability check you make that doesn't already include your Proficiency Bonus.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Agent 1",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AgtJackTrades001"
+}

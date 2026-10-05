@@ -1,0 +1,144 @@
+{
+  "_id": "FixHackDummyOrd1",
+  "name": "Hack Dummy Order",
+  "type": "feat",
+  "img": "icons/containers/boxes/crate-reinforced-steel-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 4th level, you can breach orbital cargo channels and corporate distribution hubs to route automated supply capsules directly to your vicinity.</p><p>You can use this feature a number of times equal to your <strong>Proficiency Bonus</strong> (`@prof`), and regain all expended uses when you finish a <strong>Long Rest</strong>.</p><p>By spending 10 minutes tapping an automated transceiver, a container arrives containing requested ammunition, rations, encrypted datapads, or field tech worth up to 100 credits.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Fixer 4",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactDummyOrd": {
+        "_id": "dnd5eactDummyOrd",
+        "type": "utility",
+        "name": "Requisition Supply Drop",
+        "img": "",
+        "activation": {
+          "type": "minute",
+          "value": 10,
+          "condition": "Spend 1 dummy order use"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": "@prof",
+      "max": "@prof",
+      "per": "lr",
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FixHackDummyOrd1"
+}

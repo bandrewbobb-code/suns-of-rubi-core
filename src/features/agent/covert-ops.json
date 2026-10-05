@@ -1,0 +1,62 @@
+{
+  "_id": "AgtCovertOps0001",
+  "name": "Covert Ops",
+  "type": "feat",
+  "img": "icons/skills/movement/stealth-shadow-silhouette-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 1st level, you master elite infiltration and sniping protocols:</p>\n<h3>Shifting Shadows</h3>\n<p>You can take the <strong>Hide action as a Bonus Action</strong> on your turn. Additionally, you can spend <strong>1 Nanopool point</strong> when you take the Hide action to hide even when you are only lightly obscured by dim light, foliage, or smoke. While hidden in this manner, missing with a ranged weapon attack does not reveal your location.</p>\n<h3>Take the Shot</h3>\n<p>Once per turn when you make a ranged weapon attack that deals Sneak Attack damage, you can spend <strong>1 Nanopool point</strong> to calibrate your smart-optic HUD. That attack completely <strong>ignores half cover and three-quarters cover</strong>, and any damage dice that roll a 1 or 2 are treated as a 3.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Agent 1",
+    "activities": {
+      "actShiftingShadow": {
+        "_id": "actShiftingShadow",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "Spend 1 Nanopool to hide when lightly obscured"
+        },
+        "name": "Shifting Shadows (Bonus Action Hide)"
+      },
+      "actTakeTheShot01": {
+        "_id": "actTakeTheShot01",
+        "type": "utility",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Once per turn on ranged Sneak Attack (1 Nanopool)"
+        },
+        "name": "Take the Shot (Ignore Cover / Minimum 3s)"
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AgtCovertOps0001"
+}

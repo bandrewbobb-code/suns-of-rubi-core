@@ -1,0 +1,24 @@
+{
+  "_id": "ccaddc83d6de99d3",
+  "name": "Bureaucrat OS Directory",
+  "pages": [
+    {
+      "_id": "1ab03fe867118261",
+      "name": "Bureaucrat OS Catalog",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Bureaucrat Operating System</h1><p>This directory catalogs all compiled nano-formulas available to the <strong>Bureaucrat</strong> OS. Click any entry to inspect its telemetry, or drag the link directly onto your character sheet to install the routine into your NCU.</p><h2>Tier 0: At-Will Routines (7)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.c3f0593fe9b650ed]{Befriend}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.308d329c94b7cf09]{Encrypted Message}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.6c812c1e7194c7a6]{Guidance}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.15b958932e6543ba]{Performance Review}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.38e972974e6ea220]{Poison Dart}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.e4a9fbd7a14d6edd]{Shocking Grasp}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.fce1a55b6cdcafcb]{Utility Cloud}</li></ul><h2>Tier 1: Leveled Nanoprograms (15)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.087182f47f688efb]{6,000,000,000 Forms of Communication}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.15c501710eba1485]{Bend Will}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.44de1ec3b627fdc2]{Cipher Text}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.6c82676baf7f00cc]{Command}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.5afedabc6a22bb0d]{Demotivational Speech}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.bf588c58edd366d7]{Emergency Stim}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.5e1ea1066da48023]{Entangle}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.a9db968240766789]{Ghost Drone}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.30381d2b28a1d097]{Gravity Shackle}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.f67ee6a255b15bc4]{Intensify Stress}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.d8da4bcde7bb68a3]{Morale Surge}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.332957125a551855]{Motivational Speech}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.0cbf972637ac96ae]{Neuro-Spasm}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.291ef5b39e391ad0]{Sleep}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.2ab577be075d3703]{Suppression Gas}</li></ul>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "_key": "!journal.pages!ccaddc83d6de99d3.1ab03fe867118261"
+    }
+  ],
+  "ownership": {
+    "default": 2
+  },
+  "_key": "!journal!ccaddc83d6de99d3"
+}

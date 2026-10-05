@@ -1,0 +1,137 @@
+{
+  "_id": "TrdSkillWrang001",
+  "name": "Skill Wrangle",
+  "type": "feat",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 1st level, you can re-index neural training and synaptic memory between willing subjects. As an <strong>Action</strong>, you spend <strong>2 Nanopool points</strong> to choose two willing creatures within <strong>30 feet</strong> (one of which can be yourself).</p><p>For <strong>1 hour</strong>, one creature temporarily transfers one of its skill or tool proficiencies to the other creature. If the receiving creature is already proficient in the chosen skill or tool, it instead gains <strong>Expertise</strong> (doubling its proficiency bonus) for the duration.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Trader 1",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactWrangle": {
+        "_id": "dnd5eactWrangle",
+        "type": "utility",
+        "name": "Execute Skill Wrangle",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "Spend 2 Nanopool points"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "2",
+            "type": "willing",
+            "choice": false,
+            "special": "creatures within 30 ft"
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TrdSkillWrang001"
+}

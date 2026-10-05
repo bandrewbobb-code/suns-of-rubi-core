@@ -1,0 +1,15 @@
+2026/09/24-16:17:12.348 128ac Recovering log #20
+2026/09/24-16:17:12.355 128ac Delete type=0 #20
+2026/09/24-16:17:12.356 128ac Delete type=3 #18
+2026/09/24-16:17:12.433 60b4 Level-0 table #26: started
+2026/09/24-16:17:12.438 60b4 Level-0 table #26: 4054 bytes OK
+2026/09/24-16:17:12.439 60b4 Delete type=0 #24
+2026/09/24-16:17:12.439 60b4 Manual compaction at level-0 from '!items!ArmAlloyShockT01' @ 72057594037927935 : 1 .. '!items!ArmTactCombatR01' @ 0 : 0; will stop at (end)
+2026/09/24-16:17:12.439 60b4 Manual compaction at level-1 from '!items!ArmAlloyShockT01' @ 72057594037927935 : 1 .. '!items!ArmTactCombatR01' @ 0 : 0; will stop at '!items!ArmTactCombatR01' @ 75 : 1
+2026/09/24-16:17:12.439 60b4 Compacting 1@1 + 1@2 files
+2026/09/24-16:17:12.446 60b4 Generated table #27@1: 15 keys, 4054 bytes
+2026/09/24-16:17:12.447 60b4 Compacted 1@1 + 1@2 files => 4054 bytes
+2026/09/24-16:17:12.448 60b4 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/09/24-16:17:12.448 60b4 Delete type=2 #22
+2026/09/24-16:17:12.449 60b4 Delete type=2 #26
+2026/09/24-16:17:12.450 60b4 Manual compaction at level-1 from '!items!ArmTactCombatR01' @ 75 : 1 .. '!items!ArmTactCombatR01' @ 0 : 0; will stop at (end)

@@ -1,0 +1,34 @@
+{
+  "_id": "46c260fb695ad40b",
+  "_key": "!items!46c260fb695ad40b",
+  "name": "Blind Fighting",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>You gain Blindsight out to 10 feet. Within that range, you can effectively see anything that is not behind total cover, even if you are blinded or in darkness. You can also detect invisible creatures within this range unless they are successfully hidden.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "fightingStyle",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {},
+    "identifier": "blind-fighting"
+  }
+}

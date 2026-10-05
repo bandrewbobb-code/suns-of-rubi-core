@@ -1,0 +1,24 @@
+{
+  "_id": "5633fa3d30608a43",
+  "name": "Enforcer OS Directory",
+  "pages": [
+    {
+      "_id": "d1f584e4b70facf2",
+      "name": "Enforcer OS Catalog",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Enforcer Operating System</h1><p>This directory catalogs all compiled nano-formulas available to the <strong>Enforcer</strong> OS. Click any entry to inspect its telemetry, or drag the link directly onto your character sheet to install the routine into your NCU.</p><h2>Tier 0: At-Will Routines (4)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.c7418787345d9bd6]{Deflection}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.d9d4632f2054f930]{Grapple Beam}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.6615e4571ddd30ad]{Sonic Boom}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.3ecf772517a45927]{Vocal Sub-Woofer}</li></ul><h2>Tier 1: Leveled Nanoprograms (16)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.7ead785bb1bafdfd]{Bio-Shield}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.035dee9a7d47c55a]{Cage Match}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.8b6b900cd617a441]{Coat of Blades}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.6c82676baf7f00cc]{Command}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.68f9149e1713ec96]{Concussive Strike}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.0adf6db98830fa09]{Dread Strike}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.9921790a85deaa13]{Ego Taunt}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.f852f2db63bcd053]{Energy Sink}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.832ba0cacbc269a1]{Grav Tendrils}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.57ec5068ea0b6eab]{Localized Faultline}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.d8da4bcde7bb68a3]{Morale Surge}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.8d609a64fea07808]{Plasma Strike}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.13fa7102be04d8a9]{Rocket Leap}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.0098a30425afd824]{Shockwave Smite}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.bc5750107969dcb7]{Tether Shot}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.0c86fa94277ace20]{Thicken Skin}</li></ul>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "_key": "!journal.pages!5633fa3d30608a43.d1f584e4b70facf2"
+    }
+  ],
+  "ownership": {
+    "default": 2
+  },
+  "_key": "!journal!5633fa3d30608a43"
+}

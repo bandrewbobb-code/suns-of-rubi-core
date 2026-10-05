@@ -1,0 +1,41 @@
+{
+  "_id": "TechSentryArmor1",
+  "name": "Sentry Armor",
+  "type": "feat",
+  "img": "icons/magic/defensive/armor-stone-skin.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Martial Technique</em></p><p>You gain proficiency with Light and Medium armor. You retain all benefits of Martial Arts and Unarmored Movement even while wearing Light or Medium armor, provided you are not wielding a shield.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "technique"
+    },
+    "requirements": "Martial Artist 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TechSentryArmor1"
+}

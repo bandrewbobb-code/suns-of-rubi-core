@@ -1,0 +1,37 @@
+{
+  "_id": "ToolMechanicsRg1",
+  "name": "Mechanic's Rig",
+  "type": "tool",
+  "img": "icons/tools/instruments/multitool-electronic.webp",
+  "system": {
+    "description": {
+      "value": "<p>Wrench set, plasma blowtorch, diagnostic scanners, and hydraulic lifters for ground vehicles and automatons.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 150,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 12,
+      "units": "lb"
+    },
+    "quantity": 1,
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "activities": {},
+    "type": {
+      "value": "specialist",
+      "baseItem": "mechanics-rig"
+    }
+  },
+  "_key": "!items!ToolMechanicsRg1"
+}

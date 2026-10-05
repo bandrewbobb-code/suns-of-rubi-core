@@ -1,0 +1,32 @@
+{
+  "_id": "ModTrackingGuid1",
+  "name": "Tracking Smart Guidance",
+  "type": "equipment",
+  "img": "icons/commodities/tech/chip-integrated-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Type:</strong> Weapon Mod (Sensor Suite, 1 slot)</p><p>Targets within the primary blast zone have Disadvantage on saving throws against this weapon's Payload area effect.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 250,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 0.1,
+      "units": "lb"
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": "hardware-mod"
+    },
+    "equipped": false,
+    "activities": {}
+  },
+  "_key": "!items!ModTrackingGuid1"
+}

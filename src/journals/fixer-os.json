@@ -1,0 +1,24 @@
+{
+  "_id": "80fdcc6e3f4c13b8",
+  "name": "Fixer OS Directory",
+  "pages": [
+    {
+      "_id": "81c74d173432f49e",
+      "name": "Fixer OS Catalog",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Fixer Operating System</h1><p>This directory catalogs all compiled nano-formulas available to the <strong>Fixer</strong> OS. Click any entry to inspect its telemetry, or drag the link directly onto your character sheet to install the routine into your NCU.</p><h2>Tier 0: At-Will Routines (8)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.835e75a61e8e102c]{Aimbot}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.c3f0593fe9b650ed]{Befriend}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.308d329c94b7cf09]{Encrypted Message}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.d9d4632f2054f930]{Grapple Beam}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.e5f1db48ccac424b]{Holo-Drones}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.23132ad56e29826d]{Mending}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.9d0497d2bb6868f6]{Minor Hologram}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.93db65303b54eee1]{Tracer Bolt}</li></ul><h2>Tier 1: Leveled Nanoprograms (19)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.59dd7af0bd7ad476]{Alarm}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.a356679a35af45c4]{Autonomous Assistant}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.820354b9669a981f]{Boosted Tendons}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.44de1ec3b627fdc2]{Cipher Text}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.5e1ea1066da48023]{Entangle}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.f7d4d319a46113ed]{Grav-Chute}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.30381d2b28a1d097]{Gravity Shackle}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.39cd34a285bf2b25]{Hologram}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.50035b4747243f7b]{Mask}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.be507b217645ff2c]{Memory Leak}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.25ab2a24c65f5b93]{Pharmacy Hack}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.60b114bd7c37fc99]{Shrapnel Burst}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.d33ae0c470daafa6]{Slick}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.291ef5b39e391ad0]{Sleep}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.d13178ad021cf737]{Slipstream}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.3a4f74de93b86c2a]{Smokescreen}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.085eaa5e18cba810]{Sprint}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.753cb27cd0a18d3e]{Target Paint}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.32d352ffae905262]{Terrain Knowledge}</li></ul>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "_key": "!journal.pages!80fdcc6e3f4c13b8.81c74d173432f49e"
+    }
+  ],
+  "ownership": {
+    "default": 2
+  },
+  "_key": "!journal!80fdcc6e3f4c13b8"
+}

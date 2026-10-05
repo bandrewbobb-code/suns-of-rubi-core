@@ -1,0 +1,15 @@
+2026/09/24-16:12:59.386 1295c Recovering log #98
+2026/09/24-16:12:59.390 1295c Delete type=0 #98
+2026/09/24-16:12:59.390 1295c Delete type=3 #96
+2026/09/24-16:12:59.485 c604 Level-0 table #104: started
+2026/09/24-16:12:59.495 c604 Level-0 table #104: 35624 bytes OK
+2026/09/24-16:12:59.497 c604 Delete type=0 #102
+2026/09/24-16:12:59.497 c604 Manual compaction at level-0 from '!items!AdventurerCls001' @ 72057594037927935 : 1 .. '!items!TraderClass00001' @ 0 : 0; will stop at (end)
+2026/09/24-16:12:59.497 c604 Manual compaction at level-1 from '!items!AdventurerCls001' @ 72057594037927935 : 1 .. '!items!TraderClass00001' @ 0 : 0; will stop at '!items!TraderClass00001' @ 203 : 1
+2026/09/24-16:12:59.497 c604 Compacting 1@1 + 1@2 files
+2026/09/24-16:12:59.512 c604 Generated table #105@1: 14 keys, 35624 bytes
+2026/09/24-16:12:59.512 c604 Compacted 1@1 + 1@2 files => 35624 bytes
+2026/09/24-16:12:59.514 c604 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/09/24-16:12:59.514 c604 Delete type=2 #100
+2026/09/24-16:12:59.515 c604 Delete type=2 #104
+2026/09/24-16:12:59.517 c604 Manual compaction at level-1 from '!items!TraderClass00001' @ 203 : 1 .. '!items!TraderClass00001' @ 0 : 0; will stop at (end)

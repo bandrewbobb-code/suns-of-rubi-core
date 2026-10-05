@@ -1,0 +1,75 @@
+{
+  "_id": "b9c3f4813775bb59",
+  "_key": "!items!b9c3f4813775bb59",
+  "name": "Fighting Style",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>You adopt a particular style of fighting as your specialty. Choose one Fighting Style from the compendium.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {},
+    "identifier": "fighting-style",
+    "advancement": [
+      {
+        "_id": "advFightStyle001",
+        "type": "ItemChoice",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "pool": [
+                "Compendium.suns-of-rubi-core.feats.Item.ee78707960c2d660",
+                "Compendium.suns-of-rubi-core.feats.Item.f22c5a92c8894b65",
+                "Compendium.suns-of-rubi-core.feats.Item.46c260fb695ad40b",
+                "Compendium.suns-of-rubi-core.feats.Item.d9b9377c4b532f9f",
+                "Compendium.suns-of-rubi-core.feats.Item.c95fd3e4e73634d3",
+                "Compendium.suns-of-rubi-core.feats.Item.5209379e0bb121c3",
+                "Compendium.suns-of-rubi-core.feats.Item.283dfcdaf90f1b3d",
+                "Compendium.suns-of-rubi-core.feats.Item.c6c4306bd4399736",
+                "Compendium.suns-of-rubi-core.feats.Item.7497e012ecdde431",
+                "Compendium.suns-of-rubi-core.feats.Item.f38eb7aac3c7cd37",
+                "Compendium.suns-of-rubi-core.feats.Item.1728a5b25d40356f",
+                "Compendium.suns-of-rubi-core.feats.Item.6998e3a8d4c50288",
+                "Compendium.suns-of-rubi-core.feats.Item.c13f99a104296525",
+                "Compendium.suns-of-rubi-core.feats.Item.2a3e63d602bd48c0",
+                "Compendium.suns-of-rubi-core.feats.Item.15270c0db4806d08",
+                "Compendium.suns-of-rubi-core.feats.Item.36ea7ba469dfc4f7",
+                "Compendium.suns-of-rubi-core.feats.Item.cf28a89ff3d4f444",
+                "Compendium.suns-of-rubi-core.feats.Item.2c74dd3207b661b9",
+                "Compendium.suns-of-rubi-core.feats.Item.26864a94f4b43f5a"
+              ]
+            }
+          },
+          "allowDrops": true,
+          "type": "feat",
+          "restriction": {
+            "type": "fightingStyle"
+          }
+        },
+        "title": "Fighting Style Choice",
+        "icon": "icons/skills/melee/weapons-crossed-swords-yellow.webp"
+      }
+    ]
+  }
+}

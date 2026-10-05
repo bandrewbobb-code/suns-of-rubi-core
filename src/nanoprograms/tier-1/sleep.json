@@ -1,0 +1,76 @@
+{
+  "_id": "291ef5b39e391ad0",
+  "name": "Sleep",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/sleep.webp",
+  "system": {
+    "description": {
+      "value": "<p>5-ft radius soporific aerosol: Wisdom save or Incapacitated; repeats save at start of turns, falling Unconscious on failure. Ends if damaged or shaken awake.</p><p><strong>Operating Systems:</strong> Agent, Bureaucrat, Doctor, Fixer</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "enc",
+    "properties": [
+      "concentration",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 60,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "fac6809a17416758": {
+        "_id": "fac6809a17416758",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting"
+          }
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!291ef5b39e391ad0"
+}

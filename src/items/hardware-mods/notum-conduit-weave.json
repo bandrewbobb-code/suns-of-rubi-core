@@ -1,0 +1,32 @@
+{
+  "_id": "ModNotumConduit1",
+  "name": "Notum Conduit Weave",
+  "type": "equipment",
+  "img": "icons/commodities/tech/chip-integrated-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Type:</strong> Armor Mod (1 slot, Light or Medium Armor)</p><p>Notum conducting filaments stabilize your neural focus: you have Advantage on Constitution saving throws made to maintain Concentration on nanoprograms.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 250,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 0.1,
+      "units": "lb"
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": "hardware-mod"
+    },
+    "equipped": false,
+    "activities": {}
+  },
+  "_key": "!items!ModNotumConduit1"
+}

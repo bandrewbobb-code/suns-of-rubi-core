@@ -1,0 +1,83 @@
+{
+  "_id": "DealSubLevelInf1",
+  "name": "Deal: Sub-Level Infiltrator",
+  "type": "feat",
+  "img": "icons/commodities/materials/scrap-circuit-board.webp",
+  "system": {
+    "description": {
+      "value": "<p>Navigating crawlspaces and service conduits is second nature to you:</p><ul><li>Climbing and squeezing through small spaces costs no extra movement.</li><li>You crawl at your full walking speed.</li><li>Standing up from Prone costs you only <strong>5 feet of movement</strong> instead of half your speed.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "deal"
+    },
+    "requirements": "Fixer 5",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DealSubLevelInf1"
+}

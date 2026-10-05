@@ -1,0 +1,15 @@
+2026/09/24-16:13:08.680 10450 Recovering log #93
+2026/09/24-16:13:08.682 10450 Delete type=0 #93
+2026/09/24-16:13:08.682 10450 Delete type=3 #91
+2026/09/24-16:13:08.718 121f8 Level-0 table #99: started
+2026/09/24-16:13:08.723 121f8 Level-0 table #99: 38762 bytes OK
+2026/09/24-16:13:08.724 121f8 Delete type=0 #97
+2026/09/24-16:13:08.726 121f8 Manual compaction at level-0 from '!actors!AutoAndroid00001' @ 72057594037927935 : 1 .. '!actors.items!MetaManifestNode.NodeTraitSymbOrb1' @ 0 : 0; will stop at (end)
+2026/09/24-16:13:08.726 121f8 Manual compaction at level-1 from '!actors!AutoAndroid00001' @ 72057594037927935 : 1 .. '!actors.items!MetaManifestNode.NodeTraitSymbOrb1' @ 0 : 0; will stop at '!actors.items!MetaManifestNode.NodeTraitSymbOrb1' @ 856 : 1
+2026/09/24-16:13:08.726 121f8 Compacting 1@1 + 1@2 files
+2026/09/24-16:13:08.733 121f8 Generated table #100@1: 70 keys, 38762 bytes
+2026/09/24-16:13:08.733 121f8 Compacted 1@1 + 1@2 files => 38762 bytes
+2026/09/24-16:13:08.734 121f8 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/09/24-16:13:08.734 121f8 Delete type=2 #95
+2026/09/24-16:13:08.734 121f8 Delete type=2 #99
+2026/09/24-16:13:08.735 121f8 Manual compaction at level-1 from '!actors.items!MetaManifestNode.NodeTraitSymbOrb1' @ 856 : 1 .. '!actors.items!MetaManifestNode.NodeTraitSymbOrb1' @ 0 : 0; will stop at (end)

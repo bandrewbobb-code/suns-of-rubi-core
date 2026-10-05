@@ -1,0 +1,160 @@
+{
+  "_id": "MpSourceCrystall",
+  "name": "Source Crystallization",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-flaming-diamond-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 7th level, you can condense ambient Notum into a solid crystalline battery called a <strong>Crystallized Source Vessel</strong>. You create 1 vessel whenever you finish a Short or Long Rest. You can shatter the vessel to produce one of the following effects:</p><ul><li><strong>Sovereign Aegis (Reaction):</strong> When you or an ally within 30 feet takes damage, reduce the damage by <code>1d10 + @abilities.wis.mod</code>. Your Conduit Pool heals for an amount equal to the damage prevented.</li><li><strong>Primordial Singularity (Action):</strong> Shatter the vessel at a point within 60 feet. Creatures within a 15-foot radius must make a Strength saving throw against your Program Save DC or take 2d8 Force damage and be pulled up to 10 feet toward the center.</li><li><strong>Conduit Surge (Action):</strong> You regain Nanopool points equal to your Proficiency Bonus, or gain temporary hit points equal to your Meta-Physicist level, and all your active manifestations gain +15 feet to their flying speed until the end of your next turn.</li></ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Meta-Physicist 7",
+    "activities": {
+      "actMpSovereignAe": {
+        "_id": "actMpSovereignAe",
+        "type": "utility",
+        "name": "Sovereign Aegis",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "You or an ally within 30 ft takes damage"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "range": {
+          "value": "30",
+          "units": "ft"
+        },
+        "roll": {
+          "formula": "1d10 + @abilities.wis.mod",
+          "name": "Damage Reduction"
+        }
+      },
+      "actMpPrimordSing": {
+        "_id": "actMpPrimordSing",
+        "type": "save",
+        "name": "Primordial Singularity",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "count": 1,
+            "contiguous": false,
+            "type": "radius",
+            "units": "ft",
+            "size": "15"
+          },
+          "affix": false
+        },
+        "range": {
+          "value": "60",
+          "units": "ft"
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "2d8"
+              },
+              "number": null,
+              "denomination": 0,
+              "bonus": "",
+              "types": [
+                "force"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "actMpConduitSurg": {
+        "_id": "actMpConduitSurg",
+        "type": "utility",
+        "name": "Conduit Surge",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "round",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MpSourceCrystall"
+}

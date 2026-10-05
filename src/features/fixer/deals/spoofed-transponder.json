@@ -1,0 +1,83 @@
+{
+  "_id": "DealSpoofedTran1",
+  "name": "Deal: Spoofed Transponder",
+  "type": "feat",
+  "img": "icons/commodities/materials/scrap-circuit-board.webp",
+  "system": {
+    "description": {
+      "value": "<p>Whenever you finish a Short Rest, you can fabricate false transponder codes and security credentials for yourself and up to <strong>5 companions</strong>.</p><p>While utilizing these credentials, your team has <strong>Advantage on Charisma (Deception) checks</strong> made to pass checkpoints, port authorities, and automated planetary scanners.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "deal"
+    },
+    "requirements": "Fixer 5",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DealSpoofedTran1"
+}

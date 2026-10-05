@@ -1,0 +1,145 @@
+{
+  "_id": "NtNullitySphere1",
+  "name": "Nullity Sphere",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 2nd level, you develop an emergency electromagnetic null-zone that deflects incoming kinetics and energy beams.</p><p>As a <strong>Reaction when you are hit by an attack roll</strong>, you can deploy the Nullity Sphere. Until the end of your next turn:</p><ul><li>Your speed is reduced to <strong>0</strong>.</li><li>You gain a bonus to your Armor Class equal to your <strong>Intelligence modifier (minimum +1)</strong>, which applies against the triggering attack.</li></ul><p>You can use this feature a number of times shown in the Nullity Sphere column of the Nano-Technician table (`@scale.nano-technician.nullity-sphere-uses`). You regain all expended uses when you finish a <strong>Long Rest</strong>.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Nano-Technician 2",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactNullity": {
+        "_id": "dnd5eactNullity",
+        "type": "utility",
+        "name": "Deploy Nullity Sphere",
+        "img": "",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "When hit by an attack roll"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "round",
+          "value": "1",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": "@scale.nano-technician.nullity-sphere-uses",
+      "max": "@scale.nano-technician.nullity-sphere-uses",
+      "per": "lr",
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!NtNullitySphere1"
+}

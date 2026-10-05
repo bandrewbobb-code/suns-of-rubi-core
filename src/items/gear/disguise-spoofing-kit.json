@@ -1,0 +1,37 @@
+{
+  "_id": "ToolDisguiseKit1",
+  "name": "Disguise & Spoofing Kit",
+  "type": "tool",
+  "img": "icons/tools/instruments/multitool-electronic.webp",
+  "system": {
+    "description": {
+      "value": "<p>Synthetic skin grafts, holographic identity chips, voice modulators, and cosmetics for espionage impersonation.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 75,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "quantity": 1,
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "activities": {},
+    "type": {
+      "value": "specialist",
+      "baseItem": "disguise-spoofing-kit"
+    }
+  },
+  "_key": "!items!ToolDisguiseKit1"
+}

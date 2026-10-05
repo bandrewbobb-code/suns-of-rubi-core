@@ -1,0 +1,75 @@
+{
+  "_id": "832ba0cacbc269a1",
+  "name": "Grav Tendrils",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-timespace.webp",
+  "system": {
+    "description": {
+      "value": "<p>Gravitational tendrils lash out in 10-ft radius. Each creature makes a Strength save, taking 2d6 force damage and losing Reactions on a failure (half damage and retains reactions on success).<br><br><strong>Overclock:</strong> +1d6 damage per tier above 1st (+1 NP/tier).</p><p><strong>Operating Systems:</strong> Enforcer, Meta-Physicist, Shade</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "self"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "cba103077bc111fb": {
+        "_id": "cba103077bc111fb",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting"
+          }
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!832ba0cacbc269a1"
+}

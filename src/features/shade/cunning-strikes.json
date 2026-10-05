@@ -1,0 +1,41 @@
+{
+  "_id": "ShdCunningStrk01",
+  "name": "Cunning Strikes",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-dagger-blood-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>You learn to trade raw damage for debilitating tactical maneuvers. When you deal Sneak Attack damage, you can forgo rolling one or more of your Sneak Attack damage dice (or spend banked dice from Siphon Banking) to trigger a Cunning Strike effect.</p><p>Each option specifies how many dice you must forgo to use it. If an option forces a saving throw, the DC equals your Program Save DC (<code>8 + Proficiency Bonus + Wisdom modifier</code>).</p><p>You automatically learn four baseline Cunning Strike options: <em>Vanish</em> (1d6), <em>Trip</em> (1d6), <em>Leech</em> (1d6), and <em>Vital Siphon</em> (1d6 + 1 Nanopool point).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Shade 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ShdCunningStrk01"
+}

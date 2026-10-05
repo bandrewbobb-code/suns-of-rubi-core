@@ -1,0 +1,65 @@
+{
+  "_id": "062168758a6376f7",
+  "_key": "!items!062168758a6376f7",
+  "name": "Xan Form [Replaces Aqinos Form]",
+  "type": "feat",
+  "img": "icons/weapons/swords/sword-energy-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite:</strong> The ability to execute nanoprograms.</p><p>As a part of the bonus action to adopt this form, if you execute a nanoprogram of 1st level or higher as your action (no higher than half your Max Power Level), you can make one melee weapon attack.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "form",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Source Weapon Proficiency, Ability to execute nanoprograms",
+    "activities": {
+      "3d681300fb677285": {
+        "_id": "3d681300fb677285",
+        "type": "utility",
+        "name": "Adopt Xan Form",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "xan-form"
+  }
+}

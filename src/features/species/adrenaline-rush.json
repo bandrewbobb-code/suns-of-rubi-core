@@ -1,0 +1,87 @@
+{
+  "_id": "SpcHiiAdrenRush1",
+  "name": "Adrenaline Rush",
+  "type": "feat",
+  "img": "icons/magic/movement/trail-streak-zigzag-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>You can take the Dash action as a Bonus Action. When you take this bonus action, you gain Temporary Hit Points equal to your Proficiency Bonus.</p>\n<p>You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "@prof"
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Hiisi",
+    "activities": {
+      "actAdrenRush0001": {
+        "_id": "actAdrenRush0001",
+        "type": "heal",
+        "name": "Adrenaline Rush",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false,
+          "type": "self"
+        },
+        "healing": {
+          "number": null,
+          "denomination": null,
+          "types": [
+            "temphp"
+          ],
+          "custom": {
+            "enabled": true,
+            "formula": "@prof"
+          },
+          "scaling": {
+            "mode": "whole",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "adrenaline-rush"
+  },
+  "_key": "!items!SpcHiiAdrenRush1"
+}

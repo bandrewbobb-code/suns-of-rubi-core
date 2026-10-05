@@ -1,0 +1,159 @@
+{
+  "_id": "EnfBrutalStrik01",
+  "name": "Brutal Strikes",
+  "type": "feat",
+  "img": "icons/skills/melee/unarmed-punch-fist-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Starting at 9th level, you can forgo Advantage on a <strong>Reckless Attack</strong> to deliver an overwhelming blow. When you make a Reckless Attack roll, you can choose to make the roll without Advantage. If the attack hits, the target suffers the attack's normal damage and you apply one of the following <strong>Brutal Strike</strong> effects:</p><ul><li><strong>Overwhelming Kinetic Force</strong>: The target takes an extra <strong>1d10</strong> kinetic damage. This increases to <strong>2d10</strong> at 17th level.</li><li><strong>Armor Sunder</strong>: The blow sunders the target's plating. The next attack roll made against the target by one of your allies before the start of your next turn deals an additional <strong>1d10</strong> damage if it hits.</li><li><strong>Brain Rattle</strong>: The concussive shock dazes the target. The target has <strong>Disadvantage on the next saving throw</strong> it makes before the start of your next turn.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Enforcer 9",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactBrutalDmg": {
+        "_id": "dnd5eactBrutalDmg",
+        "type": "damage",
+        "name": "Overwhelming Kinetic Force",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "When hitting with a Brutal Strike"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 10,
+              "bonus": "",
+              "types": [
+                "kinetic"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EnfBrutalStrik01"
+}

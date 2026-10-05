@@ -1,0 +1,65 @@
+{
+  "_id": "SpcCybIntegHard1",
+  "name": "Integrated Hardware",
+  "type": "feat",
+  "img": "icons/equipment/hand/glove-exoskeleton-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have one simple one-handed weapon or one tool kit directly built into your forearm chassis. You can deploy or retract this hardware as a Free Action on your turn. While integrated, the item cannot be disarmed, dropped, or removed against your will.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Cyborg",
+    "activities": {
+      "actIntegHardware1": {
+        "_id": "actIntegHardware1",
+        "type": "utility",
+        "name": "Deploy/Retract Hardware",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Free Action on your turn"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "integrated-hardware"
+  },
+  "_key": "!items!SpcCybIntegHard1"
+}

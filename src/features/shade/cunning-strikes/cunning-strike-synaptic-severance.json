@@ -1,0 +1,76 @@
+{
+  "_id": "CstSynapticSev01",
+  "name": "Cunning Strike: Synaptic Severance",
+  "type": "feat",
+  "img": "icons/magic/lightning/bolt-strike-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Cunning Strike (Cost: 4d6 Sneak Attack Dice, Prerequisite: Shade Level 5)</em></p><p>You deliver a paralyzing shock into the target's cranial link. The target must succeed on a Constitution saving throw against your Program Save DC or become Deafened and unable to execute nanoprograms, cast spells, or speak verbally until the end of its next turn.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "cunning-strike"
+    },
+    "requirements": "Shade 5",
+    "activities": {
+      "actCstSynapticSe": {
+        "_id": "actCstSynapticSe",
+        "type": "save",
+        "name": "Synaptic Severance Save",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "On dealing Sneak Attack damage (Cost: 4d6)"
+        },
+        "duration": {
+          "units": "round",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!CstSynapticSev01"
+}

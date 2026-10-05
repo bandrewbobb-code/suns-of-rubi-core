@@ -1,0 +1,41 @@
+{
+  "_id": "InscUntetherSoul",
+  "name": "Inscription: Untethered Soul",
+  "type": "feat",
+  "img": "icons/magic/movement/trail-streak-zigzag-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Novictum Inscription (Prerequisite: Shade Level 17)</em></p><p>You gain a permanent hovering speed equal to your walking speed. You can move through solid walls, shields, and structures up to 5 feet thick as if they were difficult terrain.</p><p>If you end your turn inside an object or barrier, you are safely shunted to the nearest unoccupied space you last occupied and take 1d10 Force damage.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "inscription"
+    },
+    "requirements": "Shade 17",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!InscUntetherSoul"
+}

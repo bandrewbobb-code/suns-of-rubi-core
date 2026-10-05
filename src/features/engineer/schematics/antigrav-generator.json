@@ -1,0 +1,41 @@
+{
+  "_id": "SchmAntigravGen1",
+  "name": "Schematic: Antigrav Generator",
+  "type": "feat",
+  "img": "icons/skills/trades/tools-wrench-screwdriver-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Installed on armor or vehicle: grants a flying speed of 60 feet (hover).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "schematic"
+    },
+    "requirements": "Engineer 9",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!SchmAntigravGen1"
+}

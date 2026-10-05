@@ -1,0 +1,32 @@
+{
+  "_id": "ModClusterMunit1",
+  "name": "Cluster Munitions",
+  "type": "equipment",
+  "img": "icons/commodities/tech/chip-integrated-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Type:</strong> Weapon Mod (Launcher Mod, 1 slot)</p><p>Creatures that fail their Dexterity saving throw against this weapon's Payload blast take an additional 1d8 explosive damage from secondary submunitions.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 250,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 0.1,
+      "units": "lb"
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": "hardware-mod"
+    },
+    "equipped": false,
+    "activities": {}
+  },
+  "_key": "!items!ModClusterMunit1"
+}

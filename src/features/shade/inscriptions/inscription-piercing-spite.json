@@ -1,0 +1,41 @@
+{
+  "_id": "InscPiercingSpit",
+  "name": "Inscription: Piercing Spite",
+  "type": "feat",
+  "img": "icons/magic/death/skull-energy-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Novictum Inscription (Prerequisite: Shade Level 5)</em></p><p>Whenever you hit with a weapon attack or unarmed strike, you can cause the attack and your Sneak Attack damage to deal Necrotic damage instead of its normal damage type. Additionally, your Sneak Attack damage ignores resistance to Necrotic damage.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "inscription"
+    },
+    "requirements": "Shade 5",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!InscPiercingSpit"
+}

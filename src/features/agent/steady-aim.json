@@ -1,0 +1,52 @@
+{
+  "_id": "AgtSteadyAim0001",
+  "name": "Steady Aim",
+  "type": "feat",
+  "img": "icons/skills/targeting/crosshair-scoped-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 3rd level, as a <strong>Bonus Action</strong>, you give yourself Advantage on your next attack roll on the current turn. You can use this bonus action only if you haven't moved during this turn, and after you use the bonus action, your speed is 0 until the end of the current turn.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Agent 3",
+    "activities": {
+      "actSteadyAim0001": {
+        "_id": "actSteadyAim0001",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "Usable only if not moved this turn; sets speed to 0"
+        },
+        "name": "Steady Aim"
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AgtSteadyAim0001"
+}

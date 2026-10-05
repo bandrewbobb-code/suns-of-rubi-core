@@ -1,0 +1,51 @@
+{
+  "_id": "7dcb6ec471ff5382",
+  "_key": "!items!7dcb6ec471ff5382",
+  "name": "Frontier Outrunner",
+  "type": "background",
+  "img": "icons/environment/wilderness/camp-tent-night.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have carved out a living along the lawless fringes of the galaxy. Whether traveling between orbital platforms, scavenging ancient derelicts, or trading along fringe outposts, your planetary upbringing has left an indelible mark on your survival conditioning.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "advancement": [
+      {
+        "_id": "23ced63311dbec0e",
+        "type": "ItemChoice",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "pool": [
+                "Compendium.suns-of-rubi-core.feats.Item.3d4d0aceaece8921",
+                "Compendium.suns-of-rubi-core.feats.Item.f28b73c77a2bdb4e",
+                "Compendium.suns-of-rubi-core.feats.Item.71874f11d5c3c34a",
+                "Compendium.suns-of-rubi-core.feats.Item.f8e2ac4ac6db8d0e",
+                "Compendium.suns-of-rubi-core.feats.Item.85e083e92b2962eb",
+                "Compendium.suns-of-rubi-core.feats.Item.5b97a357cb78679e",
+                "Compendium.suns-of-rubi-core.feats.Item.2c4ea9bce1119d11",
+                "Compendium.suns-of-rubi-core.feats.Item.b4736494fabb784f",
+                "Compendium.suns-of-rubi-core.feats.Item.7b683bbec6698950",
+                "Compendium.suns-of-rubi-core.feats.Item.4de3001b516186eb",
+                "Compendium.suns-of-rubi-core.feats.Item.efb4ede260c75071",
+                "Compendium.suns-of-rubi-core.feats.Item.5adc1545d4e698a7",
+                "Compendium.suns-of-rubi-core.feats.Item.31beb659f8a728b1",
+                "Compendium.suns-of-rubi-core.feats.Item.923ad738e1661bf9"
+              ]
+            }
+          },
+          "allowDrops": true,
+          "type": "feat",
+          "restriction": {
+            "type": "origin"
+          }
+        },
+        "title": "Homeworld Origin Feat",
+        "icon": "icons/magic/symbols/star-solid-gold.webp"
+      }
+    ]
+  }
+}

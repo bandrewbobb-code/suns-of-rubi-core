@@ -1,0 +1,61 @@
+{
+  "_id": "EngSupremeCreat1",
+  "name": "Supreme Creator",
+  "type": "feat",
+  "img": "icons/magic/control/silhouette-aura-energy-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 20th level, you transcend biological limitations and achieve mechanical apotheosis:</p>\n<ul>\n  <li>Your <strong>Intelligence score increases by 2</strong>, and your maximum for that score is now 22.</li>\n  <li><strong>Mechanical Ascension:</strong> Your creature type becomes <strong>Construct</strong> in addition to your other types. You are immune to critical hits, and your natural lifespan increases by 500 years.</li>\n  <li><strong>Perfect Repair:</strong> As an <strong>Action</strong>, you touch the remains of a destroyed construct, vehicle, or structure (up to a 100-foot cube). It is completely restored to full functionality with maximum hit points. Once you use this feature, you must finish <strong>1d4 Long Rests</strong> before you can use it again.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Engineer 20",
+    "activities": {
+      "actPerfectRepair": {
+        "_id": "actPerfectRepair",
+        "type": "heal",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "range": {
+          "units": "touch"
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "special": "Destroyed construct, vehicle, or structure"
+          }
+        },
+        "name": "Perfect Repair"
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EngSupremeCreat1"
+}

@@ -1,0 +1,162 @@
+{
+  "_id": "ShdCunningActn01",
+  "name": "Cunning Action",
+  "type": "feat",
+  "img": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a Bonus Action on each of your turns in combat to take the <strong>Dash</strong>, <strong>Disengage</strong>, or <strong>Hide</strong> action.</p><p><strong>Shadow Step:</strong> When you take this Bonus Action while in dim light or darkness, you can spend 1 Nanopool point to teleport up to 15 feet to an unoccupied space you can see that is also in dim light or darkness as part of the same Bonus Action.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Shade 2",
+    "activities": {
+      "actShdDash000001": {
+        "_id": "actShdDash000001",
+        "type": "utility",
+        "name": "Cunning Action: Dash",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "turn",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      },
+      "actShdDisengage1": {
+        "_id": "actShdDisengage1",
+        "type": "utility",
+        "name": "Cunning Action: Disengage",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "turn",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      },
+      "actShdHide000001": {
+        "_id": "actShdHide000001",
+        "type": "utility",
+        "name": "Cunning Action: Hide",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      },
+      "actShdShadowStep": {
+        "_id": "actShdShadowStep",
+        "type": "utility",
+        "name": "Shadow Step Teleport",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "In dim light or darkness as part of Cunning Action"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "range": {
+          "value": "15",
+          "units": "ft"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "value",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ShdCunningActn01"
+}

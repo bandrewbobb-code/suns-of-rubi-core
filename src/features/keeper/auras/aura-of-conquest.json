@@ -1,0 +1,83 @@
+{
+  "_id": "AuraConquest0001",
+  "name": "Aura: Aura of Conquest",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-glowing-triangle-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>You project an aura of suffocating terror out to your aura radius.</p><p>Whenever an enemy creature that is <strong>Frightened</strong> starts its turn in your aura, it suffers <strong>4 Slowed levels</strong> (its speed is reduced by 20 feet) and takes psychic damage equal to <strong>half your Keeper level</strong> (rounded down).</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "aura"
+    },
+    "requirements": "Keeper 3",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AuraConquest0001"
+}

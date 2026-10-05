@@ -1,0 +1,56 @@
+{
+  "_id": "EngManufacture01",
+  "name": "Manufacture",
+  "type": "feat",
+  "img": "icons/tools/smithing/anvil.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 1st level, you possess extraordinary industrial expertise:</p>\n<ul>\n  <li><strong>Tool Expertise:</strong> Your proficiency bonus is doubled for any ability check that uses your tool proficiencies.</li>\n  <li><strong>Accelerated Fabrication:</strong> Your downtime required to craft mundane items, weapons, armor, and gear is halved.</li>\n  <li><strong>Instantaneous Print:</strong> As an <strong>Action</strong>, you activate your micro-fabricator to synthesize one piece of nonmagical adventuring gear or tool worth up to <strong>500 credits</strong> (increasing to <strong>2,000 credits at 10th level</strong>). The item functions for until your next Long Rest before decomposing into inert nanite dust. You can use this feature a number of times equal to your Intelligence modifier (minimum of 1), regaining all uses on a <strong>Long Rest</strong>.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "@abilities.int.mod"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Engineer 1",
+    "activities": {
+      "actInstantPrint1": {
+        "_id": "actInstantPrint1",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "name": "Instantaneous Print"
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EngManufacture01"
+}

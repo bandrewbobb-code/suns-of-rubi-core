@@ -1,0 +1,76 @@
+{
+  "_id": "de0f158ecf13db7f",
+  "_key": "!items!de0f158ecf13db7f",
+  "name": "Fighting Forms",
+  "type": "feat",
+  "img": "icons/weapons/swords/sword-energy-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have learned specialized Source Weapon Fighting Forms. You can assume a Fighting Form using a Bonus Action on your turn, maintaining its benefits until your following turn begins.</p><p><strong>Form Save DC:</strong> 8 + Proficiency Bonus + your Wisdom or Charisma Modifier (your choice).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Source Weapon Proficiency",
+    "activities": {},
+    "identifier": "fighting-forms",
+    "advancement": [
+      {
+        "_id": "advFightForm001",
+        "type": "ItemChoice",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "pool": [
+                "Compendium.suns-of-rubi-core.feats.Item.dc19e0543abf819f",
+                "Compendium.suns-of-rubi-core.feats.Item.c48a30dd6a04d251",
+                "Compendium.suns-of-rubi-core.feats.Item.dd410ba9b4db2096",
+                "Compendium.suns-of-rubi-core.feats.Item.86f1df566639862d",
+                "Compendium.suns-of-rubi-core.feats.Item.0ad79d9d627aef07",
+                "Compendium.suns-of-rubi-core.feats.Item.1c7bd6b7ed0cf0f1",
+                "Compendium.suns-of-rubi-core.feats.Item.f872303f05b01bfc",
+                "Compendium.suns-of-rubi-core.feats.Item.ac66e6d5874c0b07",
+                "Compendium.suns-of-rubi-core.feats.Item.8cefc2bd0106ca5a",
+                "Compendium.suns-of-rubi-core.feats.Item.0cf855686a8abb91",
+                "Compendium.suns-of-rubi-core.feats.Item.77169c232316ce1e",
+                "Compendium.suns-of-rubi-core.feats.Item.780e36cef3520881",
+                "Compendium.suns-of-rubi-core.feats.Item.fb540314507c2868",
+                "Compendium.suns-of-rubi-core.feats.Item.d693743d0278edb3",
+                "Compendium.suns-of-rubi-core.feats.Item.a05bf5fbda8e1bec",
+                "Compendium.suns-of-rubi-core.feats.Item.b0fa4b8d2959d4e3",
+                "Compendium.suns-of-rubi-core.feats.Item.15929acc3e9c4a2a",
+                "Compendium.suns-of-rubi-core.feats.Item.e5f7c2320088aee7",
+                "Compendium.suns-of-rubi-core.feats.Item.062168758a6376f7",
+                "Compendium.suns-of-rubi-core.feats.Item.ab690bc44eb7095f"
+              ]
+            }
+          },
+          "allowDrops": true,
+          "type": "feat",
+          "restriction": {
+            "type": "form"
+          }
+        },
+        "title": "Fighting Form Selection",
+        "icon": "icons/weapons/swords/sword-energy-glowing-blue.webp"
+      }
+    ]
+  }
+}

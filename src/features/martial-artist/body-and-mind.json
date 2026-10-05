@@ -1,0 +1,41 @@
+{
+  "_id": "MaBodyAndMind001",
+  "name": "Body and Mind",
+  "type": "feat",
+  "img": "icons/magic/light/explosion-star-glow-silhouette.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have attained the pinnacle of martial perfection. Your Dexterity, Strength, and Wisdom scores each increase by 2, and their maximums become 24.</p><p>Additionally, when you score a critical hit with a Finishing Strike, you can execute one additional Finishing Strike on your next attack during the same turn before resetting your combo rhythm back to Neutral State.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Martial Artist 20",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MaBodyAndMind001"
+}

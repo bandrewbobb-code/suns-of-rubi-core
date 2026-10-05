@@ -1,0 +1,149 @@
+{
+  "_id": "WpnLinearRailgn1",
+  "name": "Linear Fusion Railgun",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-blaster-laser-silver.webp",
+  "system": {
+    "description": {
+      "value": "<p>Dual-mode electromagnetic rail accelerator firing concentrated beam bursts or hyper-dense kinetic slugs.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 1800,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 18,
+      "units": "lb"
+    },
+    "type": {
+      "value": "martialR",
+      "baseItem": "linear-fusion-railgun"
+    },
+    "damage": {
+      "base": {
+        "number": 2,
+        "denomination": 8,
+        "types": [
+          "radiant"
+        ]
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": []
+      }
+    },
+    "range": {
+      "value": 150,
+      "long": 600,
+      "units": "ft"
+    },
+    "mastery": "topple",
+    "properties": [
+      "hvy",
+      "two",
+      "energy-projectiles",
+      "high-recoil-str-15",
+      "lod",
+      "reload-3"
+    ],
+    "activities": {
+      "mainAttack000001": {
+        "_id": "mainAttack000001",
+        "type": "attack",
+        "name": "Strike",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "range": {
+          "value": "150",
+          "long": "600",
+          "units": "ft"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false,
+          "count": 1,
+          "type": "creature"
+        },
+        "attack": {
+          "ability": "dex",
+          "bonus": "",
+          "critical": {
+            "threshold": 20
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      },
+      "auxActivity00001": {
+        "_id": "auxActivity00001",
+        "type": "attack",
+        "name": "Kinetic Slug Mode",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "value": "150",
+          "long": "600",
+          "units": "ft"
+        },
+        "attack": {
+          "ability": "str",
+          "type": {
+            "value": "ranged",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "parts": [
+            {
+              "number": 3,
+              "denomination": 10,
+              "types": [
+                "piercing"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!WpnLinearRailgn1"
+}

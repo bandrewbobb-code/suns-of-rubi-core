@@ -1,0 +1,54 @@
+{
+  "_id": "308d329c94b7cf09",
+  "name": "Encrypted Message",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-mattermet.webp",
+  "system": {
+    "description": {
+      "value": "<p>You transmit a tight-beam, quantum-encrypted audio packet directly to a target's comms receiver within range. The target hears the message in its receiver and can reply in a whisper that only you hear.<br><br><strong>Overclock:</strong> Range 300 ft at 5th, 1,000 ft at 11th, 1 mile at 17th.</p><p><strong>Operating Systems:</strong> Agent, Bureaucrat, Fixer, Trader</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 0 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 0,
+    "school": "trs",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "round"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 120,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "dcd93aac51d80371": {
+        "_id": "dcd93aac51d80371",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        }
+      }
+    }
+  },
+  "_key": "!items!308d329c94b7cf09"
+}

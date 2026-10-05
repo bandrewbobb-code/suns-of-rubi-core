@@ -1,0 +1,15 @@
+2026/09/24-16:16:50.937 12328 Recovering log #103
+2026/09/24-16:16:50.940 12328 Delete type=0 #103
+2026/09/24-16:16:50.940 12328 Delete type=3 #101
+2026/09/24-16:16:50.970 1207c Level-0 table #109: started
+2026/09/24-16:16:50.975 1207c Level-0 table #109: 35624 bytes OK
+2026/09/24-16:16:50.977 1207c Delete type=0 #107
+2026/09/24-16:16:50.977 1207c Manual compaction at level-0 from '!items!AdventurerCls001' @ 72057594037927935 : 1 .. '!items!TraderClass00001' @ 0 : 0; will stop at (end)
+2026/09/24-16:16:50.977 1207c Manual compaction at level-1 from '!items!AdventurerCls001' @ 72057594037927935 : 1 .. '!items!TraderClass00001' @ 0 : 0; will stop at '!items!TraderClass00001' @ 217 : 1
+2026/09/24-16:16:50.977 1207c Compacting 1@1 + 1@2 files
+2026/09/24-16:16:50.982 1207c Generated table #110@1: 14 keys, 35624 bytes
+2026/09/24-16:16:50.982 1207c Compacted 1@1 + 1@2 files => 35624 bytes
+2026/09/24-16:16:50.983 1207c compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/09/24-16:16:50.983 1207c Delete type=2 #105
+2026/09/24-16:16:50.983 1207c Delete type=2 #109
+2026/09/24-16:16:50.983 1207c Manual compaction at level-1 from '!items!TraderClass00001' @ 217 : 1 .. '!items!TraderClass00001' @ 0 : 0; will stop at (end)

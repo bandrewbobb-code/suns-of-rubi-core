@@ -1,0 +1,83 @@
+{
+  "_id": "NtNanoProg000001",
+  "name": "Nanoprogramming",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-star-pentagon-cyan.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 1st level, your cutting-edge compiler and cyberdeck architecture grant you full nanocasting progression in offensive, defensive, and utility nanoprograms, scaling from Tier 1 up to Tier 9 apex routines.</p><h3>Intelligence Nanocasting</h3><p><strong>Intelligence</strong> is your nanocasting ability for Nano-Technician nanoprograms, reflecting your processing power and algorithm architecture.</p><ul><li><strong>Program Save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</li><li><strong>Program Attack Modifier</strong> = your proficiency bonus + your Intelligence modifier</li></ul><h3>Programs Known</h3><p>You know <strong>9 nanoprograms</strong> of your choice from the Nano-Technician Operating System at 1st level, and learn additional programs as shown on the class table.</p><h3>Nanopool Formula</h3><p>Your maximum Nanopool points equal <strong>(Nano-Technician level &times; 4) + your Intelligence modifier</strong> (minimum 1 point). You regain all expended Nanopool points when you finish a <strong>Long Rest</strong>.</p><h3>Max Power Level & Apex Programs</h3><p>Executing nanoprograms of <strong>6th, 7th, 8th, or 9th tier</strong> requires immense processor synchronization. You can execute each program of 6th tier or higher once per <strong>Long Rest</strong>.</p><h3>Cyberdeck Requirement</h3><p>Executing nanoprograms requires you to have at least <strong>one hand free</strong> to operate an equipped cyberdeck or neural input sleeve.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Nano-Technician 1",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!NtNanoProg000001"
+}

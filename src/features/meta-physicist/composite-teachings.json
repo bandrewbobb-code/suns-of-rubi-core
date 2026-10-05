@@ -1,0 +1,71 @@
+{
+  "_id": "MpCompositeTeach",
+  "name": "Composite Teachings",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-carved-stone-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Starting at 5th level, whenever you finish a Short or Long Rest, you broadcast a persistent carrier wave to a number of willing allies within 30 feet equal to your Proficiency Bonus. You and affected allies gain the following benefits:</p><ul><li><strong>Harmonic Resonance:</strong> When you roll damage or healing for a nanoprogram of 1st tier or higher, you add your Wisdom modifier to one roll.</li><li><strong>Neuron-Notum Interface:</strong> Your maximum overclock tier increases by +1 (<code>@scale.meta-physicist.composite-overclock</code>; +2 at 13th level, +3 at 17th level).</li><li><strong>Notum Recycler:</strong> Whenever you score a critical hit with a program attack, an enemy rolls a natural 1 on a saving throw against your programs, or you execute a program at your maximum overclock tier, you immediately regain 2 Nanopool points (<code>@scale.meta-physicist.composite-recycler</code>; 4 NP at 13th level, 6 NP at 17th level).</li></ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Meta-Physicist 5",
+    "activities": {
+      "actMpCarrierWave": {
+        "_id": "actMpCarrierWave",
+        "type": "utility",
+        "name": "Broadcast Carrier Wave",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Finish a Short or Long Rest"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "range": {
+          "value": "30",
+          "units": "ft"
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MpCompositeTeach"
+}

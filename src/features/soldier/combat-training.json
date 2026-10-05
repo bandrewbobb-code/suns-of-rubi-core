@@ -1,0 +1,156 @@
+{
+  "_id": "SolCombatTrain01",
+  "name": "Combat Training",
+  "type": "feat",
+  "img": "icons/skills/combat/hand-to-hand-fighting-stance.webp",
+  "system": {
+    "description": {
+      "value": "<h3>Fighting Style</h3>\n<p>You have honed your martial prowess and gain one Fighting Style of your choice. Whenever you gain a Soldier level, you can replace the chosen Fighting Style with another one of your choice.</p>\n<h3>Weapon Mastery</h3>\n<p>Your training with weapons allows you to use the mastery properties of three kinds of weapons of your choice with which you have proficiency. Whenever you finish a <strong>Long Rest</strong>, you can change the kinds of weapons you have chosen.</p>\n<h3>Second Wind</h3>\n<p>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a <strong>Bonus Action</strong> to regain hit points equal to <strong>1d10 + your Soldier level</strong>.</p>\n<p>You can use this feature a number of times equal to your <strong>Proficiency Bonus</strong> (`@prof`). You regain one expended use when you finish a <strong>Short Rest</strong>, and all expended uses when you finish a <strong>Long Rest</strong>. You can also expend 2 Nanopool points to regain one expended use of Second Wind.</p>\n<h3>Tactical Mind</h3>\n<p>When you fail an ability check, you can expend one use of your <strong>Second Wind</strong> (or spend 2 Nanopool points) to push yourself toward success. Rather than rolling the die and regaining hit points, you roll <strong>1d10</strong> and add the number rolled to the ability check, potentially turning the failure into a success. If the check still fails, this use of Second Wind is not expended.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        },
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "@scale.soldier.second-wind-uses"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Soldier 1",
+    "activities": {
+      "actSecondWind001": {
+        "_id": "actSecondWind001",
+        "type": "heal",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": 0,
+            "contiguous": false,
+            "type": "",
+            "size": 0,
+            "width": 0,
+            "height": 0,
+            "units": "ft"
+          }
+        },
+        "range": {
+          "units": "self",
+          "special": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "healing": {
+          "number": 1,
+          "denomination": 10,
+          "bonus": "@classes.soldier.levels",
+          "types": [
+            "healing"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "whole",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "name": "Second Wind",
+        "img": "",
+        "appliedEffects": []
+      },
+      "actTacticalMind01": {
+        "_id": "actTacticalMind01",
+        "type": "utility",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "When you fail an ability check"
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": 0,
+            "contiguous": false,
+            "type": "",
+            "size": 0,
+            "width": 0,
+            "height": 0,
+            "units": "ft"
+          }
+        },
+        "range": {
+          "units": "self",
+          "special": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "name": "Tactical Mind Check Bonus",
+          "formula": "1d10"
+        },
+        "name": "Tactical Mind",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!SolCombatTrain01"
+}

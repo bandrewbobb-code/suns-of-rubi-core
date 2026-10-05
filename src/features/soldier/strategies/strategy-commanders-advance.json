@@ -1,0 +1,41 @@
+{
+  "_id": "StratCmdrsAdvnc1",
+  "name": "Strategy: Commander's Advance",
+  "type": "feat",
+  "img": "icons/skills/melee/spear-thrust-thrusting-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Tactical Strike Enhancement</em></p>\n<p>Whenever you trigger a <strong>Natural 16–20</strong> on a weapon attack as part of your Tactical Strikes, you can call in a synchronized strike. One ally within <strong>30 feet</strong> who can see or hear you can use its <strong>Reaction</strong> to immediately make one weapon attack or cast an At-Will nanoprogram (cantrip).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "strategy"
+    },
+    "requirements": "Soldier 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!StratCmdrsAdvnc1"
+}

@@ -1,0 +1,67 @@
+{
+  "_id": "MaNanoProg000001",
+  "name": "Nanoprogramming",
+  "type": "feat",
+  "img": "icons/magic/symbols/circle-outer-ring-cyan.webp",
+  "system": {
+    "description": {
+      "value": "<p>You learn to focus your internal bio-electrical flow through nanotech augmentation, deploying utilitarian combat programs to alter kinetic impact and bodily physiology.</p><p><strong>Progression:</strong> You follow a 1/3-caster progression (Tiers 1–4).</p><p><strong>Wisdom Nanocasting:</strong> Wisdom is your nanocasting ability for your martial nanoprograms.</p><p><strong>Programs Known:</strong> You know 2 nanoprograms of 1st tier at 1st level.</p><p><strong>Nanopool Points:</strong> You possess a pool of Nanopool points equal to your Martial Artist Level + your Wisdom modifier. Expended Nanopool points are restored when you finish a Long Rest.</p><p><strong>Execution Requirement:</strong> Executing your martial nanoprograms requires at least one free hand to project nanites or channel somatic focal katas.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Martial Artist 1",
+    "activities": {
+      "actMaNanoPoolRec": {
+        "_id": "actMaNanoPoolRec",
+        "type": "utility",
+        "name": "Nanopool Recovery",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Finish a Long Rest"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MaNanoProg000001"
+}

@@ -1,0 +1,154 @@
+{
+  "_id": "DealVoxelFlashb1",
+  "name": "Deal: Voxel Flashbang",
+  "type": "feat",
+  "img": "icons/commodities/materials/scrap-circuit-board.webp",
+  "system": {
+    "description": {
+      "value": "<p>Whenever one of your active decoys is destroyed by an attack within 10 feet of the attacker, the decoy bursts into high-candela photon glare. The attacker must succeed on a <strong>Constitution saving throw</strong> against your Program Save DC or become <strong>Blinded</strong> until the start of its next turn.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "deal"
+    },
+    "requirements": "Fixer 13, Grid Armor",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactVoxelFlash": {
+        "_id": "dnd5eactVoxelFlash",
+        "type": "save",
+        "name": "Voxel Flashbang Burst",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "When decoy destroyed within 10 ft of attacker"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "round",
+          "value": "1",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "value": "10",
+          "units": "ft",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": "the attacker"
+          },
+          "prompt": true,
+          "override": false
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": []
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DealVoxelFlashb1"
+}

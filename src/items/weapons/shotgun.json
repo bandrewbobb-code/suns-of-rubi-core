@@ -1,0 +1,151 @@
+{
+  "_id": "WpnShotgun000001",
+  "name": "Shotgun",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-blaster-laser-silver.webp",
+  "system": {
+    "description": {
+      "value": "<p>Reliable pump-action scattergun devastating in close quarters with cone spray capabilities.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 600,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 5,
+      "units": "lb"
+    },
+    "type": {
+      "value": "martialR",
+      "baseItem": "shotgun"
+    },
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": 10,
+        "types": [
+          "piercing"
+        ]
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": []
+      }
+    },
+    "range": {
+      "value": 60,
+      "long": 240,
+      "units": "ft"
+    },
+    "mastery": "vex",
+    "properties": [
+      "fin",
+      "close-quarters",
+      "reload-6"
+    ],
+    "activities": {
+      "mainAttack000001": {
+        "_id": "mainAttack000001",
+        "type": "attack",
+        "name": "Strike",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "range": {
+          "value": "60",
+          "long": "240",
+          "units": "ft"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false,
+          "count": 1,
+          "type": "creature"
+        },
+        "attack": {
+          "ability": "dex",
+          "bonus": "",
+          "critical": {
+            "threshold": 20
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      },
+      "auxActivity00001": {
+        "_id": "auxActivity00001",
+        "type": "save",
+        "name": "Scatter Blast",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "Expend 1 shell"
+        },
+        "target": {
+          "template": {
+            "type": "cone",
+            "size": "15",
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "dex",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 10,
+              "types": [
+                "piercing"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!WpnShotgun000001"
+}

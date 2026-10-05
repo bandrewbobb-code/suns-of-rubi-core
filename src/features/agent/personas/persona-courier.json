@@ -1,0 +1,55 @@
+{
+  "_id": "PersOfCourier001",
+  "name": "Persona of the Courier",
+  "type": "feat",
+  "img": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Passive Alias:</strong> Your walking speed increases by <strong>10 feet</strong>, and you gain proficiency in Piloting and Land Vehicles.</p>\n<p><strong>Active Burn:</strong> As a <strong>Bonus Action</strong>, you engage a locomotive overclock for <strong>1 minute</strong>. You can take the <strong>Dash or Disengage action as a Bonus Action</strong> on each of your turns, and your jump distance is tripled.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "persona"
+    },
+    "requirements": "Agent 2",
+    "activities": {
+      "actBurnCourier01": {
+        "_id": "actBurnCourier01",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "name": "Active Burn: Locomotive Overclock"
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!PersOfCourier001"
+}

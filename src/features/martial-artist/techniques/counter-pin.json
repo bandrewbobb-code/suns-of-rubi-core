@@ -1,0 +1,80 @@
+{
+  "_id": "TechCounterPin01",
+  "name": "Counter Pin",
+  "type": "feat",
+  "img": "icons/skills/melee/unarmed-punch-fist.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Martial Technique</em></p><p>While in Flow State, when a creature within 5 feet of you misses you with a melee attack, you can use your reaction to force that creature to make a Dexterity saving throw against your Program DC. On a failed save, the creature is knocked Prone.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "technique"
+    },
+    "requirements": "Martial Artist 2",
+    "activities": {
+      "actTechCounterPin": {
+        "_id": "actTechCounterPin",
+        "type": "save",
+        "name": "Counter Pin Save",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "In Flow State, when missed by a melee attack within 5 ft"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "range": {
+          "value": "5",
+          "units": "ft"
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TechCounterPin01"
+}

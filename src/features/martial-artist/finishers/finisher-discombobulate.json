@@ -1,0 +1,76 @@
+{
+  "_id": "FinDiscombobulat",
+  "name": "Finisher: Discombobulate",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-punch-fist-white.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Finisher (Prerequisite: None)</em></p><p>You deliver an acoustic shockwave or disorienting strike directly to the target's auditory and neural sensors. Make an unarmed strike. On a hit, the target must make a Constitution saving throw against your Program DC. On a failed save, the target is Blinded, Deafened, or unable to speak (your choice) for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If the attack was a critical hit, the target has Disadvantage on saving throws against this effect.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "finisher"
+    },
+    "requirements": "Martial Artist 2",
+    "activities": {
+      "actFinDiscombob01": {
+        "_id": "actFinDiscombob01",
+        "type": "save",
+        "name": "Discombobulate Con Save",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Hit with Finisher: Discombobulate"
+        },
+        "duration": {
+          "units": "minute",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FinDiscombobulat"
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "f6cc7140c1572c36",
+  "name": "Trader OS Directory",
+  "pages": [
+    {
+      "_id": "35ea416461d4c2ae",
+      "name": "Trader OS Catalog",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Trader Operating System</h1><p>This directory catalogs all compiled nano-formulas available to the <strong>Trader</strong> OS. Click any entry to inspect its telemetry, or drag the link directly onto your character sheet to install the routine into your NCU.</p><h2>Tier 0: At-Will Routines (9)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.835e75a61e8e102c]{Aimbot}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.c3f0593fe9b650ed]{Befriend}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.308d329c94b7cf09]{Encrypted Message}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.6c812c1e7194c7a6]{Guidance}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.0002e80c124ad7a0]{Leech}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.23132ad56e29826d]{Mending}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.15b958932e6543ba]{Performance Review}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.e4a9fbd7a14d6edd]{Shocking Grasp}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.fce1a55b6cdcafcb]{Utility Cloud}</li></ul><h2>Tier 1: Leveled Nanoprograms (13)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.087182f47f688efb]{6,000,000,000 Forms of Communication}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.15c501710eba1485]{Bend Will}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.6c82676baf7f00cc]{Command}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.585c68353decaca0]{Deep Scan}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.5afedabc6a22bb0d]{Demotivational Speech}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.5e1ea1066da48023]{Entangle}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.a9db968240766789]{Ghost Drone}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.aada4c03b43a7992]{Hedge Risk}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.ade46f449f49bf58]{Hover-Sled}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.50035b4747243f7b]{Mask}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.0cbf972637ac96ae]{Neuro-Spasm}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.ff15d310907685f9]{Ransack}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.d33ae0c470daafa6]{Slick}</li></ul>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "_key": "!journal.pages!f6cc7140c1572c36.35ea416461d4c2ae"
+    }
+  ],
+  "ownership": {
+    "default": 2
+  },
+  "_key": "!journal!f6cc7140c1572c36"
+}

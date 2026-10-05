@@ -1,0 +1,68 @@
+{
+  "_id": "7ead785bb1bafdfd",
+  "name": "Bio-Shield",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-mattermet.webp",
+  "system": {
+    "description": {
+      "value": "<p>Project an electromagnetic bio-harmonic barrier around a willing creature. Aberrations, rogue Constructs, and Fiends have Disadvantage on attack rolls against target, and target cannot be Charmed, Frightened, or Possessed by them.</p><p><strong>Operating Systems:</strong> Adventurer, Doctor, Enforcer, Keeper</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "abj",
+    "properties": [
+      "concentration",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "touch"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "f297f3cf3d2f5598": {
+        "_id": "f297f3cf3d2f5598",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!7ead785bb1bafdfd"
+}

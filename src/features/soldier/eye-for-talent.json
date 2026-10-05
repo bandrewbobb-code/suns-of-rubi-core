@@ -1,0 +1,89 @@
+{
+  "_id": "SolEyeForTalent1",
+  "name": "Eye for Talent",
+  "type": "feat",
+  "img": "icons/magic/perception/eye-slit-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 4th level, you can assess a combatant's operational parameters with a glance. As a <strong>Bonus Action</strong>, make an Intelligence (Search) check against a creature you can see within <strong>30 feet</strong>. The DC equals <strong>8 + the creature's Challenge Rating (CR)</strong>. If you hit the creature with a weapon attack within the past minute, you add your Soldier level to this check.</p>\n<p>On a success, you learn one of the following pieces of tactical intel of your choice:</p>\n<ul>\n  <li>Armor Class (AC)</li>\n  <li>Highest and lowest ability score</li>\n  <li>Special senses (such as Darkvision, Blindsight, or Tremorsense)</li>\n  <li>Damage Resistances, Immunities, and Vulnerabilities</li>\n  <li>Condition Immunities</li>\n  <li>One trait, feature, or action from its stat block</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Soldier 4",
+    "activities": {
+      "actEyeForTalent1": {
+        "_id": "actEyeForTalent1",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": "Creature you can see within 30 ft"
+          },
+          "template": {
+            "count": 0,
+            "contiguous": false,
+            "type": "",
+            "size": 0,
+            "width": 0,
+            "height": 0,
+            "units": "ft"
+          }
+        },
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "special": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "name": "Search Check",
+          "formula": "1d20 + @skills.inv.total"
+        },
+        "name": "Eye for Talent Assessment",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!SolEyeForTalent1"
+}

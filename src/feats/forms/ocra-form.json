@@ -1,0 +1,65 @@
+{
+  "_id": "d693743d0278edb3",
+  "_key": "!items!d693743d0278edb3",
+  "name": "Ocra Form [Replaces Trakata Form]",
+  "type": "feat",
+  "img": "icons/weapons/swords/sword-energy-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>As a part of the bonus action to adopt this form, flourish your weapon to distract an enemy. Make a Dexterity (Sleight of Hand) or Charisma (Deception) check contested by a Wisdom (Perception) check of one creature within 5 feet. On a success, it has disadvantage on its next attack against you.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "form",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Source Weapon Proficiency",
+    "activities": {
+      "45b544433d2307a0": {
+        "_id": "45b544433d2307a0",
+        "type": "utility",
+        "name": "Adopt Ocra Form",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "ocra-form"
+  }
+}

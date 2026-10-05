@@ -6,7 +6,9 @@
     "description": {
       "value": "<p>Beginning at 14th level, when you are forced to make a <strong>saving throw</strong> caused by an effect you can see, you can add a bonus equal to your <strong>Charisma modifier</strong> to the roll.</p><p>You can use this feature a number of times equal to your <strong>Proficiency Bonus</strong> per <strong>Long Rest</strong>.</p><hr /><h3>Unshakeable Poise (17th Level)</h3><p>At 17th level, you gain <strong>1 additional use</strong> of this feature per Long Rest.</p>"
     },
-    "source": { "custom": "Suns of Rubi" },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
     "type": {
       "value": "class",
       "subtype": ""
@@ -30,17 +32,24 @@
               "type": "itemUses",
               "target": "",
               "value": "1",
-              "scaling": { "mode": "", "formula": "" }
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
             }
           ],
-          "scaling": { "allowed": false }
+          "scaling": {
+            "allowed": false
+          }
         },
         "duration": {
           "units": "inst",
           "concentration": false,
           "override": false
         },
-        "range": { "override": false },
+        "range": {
+          "override": false
+        },
         "target": {
           "template": {
             "count": "",
@@ -60,29 +69,75 @@
           "prompt": false,
           "override": false
         },
-        "uses": { "spent": 0, "max": "", "recovery": [] },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
         "sort": 0
       }
     },
-    "activation": { "type": "", "value": null, "condition": "" },
-    "duration": { "value": "", "units": "" },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
     "cover": null,
-    "target": { "value": null, "width": null, "units": "", "type": "", "prompt": true },
-    "range": { "value": null, "long": null, "units": "" },
-    "uses": { "value": "@prof", "max": "@prof", "per": "lr", "recovery": "", "prompt": false },
-    "consume": { "type": "", "target": null, "amount": null, "scale": false },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": "@prof",
+      "max": "@prof",
+      "per": "lr",
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
     "ability": null,
     "actionType": "",
     "chatFlavor": "Adds Charisma modifier to the saving throw.",
-    "critical": { "threshold": null, "damage": "" },
-    "damage": { "parts": [], "versatile": "" },
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
     "formula": "@abilities.cha.mod",
-    "save": { "ability": "", "dc": null, "scaling": "spell" }
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
   },
   "effects": [],
   "flags": {},
   "folder": null,
   "sort": 0,
-  "_stats": { "compendiumSource": null, "duplicateSource": null },
-  "_key": "!items!CalmCollect001"
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!CalmCollect001",
+  "_id": "CalmCollect001"
 }

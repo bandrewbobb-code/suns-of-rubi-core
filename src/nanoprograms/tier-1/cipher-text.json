@@ -1,0 +1,68 @@
+{
+  "_id": "44de1ec3b627fdc2",
+  "name": "Cipher Text",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-sensoryimp.webp",
+  "system": {
+    "description": {
+      "value": "<p>Encode data on a screen or datapad. Reads normally only to you and designated retinal profiles; appears illegible or displays spoofed content to unauthorized observers.</p><p><strong>Operating Systems:</strong> Agent, Bureaucrat, Fixer</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "ill",
+    "properties": [
+      "ritual",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "minute",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "10",
+      "units": "day"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "touch"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "e8d9ef9cb7764f6b": {
+        "_id": "e8d9ef9cb7764f6b",
+        "type": "utility",
+        "activation": {
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!44de1ec3b627fdc2"
+}

@@ -1,5 +1,0 @@
-2026/09/15-20:53:37.990 49bc Delete type=3 #1
-2026/09/15-20:53:37.999 7444 Level-0 table #5: started
-2026/09/15-20:53:38.003 7444 Level-0 table #5: 2190 bytes OK
-2026/09/15-20:53:38.004 7444 Delete type=0 #3
-2026/09/15-20:53:38.005 7444 Manual compaction at level-0 from '!items!BureaucratCls01' @ 72057594037927935 : 1 .. '!items!BureaucratCls01' @ 0 : 0; will stop at (end)

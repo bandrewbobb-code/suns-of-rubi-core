@@ -1,0 +1,34 @@
+{
+  "_id": "SpcGalOlfactSen1",
+  "name": "Olfactory Senses",
+  "type": "feat",
+  "img": "icons/creatures/mammals/wolf-head-howling-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your acute chemosensory chelicerae and nasal pits grant you Advantage on Wisdom (Perception) checks that rely on smell or airborne chemical tracking.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Galadon",
+    "activities": {},
+    "identifier": "olfactory-senses"
+  },
+  "_key": "!items!SpcGalOlfactSen1"
+}

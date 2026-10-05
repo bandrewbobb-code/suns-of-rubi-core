@@ -1,0 +1,167 @@
+{
+  "_id": "NtTechnoWizard01",
+  "name": "Techno-Wizard",
+  "type": "feat",
+  "img": "icons/magic/symbols/rune-sigil-horned-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 20th level, you have attained absolute mastery over the digital and physical fabric of nanite manipulation.</p><h3>Intelligence Increase</h3><p>Your <strong>Intelligence score increases by 4</strong>, and your maximum Intelligence score is now <strong>24</strong>.</p><h3>Signature Routine</h3><p>Choose one <strong>3rd-level nanoprogram</strong> that you know. You can execute that program at 3rd level <strong>without expending Nanopool points</strong> once per <strong>Short or Long Rest</strong>. If you apply Compiler Overclocks to this program, you must expend Nanopool points for the overclock as normal.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Nano-Technician 20",
+    "properties": [],
+    "advancement": [
+      {
+        "_id": "advNtTechnoASI01",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 0,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 4,
+            "wis": 0,
+            "cha": 0
+          },
+          "cap": 24
+        },
+        "value": {
+          "type": "asi",
+          "int": 4
+        },
+        "level": 20,
+        "title": "Intelligence Increase (+4, cap 24)"
+      }
+    ],
+    "activities": {
+      "dnd5eactSignRoutine": {
+        "_id": "dnd5eactSignRoutine",
+        "type": "utility",
+        "name": "Cast Signature Routine Free",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "1/Short or Long Rest for chosen 3rd-level program"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "sr",
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!NtTechnoWizard01"
+}

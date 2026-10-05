@@ -1,0 +1,32 @@
+{
+  "_id": "ModTrenchBarrel1",
+  "name": "Trench Barrel",
+  "type": "equipment",
+  "img": "icons/commodities/tech/chip-integrated-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Type:</strong> Weapon Mod (Thermal Edge Regulator, 1 slot)</p><p>Hitting a target with a melee attack grants a +2 bonus to ranged weapon damage rolls with this weapon until the end of your next turn.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 250,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 0.1,
+      "units": "lb"
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": "hardware-mod"
+    },
+    "equipped": false,
+    "activities": {}
+  },
+  "_key": "!items!ModTrenchBarrel1"
+}

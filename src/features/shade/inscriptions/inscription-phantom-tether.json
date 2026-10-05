@@ -1,0 +1,76 @@
+{
+  "_id": "InscPhantomTethe",
+  "name": "Inscription: Phantom Tether",
+  "type": "feat",
+  "img": "icons/magic/symbols/rune-sigil-hook-white-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Novictum Inscription (Prerequisite: Shade Level 7)</em></p><p>When you deal Sneak Attack damage to an Isolated Prey, you anchor its shadow to the physical plane. The target must succeed on a Strength saving throw against your Program Save DC or have its Speed halved and be unable to move more than 30 feet away from that space until the end of its next turn.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "inscription"
+    },
+    "requirements": "Shade 7",
+    "activities": {
+      "actInscPhanTethe": {
+        "_id": "actInscPhanTethe",
+        "type": "save",
+        "name": "Phantom Tether Str Save",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "On dealing Sneak Attack damage to an Isolated Prey"
+        },
+        "duration": {
+          "units": "round",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!InscPhantomTethe"
+}

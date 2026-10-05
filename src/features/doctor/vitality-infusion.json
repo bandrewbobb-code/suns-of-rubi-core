@@ -1,0 +1,83 @@
+{
+  "_id": "DocVitalityInf01",
+  "name": "Vitality Infusion",
+  "type": "feat",
+  "img": "icons/magic/life/heart-cross-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Starting at 3rd level, your regenerative biocircuits fortify living tissue beyond its normal limits.</p><p>Whenever you execute a nanoprogram of <strong>Tier 1 or higher that restores hit points</strong>, you can choose yourself or one recipient of the healing. That creature's <strong>maximum hit points and current hit points increase by an amount equal to the nanoprogram's tier</strong> for <strong>1 minute</strong>.</p><p>A creature can benefit from only one instance of this feature at a time.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Doctor 3",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DocVitalityInf01"
+}

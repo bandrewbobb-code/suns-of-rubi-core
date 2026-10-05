@@ -1,0 +1,76 @@
+{
+  "_id": "FinExposingStrk1",
+  "name": "Finisher: Exposing Strike",
+  "type": "feat",
+  "img": "icons/skills/targeting/crosshair-pointed-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Finisher (Prerequisite: Martial Artist Level 7)</em></p><p>You shatter an opponent's guard and reveal critical systemic weaknesses. Make an unarmed strike. On a hit, the target must make a Dexterity saving throw against your Program DC. On a failed save, the target is <strong>Exposed</strong> until the end of your next turn: the next attack roll made against the target by you or an ally is an automatic Critical Hit if it hits.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "finisher"
+    },
+    "requirements": "Martial Artist 7",
+    "activities": {
+      "actFinExposingStr": {
+        "_id": "actFinExposingStr",
+        "type": "save",
+        "name": "Exposing Strike Dex Save",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Hit with Finisher: Exposing Strike"
+        },
+        "duration": {
+          "units": "round",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FinExposingStrk1"
+}

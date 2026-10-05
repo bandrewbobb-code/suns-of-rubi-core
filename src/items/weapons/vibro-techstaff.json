@@ -1,0 +1,142 @@
+{
+  "_id": "WpnVibroTechstf1",
+  "name": "Vibro-Techstaff",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-broad-serrated-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Martial double-ended staff featuring independent sonic generators at both ends.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 650,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 5,
+      "units": "lb"
+    },
+    "type": {
+      "value": "martialM",
+      "baseItem": "vibro-techstaff"
+    },
+    "damage": {
+      "base": {
+        "number": 2,
+        "denomination": 4,
+        "types": [
+          "bludgeoning"
+        ]
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": []
+      }
+    },
+    "range": {
+      "value": 5,
+      "long": null,
+      "units": "ft"
+    },
+    "mastery": "slow",
+    "properties": [
+      "two",
+      "fin",
+      "double-2d4",
+      "powered"
+    ],
+    "activities": {
+      "mainAttack000001": {
+        "_id": "mainAttack000001",
+        "type": "attack",
+        "name": "Strike",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "range": {
+          "value": "5",
+          "long": "",
+          "units": "ft"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false,
+          "count": 1,
+          "type": "creature"
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": 20
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      },
+      "auxActivity00001": {
+        "_id": "auxActivity00001",
+        "type": "attack",
+        "name": "Opposite End Strike",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "When attacking with primary end"
+        },
+        "attack": {
+          "ability": "dex",
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "parts": [
+            {
+              "number": 2,
+              "denomination": 4,
+              "types": [
+                "bludgeoning"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!WpnVibroTechstf1"
+}

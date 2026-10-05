@@ -1,0 +1,24 @@
+{
+  "_id": "5adc1545d4e698a7",
+  "_key": "!items!5adc1545d4e698a7",
+  "name": "Technologic Origin",
+  "type": "feat",
+  "img": "icons/magic/symbols/star-solid-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite:</strong> Cyber-Megacity, Forge World, or Automated Shipyard</p><p>Raised in the heart of dense network server grids, automated manufacturing lines, and machine infrastructure.<ul><li><strong>Insulated Conduits:</strong> You have Resistance to Lightning (Ion) damage.</li><li><strong>Tech-Native:</strong> You gain proficiency in the Technology skill or with Slicer's Tools, and you can fluently read, write, and transmit SIGNAL (machine binary packet code).</li></ul></p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "type": {
+      "value": "origin",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 1
+    },
+    "requirements": "Cyber-Megacity, Forge World, or Automated Shipyard",
+    "activities": {}
+  }
+}

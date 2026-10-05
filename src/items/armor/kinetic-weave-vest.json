@@ -1,0 +1,38 @@
+{
+  "_id": "ArmKinetWeaveV01",
+  "name": "Kinetic Weave Vest",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-banded-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>Reinforced torso vest engineered to disperse shockwaves from projectile rounds.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 150,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 8,
+      "units": "lb"
+    },
+    "type": {
+      "value": "light",
+      "baseItem": "kinetic-weave-vest"
+    },
+    "armor": {
+      "value": 11,
+      "dex": null
+    },
+    "strength": null,
+    "properties": [],
+    "equipped": false,
+    "activities": {}
+  },
+  "_key": "!items!ArmKinetWeaveV01"
+}

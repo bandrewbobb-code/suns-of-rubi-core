@@ -1,0 +1,37 @@
+name: Release Module
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Compile compendium packs
+        run: npm run build
+
+      - name: Create module zip bundle
+        run: |
+          zip -r suns-of-rubi-core.zip module.json packs/ assets/ styles/ templates/ src/modules/
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            module.json
+            suns-of-rubi-core.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

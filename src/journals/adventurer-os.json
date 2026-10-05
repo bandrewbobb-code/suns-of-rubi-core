@@ -1,0 +1,24 @@
+{
+  "_id": "7bfa7b5d659c687c",
+  "name": "Adventurer OS Directory",
+  "pages": [
+    {
+      "_id": "99b3a6ba255717c8",
+      "name": "Adventurer OS Catalog",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Adventurer Operating System</h1><p>This directory catalogs all compiled nano-formulas available to the <strong>Adventurer</strong> OS. Click any entry to inspect its telemetry, or drag the link directly onto your character sheet to install the routine into your NCU.</p><h2>Tier 0: At-Will Routines (9)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.835e75a61e8e102c]{Aimbot}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.c7418787345d9bd6]{Deflection}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.d9d4632f2054f930]{Grapple Beam}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.4a5093a48add1c7e]{Imbue Weapon}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.af9498b5d20c4b85]{Light}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.99a238bae3d32f09]{Minor Terraform}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.ad700434dbd55b31]{Source Projector}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.93db65303b54eee1]{Tracer Bolt}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.91f99b410bd016d7]{Trauma Defibrillation}</li></ul><h2>Tier 1: Leveled Nanoprograms (21)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.51df744954007a0a]{Animal Friendship}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.6f41ed0bbb8d4676]{Bio-Scan}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.7ead785bb1bafdfd]{Bio-Shield}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.db1ed1d8d49bd352]{Bio-Transceiver}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.0a4ac1383e260226]{Cluster Flechette}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.8b6b900cd617a441]{Coat of Blades}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.0394b8304007cf07]{Create or Destroy Water}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.0a22ae47e5c1151a]{Decontaminate}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.f852f2db63bcd053]{Energy Sink}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.f7d4d319a46113ed]{Grav-Chute}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.4816cc3635b74bdc]{Nano Bandage}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.13fa7102be04d8a9]{Rocket Leap}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.60b114bd7c37fc99]{Shrapnel Burst}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.d13178ad021cf737]{Slipstream}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.3a4f74de93b86c2a]{Smokescreen}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.e64e1336af47205b]{Target Lock}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.753cb27cd0a18d3e]{Target Paint}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.bc5750107969dcb7]{Tether Shot}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.32d352ffae905262]{Terrain Knowledge}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.0c86fa94277ace20]{Thicken Skin}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.a72683717ed77ae9]{Toxin Scan}</li></ul>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "_key": "!journal.pages!7bfa7b5d659c687c.99b3a6ba255717c8"
+    }
+  ],
+  "ownership": {
+    "default": 2
+  },
+  "_key": "!journal!7bfa7b5d659c687c"
+}

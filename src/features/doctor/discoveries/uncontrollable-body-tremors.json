@@ -1,0 +1,154 @@
+{
+  "_id": "DiscBodyTremors1",
+  "name": "Discovery: Uncontrollable Body Tremors",
+  "type": "feat",
+  "img": "icons/tools/laboratory/test-tube-rack-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>As an <strong>Action</strong>, you expend <strong>4 Nanopool points</strong> to broadcast a bio-electrical disruption pulse at a creature you can see within <strong>60 feet</strong>. The target must make a <strong>Constitution saving throw</strong> against your Program Save DC.</p><p>On a failed save, violent motor spasms rack the target's body for <strong>1 minute</strong>:</p><ul><li>Its speed is <strong>halved</strong>.</li><li>It <strong>cannot take Reactions</strong>.</li><li>It has <strong>Disadvantage on attack rolls</strong>.</li><li>It can make <strong>no more than one weapon attack</strong> per turn.</li></ul><p>The target repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "discovery"
+    },
+    "requirements": "Doctor 9",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactBodyTremor": {
+        "_id": "dnd5eactBodyTremor",
+        "type": "save",
+        "name": "Induce Body Tremors",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "Spend 4 Nanopool points"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute",
+          "concentration": true,
+          "override": false
+        },
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": []
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DiscBodyTremors1"
+}

@@ -1,0 +1,47 @@
+{
+  "_id": "GearEmergDefibr1",
+  "name": "Emergency Defibrillator",
+  "type": "consumable",
+  "img": "icons/consumables/potions/vial-cork-liquid-glowing-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Automated cardiac resuscitation unit. Revives a creature that has died within the last minute, bringing them back with 1 HP.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 250,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 4,
+      "units": "lb"
+    },
+    "quantity": 1,
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": "1"
+    },
+    "activities": {
+      "actGearPrimary01": {
+        "_id": "actGearPrimary01",
+        "type": "utility",
+        "name": "Revive Patient",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "Target died within 1 minute"
+        }
+      }
+    },
+    "type": {
+      "value": "potion"
+    }
+  },
+  "_key": "!items!GearEmergDefibr1"
+}

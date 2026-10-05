@@ -1,7 +1,0 @@
-2026/09/15-20:56:14.741 2c38 Recovering log #3
-2026/09/15-20:56:14.747 2c38 Delete type=0 #3
-2026/09/15-20:56:14.748 2c38 Delete type=3 #2
-2026/09/15-20:56:14.782 2ff0 Level-0 table #7: started
-2026/09/15-20:56:14.789 2ff0 Level-0 table #7: 18279 bytes OK
-2026/09/15-20:56:14.791 2ff0 Delete type=0 #5
-2026/09/15-20:56:14.791 2ff0 Manual compaction at level-0 from '!items!CalmCollect001' @ 72057594037927935 : 1 .. '!items!SageAdvice00001' @ 0 : 0; will stop at (end)

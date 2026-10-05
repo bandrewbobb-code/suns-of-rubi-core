@@ -1,0 +1,41 @@
+{
+  "_id": "AdvWpnMastery001",
+  "name": "Weapon Mastery",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-daggers-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your training with weapons allows you to use the mastery properties of <strong>two kinds of weapons</strong> of your choice with which you have proficiency (such as Nick, Vex, or Slow). Whenever you finish a <strong>Long Rest</strong>, you can change the kinds of weapons you have chosen.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Adventurer 1",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AdvWpnMastery001"
+}

@@ -1,0 +1,120 @@
+{
+  "_id": "BgSmuggler000001",
+  "name": "Smuggler",
+  "type": "background",
+  "img": "icons/equipment/cargo/crate-reinforced-metal-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Ability Scores:</strong> DEX, WIS, CHA</p>\n<p><strong>Feat:</strong> @UUID[Compendium.suns-of-rubi-core.feats.FeatLuckyOrigin1]{Lucky}</p>\n<p><strong>Skill Proficiencies:</strong> Choose 2 from DEC, PLT, SLT, STE</p>\n<h3>Feature: Careful Assessment</h3>\n<p>You have an intimate understanding of cargo manifests, customs checkpoints, sensor baffles, and planetary blockades. You can easily spot hidden compartments, false bulkheads, and illegal contraband caches in vehicles, starships, and cargo bays. When arriving at a spaceport or frontier depot, you quickly identify corrupt customs inspectors, unmonitored maintenance tunnels, and blind spots in planetary defense sensors where illicit goods can be brought planetside undetected.</p>\n<hr/>\n<h3>Roleplay Characteristics</h3>\n<h4>Personality Traits</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I never sit with my back to a door, and my hand is always near my concealed holster.</td></tr>\n    <tr><td><strong>2</strong></td><td>I treat ship engines and grav-drives with the affectionate care most people reserve for family.</td></tr>\n    <tr><td><strong>3</strong></td><td>I have a quick-witted sarcastic quip ready for every customs inspector and bounty hunter.</td></tr>\n    <tr><td><strong>4</strong></td><td>I know the retail value and street markup of every piece of cargo in a warehouse.</td></tr>\n    <tr><td><strong>5</strong></td><td>I speak in spacer slang, encrypted freight jargon, and double entendres.</td></tr>\n    <tr><td><strong>6</strong></td><td>I stay calm, grin, and whistle nonchalantly when cargo scanners ping an alarm.</td></tr>\n  </tbody>\n</table>\n<h4>Ideals</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>Freedom. Interplanetary space should be free; tariffs, blockades, and borders are tyranny. (Chaotic)</td></tr>\n    <tr><td><strong>2</strong></td><td>Honor. Once I accept a cargo delivery contract, that cargo arrives or I die trying. (Lawful)</td></tr>\n    <tr><td><strong>3</strong></td><td>Profit. Credits make the sub-light engines burn; no risk, no payday. (Neutral)</td></tr>\n    <tr><td><strong>4</strong></td><td>Compassion. I use my hidden storage compartments to smuggle refugees and freed laborers to safety. (Good)</td></tr>\n    <tr><td><strong>5</strong></td><td>Selfishness. My skin and my ship come before anyone else's cargo or moral crusade. (Evil)</td></tr>\n    <tr><td><strong>6</strong></td><td>Adventure. Sticking to safe, approved hyperspace lanes is a death sentence for the soul. (Any)</td></tr>\n  </tbody>\n</table>\n<h4>Bonds</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>My freighter is old, battered, and constantly leaking coolant, but she's my home and pride.</td></tr>\n    <tr><td><strong>2</strong></td><td>I dumped an illicit cargo shipment during a corporate patrol raid; the cartel still wants their credits.</td></tr>\n    <tr><td><strong>3</strong></td><td>A fellow smuggler took the heat for my botched orbital run and is serving 20 years in penal labor.</td></tr>\n    <tr><td><strong>4</strong></td><td>I am looking for the lost wreckage of a legendary smuggler ship rumored to hold precursor loot.</td></tr>\n    <tr><td><strong>5</strong></td><td>I owe my life to a port mechanic who modified my sub-light engines to outrun gunboats.</td></tr>\n    <tr><td><strong>6</strong></td><td>Everything I smuggle goes toward buying an independent jump-ship for my home colony.</td></tr>\n  </tbody>\n</table>\n<h4>Flaws</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I have a terrible weakness for gambling with the funds designated for ship maintenance and fuel.</td></tr>\n    <tr><td><strong>2</strong></td><td>I can never resist a dangerous shortcut through uncharted asteroid fields or radiation belts.</td></tr>\n    <tr><td><strong>3</strong></td><td>I am constantly looking over my shoulder, expecting customs hounds or bounty hunters.</td></tr>\n    <tr><td><strong>4</strong></td><td>I am reluctant to fight unless cornered; my first instinct is always to run and burn thrust.</td></tr>\n    <tr><td><strong>5</strong></td><td>I make promises I know I can't keep just to get cargo loaded into my hold.</td></tr>\n    <tr><td><strong>6</strong></td><td>My pride in my piloting skills leads me into absurdly dangerous maneuvers.</td></tr>\n  </tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "identifier": "smuggler",
+    "advancement": [
+      {
+        "_id": "BgSmuggler00Asi1",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "con",
+            "int"
+          ],
+          "points": 3
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "Ability Score Improvement",
+        "hint": "Your background allows you to increase your DEX, WIS, CHA scores: increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      {
+        "_id": "BgSmuggler00Skl1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:dec",
+                "skills:plt",
+                "skills:slt",
+                "skills:ste"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Skill Proficiencies",
+        "hint": "Choose 2 skills from: dec, plt, slt, ste."
+      },
+      {
+        "_id": "BgSmuggler00Tol1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "tool:game:*"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tools:security-kit",
+                "tools:hackers-kit",
+                "tools:tinkers",
+                "tools:thieves"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Tool Proficiencies",
+        "hint": "Your background grants you tool proficiency options."
+      },
+      {
+        "_id": "BgSmuggler00Fgt1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.suns-of-rubi-core.feats.FeatLuckyOrigin1"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Origin Feat",
+        "hint": "Your background grants you the Lucky origin feat."
+      }
+    ]
+  },
+  "_key": "!items!BgSmuggler000001"
+}

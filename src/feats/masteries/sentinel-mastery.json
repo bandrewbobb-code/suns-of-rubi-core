@@ -1,0 +1,95 @@
+{
+  "_id": "88e89bf00ec50cca",
+  "_key": "!items!88e89bf00ec50cca",
+  "name": "Sentinel Mastery",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite:</strong> Level 4</p>\n<ul>\n  <li><strong>Ability Score Increase:</strong> Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>\n  <li><strong>Lockdown:</strong> When you hit a creature of a size no more than one size larger than you with an opportunity attack, the creature’s speed becomes 0 for the rest of the turn.</li>\n  <li><strong>Inescapable:</strong> Creatures within 5 feet of you provoke opportunity attacks from you even if they take the Disengage action before leaving your reach.</li>\n  <li><strong>Protector:</strong> When a creature within 5 feet of you makes an attack against a target other than you (and that target doesn't have this feat), you can use your Reaction to make a melee weapon attack against the attacking creature.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "mastery",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Level 4",
+    "activities": {
+      "77caf7cd3677bd5b": {
+        "_id": "77caf7cd3677bd5b",
+        "type": "utility",
+        "name": "Protector Attack",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "When a creature within 5 ft attacks a target other than you"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "sentinel-mastery",
+    "advancement": [
+      {
+        "_id": "a73f814c7ce5ac57",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "points": 1
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "Ability Score Improvement",
+        "hint": "Increase your Strength or Dexterity score by 1, to a maximum of 20."
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "_id": "AgtFalseProf0001",
+  "name": "False Profession",
+  "type": "feat",
+  "img": "icons/magic/control/silhouette-aura-energy-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 2nd level, you integrate an Emulation Deck into your neural implants, allowing you to disguise your digital and nanite footprint as an operative of another class. Whenever you finish a <strong>Long Rest</strong>, choose one other class (Bureaucrat, Doctor, Enforcer, Engineer, Fixer, Keeper, Nano-Technician, Soldier, or Trader).</p>\n<h3>Spoofed OS Programs</h3>\n<p>You learn <strong>two nanoprograms of your choice</strong> from the chosen class's Operating System of a tier lower than your current Max Power Level (Tier 0 cantrips at 2nd level). These count as Agent nanoprograms for you.</p>\n<h3>Processing Tax</h3>\n<p>Executing programs from your spoofed OS demands high computational overhead. You must expend <strong>1 additional Nanopool point</strong> whenever you cast a program learned through False Profession.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Agent 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AgtFalseProf0001"
+}

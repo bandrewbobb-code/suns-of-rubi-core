@@ -1,0 +1,197 @@
+{
+  "_id": "MpSacrificeManif",
+  "name": "Sacrifice Manifestation",
+  "type": "feat",
+  "img": "icons/magic/fire/explosion-fireball-large-purple-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 9th level, you can detonate an active manifestation as an Action, or as a Reaction when an ally within 30 feet of a node drops to 0 hit points. Roll a number of d8s equal to the sacrificed manifestation's Power Level:</p><ul><li><strong>Wrath (Kinetic Singularity):</strong> Every creature in a 20-foot sphere around the node must make a Strength saving throw against your Program Save DC or take Force damage equal to the total rolled + your Wisdom modifier, be pulled up to 15 feet toward the node's space, and be knocked Prone.</li><li><strong>Curative (Cellular Transfusion):</strong> Choose one ally within 30 feet of the node. That ally regains hit points equal to the total rolled + your Wisdom modifier, and ends one of the following conditions on itself: Blinded, Deafened, Dazed, Paralyzed, or Poisoned.</li><li><strong>Bewilderment (Neural Flash):</strong> Every creature in a 20-foot sphere must make an Intelligence saving throw or take Psychic damage equal to the total rolled + your Wisdom modifier, be Blinded, and lose its reaction until the end of its next turn. Friendly creatures in the area can use their reaction to immediately move up to half their speed without provoking opportunity attacks.</li></ul><p>Once you sacrifice a manifestation, you must finish a Short or Long Rest before doing so again.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Meta-Physicist 9",
+    "activities": {
+      "actMpDetonateWrat": {
+        "_id": "actMpDetonateWrat",
+        "type": "save",
+        "name": "Detonate Wrath (Kinetic Singularity)",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "count": 1,
+            "contiguous": false,
+            "type": "sphere",
+            "units": "ft",
+            "size": "20"
+          },
+          "affix": false
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "1d8 + @abilities.wis.mod"
+              },
+              "number": null,
+              "denomination": 0,
+              "bonus": "",
+              "types": [
+                "force"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "actMpDetonateCura": {
+        "_id": "actMpDetonateCura",
+        "type": "heal",
+        "name": "Detonate Curative (Cellular Transfusion)",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "range": {
+          "value": "30",
+          "units": "ft"
+        },
+        "healing": {
+          "types": [
+            "healing"
+          ],
+          "custom": {
+            "enabled": true,
+            "formula": "1d8 + @abilities.wis.mod"
+          },
+          "scaling": {
+            "mode": "whole",
+            "number": null,
+            "formula": ""
+          },
+          "bonus": ""
+        }
+      },
+      "actMpDetonateBewi": {
+        "_id": "actMpDetonateBewi",
+        "type": "save",
+        "name": "Detonate Bewilderment (Neural Flash)",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "round",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "count": 1,
+            "contiguous": false,
+            "type": "sphere",
+            "units": "ft",
+            "size": "20"
+          },
+          "affix": false
+        },
+        "save": {
+          "ability": [
+            "int"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "1d8 + @abilities.wis.mod"
+              },
+              "number": null,
+              "denomination": 0,
+              "bonus": "",
+              "types": [
+                "psychic"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MpSacrificeManif"
+}

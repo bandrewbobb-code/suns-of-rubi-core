@@ -1,0 +1,107 @@
+{
+  "_id": "StratPenetratMun",
+  "name": "Strategy: Penetrating Munitions",
+  "type": "feat",
+  "img": "icons/weapons/ammunition/bullet-hole-penetration-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Tactical Strike Enhancement</em></p>\n<p>Whenever you trigger a <strong>Natural 16–20</strong> with a ranged weapon attack as part of your Tactical Strikes, your shot punches straight through the target. A secondary creature directly behind the primary target within a line <strong>15 feet long and 5 feet wide</strong> takes kinetic damage equal to your <strong>Proficiency Bonus + your Intelligence modifier</strong> (`@prof + @abilities.int.mod`).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "strategy"
+    },
+    "requirements": "Soldier 5",
+    "activities": {
+      "actPenetrateMun1": {
+        "_id": "actPenetrateMun1",
+        "type": "damage",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Natural 16–20 on ranged weapon attack"
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": "Secondary creature within 15 ft line behind target"
+          },
+          "template": {
+            "count": 0,
+            "contiguous": false,
+            "type": "line",
+            "size": "15",
+            "width": "5",
+            "height": 0,
+            "units": "ft"
+          }
+        },
+        "range": {
+          "value": "15",
+          "units": "ft",
+          "special": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@prof + @abilities.int.mod"
+              },
+              "types": [
+                "kinetic"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "name": "Penetrating Munitions Damage",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!StratPenetratMun"
+}

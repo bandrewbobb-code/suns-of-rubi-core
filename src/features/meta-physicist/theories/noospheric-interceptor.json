@@ -1,0 +1,41 @@
+{
+  "_id": "MpTheoNoosphericI",
+  "name": "Noospheric Interceptor",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-carved-stone-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Metaphysical Theory (Prerequisite: Meta-Physicist Level 7)</em></p><p>When an enemy within 60 feet casts a spell or executes a nanoprogram, you can use your reaction to force it to make an Intelligence saving throw against your Program Save DC; on a failure, the program's level or tier is reduced by 1.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "theory"
+    },
+    "requirements": "Meta-Physicist 7",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MpTheoNoosphericI"
+}

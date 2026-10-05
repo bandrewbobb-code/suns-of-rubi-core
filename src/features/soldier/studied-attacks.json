@@ -1,0 +1,41 @@
+{
+  "_id": "SolStudiedAtks01",
+  "name": "Studied Attacks",
+  "type": "feat",
+  "img": "icons/skills/targeting/crosshair-arrow-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 7th level, you learn from every missed shot and parried strike. If you miss with a weapon attack roll against a creature, you gain <strong>Advantage</strong> on the next attack roll you make against that creature before the end of your next turn.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Soldier 7",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!SolStudiedAtks01"
+}

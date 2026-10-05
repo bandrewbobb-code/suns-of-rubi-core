@@ -1,0 +1,68 @@
+{
+  "_id": "0a22ae47e5c1151a",
+  "name": "Decontaminate",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/decontaminate.webp",
+  "system": {
+    "description": {
+      "value": "<p>Ultrasonic pulse and broad-spectrum UV beam purges all radiation, biological contaminants, microbes, and synthetic poisons from nonliving food/water within a 5-ft sphere.</p><p><strong>Operating Systems:</strong> Adventurer, Doctor, Engineer</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "trs",
+    "properties": [
+      "ritual",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 10,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "207b526f8af1c417": {
+        "_id": "207b526f8af1c417",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!0a22ae47e5c1151a"
+}

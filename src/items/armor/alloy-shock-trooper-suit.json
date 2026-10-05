@@ -1,0 +1,40 @@
+{
+  "_id": "ArmAlloyShockT01",
+  "name": "Alloy Shock Trooper Suit",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-banded-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>Frontline stormtrooper heavy armor with impact dampeners and hydraulic seal clamps.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 800,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 45,
+      "units": "lb"
+    },
+    "type": {
+      "value": "heavy",
+      "baseItem": "alloy-shock-trooper-suit"
+    },
+    "armor": {
+      "value": 16,
+      "dex": 0
+    },
+    "strength": 13,
+    "properties": [
+      "stealthDisadvantage"
+    ],
+    "equipped": false,
+    "activities": {}
+  },
+  "_key": "!items!ArmAlloyShockT01"
+}

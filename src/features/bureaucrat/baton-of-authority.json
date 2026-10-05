@@ -1,0 +1,146 @@
+{
+  "name": "Baton of Authority",
+  "type": "feat",
+  "img": "icons/weapons/staves/staff-ornate-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Starting at 1st level, you carry a <strong>Baton of Authority</strong> — a symbol of your executive rank that channels your commanding presence.</p><h3>Authority Die</h3><p>Your Authority Die begins as a <strong>d6</strong> and increases as you gain levels (see the Bureaucrat table). You have a number of Authority Dice equal to your <strong>Charisma modifier</strong> (minimum 1).</p><h3>Issuing Authority</h3><p>As a <strong>Bonus Action</strong>, choose a willing creature within <strong>60 feet</strong> that can hear you. That creature gains one Authority Die. Once within the next 10 minutes, the creature can roll the die and add the result to one ability check, attack roll, or saving throw it makes.</p><p>You regain all expended Authority Dice when you finish a <strong>Long Rest</strong>.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Bureaucrat 1",
+    "properties": [],
+    "activities": {
+      "dnd5eactBatonA1": {
+        "_id": "dnd5eactBatonA1",
+        "type": "utility",
+        "name": "Issue Authority Die",
+        "img": "",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "value": "10",
+          "units": "minute",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "ally",
+            "choice": false,
+            "special": "who can hear you"
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": "@abilities.cha.mod",
+      "max": "@abilities.cha.mod",
+      "per": "lr",
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!BatonAuthort001",
+  "_id": "BatonAuthort001"
+}

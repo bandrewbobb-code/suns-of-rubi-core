@@ -1,0 +1,141 @@
+{
+  "_id": "BgBountyHunter01",
+  "name": "Bounty Hunter",
+  "type": "background",
+  "img": "icons/skills/targeting/crosshair-pointed-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Ability Scores:</strong> DEX, CON, WIS</p>\n<p><strong>Feat:</strong> @UUID[Compendium.suns-of-rubi-core.feats.FeatAlertOrigin1]{Alert}</p>\n<p><strong>Skill Proficiencies:</strong> Choose 2 from DEC, INS, PER, STE</p>\n<h3>Feature: Ear to the Ground</h3>\n<p>You are in frequent contact with people involved in the lucrative and dangerous business of hunting fugitive marks. You know where to find underworld cantinas, corporate security terminals, and illicit comms relays. When searching for leads on target individuals or missing cargo, local law enforcement contacts and black-market fixers are willing to share rumors, provided you maintain professional etiquette and do not burn their covers.</p>\n<hr/>\n<h3>Roleplay Characteristics</h3>\n<h4>Personality Traits</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I assess the exits and sightlines of every room I walk into before speaking.</td></tr>\n    <tr><td><strong>2</strong></td><td>I speak in brief, clipped sentences. Long conversations get people shot.</td></tr>\n    <tr><td><strong>3</strong></td><td>I keep a worn holotag of a bounty that got away; it reminds me never to get sloppy.</td></tr>\n    <tr><td><strong>4</strong></td><td>Money talks, but professional reputation keeps you breathing in the outer colonies.</td></tr>\n    <tr><td><strong>5</strong></td><td>I have a morbid sense of humor honed from pulling bounties out of airlocks.</td></tr>\n    <tr><td><strong>6</strong></td><td>I never draw my blaster unless I have already committed to pulling the trigger.</td></tr>\n  </tbody>\n</table>\n<h4>Ideals</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>Professionalism. A contract is sacred. Once I take a retainer, I see it through. (Lawful)</td></tr>\n    <tr><td><strong>2</strong></td><td>Freedom. Freelancing keeps me untethered from corporate control. (Chaotic)</td></tr>\n    <tr><td><strong>3</strong></td><td>Survival. The only victory that matters is living to collect the fee. (Neutral)</td></tr>\n    <tr><td><strong>4</strong></td><td>Justice. Some targets deserve the cell or the grave; I ensure they get it. (Good)</td></tr>\n    <tr><td><strong>5</strong></td><td>Greed. Credits rule this solar system, and I intend to amass a mountain of them. (Evil)</td></tr>\n    <tr><td><strong>6</strong></td><td>Code. I never hunt children, indentured laborers, or the genuinely helpless. (Any)</td></tr>\n  </tbody>\n</table>\n<h4>Bonds</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>My mentor was killed by an elusive syndicate syndicate target; I will bring them in dead or alive.</td></tr>\n    <tr><td><strong>2</strong></td><td>I owe my custom pursuit gunship to a loan shark who still holds the override codes.</td></tr>\n    <tr><td><strong>3</strong></td><td>A former bounty saved my life when a gig went sideways; I owe them a favor no matter what.</td></tr>\n    <tr><td><strong>4</strong></td><td>The guild syndicate that issued my license is the only family I acknowledge.</td></tr>\n    <tr><td><strong>5</strong></td><td>Everything I earn goes toward buying my family out of an Omni-Tek labor indent.</td></tr>\n    <tr><td><strong>6</strong></td><td>I wear the insignia of an old PMC squad that was betrayed and wiped out.</td></tr>\n  </tbody>\n</table>\n<h4>Flaws</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I assume everyone has a hidden angle, price tag, or bounty on their head.</td></tr>\n    <tr><td><strong>2</strong></td><td>I cannot resist a dangerous bet or high-risk bounty with obscene payouts.</td></tr>\n    <tr><td><strong>3</strong></td><td>My ruthlessness makes it difficult to maintain civil relationships with gentle people.</td></tr>\n    <tr><td><strong>4</strong></td><td>When an alarm sounds, my immediate instinct is to draw weapons and shoot first.</td></tr>\n    <tr><td><strong>5</strong></td><td>I hold long grudges against anyone who stands between me and a contracted target.</td></tr>\n    <tr><td><strong>6</strong></td><td>I rely heavily on combat stims to stay alert during multi-day surveillance stakes.</td></tr>\n  </tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "identifier": "bounty-hunter",
+    "advancement": [
+      {
+        "_id": "BgBountyHuntAsi1",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "int",
+            "cha"
+          ],
+          "points": 3
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "Ability Score Improvement",
+        "hint": "Your background allows you to increase your DEX, CON, WIS scores: increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      {
+        "_id": "BgBountyHuntSkl1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:dec",
+                "skills:ins",
+                "skills:per",
+                "skills:ste"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Skill Proficiencies",
+        "hint": "Choose 2 skills from: dec, ins, per, ste."
+      },
+      {
+        "_id": "BgBountyHuntTol1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tools:demolitions",
+                "tools:security-kit",
+                "tools:hackers-kit",
+                "tools:thieves"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Tool Proficiencies",
+        "hint": "Your background grants you tool proficiency options."
+      },
+      {
+        "_id": "BgBountyHuntLng1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Languages",
+        "hint": "Choose 1 language(s)."
+      },
+      {
+        "_id": "BgBountyHuntFgt1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.suns-of-rubi-core.feats.FeatAlertOrigin1"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Origin Feat",
+        "hint": "Your background grants you the Alert origin feat."
+      }
+    ]
+  },
+  "_key": "!items!BgBountyHunter01"
+}

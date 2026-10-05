@@ -1,0 +1,41 @@
+{
+  "_id": "TechFightingSty1",
+  "name": "Fighting Style",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-sword-blood-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Martial Technique</em></p><p>You adopt a particular style of fighting as your specialty. Choose one Fighting Style feature from Chapter 6.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "technique"
+    },
+    "requirements": "Martial Artist 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TechFightingSty1"
+}

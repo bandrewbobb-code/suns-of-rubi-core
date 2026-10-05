@@ -6,7 +6,9 @@
     "description": {
       "value": "<p>At 7th level, when you or a creature within <strong>30 feet</strong> of you fails a saving throw against an effect that applies the <strong>Charmed</strong> or <strong>Frightened</strong> condition, you can use your <strong>Reaction</strong> to force that creature to reroll the saving throw with <strong>Advantage</strong>.</p><p>The creature must use the new roll.</p>"
     },
-    "source": { "custom": "Suns of Rubi" },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
     "type": {
       "value": "class",
       "subtype": ""
@@ -26,7 +28,9 @@
         },
         "consumption": {
           "targets": [],
-          "scaling": { "allowed": false }
+          "scaling": {
+            "allowed": false
+          }
         },
         "duration": {
           "units": "inst",
@@ -57,29 +61,75 @@
           "prompt": true,
           "override": false
         },
-        "uses": { "spent": 0, "max": "", "recovery": [] },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
         "sort": 0
       }
     },
-    "activation": { "type": "reaction", "value": 1, "condition": "A creature within 30 ft fails a save vs Charmed or Frightened" },
-    "duration": { "value": "", "units": "" },
+    "activation": {
+      "type": "reaction",
+      "value": 1,
+      "condition": "A creature within 30 ft fails a save vs Charmed or Frightened"
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
     "cover": null,
-    "target": { "value": null, "width": null, "units": "", "type": "", "prompt": true },
-    "range": { "value": 30, "long": null, "units": "ft" },
-    "uses": { "value": null, "max": "", "per": null, "recovery": "", "prompt": false },
-    "consume": { "type": "", "target": null, "amount": null, "scale": false },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
     "ability": null,
     "actionType": "",
     "chatFlavor": "",
-    "critical": { "threshold": null, "damage": "" },
-    "damage": { "parts": [], "versatile": "" },
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
     "formula": "",
-    "save": { "ability": "", "dc": null, "scaling": "spell" }
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
   },
   "effects": [],
   "flags": {},
   "folder": null,
   "sort": 0,
-  "_stats": { "compendiumSource": null, "duplicateSource": null },
-  "_key": "!items!Countercharm01"
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!Countercharm01",
+  "_id": "Countercharm01"
 }

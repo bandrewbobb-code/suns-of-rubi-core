@@ -1,0 +1,41 @@
+{
+  "_id": "MpTheoOmniscient",
+  "name": "Omniscient Overwatch",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-carved-stone-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Metaphysical Theory (Prerequisite: Meta-Physicist Level 9)</em></p><p>While you have at least 2 active manifestations within 60 feet of each other, you cannot be surprised, and you and allies within their line of sight gain a +2 bonus to Initiative rolls.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "theory"
+    },
+    "requirements": "Meta-Physicist 9",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MpTheoOmniscient"
+}

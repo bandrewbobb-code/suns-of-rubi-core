@@ -1,0 +1,95 @@
+{
+  "_id": "2a3e63d602bd48c0",
+  "_key": "!items!2a3e63d602bd48c0",
+  "name": "Sentinel Fighting",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>While wielding a melee weapon with which you are proficient, you can use a Bonus Action to enter a defensive stance until the start of your next turn. While in this stance, you can make a number of Opportunity Attacks equal to your Proficiency Bonus without using your Reaction, and you can use your Reaction to attack a creature that moves more than 5 feet while within your reach.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "fightingStyle",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {
+      "2e4db48655618c3d": {
+        "_id": "2e4db48655618c3d",
+        "type": "utility",
+        "name": "Bonus Action Defensive Stance",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      },
+      "5c6db3ddd36f3efa": {
+        "_id": "5c6db3ddd36f3efa",
+        "type": "utility",
+        "name": "Reaction Reach Attack",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "When a creature moves > 5 ft while within your reach"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "sentinel-fighting"
+  }
+}

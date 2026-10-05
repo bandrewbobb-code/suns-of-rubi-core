@@ -1,0 +1,113 @@
+{
+  "_id": "ShdSneakAttack01",
+  "name": "Sneak Attack",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-dagger-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>Beginning at 1st level, you know how to strike subtly and exploit an opponent's distraction. Once per turn, you can deal extra damage to one creature you hit with an attack roll if you make the attack roll with a Light and Finesse melee weapon or an Unarmed Strike, and you meet at least one of the following conditions:</p><ul><li>You have Advantage on the attack roll.</li><li>An ally of yours is within 5 feet of the target, that ally isn't Incapacitated, and you don't have Disadvantage on the attack roll.</li><li><strong>Isolated Prey:</strong> No other creature (hostile or friendly) is within 15 feet of the target, and you don't have Disadvantage on the attack roll.</li></ul><p>The extra damage is 1d6 at 1st level, and increases as you gain Shade levels as shown in the Sneak Attack column of the Shade table (<code>@scale.shade.sneak-attack</code>).</p><p><strong>Siphon Banking:</strong> When you qualify to deal Sneak Attack damage, you can forgo rolling any number of your Sneak Attack damage dice to bank them into your Novictum Reserve instead. You can bank a maximum number of Sneak Attack dice equal to your Proficiency Bonus (<code>@scale.shade.siphon-bank-cap</code>). You can spend banked dice on future attacks within the same encounter to add to your Sneak Attack damage or pay the cost of Cunning Strike options. All banked dice dissipate when you finish a Short or Long Rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Shade 1",
+    "activities": {
+      "actShdSneakAtk01": {
+        "_id": "actShdSneakAtk01",
+        "type": "damage",
+        "name": "Sneak Attack Damage",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Once per turn on a qualifying hit"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "damage": {
+          "critical": {
+            "allow": true,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "@scale.shade.sneak-attack"
+              },
+              "number": null,
+              "denomination": 0,
+              "bonus": "",
+              "types": [
+                "piercing"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      },
+      "actShdSiphonBank": {
+        "_id": "actShdSiphonBank",
+        "type": "utility",
+        "name": "Siphon Banking",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Forgo rolling Sneak Attack dice to store in reserve"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ShdSneakAttack01"
+}

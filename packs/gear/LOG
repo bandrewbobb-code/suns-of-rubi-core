@@ -1,0 +1,15 @@
+2026/09/24-16:17:13.913 984 Recovering log #20
+2026/09/24-16:17:13.919 984 Delete type=0 #20
+2026/09/24-16:17:13.920 984 Delete type=3 #18
+2026/09/24-16:17:13.990 adcc Level-0 table #26: started
+2026/09/24-16:17:13.993 adcc Level-0 table #26: 6259 bytes OK
+2026/09/24-16:17:13.994 adcc Delete type=0 #24
+2026/09/24-16:17:13.994 adcc Manual compaction at level-0 from '!items!GearBioScanner01' @ 72057594037927935 : 1 .. '!items!ToolSecurityKit1' @ 0 : 0; will stop at (end)
+2026/09/24-16:17:13.994 adcc Manual compaction at level-1 from '!items!GearBioScanner01' @ 72057594037927935 : 1 .. '!items!ToolSecurityKit1' @ 0 : 0; will stop at '!items!ToolSecurityKit1' @ 116 : 1
+2026/09/24-16:17:13.994 adcc Compacting 1@1 + 1@2 files
+2026/09/24-16:17:13.999 adcc Generated table #27@1: 24 keys, 6259 bytes
+2026/09/24-16:17:13.999 adcc Compacted 1@1 + 1@2 files => 6259 bytes
+2026/09/24-16:17:14.000 adcc compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/09/24-16:17:14.000 adcc Delete type=2 #22
+2026/09/24-16:17:14.000 adcc Delete type=2 #26
+2026/09/24-16:17:14.001 adcc Manual compaction at level-1 from '!items!ToolSecurityKit1' @ 116 : 1 .. '!items!ToolSecurityKit1' @ 0 : 0; will stop at (end)

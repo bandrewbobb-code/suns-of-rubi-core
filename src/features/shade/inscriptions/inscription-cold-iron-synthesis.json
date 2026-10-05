@@ -1,0 +1,41 @@
+{
+  "_id": "InscColdIronSynt",
+  "name": "Inscription: Cold-Iron Synthesis",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-dagger-white.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Novictum Inscription (Prerequisite: Shade Level 9)</em></p><p>Your weapons smell of chilled void matter. When you attack a creature that has less than half its maximum hit points remaining, your weapon attacks score a critical hit on a roll of 19 or 20 (or expand your existing critical threat range by 1).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "inscription"
+    },
+    "requirements": "Shade 9",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!InscColdIronSynt"
+}

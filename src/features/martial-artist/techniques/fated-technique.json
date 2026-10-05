@@ -1,0 +1,67 @@
+{
+  "_id": "TechFatedTechn01",
+  "name": "Fated Technique",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-carved-stone-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Martial Technique (Prerequisite: Martial Artist Level 7)</em></p><p>When you finish a Short or Long Rest, roll a d20 and record the number rolled. You can replace any attack roll, saving throw, or ability check made by you or a creature within 5 feet of you with this fated roll once before your next rest. You must choose to do so before the roll is made.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "technique"
+    },
+    "requirements": "Martial Artist 7",
+    "activities": {
+      "actTechFatedTech1": {
+        "_id": "actTechFatedTech1",
+        "type": "utility",
+        "name": "Roll Fated Die",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Finish a Short or Long Rest"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "1d20",
+          "name": "Fated Roll"
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TechFatedTechn01"
+}

@@ -1,0 +1,83 @@
+{
+  "_id": "MpMultiVectorSyn",
+  "name": "Multi-Vector Synchronization",
+  "type": "feat",
+  "img": "icons/magic/movement/trail-streak-zigzag-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Beginning at 6th level, you can synchronize multiple manifestations across the battlefield. As a Bonus Action on your turn, you can spend 2 Nanopool points to command two active manifestation nodes simultaneously. You roll your Noetic Pulse once and apply the result to both commanded nodes.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Meta-Physicist 6",
+    "activities": {
+      "actMpMultiVector": {
+        "_id": "actMpMultiVector",
+        "type": "utility",
+        "name": "Dual Node Command",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "value",
+              "value": "2",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "roll": {
+          "formula": "1d8 + @abilities.wis.mod",
+          "name": "Synchronized Noetic Pulse"
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MpMultiVectorSyn"
+}

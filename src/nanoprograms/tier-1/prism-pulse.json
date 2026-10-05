@@ -1,0 +1,71 @@
+{
+  "_id": "ab6db64e36e4b154",
+  "name": "Prism Pulse",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/prism-pulse.webp",
+  "system": {
+    "description": {
+      "value": "<p>Ranged attack dealing 3d8 damage (Acid, Cold, Fire, Lightning, Poison, or Thunder). If 2+ dice match, pulse bounces to another creature within 30 ft.<br><br><strong>Overclock:</strong> +1d8 damage per tier above 1st (+1 NP/tier).</p><p><strong>Operating Systems:</strong> Meta-Physicist, Nano-Technician</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 90,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "9b95add533e23ebe": {
+        "_id": "9b95add533e23ebe",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "attack": {
+          "type": "ranged",
+          "classification": "spell"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!ab6db64e36e4b154"
+}

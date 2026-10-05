@@ -1,0 +1,84 @@
+{
+  "_id": "FeatLuckyOrigin1",
+  "name": "Lucky",
+  "type": "feat",
+  "img": "icons/commodities/treasure/token-gold-gem-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have inexplicable luck that seems to kick in at just the right moment.</p>\n<p>You have 3 Luck points per Long Rest. Whenever you make a d20 test (an attack roll, ability check, or saving throw), you can spend 1 Luck point to gain Advantage on the roll. Alternatively, when an attack roll is made against you, you can spend 1 Luck point to impose Disadvantage on that attack roll.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "3"
+    },
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {
+      "actLuckyReroll01": {
+        "_id": "actLuckyReroll01",
+        "type": "utility",
+        "name": "Spend Luck Point",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "When making a d20 roll or attacked"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {}
+            }
+          ]
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "lucky"
+  },
+  "_key": "!items!FeatLuckyOrigin1"
+}

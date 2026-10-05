@@ -1,0 +1,160 @@
+{
+  "_id": "TrdAttackDrain01",
+  "name": "Attack Drain",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-blade-blood-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Beginning at 5th level, whenever you use your <strong>Siphon Die</strong> on a hostile creature (such as via Deprive or Snare), you mark a severe vulnerability in its defense.</p><p>Once per turn, until the end of your next turn, the next weapon attack that hits that creature deals <strong>extra damage equal to 2 rolls of your Siphon Die</strong> (`2@scale.trader.siphon-die`).</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Trader 5",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactAtkDrain": {
+        "_id": "dnd5eactAtkDrain",
+        "type": "damage",
+        "name": "Attack Drain Burst",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Once per turn when using Siphon Die on a creature"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "round",
+          "value": "1",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": [
+            {
+              "number": null,
+              "denomination": null,
+              "bonus": "2@scale.trader.siphon-die",
+              "types": [
+                "kinetic"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "2@scale.trader.siphon-die"
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TrdAttackDrain01"
+}

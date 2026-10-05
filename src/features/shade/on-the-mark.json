@@ -1,0 +1,88 @@
+{
+  "_id": "ShdOnTheMark0001",
+  "name": "On the Mark",
+  "type": "feat",
+  "img": "icons/skills/targeting/crosshair-pointed-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your lethal precision ensures that even near-misses bleed energy from your foe. When you miss with an attack roll that would have qualified for Sneak Attack, you can still roll your Sneak Attack damage; the target takes half of that damage, or you can forgo dice to apply Cunning Strike effects as normal.</p><p>Doing so counts as using Sneak Attack for the turn.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Shade 5",
+    "activities": {
+      "actShdOnTheMark1": {
+        "_id": "actShdOnTheMark1",
+        "type": "damage",
+        "name": "Near-Miss Half Sneak Attack",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "On a missed attack qualifying for Sneak Attack"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "floor((@scale.shade.sneak-attack) / 2)"
+              },
+              "number": null,
+              "denomination": 0,
+              "bonus": "",
+              "types": [
+                "piercing"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ShdOnTheMark0001"
+}

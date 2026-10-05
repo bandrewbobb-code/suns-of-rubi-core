@@ -1,0 +1,72 @@
+{
+  "_id": "0adf6db98830fa09",
+  "name": "Dread Strike",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-psychmod.webp",
+  "system": {
+    "description": {
+      "value": "<p>Next melee hit discharges neural feedback dealing +1d6 psychic damage; target must make a Wisdom save or have the Frightened condition until program ends.</p><p><strong>Operating Systems:</strong> Enforcer, Shade</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "enc",
+    "properties": [
+      "concentration",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "bonus",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "self"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "9cff998bc34cc376": {
+        "_id": "9cff998bc34cc376",
+        "type": "attack",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "attack": {
+          "type": "melee",
+          "classification": "spell"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!0adf6db98830fa09"
+}

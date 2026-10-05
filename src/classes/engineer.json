@@ -1,0 +1,536 @@
+{
+  "_id": "EngineerClass001",
+  "name": "Engineer",
+  "type": "class",
+  "img": "icons/skills/trades/tools-wrench-screwdriver-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Masters of hardware compilation, autonomous constructs, and field fabrication, Engineers represent the bleeding edge of Rubi-Ka's technological supremacy. Accompanied by modular nanophotonic Automatons and armed with tradeskill schematics, an Engineer reshapes the theater of war through cold industrial precision.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "identifier": "engineer",
+    "levels": 1,
+    "hd": {
+      "denomination": 8,
+      "spent": 0,
+      "additional": ""
+    },
+    "primaryAbility": {
+      "value": [
+        "int"
+      ],
+      "all": false
+    },
+    "spellcasting": {
+      "progression": "artificer",
+      "ability": "int"
+    },
+    "advancement": [
+      {
+        "_id": "advEngHitPoints1",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {},
+        "level": 1,
+        "title": "Hit Points"
+      },
+      {
+        "_id": "advEngSavesPrf01",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "saves:con",
+            "saves:int"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Saving Throws"
+      },
+      {
+        "_id": "advEngArmorPrf01",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "armor:lgt"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Armor Training"
+      },
+      {
+        "_id": "advEngWeaponPr01",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "weapons:sim"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Weapon Proficiencies"
+      },
+      {
+        "_id": "advEngToolPrf001",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "tools:tinkers",
+            "tools:thieves"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Tool Proficiencies"
+      },
+      {
+        "_id": "advEngSkillPrf01",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 3,
+              "pool": [
+                "skills:arc",
+                "skills:his",
+                "skills:inv",
+                "skills:med",
+                "skills:nat",
+                "skills:prc",
+                "skills:slt"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "title": "Skill Proficiencies"
+      },
+      {
+        "_id": "advEngScNanopl01",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "nanopool-points",
+          "type": "number",
+          "scale": {
+            "1": {
+              "value": 3
+            },
+            "2": {
+              "value": 6
+            },
+            "3": {
+              "value": 9
+            },
+            "4": {
+              "value": 12
+            },
+            "5": {
+              "value": 15
+            },
+            "6": {
+              "value": 18
+            },
+            "7": {
+              "value": 21
+            },
+            "8": {
+              "value": 24
+            },
+            "9": {
+              "value": 27
+            },
+            "10": {
+              "value": 30
+            },
+            "11": {
+              "value": 33
+            },
+            "12": {
+              "value": 36
+            },
+            "13": {
+              "value": 39
+            },
+            "14": {
+              "value": 42
+            },
+            "15": {
+              "value": 45
+            },
+            "16": {
+              "value": 48
+            },
+            "17": {
+              "value": 51
+            },
+            "18": {
+              "value": 54
+            },
+            "19": {
+              "value": 57
+            },
+            "20": {
+              "value": 60
+            }
+          }
+        },
+        "value": {},
+        "level": 1,
+        "title": "Nanopool Points"
+      },
+      {
+        "_id": "advEngScRepDie01",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "repair-dice",
+          "type": "number",
+          "formula": "2 * @abilities.int.mod",
+          "scale": {
+            "2": {
+              "value": 2,
+              "formula": "2 * @abilities.int.mod"
+            }
+          }
+        },
+        "value": {},
+        "level": 2,
+        "title": "Rapid Repair Dice"
+      },
+      {
+        "_id": "advEngScSysUpg01",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "system-upgrades",
+          "type": "number",
+          "scale": {
+            "4": {
+              "value": 2
+            },
+            "8": {
+              "value": 4
+            },
+            "12": {
+              "value": 6
+            },
+            "16": {
+              "value": 8
+            },
+            "19": {
+              "value": 10
+            }
+          }
+        },
+        "value": {},
+        "level": 4,
+        "title": "System Upgrades"
+      },
+      {
+        "_id": "advEngScOvrDrDie",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "overdrive-dice",
+          "type": "number",
+          "scale": {
+            "5": {
+              "value": 1
+            },
+            "11": {
+              "value": 2
+            },
+            "17": {
+              "value": 3
+            }
+          }
+        },
+        "value": {},
+        "level": 5,
+        "title": "Overdrive Damage Dice"
+      },
+      {
+        "_id": "advEngScMfgCap01",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "manufacture-cap",
+          "type": "number",
+          "scale": {
+            "1": {
+              "value": 500
+            },
+            "10": {
+              "value": 2000
+            }
+          }
+        },
+        "value": {},
+        "level": 1,
+        "title": "Manufacture Credit Cap"
+      },
+      {
+        "_id": "advEngItmGrLvl01",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.EngNanoProg00001",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.EngNanophotAuto1",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.EngManufacture01",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Engineer Features (Level 1)"
+      },
+      {
+        "_id": "advEngItmGrLvl02",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.EngRapidRepair01",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.EngTradeskill001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "Engineer Features (Level 2)"
+      },
+      {
+        "_id": "advEngSubclass01",
+        "type": "Subclass",
+        "configuration": {},
+        "value": {},
+        "level": 3,
+        "title": "Engineering Field"
+      },
+      {
+        "_id": "advEngItmGrLvl03",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.EngSparkInnov001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Engineer Features (Level 3)"
+      },
+      {
+        "_id": "advEngASILvl0401",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 4,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advEngItmGrLvl05",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.EngOverdriveAggr",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 5,
+        "title": "Engineer Features (Level 5)"
+      },
+      {
+        "_id": "advEngItmGrLvl06",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.EngExperiment001",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "Engineer Features (Level 6)"
+      },
+      {
+        "_id": "advEngItmGrLvl07",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.EngDivertEnergy1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 7,
+        "title": "Engineer Features (Level 7)"
+      },
+      {
+        "_id": "advEngASILvl0801",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 8,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advEngASILvl1201",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 12,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advEngItmGrLvl14",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.EngRepairRechg01",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 14,
+        "title": "Engineer Features (Level 14)"
+      },
+      {
+        "_id": "advEngASILvl1601",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 16,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advEngASILvl1901",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 19,
+        "title": "Ability Score Improvement"
+      },
+      {
+        "_id": "advEngItmGrLvl20",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.class-features.Item.EngSupremeCreat1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 20,
+        "title": "Engineer Features (Level 20)"
+      }
+    ],
+    "wealth": "5d4 * 10",
+    "startingEquipment": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EngineerClass001"
+}

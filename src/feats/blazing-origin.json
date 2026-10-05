@@ -1,0 +1,24 @@
+{
+  "_id": "85e083e92b2962eb",
+  "_key": "!items!85e083e92b2962eb",
+  "name": "Blazing Origin",
+  "type": "feat",
+  "img": "icons/magic/symbols/star-solid-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite:</strong> Scorching, Desert, or Volcanic Homeworld</p><p>Hardened under blistering suns, thermal vents, and arid wastes.<ul><li><strong>Thermal Dissipation:</strong> You have Resistance to Fire damage.</li><li><strong>Arid Acclimatization:</strong> You require only half the normal water consumption for your size category. If you are subjected to an effect that causes you to start burning, you can make a DC 15 Constitution saving throw; on a success, the flames immediately extinguish.</li></ul></p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "type": {
+      "value": "origin",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 1
+    },
+    "requirements": "Scorching, Desert, or Volcanic Homeworld",
+    "activities": {}
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "_id": "SolActionSurge01",
+  "name": "Action Surge",
+  "type": "feat",
+  "img": "icons/magic/movement/chevrons-down-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take <strong>one additional action</strong>.</p>\n<p>Once you use this feature, you must finish a <strong>Short or Long Rest</strong> before you can use it again. Starting at <strong>17th level</strong>, you can use it twice before a rest, but only once on the same turn.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        },
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "@scale.soldier.action-surge-uses"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Soldier 2",
+    "activities": {
+      "actActionSurge01": {
+        "_id": "actActionSurge01",
+        "type": "utility",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "On your turn"
+        },
+        "duration": {
+          "value": "1",
+          "units": "turn"
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": 0,
+            "contiguous": false,
+            "type": "",
+            "size": 0,
+            "width": 0,
+            "height": 0,
+            "units": "ft"
+          }
+        },
+        "range": {
+          "units": "self",
+          "special": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "name": "Action Surge",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!SolActionSurge01"
+}

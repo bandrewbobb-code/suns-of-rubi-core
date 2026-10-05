@@ -1,0 +1,72 @@
+{
+  "_id": "8d609a64fea07808",
+  "name": "Plasma Strike",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plasma-strike.webp",
+  "system": {
+    "description": {
+      "value": "<p>Next melee hit deals +1d6 fire damage and ignites target, causing it to take 1d6 fire damage at start of its turns until extinguished.<br><br><strong>Overclock:</strong> +1d6 initial fire damage per tier above 1st (+1 NP/tier).</p><p><strong>Operating Systems:</strong> Enforcer, Soldier</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "evo",
+    "properties": [
+      "concentration",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "bonus",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "self"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "701eb94fd90a242e": {
+        "_id": "701eb94fd90a242e",
+        "type": "attack",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "attack": {
+          "type": "melee",
+          "classification": "spell"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!8d609a64fea07808"
+}

@@ -1,0 +1,41 @@
+{
+  "_id": "EngTradeskill001",
+  "name": "Tradeskill Schematics",
+  "type": "feat",
+  "img": "icons/sundries/documents/blueprint-recipe-magic.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 2nd level, you master technical blueprints called <strong>Tradeskill Schematics</strong>. Whenever you finish a Long Rest, you can install a number of active schematics onto your gear, your allies' gear, or your Automaton up to your <strong>Intelligence modifier</strong> (minimum 1).</p>\n<p>Schematics are divided into Baseline (Level 2), Advanced (Level 5), and Master (Level 9). Whenever you gain an Engineer level, you can swap one schematic you know for another schematic of an eligible tier.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Engineer 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EngTradeskill001"
+}

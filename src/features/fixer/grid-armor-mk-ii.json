@@ -1,0 +1,83 @@
+{
+  "_id": "FixGridArmorMk21",
+  "name": "Grid Armor Mk II",
+  "type": "feat",
+  "img": "icons/equipment/chest/vest-leather-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 5th level, your Grid Armor upgrades to <strong>Mk II specifications</strong>:</p><ul><li>Your maximum active decoys increases to <strong>2</strong>.</li><li><strong>Vertical Traversal</strong>: While you have at least one decoy active, you can climb vertical surfaces and cross liquids without falling or sinking.</li><li><strong>Shunt</strong>: Whenever you take the Dash action, you instantly purge any mundane restraints, grapples, or non-magical slow effects affecting you.</li><li><strong>NCU Speed Optimizer</strong>: Whenever you take the Dash action while a decoy is active, your walking speed increases by an additional <strong>+15 feet</strong> for the turn.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Fixer 5",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FixGridArmorMk21"
+}

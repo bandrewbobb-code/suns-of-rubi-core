@@ -1,0 +1,40 @@
+{
+  "_id": "ArmDreadnought01",
+  "name": "Dreadnought Heavy Rig",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-banded-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>Maximum heavy defense plating engineered to withstand direct anti-tank and orbital ordnance hits.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 3500,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 65,
+      "units": "lb"
+    },
+    "type": {
+      "value": "heavy",
+      "baseItem": "dreadnought-heavy-rig"
+    },
+    "armor": {
+      "value": 18,
+      "dex": 0
+    },
+    "strength": 15,
+    "properties": [
+      "stealthDisadvantage"
+    ],
+    "equipped": false,
+    "activities": {}
+  },
+  "_key": "!items!ArmDreadnought01"
+}

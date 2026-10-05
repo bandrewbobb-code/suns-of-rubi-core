@@ -1,0 +1,117 @@
+{
+  "_id": "MaKineticCombo01",
+  "name": "Kinetic Combo",
+  "type": "feat",
+  "img": "icons/skills/movement/body-turn-twist-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Starting at 2nd level, you master the ebb and flow of kinetic momentum, entering a dynamic three-stage combat rhythm: <strong>Neutral State</strong>, <strong>Flow State</strong>, and <strong>Finisher Ready</strong>.</p><ul><li><strong>Opening Strike (Neutral State):</strong> When you hit a hostile creature with an unarmed strike or Martial Artist weapon while in Neutral State, you enter <strong>Flow State</strong>. If the d20 roll for your attack is a natural even number, you bypass Flow State and immediately become <strong>Finisher Ready</strong>.</li><li><strong>Flow State:</strong> While in Flow State, your critical hit range expands to 18–20. You also unlock dynamic Flow Bonus Actions:<ul><li><em>Flurry of Blows:</em> Immediately after you take the Attack action on your turn, you can make two unarmed strikes as a Bonus Action.</li><li><em>Step of the Wind:</em> You can take the Disengage or Dash action as a Bonus Action on your turn, and your jump distance is doubled for the turn.</li><li><em>Patient Defense:</em> You can take the Dodge action as a Bonus Action on your turn. Taking this action resets your combo rhythm back to Neutral State.</li></ul></li><li><strong>Finishing Strike (Finisher Ready):</strong> While Finisher Ready, your critical hit range expands to 16–20. Once per turn when you make an attack, you can execute a known <strong>Finisher</strong>. After the attack resolves (hit or miss), your combo rhythm resets to Neutral State.</li></ul><p>You automatically learn three baseline Finishers: <em>Roundhouse Kick</em>, <em>Discombobulate</em>, and <em>Snap Punch</em>.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Martial Artist 2",
+    "activities": {
+      "actMaFlurryOfBlow": {
+        "_id": "actMaFlurryOfBlow",
+        "type": "utility",
+        "name": "Flurry of Blows",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "In Flow State, after taking the Attack action"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      },
+      "actMaStepOfWind01": {
+        "_id": "actMaStepOfWind01",
+        "type": "utility",
+        "name": "Step of the Wind",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "In Flow State"
+        },
+        "duration": {
+          "units": "turn",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      },
+      "actMaPatientDef01": {
+        "_id": "actMaPatientDef01",
+        "type": "utility",
+        "name": "Patient Defense (Resets to Neutral)",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "In Flow State; resets combo to Neutral State"
+        },
+        "duration": {
+          "units": "round",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MaKineticCombo01"
+}

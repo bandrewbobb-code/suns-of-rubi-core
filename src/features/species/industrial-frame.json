@@ -1,0 +1,34 @@
+{
+  "_id": "SpcAtxIndustFrm1",
+  "name": "Industrial Frame",
+  "type": "feat",
+  "img": "icons/magic/control/buff-strength-muscle-damage-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have a massive, hyper-dense skeletal structure. You count as one size larger (Large) when determining your carrying capacity and the weight you can push, drag, or lift.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Atrox",
+    "activities": {},
+    "identifier": "industrial-frame"
+  },
+  "_key": "!items!SpcAtxIndustFrm1"
+}

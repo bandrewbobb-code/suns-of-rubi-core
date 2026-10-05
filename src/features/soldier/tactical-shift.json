@@ -1,0 +1,41 @@
+{
+  "_id": "SolTactShift0001",
+  "name": "Tactical Shift",
+  "type": "feat",
+  "img": "icons/magic/movement/trail-streak-zigzag-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 5th level, whenever you activate your <strong>Second Wind</strong> as a Bonus Action, you can move up to <strong>half your speed</strong> immediately as part of the same Bonus Action without provoking Opportunity Attacks.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Soldier 5",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!SolTactShift0001"
+}

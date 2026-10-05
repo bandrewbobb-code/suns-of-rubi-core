@@ -1,0 +1,59 @@
+{
+  "_id": "d33941c83485c92a",
+  "_key": "!items!d33941c83485c92a",
+  "name": "Formfighting Mastery",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite:</strong> Level 4</p>\n<ul>\n  <li><strong>Ability Score Increase:</strong> Increase one ability score of your choice by 1, to a maximum of 20.</li>\n  <li><strong>Expanded Stances:</strong> You learn three Rubicon Bladeforms. If you already know at least three, you instead learn seven.</li>\n  <li><strong>Fluid Shift:</strong> Once on each of your turns, you can enter a Bladeform without expending your Bonus Action.</li>\n  <li><strong>Stance Superiority:</strong> The saving throw DC for your Bladeforms increases by 1.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "mastery",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Level 4",
+    "activities": {},
+    "identifier": "formfighting-mastery",
+    "advancement": [
+      {
+        "_id": "11033c642e107db8",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [],
+          "points": 1
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "Ability Score Improvement",
+        "hint": "Increase one ability score of your choice by 1, to a maximum of 20."
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "PersOfScout00001",
+  "name": "Persona of the Scout",
+  "type": "feat",
+  "img": "icons/tools/navigation/binoculars-leather-brass.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Passive Alias:</strong> You gain proficiency in Perception and Survival. You cannot be surprised while conscious, and traveling stealthily does not reduce your travel pace.</p>\n<p><strong>Active Burn:</strong> As a <strong>Bonus Action</strong>, you activate your high-spectrum reconnaissance HUD for <strong>1 minute</strong>, gaining <strong>Blindsight out to 15 feet</strong> and ignoring Disadvantage on attack rolls caused by light or heavy obscurement.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "persona"
+    },
+    "requirements": "Agent 2",
+    "activities": {
+      "actBurnScout0001": {
+        "_id": "actBurnScout0001",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "name": "Active Burn: High-Spectrum HUD"
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!PersOfScout00001"
+}

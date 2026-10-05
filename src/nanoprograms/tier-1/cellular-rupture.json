@@ -1,0 +1,71 @@
+{
+  "_id": "54a9a880a54cfd71",
+  "name": "Cellular Rupture",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/cellular-rupture.webp",
+  "system": {
+    "description": {
+      "value": "<p>Channel destructive Novictum pulses through your hand into an organic foe. Make a melee program attack dealing 3d10 necrotic damage on a hit.<br><br><strong>Overclock:</strong> +1d10 damage per tier above 1st (+1 NP/tier).</p><p><strong>Operating Systems:</strong> Doctor, Shade</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "nec",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "touch"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "ebb5877ef8e0e1bc": {
+        "_id": "ebb5877ef8e0e1bc",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "attack": {
+          "type": "melee",
+          "classification": "spell"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!54a9a880a54cfd71"
+}

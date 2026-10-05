@@ -1,0 +1,116 @@
+{
+  "_id": "SpcGalCommander1",
+  "name": "Commander Form",
+  "type": "feat",
+  "img": "icons/skills/social/intimidation-impressing.webp",
+  "system": {
+    "description": {
+      "value": "<p>You were born into the hulking martial leadership caste of the Galadon:</p>\n<ul>\n  <li>You gain proficiency in your choice of the Intimidation or Persuasion skill.</li>\n  <li><strong>Relentless Stand.</strong> When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. Once you use this trait, you can't do so again until you finish a Long Rest.</li>\n  <li><strong>House War-Cry (1/LR).</strong> As an Action, you unleash a resonant acoustic battle roar. Choose one of the following effects:\n    <ul>\n      <li><em>Terrifying Bellow:</em> Each hostile creature within 30 feet must succeed on a Wisdom saving throw (DC = 8 + your Charisma modifier + your Proficiency Bonus) or be Frightened of you for 1 minute (save ends at end of turn).</li>\n      <li><em>Emboldening Cry:</em> Allies within 60 feet who hear you become immune to the Charmed and Frightened conditions for 1 minute and can add 1d4 to one attack roll or saving throw within that duration.</li>\n    </ul>\n  </li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Galadon",
+    "activities": {
+      "actWarCryBellow1": {
+        "_id": "actWarCryBellow1",
+        "type": "save",
+        "name": "War-Cry: Terrifying Bellow",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "30"
+          },
+          "affix": false
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "8 + @abilities.cha.mod + @prof"
+          }
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      },
+      "actWarCryEmbold1": {
+        "_id": "actWarCryEmbold1",
+        "type": "utility",
+        "name": "War-Cry: Emboldening Cry",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "1"
+        },
+        "range": {
+          "units": "ft",
+          "value": "60"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false,
+          "type": "ally"
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "commander-form"
+  },
+  "_key": "!items!SpcGalCommander1"
+}

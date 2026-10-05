@@ -1,0 +1,73 @@
+{
+  "_id": "224800ab3d3aa09e",
+  "_key": "!items!224800ab3d3aa09e",
+  "name": "Fighting Mastery",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>You unlock deep kinetic mastery and muscle memory with a chosen combat style. Choose one Fighting Mastery from the compendium.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Level 4",
+    "activities": {},
+    "identifier": "fighting-mastery",
+    "advancement": [
+      {
+        "_id": "advFightMstr001",
+        "type": "ItemChoice",
+        "configuration": {
+          "choices": {
+            "0": {
+              "count": 1,
+              "pool": [
+                "Compendium.suns-of-rubi-core.feats.Item.8b57021c9d78ba08",
+                "Compendium.suns-of-rubi-core.feats.Item.40e624507b8264f3",
+                "Compendium.suns-of-rubi-core.feats.Item.fc507134863c884b",
+                "Compendium.suns-of-rubi-core.feats.Item.6b53cff0210b90d4",
+                "Compendium.suns-of-rubi-core.feats.Item.99ea01330d111af1",
+                "Compendium.suns-of-rubi-core.feats.Item.eb92289dc7f7a8aa",
+                "Compendium.suns-of-rubi-core.feats.Item.4ed8e11e6c8841ca",
+                "Compendium.suns-of-rubi-core.feats.Item.d33941c83485c92a",
+                "Compendium.suns-of-rubi-core.feats.Item.cc6e2acd57bf7fff",
+                "Compendium.suns-of-rubi-core.feats.Item.13bbc74c1449db4b",
+                "Compendium.suns-of-rubi-core.feats.Item.88e89bf00ec50cca",
+                "Compendium.suns-of-rubi-core.feats.Item.5bf0b97d07d47d40",
+                "Compendium.suns-of-rubi-core.feats.Item.23aa470b9b0565b0",
+                "Compendium.suns-of-rubi-core.feats.Item.ed59508d10629f33",
+                "Compendium.suns-of-rubi-core.feats.Item.a19d3643a075aa45",
+                "Compendium.suns-of-rubi-core.feats.Item.66363f626821062f",
+                "Compendium.suns-of-rubi-core.feats.Item.d47a71334016a8d5"
+              ]
+            }
+          },
+          "allowDrops": true,
+          "type": "feat",
+          "restriction": {
+            "type": "mastery"
+          }
+        },
+        "title": "Fighting Mastery Choice",
+        "icon": "icons/skills/melee/weapons-crossed-swords-yellow.webp"
+      }
+    ]
+  }
+}

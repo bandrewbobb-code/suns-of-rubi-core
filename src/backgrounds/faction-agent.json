@@ -1,0 +1,115 @@
+{
+  "_id": "BgFactionAgent01",
+  "name": "Faction Agent",
+  "type": "background",
+  "img": "icons/equipment/chest/vest-leather-buckled-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Ability Scores:</strong> INT, WIS, CHA</p>\n<p><strong>Feat:</strong> @UUID[Compendium.suns-of-rubi-core.feats.FeatAlertOrigin1]{Alert}</p>\n<p><strong>Skill Proficiencies:</strong> Choose 2 from DEC, INV, LOR, PER</p>\n<h3>Feature: Safe Haven</h3>\n<p>As a faction operative, you have access to a network of clandestine safe houses, sympathetic cutouts, and encrypted communication dead-drops maintained by your faction (Omni-Tek Internal Affairs, the Clan Council of Truth, or the Neutral Freelancer League). You know secret passphrases, digital handshake protocols, and safe houses where you and your companions can rest, recuperate, and seek discrete medical aid or munitions without alerting local security forces.</p>\n<hr/>\n<h3>Roleplay Characteristics</h3>\n<h4>Personality Traits</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I never give a straight answer when an ambiguous or cautious one will suffice.</td></tr>\n    <tr><td><strong>2</strong></td><td>I continuously catalog the political and factional loyalties of everyone I meet.</td></tr>\n    <tr><td><strong>3</strong></td><td>I speak multiple planetary dialects with authentic regional accents.</td></tr>\n    <tr><td><strong>4</strong></td><td>I appear completely ordinary and forgettable—a face that blends into any crowd.</td></tr>\n    <tr><td><strong>5</strong></td><td>I never leave confidential notes or open datapads unattended for even a second.</td></tr>\n    <tr><td><strong>6</strong></td><td>I always sit facing the primary entryway with a clear line of sight to all exits.</td></tr>\n  </tbody>\n</table>\n<h4>Ideals</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>Loyalty. My faction represents humanity's only organized future, and my allegiance is unwavering. (Lawful)</td></tr>\n    <tr><td><strong>2</strong></td><td>Liberty. Free people should not be subjugated by corporate boardrooms or oppressive dogma. (Chaotic)</td></tr>\n    <tr><td><strong>3</strong></td><td>Pragmatism. Political rhetoric is irrelevant; only concrete results and intel matter. (Neutral)</td></tr>\n    <tr><td><strong>4</strong></td><td>Protection. My covert operations prevent planetary wars that would slaughter millions. (Good)</td></tr>\n    <tr><td><strong>5</strong></td><td>Power. Knowledge is leverage, leverage is influence, and influence controls solar systems. (Evil)</td></tr>\n    <tr><td><strong>6</strong></td><td>Duty. Personal happiness must be sacrificed for the broader mission objective. (Any)</td></tr>\n  </tbody>\n</table>\n<h4>Bonds</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I would lay down my life to protect the identity and safety of my faction handler.</td></tr>\n    <tr><td><strong>2</strong></td><td>I possess encrypted files containing proof of a corporate conspiracy that could ignite war.</td></tr>\n    <tr><td><strong>3</strong></td><td>A rival faction operative murdered my squadmate; our duel across the colonies is unfinished.</td></tr>\n    <tr><td><strong>4</strong></td><td>The colony where I was born was destroyed by a cover-up; I fight to expose the perpetrators.</td></tr>\n    <tr><td><strong>5</strong></td><td>My loyalties are divided between my faction's commands and my personal comrades.</td></tr>\n    <tr><td><strong>6</strong></td><td>I suspect my direct superior may be a double-agent for Omni-Prime.</td></tr>\n  </tbody>\n</table>\n<h4>Flaws</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I am chronically paranoid and struggle to genuinely trust anyone, even long-time allies.</td></tr>\n    <tr><td><strong>2</strong></td><td>I am accustomed to treating people as assets and pawns rather than living beings.</td></tr>\n    <tr><td><strong>3</strong></td><td>My faction's orders override personal moral qualms, leading me to commit cold actions.</td></tr>\n    <tr><td><strong>4</strong></td><td>I carry cyanide-capsules or data-wipe killswitches and assume capture means execution.</td></tr>\n    <tr><td><strong>5</strong></td><td>I cannot resist investigating encrypted transmissions even when mission parameters forbid it.</td></tr>\n    <tr><td><strong>6</strong></td><td>I look down on civilians who remain blissfully ignorant of shadow conflicts.</td></tr>\n  </tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "identifier": "faction-agent",
+    "advancement": [
+      {
+        "_id": "BgFactionAgeAsi1",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 3
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "Ability Score Improvement",
+        "hint": "Your background allows you to increase your INT, WIS, CHA scores: increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      {
+        "_id": "BgFactionAgeSkl1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:dec",
+                "skills:inv",
+                "skills:lor",
+                "skills:per"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Skill Proficiencies",
+        "hint": "Choose 2 skills from: dec, inv, lor, per."
+      },
+      {
+        "_id": "BgFactionAgeLng1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Languages",
+        "hint": "Choose 2 language(s)."
+      },
+      {
+        "_id": "BgFactionAgeFgt1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.suns-of-rubi-core.feats.FeatAlertOrigin1"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Origin Feat",
+        "hint": "Your background grants you the Alert origin feat."
+      }
+    ]
+  },
+  "_key": "!items!BgFactionAgent01"
+}

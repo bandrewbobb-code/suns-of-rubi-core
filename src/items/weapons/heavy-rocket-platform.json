@@ -1,0 +1,154 @@
+{
+  "_id": "WpnHvyRocketPlt1",
+  "name": "Heavy Rocket Platform",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-blaster-laser-silver.webp",
+  "system": {
+    "description": {
+      "value": "<p>Shoulder-mounted tracking rocket battery delivering high-yield demolition warheads.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 2000,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 20,
+      "units": "lb"
+    },
+    "type": {
+      "value": "martialR",
+      "baseItem": "heavy-rocket-platform"
+    },
+    "damage": {
+      "base": {
+        "number": 2,
+        "denomination": 10,
+        "types": [
+          "fire"
+        ]
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": []
+      }
+    },
+    "range": {
+      "value": 100,
+      "long": 400,
+      "units": "ft"
+    },
+    "mastery": "push",
+    "properties": [
+      "hvy",
+      "two",
+      "high-recoil-str-15",
+      "lod",
+      "payload-10",
+      "reload-2"
+    ],
+    "activities": {
+      "mainAttack000001": {
+        "_id": "mainAttack000001",
+        "type": "attack",
+        "name": "Strike",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "range": {
+          "value": "100",
+          "long": "400",
+          "units": "ft"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false,
+          "count": 1,
+          "type": "creature"
+        },
+        "attack": {
+          "ability": "dex",
+          "bonus": "",
+          "critical": {
+            "threshold": 20
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      },
+      "auxActivity00001": {
+        "_id": "auxActivity00001",
+        "type": "save",
+        "name": "Rocket Warhead Blast",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "target": {
+          "template": {
+            "type": "sphere",
+            "size": "10",
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "dex",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "parts": [
+            {
+              "number": 2,
+              "denomination": 10,
+              "types": [
+                "fire"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!WpnHvyRocketPlt1"
+}

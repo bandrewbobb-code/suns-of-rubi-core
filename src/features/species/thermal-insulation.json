@@ -1,0 +1,34 @@
+{
+  "_id": "SpcDraThermInsu1",
+  "name": "Thermal Insulation",
+  "type": "feat",
+  "img": "icons/magic/defensive/barrier-shield-dome-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your scales provide innate thermal insulation. You have Resistance to Fire damage or Cold damage (matching the energy type chosen for your Bio-Plasma Breath).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Drakken",
+    "activities": {},
+    "identifier": "thermal-insulation"
+  },
+  "_key": "!items!SpcDraThermInsu1"
+}

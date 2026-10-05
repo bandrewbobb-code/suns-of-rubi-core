@@ -1,0 +1,65 @@
+{
+  "_id": "1c7bd6b7ed0cf0f1",
+  "_key": "!items!1c7bd6b7ed0cf0f1",
+  "name": "Dalja Form [Replaces Ysannite Form]",
+  "type": "feat",
+  "img": "icons/weapons/swords/sword-energy-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Until the end of your next turn, you do not have disadvantage on ranged weapon attack rolls while within 5 feet of a hostile creature. When you hit a creature within 5 feet of you with a ranged attack, their speed is reduced by 10 feet until the start of your next turn (stacks with the Slow mastery).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "form",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Source Weapon Proficiency",
+    "activities": {
+      "af2cbfde8601fe92": {
+        "_id": "af2cbfde8601fe92",
+        "type": "utility",
+        "name": "Adopt Dalja Form",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "dalja-form"
+  }
+}

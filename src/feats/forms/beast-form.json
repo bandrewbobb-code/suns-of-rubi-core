@@ -1,0 +1,65 @@
+{
+  "_id": "86f1df566639862d",
+  "_key": "!items!86f1df566639862d",
+  "name": "Beast Form [Replaces Twilight Form]",
+  "type": "feat",
+  "img": "icons/weapons/swords/sword-energy-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>As a part of the bonus action to adopt this form, make a Dexterity (Stealth) check contested by a Wisdom (Perception) check of a creature within 5 feet. On a success, you become invisible to that creature until the start of your next turn, or until you make an attack roll, execute a nanoprogram, or take a hostile action.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "form",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Source Weapon Proficiency",
+    "activities": {
+      "110d09f4f8b23efa": {
+        "_id": "110d09f4f8b23efa",
+        "type": "utility",
+        "name": "Adopt Beast Form",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "beast-form"
+  }
+}

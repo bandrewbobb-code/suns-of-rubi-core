@@ -1,0 +1,80 @@
+{
+  "_id": "TechNemesisTech1",
+  "name": "Nemesis Technique",
+  "type": "feat",
+  "img": "icons/skills/targeting/crosshair-pointed-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Martial Technique (Prerequisite: Martial Artist Level 13)</em></p><p>As a Bonus Action, you can challenge a creature you can see within 30 feet of you. The target must make a Wisdom saving throw against your Program DC. On a failed save, the target has Disadvantage on attack rolls against creatures other than you, and must make another Wisdom saving throw each time it attempts to move more than 30 feet away from you; on a failure, its movement speed becomes 0 until the start of its next turn. This effect lasts for 1 minute or until you challenge another creature.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "technique"
+    },
+    "requirements": "Martial Artist 13",
+    "activities": {
+      "actTechNemesisTec": {
+        "_id": "actTechNemesisTec",
+        "type": "save",
+        "name": "Challenge Nemesis",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "range": {
+          "value": "30",
+          "units": "ft"
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TechNemesisTech1"
+}

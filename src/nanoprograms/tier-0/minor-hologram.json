@@ -1,0 +1,54 @@
+{
+  "_id": "9d0497d2bb6868f6",
+  "name": "Minor Hologram",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-sensoryimp.webp",
+  "system": {
+    "description": {
+      "value": "<p>You compile a visual hologram or audio sound within a 5-foot cube that lasts for the duration. Physical interaction reveals it as an illusion, or it can be discerned via Intelligence (Investigation).<br><br><strong>Overclock:</strong> Range 60 ft at 5th; 10-ft cube at 11th; combines audio and visual loops at 17th.</p><p><strong>Operating Systems:</strong> Agent, Engineer, Fixer, Shade</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 0 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 0,
+    "school": "ill",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 30,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "fd16b481a27ddee2": {
+        "_id": "fd16b481a27ddee2",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        }
+      }
+    }
+  },
+  "_key": "!items!9d0497d2bb6868f6"
+}

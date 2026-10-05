@@ -1,0 +1,113 @@
+{
+  "_id": "WpnSrcRapier0001",
+  "name": "Source Rapier",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-blade-energy-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Elegant dueling sword with an ultra-fine needle blade of pure coherent Notum light.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 600,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "type": {
+      "value": "martialM",
+      "baseItem": "source-rapier"
+    },
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": 8,
+        "types": [
+          "radiant"
+        ]
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": []
+      }
+    },
+    "range": {
+      "value": 5,
+      "long": null,
+      "units": "ft"
+    },
+    "mastery": "sap",
+    "properties": [
+      "fin",
+      "hidden",
+      "source-resonance"
+    ],
+    "activities": {
+      "mainAttack000001": {
+        "_id": "mainAttack000001",
+        "type": "attack",
+        "name": "Strike",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "range": {
+          "value": "5",
+          "long": "",
+          "units": "ft"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false,
+          "count": 1,
+          "type": "creature"
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": 20
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    }
+  },
+  "_key": "!items!WpnSrcRapier0001"
+}

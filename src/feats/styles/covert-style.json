@@ -1,0 +1,95 @@
+{
+  "_id": "5209379e0bb121c3",
+  "_key": "!items!5209379e0bb121c3",
+  "name": "Covert Style",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>While operating from shadows and unexpected angles: you can take the Hide action as a Bonus Action. If you can already Hide as a Bonus Action, you can instead Hide as a Reaction when gaining cover or obscuration on your turn; creatures you have damaged since the start of your last turn have disadvantage on Wisdom (Perception) checks made to find you.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "fightingStyle",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {
+      "bee95e3ea3824594": {
+        "_id": "bee95e3ea3824594",
+        "type": "utility",
+        "name": "Bonus Action Hide",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      },
+      "70aeb102c429dfe9": {
+        "_id": "70aeb102c429dfe9",
+        "type": "utility",
+        "name": "Reaction Hide (Gaining Cover)",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "When gaining cover or obscuration on your turn"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "covert-style"
+  }
+}

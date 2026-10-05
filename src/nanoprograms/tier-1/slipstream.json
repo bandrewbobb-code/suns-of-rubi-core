@@ -1,0 +1,68 @@
+{
+  "_id": "d13178ad021cf737",
+  "name": "Slipstream",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/slipstream.webp",
+  "system": {
+    "description": {
+      "value": "<p>Movement does not provoke Opportunity Attacks. Once before ending, gain Advantage on one attack (+1d8 force damage on hit) and +30 ft walking speed for the turn.</p><p><strong>Operating Systems:</strong> Adventurer, Fixer, Martial Artist, Shade</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "trs",
+    "properties": [
+      "concentration",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "bonus",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "self"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "56677487606993da": {
+        "_id": "56677487606993da",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!d13178ad021cf737"
+}

@@ -1,0 +1,83 @@
+{
+  "_id": "DiscCellInocula1",
+  "name": "Discovery: Cellular Inoculation",
+  "type": "feat",
+  "img": "icons/tools/laboratory/test-tube-rack-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Subdermal biocircuits continuously filter your blood and lymphatic channels:</p><ul><li>You are completely <strong>immune to all diseases, poison damage, and the Poisoned condition</strong>.</li><li>You have <strong>Advantage on Constitution saving throws</strong> against environmental fatigue, sleep deprivation, and exhaustion.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "discovery"
+    },
+    "requirements": "Doctor 5",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DiscCellInocula1"
+}

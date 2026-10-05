@@ -1,0 +1,41 @@
+{
+  "_id": "FormAmbush000001",
+  "name": "Bio-Morph: Ambush Form",
+  "type": "feat",
+  "img": "icons/creatures/mammals/panther-stalking-shadow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your chassis slims down, dampening acoustic emissions and synthesizing sleek predatory musculature:</p>\n<ul>\n  <li><strong>Speed:</strong> Your walking speed increases by <strong>10 feet</strong>.</li>\n  <li><strong>Ambusher:</strong> You have <strong>Advantage on Initiative rolls</strong> and <strong>Dexterity (Stealth) checks</strong>.</li>\n  <li><strong>Primal Pounce:</strong> If you move at least 20 feet straight toward a creature and then hit it with a melee weapon attack on the same turn, that attack deals an extra <strong>1d8 kinetic damage</strong>.</li>\n  <li><strong>Stalk:</strong> You can use a <strong>Bonus Action</strong> to move up to your speed and take the <strong>Hide action</strong>.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "form"
+    },
+    "requirements": "Adventurer 1",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FormAmbush000001"
+}

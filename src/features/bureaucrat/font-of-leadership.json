@@ -6,7 +6,9 @@
     "description": {
       "value": "<p>Starting at 5th level, you regain all expended uses of <strong>Baton of Authority</strong> when you finish a <strong>Short or Long Rest</strong>.</p><p>In addition, you can expend <strong>2 Nanopool points</strong> (no action required) to regain one expended use of your <strong>Authority Die</strong>.</p>"
     },
-    "source": { "custom": "Suns of Rubi" },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
     "type": {
       "value": "class",
       "subtype": ""
@@ -30,17 +32,24 @@
               "type": "attribute",
               "target": "resources.primary.value",
               "value": "2",
-              "scaling": { "mode": "", "formula": "" }
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
             }
           ],
-          "scaling": { "allowed": false }
+          "scaling": {
+            "allowed": false
+          }
         },
         "duration": {
           "units": "inst",
           "concentration": false,
           "override": false
         },
-        "range": { "override": false },
+        "range": {
+          "override": false
+        },
         "target": {
           "template": {
             "count": "",
@@ -60,29 +69,75 @@
           "prompt": false,
           "override": false
         },
-        "uses": { "spent": 0, "max": "", "recovery": [] },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
         "sort": 0
       }
     },
-    "activation": { "type": "", "value": null, "condition": "" },
-    "duration": { "value": "", "units": "" },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
     "cover": null,
-    "target": { "value": null, "width": null, "units": "", "type": "", "prompt": true },
-    "range": { "value": null, "long": null, "units": "" },
-    "uses": { "value": null, "max": "", "per": null, "recovery": "", "prompt": false },
-    "consume": { "type": "", "target": null, "amount": null, "scale": false },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
     "ability": null,
     "actionType": "",
     "chatFlavor": "Expends 2 Nanopool points to regain 1 Baton of Authority use.",
-    "critical": { "threshold": null, "damage": "" },
-    "damage": { "parts": [], "versatile": "" },
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
     "formula": "",
-    "save": { "ability": "", "dc": null, "scaling": "spell" }
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
   },
   "effects": [],
   "flags": {},
   "folder": null,
   "sort": 0,
-  "_stats": { "compendiumSource": null, "duplicateSource": null },
-  "_key": "!items!FontLeadersh01"
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FontLeadersh01",
+  "_id": "FontLeadersh01"
 }

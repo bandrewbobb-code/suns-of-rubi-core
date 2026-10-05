@@ -1,0 +1,72 @@
+{
+  "_id": "ShdAvatarOfVoid1",
+  "name": "Avatar of the Void",
+  "type": "feat",
+  "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>You embody pure void essence. Your Dexterity and Wisdom scores each increase by 2, and their maximums become 22.</p><p>Additionally, as a Bonus Action, you can merge entirely with Novictum energy for 1 minute, gaining the following benefits:</p><ul><li>You gain the <strong>Invisible</strong> condition.</li><li>All Cunning Strike options cost 1 fewer Sneak Attack die to activate (to a minimum of 0 dice).</li><li>Once per turn, your Sneak Attack damage deals maximum damage automatically without rolling.</li></ul><p>You can use this transformation once without spending Nanopool, regaining this use upon finishing a Long Rest. You can also activate it by spending 6 Nanopool points.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Shade 20",
+    "activities": {
+      "actShdAvatarTrans": {
+        "_id": "actShdAvatarTrans",
+        "type": "utility",
+        "name": "Activate Avatar of the Void",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ShdAvatarOfVoid1"
+}

@@ -1,0 +1,76 @@
+{
+  "_id": "FinStunningStrk1",
+  "name": "Finisher: Stunning Strike",
+  "type": "feat",
+  "img": "icons/magic/stun/shock-ring-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Finisher (Prerequisite: Martial Artist Level 5)</em></p><p>You disrupt the flow of bio-currents through the target's nervous framework. Make an unarmed strike or Martial Artist weapon attack. On a hit, the target must make a Constitution saving throw against your Program DC. On a failed save, the target is <strong>Stunned</strong> until the start of your next turn. On a successful save, the target's speed is halved until the start of your next turn, and the next attack roll made against it before the start of your next turn has Advantage.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "finisher"
+    },
+    "requirements": "Martial Artist 5",
+    "activities": {
+      "actFinStunningStr": {
+        "_id": "actFinStunningStr",
+        "type": "save",
+        "name": "Stunning Strike Con Save",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Hit with Finisher: Stunning Strike"
+        },
+        "duration": {
+          "units": "round",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FinStunningStrk1"
+}

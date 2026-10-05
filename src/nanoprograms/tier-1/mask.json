@@ -1,0 +1,67 @@
+{
+  "_id": "50035b4747243f7b",
+  "name": "Mask",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/mask.webp",
+  "system": {
+    "description": {
+      "value": "<p>Refractive holoprojectors alter facial features, clothing, armor, and gear (+/- 1 foot height). Discerned via Intelligence (Investigation) against Program DC.</p><p><strong>Operating Systems:</strong> Agent, Fixer, Shade, Trader</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "ill",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "self"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "175eabf48b07b94c": {
+        "_id": "175eabf48b07b94c",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!50035b4747243f7b"
+}

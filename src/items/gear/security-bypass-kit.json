@@ -1,0 +1,37 @@
+{
+  "_id": "ToolSecurityKit1",
+  "name": "Security Bypass Kit",
+  "type": "tool",
+  "img": "icons/tools/instruments/multitool-electronic.webp",
+  "system": {
+    "description": {
+      "value": "<p>Electromagnetic pick set, cipher decoders, and laser diffraction shims used to open electronic and mechanical locks.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 100,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "quantity": 1,
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "activities": {},
+    "type": {
+      "value": "specialist",
+      "baseItem": "security-bypass-kit"
+    }
+  },
+  "_key": "!items!ToolSecurityKit1"
+}

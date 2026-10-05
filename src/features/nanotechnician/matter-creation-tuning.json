@@ -1,0 +1,83 @@
+{
+  "_id": "NtMCTuning000001",
+  "name": "Matter Creation Tuning",
+  "type": "feat",
+  "img": "icons/commodities/materials/shard-crystal-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 3rd level, you fine-tune your deck's core matter-creation (MC) nanite emitters to specialize your combat output. Choose one of the following tunings from the Matter Creation Tuning compendium:</p><ul><li><strong>Agonizing Blast</strong>: Add your Intelligence modifier to damage rolls of At-Will (Tier 0) nanoprograms.</li><li><strong>Expanded NCU Bandwidth</strong>: Add both Wisdom and Charisma modifiers to your maximum Nanopool points.</li><li><strong>Nano Recompiler</strong>: Gain Advantage on Constitution saving throws made to maintain Concentration on nanoprograms.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Nano-Technician 3",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!NtMCTuning000001"
+}

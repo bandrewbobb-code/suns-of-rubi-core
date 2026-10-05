@@ -1,0 +1,67 @@
+{
+  "_id": "CstWithdraw00001",
+  "name": "Cunning Strike: Withdraw",
+  "type": "feat",
+  "img": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Cunning Strike (Cost: 1d6 Sneak Attack Die)</em></p><p>Immediately after dealing damage, you move up to half your Speed without provoking opportunity attacks.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "cunning-strike"
+    },
+    "requirements": "Shade 2",
+    "activities": {
+      "actCstWithdraw01": {
+        "_id": "actCstWithdraw01",
+        "type": "utility",
+        "name": "Withdraw Movement",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "On dealing Sneak Attack damage (Cost: 1d6)"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!CstWithdraw00001"
+}

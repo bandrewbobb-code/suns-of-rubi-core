@@ -1,0 +1,41 @@
+{
+  "_id": "StratSourcewpns1",
+  "name": "Strategy: Sourceweapons Strategist",
+  "type": "feat",
+  "img": "icons/weapons/swords/sword-broad-crystal-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>You integrate exotic Sourceweapon doctrines into your military training:</p>\n<ul>\n  <li>You gain <strong>proficiency in all Sourceweapons</strong>.</li>\n  <li>You learn one <strong>Fighting Form</strong> of your choice without needing to possess forcecasting or nanocasting requirements.</li>\n  <li><strong>Second Skin:</strong> While wearing Medium or Heavy armor, all kinetic, energy, and ion damage you suffer is reduced by your <strong>Proficiency Bonus</strong> (`@prof`).</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "strategy"
+    },
+    "requirements": "Soldier 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!StratSourcewpns1"
+}

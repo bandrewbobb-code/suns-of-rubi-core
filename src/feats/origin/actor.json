@@ -1,0 +1,65 @@
+{
+  "_id": "FeatActorOrigin1",
+  "name": "Actor",
+  "type": "feat",
+  "img": "icons/equipment/head/mask-carved-wood-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Skilled at mimicry and dramatics, you gain the following benefits:</p>\n<ul>\n  <li><strong>Impersonation Advantage.</strong> You have Advantage on Deception and Performance checks when trying to pass yourself off as a different person.</li>\n  <li><strong>Speech &amp; Sound Mimicry.</strong> You can mimic the speech of another person or the sounds made by other creatures and machinery. You must have heard the person speaking or heard the creature/device for at least 1 minute. A successful Insight check contested by your Deception check allows a listener to determine that the effect is faked.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {
+      "actActorMimic001": {
+        "_id": "actActorMimic001",
+        "type": "utility",
+        "name": "Mimicry",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "actor"
+  },
+  "_key": "!items!FeatActorOrigin1"
+}

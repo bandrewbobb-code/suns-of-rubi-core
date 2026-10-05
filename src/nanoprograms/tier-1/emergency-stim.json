@@ -1,0 +1,67 @@
+{
+  "_id": "bf588c58edd366d7",
+  "name": "Emergency Stim",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/emergency-stim.webp",
+  "system": {
+    "description": {
+      "value": "<p>Launch a nano-injection beacon. A living creature of your choice within range regains 2d4 + your nanocasting ability modifier Hit Points.<br><br><strong>Overclock:</strong> +2d4 healing per tier above 1st (+1 NP/tier).</p><p><strong>Operating Systems:</strong> Bureaucrat, Doctor, Keeper</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "bonus",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 60,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "819301a0bf11ba02": {
+        "_id": "819301a0bf11ba02",
+        "type": "heal",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!bf588c58edd366d7"
+}

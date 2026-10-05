@@ -1,0 +1,108 @@
+{
+  "_id": "RaceYuttos000001",
+  "name": "Yuttos",
+  "type": "race",
+  "img": "icons/magic/perception/orb-crystal-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>The <strong>Yuttos</strong> are the ancient, robed caretakers of Rubi-Ka. Little is known of their biological origins, as they remain perpetually concealed beneath layered garments, cowls, and intricate filtration masks.</p>\n<h3>Keepers of Precursor Lore</h3>\n<p>Possessing an innate precognitive awareness of impending disaster and deep knowledge of precursor ruins, Yuttos offer cryptic guidance to travelers, wandering the desert wastes as solitary hermits or in small communal conclaves.</p>\n<h3>Yuttos Names</h3>\n<p>Yuttos take names derived from natural planetary phenomena, seasonal stars, and ancient proverbs.</p>\n<ul>\n  <li><em>Names:</em> One-Who-Watches, Dust-Drifter, Sage-of-the-Oasis, Whisper, Oru, Yut-Tek.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "identifier": "yuttos",
+    "movement": {
+      "burrow": null,
+      "climb": null,
+      "fly": null,
+      "swim": null,
+      "walk": 30,
+      "units": "ft",
+      "hover": false
+    },
+    "senses": {
+      "darkvision": null,
+      "blindsight": null,
+      "tremorsense": null,
+      "truesight": null,
+      "units": "ft",
+      "special": ""
+    },
+    "type": {
+      "value": "humanoid",
+      "subtype": "Yuttos",
+      "custom": ""
+    },
+    "advancement": [
+      {
+        "_id": "RaceYuttos00Siz1",
+        "type": "Size",
+        "configuration": {
+          "sizes": [
+            "sm",
+            "med"
+          ]
+        },
+        "level": 0,
+        "title": "Size",
+        "hint": "Your size is Small or Medium.",
+        "value": {}
+      },
+      {
+        "_id": "RaceYuttos00Lng1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:standard:common"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Languages",
+        "hint": "You speak Galactic Trade (Common) and one additional language such as Ancient Yutto cant."
+      },
+      {
+        "_id": "RaceYuttos00Fgt1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.suns-of-rubi-core.species-features.SpcYutPrecognit1",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.species-features.SpcYutInscrutab1",
+              "optional": false
+            },
+            {
+              "uuid": "Compendium.suns-of-rubi-core.species-features.SpcYutCareAncKn1",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Yuttos Traits",
+        "hint": "Grants the innate traits of the Yuttos."
+      }
+    ]
+  },
+  "_key": "!items!RaceYuttos000001"
+}

@@ -1,0 +1,112 @@
+{
+  "_id": "MpManifestation1",
+  "name": "Notum Manifestation",
+  "type": "feat",
+  "img": "icons/magic/light/orb-lightbulb-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Starting at 1st level, you can materialize floating Notum Valences known as <strong>Manifestation Nodes</strong>. As an Action, you spend Nanopool points to manifest one node in an unoccupied space within 60 feet. The minimum cost is 2 Nanopool points (Power Level 1), and you can spend additional points up to your Max Power Level (+1 NP per tier).</p><ul><li><strong>Node Aspects:</strong> You choose the node's aspect upon manifestation: <em>Wrath</em> (offensive force), <em>Curative</em> (somatic restoration), or <em>Bewilderment</em> (sensory distortion).</li><li><strong>Capacity & Duration:</strong> You can maintain up to 3 active nodes simultaneously. A manifestation persists for a number of hours equal to your Meta-Physicist level, until reduced to 0 HP, or until you dismiss it.</li><li><strong>Conduit Pool:</strong> All your manifestations share a single Conduit Pool with hit points equal to <code>10 + (5 * @classes.meta-physicist.levels)</code>. Overpowering a manifestation at Power Level 2 or higher immediately heals the Conduit Pool for <code>5 * Power Level</code>.</li><li><strong>Noetic Pulse:</strong> As a Bonus Action on your turn, you can issue a Noetic Pulse command to one active manifestation node, activating its corresponding action (Wrath Strike, Curative Pulse, or Bewilderment Pulse).</li><li><strong>Symbiotic Orbit:</strong> A manifestation node can enter and occupy an ally's space, moving along with them without provoking opportunity attacks.</li></ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Meta-Physicist 1",
+    "activities": {
+      "actMpManifestNode": {
+        "_id": "actMpManifestNode",
+        "type": "utility",
+        "name": "Manifest Node",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "hour",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "range": {
+          "value": "60",
+          "units": "ft"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "value",
+              "value": "2",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": true,
+            "max": ""
+          }
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      },
+      "actMpNoeticPulse1": {
+        "_id": "actMpNoeticPulse1",
+        "type": "utility",
+        "name": "Noetic Pulse Command",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "1d8 + @abilities.wis.mod",
+          "name": "Noetic Pulse Roll"
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MpManifestation1"
+}

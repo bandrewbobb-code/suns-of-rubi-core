@@ -1,0 +1,24 @@
+{
+  "_id": "f28b73c77a2bdb4e",
+  "_key": "!items!f28b73c77a2bdb4e",
+  "name": "Airy Origin",
+  "type": "feat",
+  "img": "icons/magic/symbols/star-solid-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite:</strong> Gas Giant Station, Aerial Colony, or Stormworld</p><p>You grew up navigating thin atmospheres, orbital drop-shafts, and atmospheric weather storms.<ul><li><strong>Atmospheric Resistance:</strong> You have Resistance to falling damage, Lightning damage, or Thunder/Sonic damage (chosen when you select this feat).</li><li><strong>Low-Oxygen Conditioning:</strong> You can hold your breath for a number of hours equal to 3 plus your Constitution modifier (minimum of 1 hour).</li></ul></p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "type": {
+      "value": "origin",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 1
+    },
+    "requirements": "Gas Giant Station, Aerial Colony, or Stormworld",
+    "activities": {}
+  }
+}

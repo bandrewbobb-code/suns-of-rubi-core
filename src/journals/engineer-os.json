@@ -1,0 +1,24 @@
+{
+  "_id": "1f753173c63287c8",
+  "name": "Engineer OS Directory",
+  "pages": [
+    {
+      "_id": "1985e0edb6bbf0d1",
+      "name": "Engineer OS Catalog",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Engineer Operating System</h1><p>This directory catalogs all compiled nano-formulas available to the <strong>Engineer</strong> OS. Click any entry to inspect its telemetry, or drag the link directly onto your character sheet to install the routine into your NCU.</p><h2>Tier 0: At-Will Routines (6)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.d9d4632f2054f930]{Grapple Beam}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.e5f1db48ccac424b]{Holo-Drones}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.af9498b5d20c4b85]{Light}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.23132ad56e29826d]{Mending}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.9d0497d2bb6868f6]{Minor Hologram}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.e4a9fbd7a14d6edd]{Shocking Grasp}</li></ul><h2>Tier 1: Leveled Nanoprograms (22)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.087182f47f688efb]{6,000,000,000 Forms of Communication}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.59dd7af0bd7ad476]{Alarm}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.149b699cf13e38e4]{Armor Megaboost}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.a356679a35af45c4]{Autonomous Assistant}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.820354b9669a981f]{Boosted Tendons}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.8b6b900cd617a441]{Coat of Blades}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.0394b8304007cf07]{Create or Destroy Water}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.0a22ae47e5c1151a]{Decontaminate}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.585c68353decaca0]{Deep Scan}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.b102b24e674e85d7]{Detect Notum}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.f852f2db63bcd053]{Energy Sink}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.a9db968240766789]{Ghost Drone}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.f7d4d319a46113ed]{Grav-Chute}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.39cd34a285bf2b25]{Hologram}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.ade46f449f49bf58]{Hover-Sled}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.e36706f4abcc6503]{Mirror Shield}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.e07029c73cd0be59]{Photon Deflector}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.18772fc9cf97967e]{Rail Toss}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.8c358653a9c620c3]{Repair Object}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.d33ae0c470daafa6]{Slick}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.fe214ee346885ebc]{Tesla Arc}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.a72683717ed77ae9]{Toxin Scan}</li></ul>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "_key": "!journal.pages!1f753173c63287c8.1985e0edb6bbf0d1"
+    }
+  ],
+  "ownership": {
+    "default": 2
+  },
+  "_key": "!journal!1f753173c63287c8"
+}

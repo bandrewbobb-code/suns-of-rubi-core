@@ -1,0 +1,67 @@
+{
+  "_id": "InscVaporousForm",
+  "name": "Inscription: Vaporous Form",
+  "type": "feat",
+  "img": "icons/magic/air/fog-gas-smoke-dense-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Novictum Inscription (Prerequisite: Shade Level 9)</em></p><p>When you take the Disengage action using your Cunning Action, your body temporarily shifts into vaporous nanite smog. You gain a flying speed equal to your walking speed until the end of your current turn, and you can move through the space of other creatures as if it were difficult terrain.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "inscription"
+    },
+    "requirements": "Shade 9",
+    "activities": {
+      "actInscVaporForm": {
+        "_id": "actInscVaporForm",
+        "type": "utility",
+        "name": "Vaporous Shift",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "When taking Cunning Action: Disengage"
+        },
+        "duration": {
+          "units": "turn",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!InscVaporousForm"
+}

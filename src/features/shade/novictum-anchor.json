@@ -1,0 +1,101 @@
+{
+  "_id": "ShdNovictAnchor1",
+  "name": "Novictum Anchor",
+  "type": "feat",
+  "img": "icons/magic/symbols/rune-sigil-hook-white-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>You can use a Bonus Action to tether an invisible Novictum Anchor to your current space. The anchor lasts for 1 minute or until you create another one. At any point while the anchor persists, if you are within 60 feet of it, you can use a Bonus Action or a Reaction to instantly teleport back to the anchor's space.</p><p>You can place an anchor once without spending Nanopool, regaining this free use when you finish a Short or Long Rest. You can also create an anchor by spending 4 Nanopool points.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Shade 9",
+    "activities": {
+      "actShdPlaceAnchor": {
+        "_id": "actShdPlaceAnchor",
+        "type": "utility",
+        "name": "Place Novictum Anchor",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "minute",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      },
+      "actShdTeleToAnchr": {
+        "_id": "actShdTeleToAnchr",
+        "type": "utility",
+        "name": "Teleport to Anchor",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "Within 60 ft of active Novictum Anchor (can also use Reaction)"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "range": {
+          "value": "60",
+          "units": "ft"
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ShdNovictAnchor1"
+}

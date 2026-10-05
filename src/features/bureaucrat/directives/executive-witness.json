@@ -1,0 +1,82 @@
+{
+  "name": "Directive: Executive Witness",
+  "type": "feat",
+  "img": "icons/sundries/scrolls/scroll-bound-ruby-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your Mechanical Bodyguard gains <strong>10 ft. Truesight</strong> and can access local registry databases.</p><p>You have <strong>Advantage</strong> on Intelligence (Lore) and Wisdom (Insight) checks regarding <strong>organizations</strong>, <strong>bounties</strong>, or <strong>contracts</strong>.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "directive"
+    },
+    "requirements": "Bureaucrat 2",
+    "properties": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DirExecWitns001",
+  "_id": "DirExecWitns001"
+}

@@ -1,0 +1,54 @@
+{
+  "_id": "SpcYutCareAncKn1",
+  "name": "Caretakers of Ancient Knowledge",
+  "type": "feat",
+  "img": "icons/sundries/books/book-embossed-gold-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>You possess ancestral memories handed down from the oldest custodians of Rubi-Ka:</p>\n<ul>\n  <li>You gain proficiency in the Lore skill.</li>\n  <li>You add double your Proficiency Bonus to any check regarding ancient precursor history, alien glyphs, and forgotten archaeological ruins.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Yuttos",
+    "activities": {},
+    "identifier": "caretakers-ancient-knowledge",
+    "advancement": [
+      {
+        "_id": "advYutLoreSkl001",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:lor"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Caretakers of Ancient Knowledge",
+        "hint": "Grants proficiency in the Lore skill."
+      }
+    ]
+  },
+  "_key": "!items!SpcYutCareAncKn1"
+}

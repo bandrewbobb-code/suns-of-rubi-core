@@ -1,0 +1,65 @@
+{
+  "_id": "a05bf5fbda8e1bec",
+  "_key": "!items!a05bf5fbda8e1bec",
+  "name": "Roch Form [Replaces Shii-Cho Form]",
+  "type": "feat",
+  "img": "icons/weapons/swords/sword-energy-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>When you successfully push a creature or knock it prone (such as via the Push or Topple masteries), you can immediately move up to 10 feet into an unoccupied space without provoking opportunity attacks.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "form",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Source Weapon Proficiency",
+    "activities": {
+      "dcb589204f0d83d3": {
+        "_id": "dcb589204f0d83d3",
+        "type": "utility",
+        "name": "Adopt Roch Form",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "roch-form"
+  }
+}

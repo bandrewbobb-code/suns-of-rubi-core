@@ -1,0 +1,242 @@
+{
+  "_id": "SolTactStrikes01",
+  "name": "Tactical Strikes",
+  "type": "feat",
+  "img": "icons/skills/targeting/crosshair-pointed-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 2nd level, you turn the heat of combat into an analytical combat loop. When you hit a creature with a weapon attack as part of the <strong>Attack action</strong>, check the natural number rolled on the d20:</p>\n<ul>\n  <li><strong>Natural Even Roll — Tactical Reposition:</strong> Choose one willing ally within 30 feet who can see or hear you. That ally can use its <strong>Reaction</strong> to move up to 10 feet without provoking Opportunity Attacks.</li>\n  <li><strong>Natural Odd Roll — Suppressive Fire:</strong> The target's speed is reduced by <strong>10 feet</strong> until the start of your next turn.</li>\n  <li><strong>Natural 16–20 — Tactical Maneuver:</strong> You can apply one of the following maneuvers (maximum once per turn):\n    <ul>\n      <li><strong>Disarming Strike:</strong> The target must succeed on a Strength saving throw against your Nanoprogram Save DC or drop one weapon or held item of your choice onto the ground within 5 feet of it.</li>\n      <li><strong>Heavy Ordnance:</strong> If the target is Large or smaller, it is pushed 15 feet straight away from you. If your attack misses, it still suffers graze damage equal to your Intelligence modifier (minimum of 1 kinetic damage).</li>\n    </ul>\n  </li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Soldier 2",
+    "activities": {
+      "actTactReposition": {
+        "_id": "actTactReposition",
+        "type": "utility",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Hit with weapon attack (Natural Even roll)"
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "ally",
+            "choice": false,
+            "special": "Willing ally within 30 ft who can see or hear you"
+          },
+          "template": {
+            "count": 0,
+            "contiguous": false,
+            "type": "",
+            "size": 0,
+            "width": 0,
+            "height": 0,
+            "units": "ft"
+          }
+        },
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "special": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "name": "Tactical Reposition (Natural Even)",
+        "img": "",
+        "appliedEffects": []
+      },
+      "actSuppressFire1": {
+        "_id": "actSuppressFire1",
+        "type": "utility",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Hit with weapon attack (Natural Odd roll)"
+        },
+        "duration": {
+          "value": "1",
+          "units": "round"
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": "Target of weapon attack"
+          },
+          "template": {
+            "count": 0,
+            "contiguous": false,
+            "type": "",
+            "size": 0,
+            "width": 0,
+            "height": 0,
+            "units": "ft"
+          }
+        },
+        "range": {
+          "units": "spec",
+          "special": "Target of attack"
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "name": "Suppressive Fire (Natural Odd)",
+        "img": "",
+        "appliedEffects": []
+      },
+      "actDisarmStrike1": {
+        "_id": "actDisarmStrike1",
+        "type": "save",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Natural 16–20 on weapon attack (1/turn)"
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": "Target hit by weapon attack"
+          },
+          "template": {
+            "count": 0,
+            "contiguous": false,
+            "type": "",
+            "size": 0,
+            "width": 0,
+            "height": 0,
+            "units": "ft"
+          }
+        },
+        "range": {
+          "units": "spec",
+          "special": "Target hit"
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "int",
+            "formula": ""
+          }
+        },
+        "name": "Disarming Strike (Natural 16–20)",
+        "img": "",
+        "appliedEffects": []
+      },
+      "actHeavyOrdnance": {
+        "_id": "actHeavyOrdnance",
+        "type": "damage",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Natural 16–20 on weapon attack (1/turn)"
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": "Large or smaller target"
+          },
+          "template": {
+            "count": 0,
+            "contiguous": false,
+            "type": "",
+            "size": 0,
+            "width": 0,
+            "height": 0,
+            "units": "ft"
+          }
+        },
+        "range": {
+          "units": "spec",
+          "special": "Target hit"
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "max(1, @abilities.int.mod)"
+              },
+              "types": [
+                "kinetic"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "name": "Heavy Ordnance (Push 15 ft / Graze Damage)",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!SolTactStrikes01"
+}

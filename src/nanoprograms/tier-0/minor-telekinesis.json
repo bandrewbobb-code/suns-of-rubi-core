@@ -1,0 +1,54 @@
+{
+  "_id": "28816a2e217c81b4",
+  "name": "Minor Telekinesis",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-mattermet.webp",
+  "system": {
+    "description": {
+      "value": "<p>A micro-graviton tractor beam appears at a point within range. Use your action to manipulate an object, open an unlocked door/container, or retrieve gear up to 10 pounds. Cannot attack or activate tech items.<br><br><strong>Overclock:</strong> 20 lbs at 5th; 40 lbs and range 60 ft at 11th; 80 lbs at 17th.</p><p><strong>Operating Systems:</strong> Keeper, Martial Artist, Meta-Physicist, Shade</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 0 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 0,
+    "school": "trs",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 30,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "109a6265ae872185": {
+        "_id": "109a6265ae872185",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        }
+      }
+    }
+  },
+  "_key": "!items!28816a2e217c81b4"
+}

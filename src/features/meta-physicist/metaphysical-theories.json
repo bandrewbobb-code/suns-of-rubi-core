@@ -1,0 +1,41 @@
+{
+  "_id": "MpTheoriesOvervw",
+  "name": "Metaphysical Theories",
+  "type": "feat",
+  "img": "icons/sundries/books/book-embossed-jewel-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>In your research into the physics of Notum, you have formulated modular Metaphysical Theories that unlock unique paracausal interactions. At 2nd level, you gain two Metaphysical Theories of your choice. You gain additional theories as shown in the Theories Known column of the Meta-Physicist table (up to 10 at 18th level).</p><p>Whenever you gain a level in this class, you can choose one of the theories you know and replace it with another theory that you could learn at that level.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Meta-Physicist 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MpTheoriesOvervw"
+}

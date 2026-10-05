@@ -1,0 +1,105 @@
+{
+  "_id": "15270c0db4806d08",
+  "_key": "!items!15270c0db4806d08",
+  "name": "Shielding",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>While wielding a shield with which you are proficient: when a creature you can see attacks a target other than you within 5 feet, you can use your Reaction to impose disadvantage on the attack roll; when you take the Attack action with a melee weapon, you can use a Bonus Action to make a shield bash attack (1d4 kinetic damage, uses the primary attack's ability modifier); wielding a Heavy Shield no longer requires you to hold a Light weapon in your other hand.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "fightingStyle",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {
+      "f8c0d2a415ae7fd8": {
+        "_id": "f8c0d2a415ae7fd8",
+        "type": "utility",
+        "name": "Reaction Impose Disadvantage",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "When a creature you can see attacks another target within 5 ft"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      },
+      "6d1ef4c207172ec5": {
+        "_id": "6d1ef4c207172ec5",
+        "type": "damage",
+        "name": "Bonus Action Shield Bash",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "When you take the Attack action with a melee weapon"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "damage": {
+          "parts": [
+            {
+              "formula": "1d4 + @mod",
+              "types": [
+                "bludgeoning"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "identifier": "shielding"
+  }
+}

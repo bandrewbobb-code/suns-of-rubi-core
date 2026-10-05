@@ -1,0 +1,34 @@
+{
+  "_id": "SpcSolUnmodEqui1",
+  "name": "Unmodified Equilibrium",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-flaming-diamond-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>As the baseline genetic template of humanity, your natural immune and biological systems are remarkably balanced:</p>\n<ul>\n  <li>You have Advantage on saving throws against biological diseases and cellular degeneration.</li>\n  <li>Your body never rejects cybernetic augmentations, nanotech symbionts, or neural implants.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Solitus",
+    "activities": {},
+    "identifier": "unmodified-equilibrium"
+  },
+  "_key": "!items!SpcSolUnmodEqui1"
+}

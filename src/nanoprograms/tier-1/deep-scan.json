@@ -1,0 +1,68 @@
+{
+  "_id": "585c68353decaca0",
+  "name": "Deep Scan",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/deep-scan.webp",
+  "system": {
+    "description": {
+      "value": "<p>Diagnostic cables analyze an object, relic, or cybernetic implant, revealing properties, operational modes, activation commands, battery charges, tracking chips, or malware.</p><p><strong>Operating Systems:</strong> Engineer, Meta-Physicist, Nano-Technician, Trader</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "div",
+    "properties": [
+      "ritual",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "minute",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "touch"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "43df5e389bd5e7d2": {
+        "_id": "43df5e389bd5e7d2",
+        "type": "utility",
+        "activation": {
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!585c68353decaca0"
+}

@@ -1,0 +1,56 @@
+{
+  "_id": "GearCellNaniteS1",
+  "name": "Cellular Nanite Salve",
+  "type": "consumable",
+  "img": "icons/consumables/potions/vial-cork-liquid-glowing-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Medical nanite paste that rapidly reconstructs cellular damage. Restores 4d4 + 4 HP and removes 1 Exhaustion level.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 150,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "quantity": 1,
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": "1"
+    },
+    "activities": {
+      "actGearPrimary01": {
+        "_id": "actGearPrimary01",
+        "type": "heal",
+        "name": "Apply Salve",
+        "activation": {
+          "type": "minute",
+          "value": 1,
+          "condition": ""
+        },
+        "healing": {
+          "types": [
+            "healing"
+          ],
+          "custom": {
+            "enabled": true,
+            "formula": "4d4 + 4"
+          }
+        }
+      }
+    },
+    "type": {
+      "value": "potion"
+    }
+  },
+  "_key": "!items!GearCellNaniteS1"
+}

@@ -1,0 +1,76 @@
+{
+  "_id": "CstKnockOut00001",
+  "name": "Cunning Strike: Knock Out",
+  "type": "feat",
+  "img": "icons/magic/control/sleep-bubble-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Cunning Strike (Cost: 6d6 Sneak Attack Dice, Prerequisite: Shade Level 11)</em></p><p>You strike with devastating concussive force. The target must succeed on a Constitution saving throw against your Program Save DC or be <strong>Unconscious</strong> for 1 minute, or until it takes damage. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "cunning-strike"
+    },
+    "requirements": "Shade 11",
+    "activities": {
+      "actCstKnockOut01": {
+        "_id": "actCstKnockOut01",
+        "type": "save",
+        "name": "Knock Out Con Save",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "On dealing Sneak Attack damage (Cost: 6d6)"
+        },
+        "duration": {
+          "units": "minute",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!CstKnockOut00001"
+}

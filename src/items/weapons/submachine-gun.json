@@ -1,0 +1,153 @@
+{
+  "_id": "WpnSubmachineGn1",
+  "name": "Submachine Gun",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-blaster-laser-silver.webp",
+  "system": {
+    "description": {
+      "value": "<p>Compact automatic ballistic weapon firing high-velocity caseless slugs. Features Full Auto spray mode.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 300,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 4,
+      "units": "lb"
+    },
+    "type": {
+      "value": "simpleR",
+      "baseItem": "submachine-gun"
+    },
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": 6,
+        "types": [
+          "piercing"
+        ]
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": []
+      }
+    },
+    "range": {
+      "value": 30,
+      "long": 90,
+      "units": "ft"
+    },
+    "mastery": "nick",
+    "properties": [
+      "lgt",
+      "close-quarters",
+      "continuous-fire",
+      "auto-6",
+      "reload-12"
+    ],
+    "activities": {
+      "mainAttack000001": {
+        "_id": "mainAttack000001",
+        "type": "attack",
+        "name": "Strike",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "range": {
+          "value": "30",
+          "long": "90",
+          "units": "ft"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false,
+          "count": 1,
+          "type": "creature"
+        },
+        "attack": {
+          "ability": "dex",
+          "bonus": "",
+          "critical": {
+            "threshold": 20
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      },
+      "auxActivity00001": {
+        "_id": "auxActivity00001",
+        "type": "save",
+        "name": "Full Auto Spray",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "Expend 6 rounds"
+        },
+        "target": {
+          "template": {
+            "type": "cube",
+            "size": "10",
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "dex",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 6,
+              "types": [
+                "piercing"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!WpnSubmachineGn1"
+}

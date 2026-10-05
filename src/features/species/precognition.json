@@ -1,0 +1,65 @@
+{
+  "_id": "SpcYutPrecognit1",
+  "name": "Precognition",
+  "type": "feat",
+  "img": "icons/magic/perception/orb-crystal-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your third eye and temporal Notum sensitivity grant flashes of impending probability. When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Yuttos",
+    "activities": {
+      "actYuttoPrecogn1": {
+        "_id": "actYuttoPrecogn1",
+        "type": "utility",
+        "name": "Precognitive Reroll",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "When you roll a 1 on a d20"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "precognition"
+  },
+  "_key": "!items!SpcYutPrecognit1"
+}

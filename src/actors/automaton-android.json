@@ -1,0 +1,572 @@
+{
+  "_id": "AutoAndroid00001",
+  "name": "Automaton: Android",
+  "type": "npc",
+  "img": "icons/creatures/magical/construct-iron-humanoid.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 16,
+        "proficient": 1
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 1
+      },
+      "con": {
+        "value": 14,
+        "proficient": 0
+      },
+      "int": {
+        "value": 6,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 8,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": null,
+        "calc": "custom",
+        "formula": "13 + @prof"
+      },
+      "hp": {
+        "value": 20,
+        "max": 20,
+        "formula": "5 + (@abilities.int.mod * @classes.engineer.levels)"
+      },
+      "movement": {
+        "walk": 30,
+        "fly": 0,
+        "burrow": 0,
+        "climb": 0,
+        "swim": 0,
+        "units": "ft",
+        "hover": false
+      },
+      "senses": {
+        "darkvision": 60,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0,
+        "units": "ft",
+        "special": "Darkvision 60 ft"
+      }
+    },
+    "details": {
+      "biography": {
+        "value": "<p>An anthropomorphic bipedal combat unit engineered for tactical breach maneuvers, close retention defense, and high-threat target neutralization.</p>",
+        "public": ""
+      },
+      "alignment": "Unaligned",
+      "cr": null,
+      "spellLevel": 0,
+      "type": {
+        "value": "construct",
+        "subtype": "Automaton",
+        "swarm": "",
+        "custom": ""
+      },
+      "source": {
+        "custom": "Suns of Rubi"
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [
+          "poison",
+          "psychic"
+        ],
+        "bypasses": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [
+          "lightning"
+        ],
+        "bypasses": [],
+        "custom": "Ion"
+      },
+      "dr": {
+        "value": [],
+        "bypasses": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhaustion",
+          "frightened",
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Understands creator's languages but cannot speak"
+      }
+    },
+    "skills": {
+      "ath": {
+        "value": 1,
+        "ability": "str"
+      },
+      "itm": {
+        "value": 1,
+        "ability": "cha"
+      },
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Automaton: Android",
+    "displayName": 20,
+    "displayBars": 20,
+    "actorLink": true,
+    "disposition": 1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "sight": {
+      "enabled": true,
+      "range": 60,
+      "visionMode": "darkvision"
+    },
+    "depth": 1
+  },
+  "items": [
+    {
+      "_id": "RctCoreAndroid000",
+      "name": "Reactor Core",
+      "type": "feat",
+      "img": "icons/magic/fire/orb-vortex-sun-yellow.webp",
+      "system": {
+        "description": {
+          "value": "<p><strong>Heat Management (0–10):</strong> The automaton is driven by a high-output miniaturized fusion reactor.</p>\n<ul>\n  <li><strong>Heat Buildup:</strong> At the start of each of its turns, the automaton generates <strong>+1 Heat</strong> (or <strong>+2 Heat</strong> if it is within 5 feet of one or more hostile creatures). Whenever the automaton suffers 10 or more damage from a single attack or effect, it generates <strong>+1 Heat</strong>.</li>\n  <li><strong>Meltdown Check:</strong> At the start of its turn, if its Heat is <strong>7 or higher</strong>, roll a d20. If the roll is strictly less than its current Heat (`d20 < Heat`), the core breaches in a catastrophic <strong>Meltdown</strong>:\n    <ul>\n      <li>Every creature within a <strong>10-foot radius</strong> must make a Dexterity saving throw (DC = 8 + creator's PB + creator's INT mod), taking <strong>@prof d6 fire and kinetic damage</strong> on a failed save, or half on a success.</li>\n      <li>The area becomes heavily obscured by superheated steam and radioactive exhaust until the end of the automaton's next turn.</li>\n      <li><strong>Emergency Lockout:</strong> The automaton immediately suffers Emergency Lockout: it is <strong>Incapacitated</strong> with a speed of 0 until the end of its next turn. Its Heat resets to 0.</li>\n    </ul>\n  </li>\n</ul>"
+        },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "monster",
+          "subtype": "Trait"
+        },
+        "requirements": "",
+        "activities": {
+          "actMeltdown00001": {
+            "_id": "actMeltdown00001",
+            "type": "save",
+            "activation": {
+              "type": "special",
+              "value": null,
+              "condition": "When d20 < Heat during turn start check at 7+ Heat"
+            },
+            "duration": {
+              "value": "0",
+              "units": "inst"
+            },
+            "target": {
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "template": {
+                "count": 0,
+                "contiguous": false,
+                "type": "radius",
+                "size": "10",
+                "width": 0,
+                "height": 0,
+                "units": "ft"
+              }
+            },
+            "range": {
+              "units": "self",
+              "special": ""
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "int",
+                "formula": "8 + @prof + @abilities.int.mod"
+              }
+            },
+            "damage": {
+              "critical": {
+                "allow": false,
+                "bonus": ""
+              },
+              "parts": [
+                {
+                  "custom": {
+                    "enabled": true,
+                    "formula": "@prof d6"
+                  },
+                  "types": [
+                    "fire"
+                  ],
+                  "scaling": {
+                    "mode": "whole",
+                    "number": null,
+                    "formula": ""
+                  }
+                }
+              ]
+            },
+            "name": "Reactor Meltdown",
+            "img": "",
+            "appliedEffects": []
+          }
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "sort": 100000,
+      "_key": "!actors.items!AutoAndroid00001.RctCoreAndroid000"
+    },
+    {
+      "_id": "TraitAndroid001",
+      "name": "Articulated Hardpoints",
+      "type": "feat",
+      "img": "icons/magic/defensive/shield-barrier-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>The Android can wield one-handed weapons or shields in its articulated manipulators, and its walking speed increases by 5 feet for each point of its creator's Proficiency Bonus.</p>"
+        },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "monster",
+          "subtype": "Trait"
+        },
+        "requirements": "",
+        "activities": {}
+      },
+      "effects": [],
+      "flags": {},
+      "sort": 200000,
+      "_key": "!actors.items!AutoAndroid00001.TraitAndroid001"
+    },
+    {
+      "_id": "ActnAndroid001",
+      "name": "Heavy Backhand",
+      "type": "weapon",
+      "img": "icons/weapons/maces/mace-round-spiked-grey.webp",
+      "system": {
+        "description": {
+          "value": "<p><em>Melee Attack:</em> Reach 5 ft., one target. Hit: 1d8 + @prof kinetic damage.</p>"
+        },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "natural"
+        },
+        "requirements": "",
+        "equipped": true,
+        "proficient": true,
+        "activities": {
+          "actHvyBackhand01": {
+            "_id": "actHvyBackhand01",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": 1
+            },
+            "target": {
+              "affects": {
+                "count": "1",
+                "type": "creature"
+              }
+            },
+            "range": {
+              "value": "5",
+              "units": "ft"
+            },
+            "attack": {
+              "ability": "str",
+              "bonus": "@prof",
+              "flat": false,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "critical": {
+                "allow": true
+              },
+              "parts": [
+                {
+                  "custom": {
+                    "enabled": true,
+                    "formula": "1d8 + @prof"
+                  },
+                  "types": [
+                    "kinetic"
+                  ]
+                }
+              ]
+            },
+            "name": "Heavy Backhand"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "sort": 300000,
+      "_key": "!actors.items!AutoAndroid00001.ActnAndroid001"
+    },
+    {
+      "_id": "ActnAndroid002",
+      "name": "Disarming Strike (3 Heat)",
+      "type": "weapon",
+      "img": "icons/weapons/maces/mace-round-spiked-grey.webp",
+      "system": {
+        "description": {
+          "value": "<p><em>Special Attack (Generates 3 Heat):</em> The Android strikes a foe's arm. Target makes a STR save (DC 8 + creator's PB + INT mod) or drops one held item.</p>"
+        },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "natural"
+        },
+        "requirements": "",
+        "equipped": true,
+        "proficient": true,
+        "activities": {
+          "actDisarmStrike1": {
+            "_id": "actDisarmStrike1",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": 1
+            },
+            "target": {
+              "affects": {
+                "count": "1",
+                "type": "creature"
+              }
+            },
+            "range": {
+              "value": "5",
+              "units": "ft"
+            },
+            "save": {
+              "ability": [
+                "str"
+              ],
+              "dc": {
+                "calculation": "int",
+                "formula": "8 + @prof + @abilities.int.mod"
+              }
+            },
+            "name": "Disarming Strike"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "sort": 310000,
+      "_key": "!actors.items!AutoAndroid00001.ActnAndroid002"
+    },
+    {
+      "_id": "ActnAndroid003",
+      "name": "Ragdoll Heave (4 Heat)",
+      "type": "weapon",
+      "img": "icons/weapons/maces/mace-round-spiked-grey.webp",
+      "system": {
+        "description": {
+          "value": "<p><em>Special Attack (Generates 4 Heat):</em> The Android lifts a Medium or smaller creature and heaves it up to 20 feet away. The target lands prone and takes 2d6 kinetic damage.</p>"
+        },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "natural"
+        },
+        "requirements": "",
+        "equipped": true,
+        "proficient": true,
+        "activities": {
+          "actRagdollHeave1": {
+            "_id": "actRagdollHeave1",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": 1
+            },
+            "target": {
+              "affects": {
+                "count": "1",
+                "type": "creature"
+              }
+            },
+            "range": {
+              "value": "5",
+              "units": "ft"
+            },
+            "save": {
+              "ability": [
+                "str"
+              ],
+              "dc": {
+                "calculation": "int",
+                "formula": "8 + @prof + @abilities.int.mod"
+              }
+            },
+            "damage": {
+              "parts": [
+                {
+                  "custom": {
+                    "enabled": true,
+                    "formula": "2d6"
+                  },
+                  "types": [
+                    "kinetic"
+                  ]
+                }
+              ]
+            },
+            "name": "Ragdoll Heave"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "sort": 320000,
+      "_key": "!actors.items!AutoAndroid00001.ActnAndroid003"
+    },
+    {
+      "_id": "ActnAndroid004",
+      "name": "Chokehold (6 Heat)",
+      "type": "weapon",
+      "img": "icons/weapons/maces/mace-round-spiked-grey.webp",
+      "system": {
+        "description": {
+          "value": "<p><em>Signature Attack (Generates 6 Heat):</em> The Android seizes a creature by the throat. The target is Grappled and Restrained (escape DC 8 + creator PB + INT mod) and suffers 2d8 + @prof kinetic damage at the start of each of its turns.</p>"
+        },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "natural"
+        },
+        "requirements": "",
+        "equipped": true,
+        "proficient": true,
+        "activities": {
+          "actChokehold0001": {
+            "_id": "actChokehold0001",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": 1
+            },
+            "target": {
+              "affects": {
+                "count": "1",
+                "type": "creature"
+              }
+            },
+            "range": {
+              "value": "5",
+              "units": "ft"
+            },
+            "save": {
+              "ability": [
+                "str"
+              ],
+              "dc": {
+                "calculation": "int",
+                "formula": "8 + @prof + @abilities.int.mod"
+              }
+            },
+            "damage": {
+              "parts": [
+                {
+                  "custom": {
+                    "enabled": true,
+                    "formula": "2d8 + @prof"
+                  },
+                  "types": [
+                    "kinetic"
+                  ]
+                }
+              ]
+            },
+            "name": "Chokehold"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "sort": 330000,
+      "_key": "!actors.items!AutoAndroid00001.ActnAndroid004"
+    },
+    {
+      "_id": "BActAndroid001",
+      "name": "Protocol Override (1/LR)",
+      "type": "feat",
+      "img": "icons/magic/movement/chevrons-right-yellow.webp",
+      "system": {
+        "description": {
+          "value": "<p>The Android enters an overclocked tactical state until the end of its turn: its speed doubles and its weapon attacks have Advantage.</p>"
+        },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "monster",
+          "subtype": "Bonus Action"
+        },
+        "requirements": "",
+        "activities": {
+          "actProtOverride1": {
+            "_id": "actProtOverride1",
+            "type": "utility",
+            "activation": {
+              "type": "bonus",
+              "value": 1
+            },
+            "name": "Protocol Override"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "sort": 400000,
+      "_key": "!actors.items!AutoAndroid00001.BActAndroid001"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!actors!AutoAndroid00001"
+}

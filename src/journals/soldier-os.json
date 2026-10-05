@@ -1,0 +1,24 @@
+{
+  "_id": "0dcd70dea5a67a53",
+  "name": "Soldier OS Directory",
+  "pages": [
+    {
+      "_id": "57b8d37cd66ac01a",
+      "name": "Soldier OS Catalog",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Soldier Operating System</h1><p>This directory catalogs all compiled nano-formulas available to the <strong>Soldier</strong> OS. Click any entry to inspect its telemetry, or drag the link directly onto your character sheet to install the routine into your NCU.</p><h2>Tier 0: At-Will Routines (4)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.835e75a61e8e102c]{Aimbot}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.c7418787345d9bd6]{Deflection}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.d9d4632f2054f930]{Grapple Beam}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.af9498b5d20c4b85]{Light}</li></ul><h2>Tier 1: Leveled Nanoprograms (19)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.59dd7af0bd7ad476]{Alarm}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.149b699cf13e38e4]{Armor Megaboost}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.820354b9669a981f]{Boosted Tendons}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.0a4ac1383e260226]{Cluster Flechette}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.8b6b900cd617a441]{Coat of Blades}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.9921790a85deaa13]{Ego Taunt}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.f852f2db63bcd053]{Energy Sink}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.e36706f4abcc6503]{Mirror Shield}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.d8da4bcde7bb68a3]{Morale Surge}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.332957125a551855]{Motivational Speech}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.8d609a64fea07808]{Plasma Strike}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.60b114bd7c37fc99]{Shrapnel Burst}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.3a4f74de93b86c2a]{Smokescreen}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.085eaa5e18cba810]{Sprint}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.e64e1336af47205b]{Target Lock}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.753cb27cd0a18d3e]{Target Paint}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.bc5750107969dcb7]{Tether Shot}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.32d352ffae905262]{Terrain Knowledge}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.0c86fa94277ace20]{Thicken Skin}</li></ul>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "_key": "!journal.pages!0dcd70dea5a67a53.57b8d37cd66ac01a"
+    }
+  ],
+  "ownership": {
+    "default": 2
+  },
+  "_key": "!journal!0dcd70dea5a67a53"
+}

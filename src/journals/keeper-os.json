@@ -1,0 +1,24 @@
+{
+  "_id": "1bf3ecde07dcdfcb",
+  "name": "Keeper OS Directory",
+  "pages": [
+    {
+      "_id": "b7f6ad2d38293e04",
+      "name": "Keeper OS Catalog",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Keeper Operating System</h1><p>This directory catalogs all compiled nano-formulas available to the <strong>Keeper</strong> OS. Click any entry to inspect its telemetry, or drag the link directly onto your character sheet to install the routine into your NCU.</p><h2>Tier 0: At-Will Routines (7)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.c7418787345d9bd6]{Deflection}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.6c812c1e7194c7a6]{Guidance}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.780794062705184b]{Ion Aegis}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.a7f2fd8bae2ad087]{Ion Lasing}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.af9498b5d20c4b85]{Light}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.28816a2e217c81b4]{Minor Telekinesis}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.d5b838cae26c26d4]{Resistance}</li></ul><h2>Tier 1: Leveled Nanoprograms (12)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.149b699cf13e38e4]{Armor Megaboost}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.6f41ed0bbb8d4676]{Bio-Scan}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.7ead785bb1bafdfd]{Bio-Shield}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.820354b9669a981f]{Boosted Tendons}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.68f9149e1713ec96]{Concussive Strike}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.bf588c58edd366d7]{Emergency Stim}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.332957125a551855]{Motivational Speech}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.18772fc9cf97967e]{Rail Toss}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.0098a30425afd824]{Shockwave Smite}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.c53f722dd47577db]{Source Empowered Strike}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.2ab577be075d3703]{Suppression Gas}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.0c86fa94277ace20]{Thicken Skin}</li></ul>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "_key": "!journal.pages!1bf3ecde07dcdfcb.b7f6ad2d38293e04"
+    }
+  ],
+  "ownership": {
+    "default": 2
+  },
+  "_key": "!journal!1bf3ecde07dcdfcb"
+}

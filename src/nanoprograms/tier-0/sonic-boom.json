@@ -1,0 +1,75 @@
+{
+  "_id": "6615e4571ddd30ad",
+  "name": "Sonic Boom",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-mattercre.webp",
+  "system": {
+    "description": {
+      "value": "<p>5-foot emanation: concussive acoustic burst ripples outward. Each creature within 5 feet must succeed on a Constitution saving throw or take 1d6 thunder damage. Audible out to 100 feet.<br><br><strong>Overclock:</strong> 2d6 at 5th, 3d6 at 11th, 4d6 at 17th.</p><p><strong>Operating Systems:</strong> Enforcer, Martial Artist</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 0 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 0,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "self"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "26c17d71d95c8268": {
+        "_id": "26c17d71d95c8268",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting"
+          }
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": "@scaling.cantrip * 1d6"
+              },
+              "types": [
+                "thunder"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!6615e4571ddd30ad"
+}

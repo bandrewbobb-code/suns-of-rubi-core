@@ -1,0 +1,41 @@
+{
+  "_id": "MpTheoNasiersRes",
+  "name": "Nasier's Resonant Grace",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-carved-stone-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Metaphysical Theory</em></p><p>Your movement speed increases by 10 feet. When you take the Disengage action, your active manifestations can immediately fly up to 15 feet as a free movement.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "theory"
+    },
+    "requirements": "Meta-Physicist 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MpTheoNasiersRes"
+}

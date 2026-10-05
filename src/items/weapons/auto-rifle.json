@@ -1,0 +1,154 @@
+{
+  "_id": "WpnAutoRifle0001",
+  "name": "Auto Rifle",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-blaster-laser-silver.webp",
+  "system": {
+    "description": {
+      "value": "<p>Military assault rifle featuring selectable burst and automatic fire modes.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 650,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 8,
+      "units": "lb"
+    },
+    "type": {
+      "value": "martialR",
+      "baseItem": "auto-rifle"
+    },
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": 6,
+        "types": [
+          "piercing"
+        ]
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": []
+      }
+    },
+    "range": {
+      "value": 80,
+      "long": 320,
+      "units": "ft"
+    },
+    "mastery": "graze",
+    "properties": [
+      "two",
+      "continuous-fire",
+      "burst-2",
+      "auto-4",
+      "high-recoil-str-13",
+      "reload-8"
+    ],
+    "activities": {
+      "mainAttack000001": {
+        "_id": "mainAttack000001",
+        "type": "attack",
+        "name": "Strike",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "range": {
+          "value": "80",
+          "long": "320",
+          "units": "ft"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false,
+          "count": 1,
+          "type": "creature"
+        },
+        "attack": {
+          "ability": "dex",
+          "bonus": "",
+          "critical": {
+            "threshold": 20
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      },
+      "auxActivity00001": {
+        "_id": "auxActivity00001",
+        "type": "save",
+        "name": "Auto Fire",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "Expend 4 rounds"
+        },
+        "target": {
+          "template": {
+            "type": "cube",
+            "size": "10",
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "dex",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 6,
+              "types": [
+                "piercing"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!WpnAutoRifle0001"
+}

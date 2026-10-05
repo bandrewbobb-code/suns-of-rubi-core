@@ -1,0 +1,68 @@
+{
+  "_id": "085eaa5e18cba810",
+  "name": "Sprint",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/sprint.webp",
+  "system": {
+    "description": {
+      "value": "<p>Bypass leg servo safeties: take the Dash action as a Bonus Action on each of your subsequent turns for the duration.</p><p><strong>Operating Systems:</strong> Agent, Fixer, Martial Artist, Soldier</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "trs",
+    "properties": [
+      "concentration",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "bonus",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "self"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "0d0b6c116b252bed": {
+        "_id": "0d0b6c116b252bed",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!085eaa5e18cba810"
+}

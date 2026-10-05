@@ -1,0 +1,67 @@
+{
+  "_id": "TechFeintingOpn1",
+  "name": "Feinting Opener",
+  "type": "feat",
+  "img": "icons/skills/movement/body-turn-twist-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Martial Technique</em></p><p>When you make an Opening Strike while in Neutral State, you can choose to make the attack roll with Disadvantage. If the attack hits despite Disadvantage, you gain Advantage on all subsequent attacks you make until the end of your current turn.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "technique"
+    },
+    "requirements": "Martial Artist 2",
+    "activities": {
+      "actTechFeintingOp": {
+        "_id": "actTechFeintingOp",
+        "type": "utility",
+        "name": "Feinting Opener",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Making an Opening Strike in Neutral State"
+        },
+        "duration": {
+          "units": "turn",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TechFeintingOpn1"
+}

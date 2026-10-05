@@ -1,0 +1,37 @@
+{
+  "_id": "ToolDemolitions1",
+  "name": "Demolitions Kit",
+  "type": "tool",
+  "img": "icons/tools/instruments/multitool-electronic.webp",
+  "system": {
+    "description": {
+      "value": "<p>Detonators, shape-charge liners, timer ciphers, and defusal probes used to place and disarm heavy ordnance.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 200,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 8,
+      "units": "lb"
+    },
+    "quantity": 1,
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "activities": {},
+    "type": {
+      "value": "specialist",
+      "baseItem": "demolitions-kit"
+    }
+  },
+  "_key": "!items!ToolDemolitions1"
+}

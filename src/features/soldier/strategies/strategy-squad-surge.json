@@ -1,0 +1,41 @@
+{
+  "_id": "StratSquadSurge1",
+  "name": "Strategy: Squad Surge",
+  "type": "feat",
+  "img": "icons/magic/movement/chevrons-right-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Tactical Strike Enhancement</em></p>\n<p>Whenever you trigger a <strong>Natural 16–20</strong> on a weapon attack as part of your Tactical Strikes, your fire superiority opens an evasive movement window for your team. Up to <strong>three willing allies within 30 feet</strong> who can see or hear you can immediately use their <strong>Reactions</strong> to move up to <strong>half their speed</strong> without provoking Opportunity Attacks.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "strategy"
+    },
+    "requirements": "Soldier 11",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!StratSquadSurge1"
+}

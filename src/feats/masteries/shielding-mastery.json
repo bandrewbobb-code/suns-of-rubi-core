@@ -1,0 +1,95 @@
+{
+  "_id": "23aa470b9b0565b0",
+  "_key": "!items!23aa470b9b0565b0",
+  "name": "Shielding Mastery",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite:</strong> Level 4</p>\n<ul>\n  <li><strong>Ability Score Increase:</strong> Increase your Strength or Constitution score by 1, to a maximum of 20.</li>\n  <li><strong>Shield Bash:</strong> If you take the Attack action on your turn and hit a creature with a weapon attack, you can use a Bonus Action to shove that creature within 5 feet of you with your shield.</li>\n  <li><strong>Phalanx Wall:</strong> If you aren’t incapacitated, you and allies within 5 feet of you can add your shield’s AC bonus to any Dexterity saving throw made against a nanoprogram or harmful area effect.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "mastery",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 4
+    },
+    "properties": [],
+    "requirements": "Level 4",
+    "activities": {
+      "ce756ea7fa2266e5": {
+        "_id": "ce756ea7fa2266e5",
+        "type": "utility",
+        "name": "Shield Shove",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "When you take the Attack action on your turn and hit with a weapon attack"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    },
+    "identifier": "shielding-mastery",
+    "advancement": [
+      {
+        "_id": "d4bc7a7be6d0b6ee",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 1,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "dex",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "points": 1
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "Ability Score Improvement",
+        "hint": "Increase your Strength or Constitution score by 1, to a maximum of 20."
+      }
+    ]
+  }
+}

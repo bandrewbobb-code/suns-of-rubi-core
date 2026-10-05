@@ -1,0 +1,33 @@
+{
+  "_id": "GearFieldHolom01",
+  "name": "Field Holomap",
+  "type": "loot",
+  "img": "icons/commodities/tech/sensor-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Topographical projection pad rendering real-time 3D orbital radar terrain and underground cavern maps.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 150,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "quantity": 1,
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "activities": {}
+  },
+  "_key": "!items!GearFieldHolom01"
+}

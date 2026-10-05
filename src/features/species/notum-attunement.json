@@ -1,0 +1,34 @@
+{
+  "_id": "SpcNanNotumAttn1",
+  "name": "Notum Attunement",
+  "type": "feat",
+  "img": "icons/magic/symbols/rune-sigil-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your cells are suffused with micro-crystallized Notum. You have Advantage on saving throws against all nanoprograms, force discharges, and environmental Notum hazards (such as Notum sinkholes and field discharges).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Nanomage",
+    "activities": {},
+    "identifier": "notum-attunement"
+  },
+  "_key": "!items!SpcNanNotumAttn1"
+}

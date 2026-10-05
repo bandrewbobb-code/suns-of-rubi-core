@@ -1,0 +1,55 @@
+{
+  "_id": "PersOfContract01",
+  "name": "Persona of the Contractor",
+  "type": "feat",
+  "img": "icons/skills/combat/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Passive Alias:</strong> You adopt one Fighting Style of your choice from Chapter 6.</p>\n<p><strong>Active Burn:</strong> As a <strong>Bonus Action</strong>, you engage predictive ballistic computations for <strong>1 minute</strong>. You can stow or draw weapons freely on your turn, and weapon attacks you make utilizing your chosen Fighting Style add your <strong>Wisdom modifier</strong> to their damage rolls.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "persona"
+    },
+    "requirements": "Agent 2",
+    "activities": {
+      "actBurnContract": {
+        "_id": "actBurnContract",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "name": "Active Burn: Predictive Ballistics"
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!PersOfContract01"
+}

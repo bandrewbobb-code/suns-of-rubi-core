@@ -1,0 +1,62 @@
+{
+  "_id": "AgtTotalConcen01",
+  "name": "Total Concentration",
+  "type": "feat",
+  "img": "icons/skills/targeting/target-strike-triple-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 5th level, you can spend <strong>4 Nanopool points</strong> when you activate <strong>Steady Aim</strong> to enter an ultra-focused state of hyper-awareness for up to <strong>1 minute (requires Concentration)</strong>. While in this state:</p>\n<ul>\n  <li>Your ranged weapon attacks score a critical hit on a roll of <strong>18–20</strong>.</li>\n  <li>Whenever you deal Sneak Attack damage with a ranged weapon, you deal the <strong>maximum value of each damage die</strong> instead of rolling.</li>\n  <li><strong>Execute Threshold:</strong> If a ranged attack you make leaves the target with hit points equal to or less than <strong>twice your Agent level</strong> (`@scale.agent.execute-threshold`), the target immediately drops to <strong>0 hit points</strong>.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Agent 5",
+    "activities": {
+      "actTotalConcen01": {
+        "_id": "actTotalConcen01",
+        "type": "utility",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Spend 4 Nanopool when activating Steady Aim"
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "self"
+          }
+        },
+        "name": "Enter Total Concentration"
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AgtTotalConcen01"
+}

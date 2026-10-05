@@ -1,0 +1,46 @@
+{
+  "_id": "EngRepairRechg01",
+  "name": "Repair Recharge",
+  "type": "feat",
+  "img": "icons/magic/lightning/bolt-strike-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 14th level, your repair nanites cycle continuously. When you finish a <strong>Short Rest</strong>, you regain a number of expended Rapid Repair dice equal to your <strong>Intelligence modifier</strong> (minimum of 1). Once you use this feature, you cannot do so again until you finish a Long Rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Engineer 14",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EngRepairRechg01"
+}

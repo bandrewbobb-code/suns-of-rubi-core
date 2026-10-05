@@ -1,0 +1,114 @@
+{
+  "_id": "WpnSniperRifle01",
+  "name": "Sniper Rifle",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-blaster-laser-silver.webp",
+  "system": {
+    "description": {
+      "value": "<p>Extreme-range anti-materiel rifle equipped with ballistic trajectory computer.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 1200,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 12,
+      "units": "lb"
+    },
+    "type": {
+      "value": "martialR",
+      "baseItem": "sniper-rifle"
+    },
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": 12,
+        "types": [
+          "piercing"
+        ]
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": []
+      }
+    },
+    "range": {
+      "value": 150,
+      "long": 600,
+      "units": "ft"
+    },
+    "mastery": "slow",
+    "properties": [
+      "hvy",
+      "two",
+      "high-recoil-str-11",
+      "reload-2"
+    ],
+    "activities": {
+      "mainAttack000001": {
+        "_id": "mainAttack000001",
+        "type": "attack",
+        "name": "Strike",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "range": {
+          "value": "150",
+          "long": "600",
+          "units": "ft"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false,
+          "count": 1,
+          "type": "creature"
+        },
+        "attack": {
+          "ability": "dex",
+          "bonus": "",
+          "critical": {
+            "threshold": 20
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    }
+  },
+  "_key": "!items!WpnSniperRifle01"
+}

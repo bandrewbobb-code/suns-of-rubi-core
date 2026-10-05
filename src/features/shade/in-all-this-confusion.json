@@ -1,0 +1,67 @@
+{
+  "_id": "ShdInAllThisConf",
+  "name": "In All This Confusion",
+  "type": "feat",
+  "img": "icons/skills/movement/body-turn-twist-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>When you are hit by an attack from an attacker that you can see, you can use your reaction to halve the attack's damage against you. Immediately after the damage resolves, you can move up to 15 feet without provoking opportunity attacks as you slip through the chaos of combat.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Shade 5",
+    "activities": {
+      "actShdInConfusion": {
+        "_id": "actShdInConfusion",
+        "type": "utility",
+        "name": "In All This Confusion Reaction",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "Hit by an attack from an attacker you can see"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ShdInAllThisConf"
+}

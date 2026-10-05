@@ -1,0 +1,83 @@
+{
+  "_id": "TrdMarketLev0001",
+  "name": "Market Leverage",
+  "type": "feat",
+  "img": "icons/commodities/currency/coins-assorted-mix-platinum.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 3rd level, your financial acumen gives you unprecedented commercial dominance.</p><ul><li><strong>Aggressive Haggling</strong>: You have <strong>Advantage</strong> on Charisma (Persuasion) and Charisma (Deception) checks made to negotiate purchase prices, contract fees, bribes, or item appraisals.</li><li><strong>Wholesale Margins</strong>: You and your companions gain a permanent <strong>15% discount</strong> on all weapons, armor, tech gear, provisions, and stims purchased from recognized vendors. Additionally, you sell salvaged gear and loot for <strong>+10%</strong> above standard merchant trade-in rates.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Trader 3",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TrdMarketLev0001"
+}

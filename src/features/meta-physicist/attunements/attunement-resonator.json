@@ -1,0 +1,113 @@
+{
+  "_id": "MpAttuneResonato",
+  "name": "Attunement of the Resonator",
+  "type": "feat",
+  "img": "icons/magic/symbols/circle-outer-ring-cyan.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Paracausal Attunement</em></p><p>You manifest a specialized focus known as the <strong>Paracausal Resonator</strong>, tuning sympathetic vibrational frequencies to your allies:</p><ul><li><strong>Cognitive Buffer:</strong> You bond your resonator to one ally during a rest. When that ally fails an ability check or saving throw, you can use your reaction to add a 1d4 bonus to the roll (usable a number of times equal to 2 &times; Proficiency Bonus per Long Rest).</li><li><strong>Reactive Static:</strong> When a bonded ally is hit in melee, you can use your reaction to deal <code>1d8 + @abilities.wis.mod</code> Psychic damage to the attacker.</li><li><strong>Conduit Tether:</strong> When your bonded ally takes damage, you can use your reaction to shunt half of the damage to your Conduit Pool instead.</li><li><strong>Resonant Echo:</strong> When your Curative manifestation pulses, your bonded ally gains additional temporary hit points equal to your Wisdom modifier.</li></ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "attunement"
+    },
+    "requirements": "Meta-Physicist 2",
+    "activities": {
+      "actMpCognitiveBuf": {
+        "_id": "actMpCognitiveBuf",
+        "type": "utility",
+        "name": "Cognitive Buffer",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "Bonded ally fails an ability check or saving throw"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "1d4",
+          "name": "Buffer Bonus"
+        }
+      },
+      "actMpReactiveStat": {
+        "_id": "actMpReactiveStat",
+        "type": "damage",
+        "name": "Reactive Static",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "Bonded ally is hit by a melee attack"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "1d8 + @abilities.wis.mod"
+              },
+              "number": null,
+              "denomination": 0,
+              "bonus": "",
+              "types": [
+                "psychic"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MpAttuneResonato"
+}

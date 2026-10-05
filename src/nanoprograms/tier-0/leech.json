@@ -1,0 +1,71 @@
+{
+  "_id": "0002e80c124ad7a0",
+  "name": "Leech",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-biomet.webp",
+  "system": {
+    "description": {
+      "value": "<p>Make a melee program attack against a creature within reach. On a hit, the target takes 1d10 necrotic damage, and it cannot regain Hit Points until the start of your next turn. If Undead, Construct, or Droid, it has Disadvantage on attack rolls against you.<br><br><strong>Overclock:</strong> 2d10 at 5th, 3d10 at 11th, 4d10 at 17th.</p><p><strong>Operating Systems:</strong> Doctor, Shade, Trader</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 0 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 0,
+    "school": "nec",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "round"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "touch"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "08a25aa972bbdb92": {
+        "_id": "08a25aa972bbdb92",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "attack": {
+          "type": "melee",
+          "classification": "spell"
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": "@scaling.cantrip * 1d10"
+              },
+              "types": [
+                "necrotic"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!0002e80c124ad7a0"
+}

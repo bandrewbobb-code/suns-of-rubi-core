@@ -1,0 +1,41 @@
+{
+  "_id": "AdvOneWithNat001",
+  "name": "One with Nature",
+  "type": "feat",
+  "img": "icons/magic/nature/tree-roots-glow-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 20th level, you have attained absolute mastery over the mutative forces of the universe:</p>\n<ul>\n  <li>Your <strong>Strength or Dexterity score increases by 2</strong>, and your <strong>Wisdom score increases by 2</strong>. Your maximum for those scores is now 22.</li>\n  <li><strong>Evergreen Bio-Morph:</strong> When you roll Initiative and have no uses of Bio-Morph remaining, you immediately regain 1 use.</li>\n  <li><strong>Refined Biomorphic Fuel:</strong> When you finish a Long Rest, you can convert unexpended Bio-Morph uses into <strong>3 Nanopool points per use</strong>.</li>\n  <li><strong>Longevity:</strong> For every 10 years that pass, your body ages only 1 year.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Adventurer 20",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AdvOneWithNat001"
+}

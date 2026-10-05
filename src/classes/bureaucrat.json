@@ -6,7 +6,9 @@
     "description": {
       "value": "<p>A master of administrative authority, corporate leverage, and nanoprogram-augmented leadership. The Bureaucrat commands the battlefield not through brute force, but through calculated orders, regulatory overrides, and an ever-present Mechanical Bodyguard.</p>"
     },
-    "source": { "custom": "Suns of Rubi" },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
     "identifier": "bureaucrat",
     "levels": 1,
     "hd": {
@@ -15,7 +17,9 @@
       "additional": ""
     },
     "primaryAbility": {
-      "value": ["cha"],
+      "value": [
+        "cha"
+      ],
       "all": false
     },
     "spellcasting": {
@@ -37,10 +41,15 @@
         "configuration": {
           "mode": "default",
           "allowReplacements": false,
-          "grants": ["saves:cha", "saves:wis"],
+          "grants": [
+            "saves:cha",
+            "saves:wis"
+          ],
           "choices": []
         },
-        "value": { "chosen": [] },
+        "value": {
+          "chosen": []
+        },
         "level": 1,
         "title": "Saving Throws"
       },
@@ -67,7 +76,9 @@
             }
           ]
         },
-        "value": { "chosen": [] },
+        "value": {
+          "chosen": []
+        },
         "level": 1,
         "title": "Skill Proficiencies"
       },
@@ -77,10 +88,15 @@
         "configuration": {
           "mode": "default",
           "allowReplacements": false,
-          "grants": ["weapons:sim"],
+          "grants": [
+            "weapons:sim",
+            "weapons:sidearm"
+          ],
           "choices": []
         },
-        "value": { "chosen": [] },
+        "value": {
+          "chosen": []
+        },
         "level": 1,
         "title": "Weapon Proficiencies"
       },
@@ -96,12 +112,15 @@
               "count": 1,
               "pool": [
                 "tools:slicer",
+                "tools:datapad",
                 "tools:gaming"
               ]
             }
           ]
         },
-        "value": { "chosen": [] },
+        "value": {
+          "chosen": []
+        },
         "level": 1,
         "title": "Tool Proficiencies"
       },
@@ -112,10 +131,22 @@
           "identifier": "authority-die",
           "type": "dice",
           "scale": {
-            "1":  { "number": 1, "faces": 6 },
-            "5":  { "number": 1, "faces": 8 },
-            "10": { "number": 1, "faces": 10 },
-            "15": { "number": 1, "faces": 12 }
+            "1": {
+              "number": 1,
+              "faces": 6
+            },
+            "5": {
+              "number": 1,
+              "faces": 8
+            },
+            "10": {
+              "number": 1,
+              "faces": 10
+            },
+            "15": {
+              "number": 1,
+              "faces": 12
+            }
           }
         },
         "value": {},
@@ -123,25 +154,147 @@
         "title": "Authority Die"
       },
       {
-        "_id": "m3n4ExecDirSv01",
+        "_id": "n5o6NanoplPts01",
         "type": "ScaleValue",
         "configuration": {
-          "identifier": "executive-directives",
+          "identifier": "nanopool-points",
           "type": "number",
           "scale": {
-            "2":  { "value": 2 },
-            "3":  { "value": 3 },
-            "5":  { "value": 5 },
-            "7":  { "value": 6 },
-            "9":  { "value": 7 },
-            "12": { "value": 8 },
-            "15": { "value": 9 },
-            "18": { "value": 10 }
+            "1": {
+              "value": 4
+            },
+            "2": {
+              "value": 8
+            },
+            "3": {
+              "value": 12
+            },
+            "4": {
+              "value": 16
+            },
+            "5": {
+              "value": 20
+            },
+            "6": {
+              "value": 24
+            },
+            "7": {
+              "value": 28
+            },
+            "8": {
+              "value": 32
+            },
+            "9": {
+              "value": 36
+            },
+            "10": {
+              "value": 40
+            },
+            "11": {
+              "value": 44
+            },
+            "12": {
+              "value": 48
+            },
+            "13": {
+              "value": 52
+            },
+            "14": {
+              "value": 56
+            },
+            "15": {
+              "value": 60
+            },
+            "16": {
+              "value": 64
+            },
+            "17": {
+              "value": 68
+            },
+            "18": {
+              "value": 72
+            },
+            "19": {
+              "value": 76
+            },
+            "20": {
+              "value": 80
+            }
+          }
+        },
+        "value": {},
+        "level": 1,
+        "title": "Nanopool Points"
+      },
+      {
+        "_id": "p7q8DirKnown001",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "directives-known",
+          "type": "number",
+          "scale": {
+            "2": {
+              "value": 2
+            },
+            "3": {
+              "value": 3
+            },
+            "4": {
+              "value": 3
+            },
+            "5": {
+              "value": 5
+            },
+            "6": {
+              "value": 5
+            },
+            "7": {
+              "value": 6
+            },
+            "8": {
+              "value": 6
+            },
+            "9": {
+              "value": 7
+            },
+            "10": {
+              "value": 7
+            },
+            "11": {
+              "value": 7
+            },
+            "12": {
+              "value": 8
+            },
+            "13": {
+              "value": 8
+            },
+            "14": {
+              "value": 8
+            },
+            "15": {
+              "value": 9
+            },
+            "16": {
+              "value": 9
+            },
+            "17": {
+              "value": 9
+            },
+            "18": {
+              "value": 10
+            },
+            "19": {
+              "value": 10
+            },
+            "20": {
+              "value": 10
+            }
           }
         },
         "value": {},
         "level": 2,
-        "title": "Executive Directives"
+        "title": "Directives Known"
       },
       {
         "_id": "A1B2ItmGrLv0101",
@@ -218,7 +371,9 @@
           "fixed": {},
           "cap": 2
         },
-        "value": { "type": "asi" },
+        "value": {
+          "type": "asi"
+        },
         "level": 4,
         "title": "Ability Score Improvement"
       },
@@ -264,7 +419,9 @@
           "fixed": {},
           "cap": 2
         },
-        "value": { "type": "asi" },
+        "value": {
+          "type": "asi"
+        },
         "level": 8,
         "title": "Ability Score Improvement"
       },
@@ -276,7 +433,9 @@
           "fixed": {},
           "cap": 2
         },
-        "value": { "type": "asi" },
+        "value": {
+          "type": "asi"
+        },
         "level": 12,
         "title": "Ability Score Improvement"
       },
@@ -305,7 +464,9 @@
           "fixed": {},
           "cap": 2
         },
-        "value": { "type": "asi" },
+        "value": {
+          "type": "asi"
+        },
         "level": 16,
         "title": "Ability Score Improvement"
       },
@@ -317,7 +478,9 @@
           "fixed": {},
           "cap": 2
         },
-        "value": { "type": "asi" },
+        "value": {
+          "type": "asi"
+        },
         "level": 19,
         "title": "Ability Score Improvement"
       },
@@ -350,5 +513,6 @@
     "compendiumSource": null,
     "duplicateSource": null
   },
-  "_key": "!items!BureaucratCls01"
+  "_key": "!items!BureaucratCls01",
+  "_id": "BureaucratCls01"
 }

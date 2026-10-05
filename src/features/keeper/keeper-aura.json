@@ -1,0 +1,83 @@
+{
+  "_id": "KepKeeperAura001",
+  "name": "Keeper Aura",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-glowing-triangle-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Starting at 3rd level, your bio-frequency harmonics project an invisible field of authority and protection surrounding you in a <strong>15-foot radius</strong>. This aura expands to a <strong>30-foot radius at 17th level</strong> (`@scale.keeper.aura-radius`).</p><p>You learn <strong>1 Keeper Aura</strong> of your choice at 3rd level, a second aura at 10th level, and a third aura at 18th level (`@scale.keeper.auras-known`). All selected auras are active simultaneously whenever you are conscious.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Keeper 3",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!KepKeeperAura001"
+}

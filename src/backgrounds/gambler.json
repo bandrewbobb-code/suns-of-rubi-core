@@ -1,0 +1,117 @@
+{
+  "_id": "BgGambler0000001",
+  "name": "Gambler",
+  "type": "background",
+  "img": "icons/commodities/treasure/dice-pair-black.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Ability Scores:</strong> DEX, WIS, CHA</p>\n<p><strong>Feat:</strong> @UUID[Compendium.suns-of-rubi-core.feats.FeatLuckyOrigin1]{Lucky}</p>\n<p><strong>Skill Proficiencies:</strong> Choose 2 from DEC, INS, ITM, SLT</p>\n<h3>Feature: Let's Make It Interesting</h3>\n<p>You can always find high-stakes or backroom games of chance in any settlement or orbital station. Whether dice, holographic poker, or sabacc, your reputation as a gambler earns you an invitation to VIP lounges, smuggler dens, and corporate executive card tables. In addition, when negotiating terms, you can propose a wager or game of skill/chance to resolve impasses, establish mutual respect, or win critical favors from high-ranking adversaries.</p>\n<hr/>\n<h3>Roleplay Characteristics</h3>\n<h4>Personality Traits</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I calculate odds and risk percentages out loud in high-stress situations.</td></tr>\n    <tr><td><strong>2</strong></td><td>I always flip a credstick or roll a lucky die when faced with a tough choice.</td></tr>\n    <tr><td><strong>3</strong></td><td>I smile widest when the stakes are lethal and the odds are stacked against me.</td></tr>\n    <tr><td><strong>4</strong></td><td>I never leave a table while I am ahead; momentum is a force of nature.</td></tr>\n    <tr><td><strong>5</strong></td><td>I can read micro-tells, dilated pupils, and vocal tremors with terrifying accuracy.</td></tr>\n    <tr><td><strong>6</strong></td><td>Win or lose, I take pleasure in the game itself.</td></tr>\n  </tbody>\n</table>\n<h4>Ideals</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>Luck. The cosmos is governed by random chance, and those who dare to play win the galaxy. (Chaotic)</td></tr>\n    <tr><td><strong>2</strong></td><td>Fairness. Cheating ruins the thrill of true victory; the game must be played by the rules. (Lawful)</td></tr>\n    <tr><td><strong>3</strong></td><td>Independence. With a steady hand and a deck of cards, I need no master or corporation. (Neutral)</td></tr>\n    <tr><td><strong>4</strong></td><td>Generosity. When the luck rolls my way, everyone at my table eats and drinks like royalty. (Good)</td></tr>\n    <tr><td><strong>5</strong></td><td>Exploitation. A sucker is born every second, and it is my duty to separate them from their credits. (Evil)</td></tr>\n    <tr><td><strong>6</strong></td><td>Audacity. Safe choices lead to slow deaths; fortune truly favors the audacious. (Any)</td></tr>\n  </tbody>\n</table>\n<h4>Bonds</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I once won a customized starship in a legendary high-stakes tournament; I'll die before losing it.</td></tr>\n    <tr><td><strong>2</strong></td><td>I owe an astronomical credit debt to an interplanetary crime syndicate that wants my head.</td></tr>\n    <tr><td><strong>3</strong></td><td>My lucky coin was passed down through five generations of frontier spacers.</td></tr>\n    <tr><td><strong>4</strong></td><td>A fellow card shark betrayed me on a joint heist; I aim to settle the score at the table.</td></tr>\n    <tr><td><strong>5</strong></td><td>Everything I gamble for is dedicated to funding an independent haven for runaways.</td></tr>\n    <tr><td><strong>6</strong></td><td>I swore an oath to clean out the corporate casino that bankrupt my parents.</td></tr>\n  </tbody>\n</table>\n<h4>Flaws</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I simply cannot walk away from a wager or bet, no matter the terrible consequences.</td></tr>\n    <tr><td><strong>2</strong></td><td>I constantly overestimate my ability to bluff my way out of mortal danger.</td></tr>\n    <tr><td><strong>3</strong></td><td>I am addicted to the adrenaline rush of risking everything on a single roll.</td></tr>\n    <tr><td><strong>4</strong></td><td>I have a habit of borrowing funds from companions with grand promises of returns.</td></tr>\n    <tr><td><strong>5</strong></td><td>I become irrationally angry when someone accuses me of cheating without proof.</td></tr>\n    <tr><td><strong>6</strong></td><td>I trust my gut and superstition over sound military logistics.</td></tr>\n  </tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "identifier": "gambler",
+    "advancement": [
+      {
+        "_id": "BgGambler000Asi1",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "con",
+            "int"
+          ],
+          "points": 3
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "Ability Score Improvement",
+        "hint": "Your background allows you to increase your DEX, WIS, CHA scores: increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      {
+        "_id": "BgGambler000Skl1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:dec",
+                "skills:ins",
+                "skills:itm",
+                "skills:slt"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Skill Proficiencies",
+        "hint": "Choose 2 skills from: dec, ins, itm, slt."
+      },
+      {
+        "_id": "BgGambler000Tol1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "tool:game:*"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:game:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Tool Proficiencies",
+        "hint": "Your background grants you tool proficiency options."
+      },
+      {
+        "_id": "BgGambler000Fgt1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.suns-of-rubi-core.feats.FeatLuckyOrigin1"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Origin Feat",
+        "hint": "Your background grants you the Lucky origin feat."
+      }
+    ]
+  },
+  "_key": "!items!BgGambler0000001"
+}

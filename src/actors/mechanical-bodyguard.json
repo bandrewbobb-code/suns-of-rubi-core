@@ -4,12 +4,30 @@
   "img": "icons/creatures/magical/construct-golem-stone-blue.webp",
   "system": {
     "abilities": {
-      "str": { "value": 14, "proficient": 1 },
-      "dex": { "value": 10, "proficient": 0 },
-      "con": { "value": 14, "proficient": 1 },
-      "int": { "value": 8, "proficient": 0 },
-      "wis": { "value": 10, "proficient": 0 },
-      "cha": { "value": 10, "proficient": 0 }
+      "str": {
+        "value": 14,
+        "proficient": 1
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0
+      },
+      "con": {
+        "value": 14,
+        "proficient": 1
+      },
+      "int": {
+        "value": 8,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
     },
     "attributes": {
       "ac": {
@@ -65,12 +83,17 @@
     "traits": {
       "size": "med",
       "di": {
-        "value": ["poison", "psychic"],
+        "value": [
+          "poison",
+          "psychic"
+        ],
         "bypasses": [],
         "custom": ""
       },
       "dv": {
-        "value": ["lightning"],
+        "value": [
+          "lightning"
+        ],
         "bypasses": [],
         "custom": "Ion"
       },
@@ -80,7 +103,11 @@
         "custom": ""
       },
       "ci": {
-        "value": ["charmed", "poisoned", "exhaustion"],
+        "value": [
+          "charmed",
+          "poisoned",
+          "exhaustion"
+        ],
         "custom": ""
       },
       "languages": {
@@ -89,22 +116,70 @@
       }
     },
     "skills": {
-      "ath": { "value": 1, "ability": "str", "bonuses": { "check": "", "passive": "" } },
-      "itm": { "value": 1, "ability": "cha", "bonuses": { "check": "", "passive": "" } },
-      "prc": { "value": 1, "ability": "wis", "bonuses": { "check": "", "passive": "" } }
+      "ath": {
+        "value": 1,
+        "ability": "str",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "itm": {
+        "value": 1,
+        "ability": "cha",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      },
+      "prc": {
+        "value": 1,
+        "ability": "wis",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        }
+      }
     },
     "bonuses": {
-      "mwak": { "attack": "", "damage": "" },
-      "rwak": { "attack": "", "damage": "" },
-      "msak": { "attack": "", "damage": "" },
-      "rsak": { "attack": "", "damage": "" },
-      "abilities": { "check": "", "save": "", "skill": "" },
-      "spell": { "dc": "" }
+      "mwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "msak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rsak": {
+        "attack": "",
+        "damage": ""
+      },
+      "abilities": {
+        "check": "",
+        "save": "",
+        "skill": ""
+      },
+      "spell": {
+        "dc": ""
+      }
     },
     "resources": {
-      "legact": { "value": 0, "max": 0 },
-      "legres": { "value": 0, "max": 0 },
-      "lair": { "value": false, "initiative": 0 }
+      "legact": {
+        "value": 0,
+        "max": 0
+      },
+      "legres": {
+        "value": 0,
+        "max": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 0
+      }
     }
   },
   "prototypeToken": {
@@ -113,8 +188,15 @@
     "displayBars": 20,
     "actorLink": true,
     "disposition": 1,
-    "bar1": { "attribute": "attributes.hp" },
-    "sight": { "enabled": true, "range": 60, "visionMode": "darkvision" }
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "sight": {
+      "enabled": true,
+      "range": 60,
+      "visionMode": "darkvision"
+    },
+    "depth": 1
   },
   "items": [
     {
@@ -125,17 +207,33 @@
         "description": {
           "value": "<p>Allies within 5 feet of the Mechanical Bodyguard have <strong>Half Cover</strong> (+2 bonus to AC and Dexterity saving throws) against attacks and effects that originate from beyond the droid.</p>"
         },
-        "source": { "custom": "Suns of Rubi" },
-        "type": { "value": "monster", "subtype": "Trait" },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "monster",
+          "subtype": "Trait"
+        },
         "requirements": "",
-        "activation": { "type": "", "value": null, "condition": "" },
-        "uses": { "value": null, "max": "", "per": null, "recovery": "", "prompt": false },
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": "",
+          "prompt": false
+        },
         "activities": {}
       },
       "effects": [],
       "flags": {},
       "sort": 100000,
-      "_key": "!actors.items!MBGuard000001.LivingCover001"
+      "_key": "!actors.items!MBGuard000001.LivingCover001",
+      "_id": "LivingCover001"
     },
     {
       "name": "Executive Attaché",
@@ -145,17 +243,33 @@
         "description": {
           "value": "<p>The droid is equipped with a secure <strong>150-lb storage compartment</strong> and integrated <strong>comms/recording suite</strong>.</p><p>Additionally, willing creatures adjacent to the Bodyguard may add the Bureaucrat's <strong>Authority Die</strong> to their Charisma checks.</p>"
         },
-        "source": { "custom": "Suns of Rubi" },
-        "type": { "value": "monster", "subtype": "Trait" },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "monster",
+          "subtype": "Trait"
+        },
         "requirements": "",
-        "activation": { "type": "", "value": null, "condition": "" },
-        "uses": { "value": null, "max": "", "per": null, "recovery": "", "prompt": false },
+        "activation": {
+          "type": "",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": "",
+          "prompt": false
+        },
         "activities": {}
       },
       "effects": [],
       "flags": {},
       "sort": 200000,
-      "_key": "!actors.items!MBGuard000001.ExecAttache01"
+      "_key": "!actors.items!MBGuard000001.ExecAttache01",
+      "_id": "ExecAttache01"
     },
     {
       "name": "Intercept Threat",
@@ -165,8 +279,13 @@
         "description": {
           "value": "<p><em>Reaction trigger:</em> An ally within 5 feet of the Bodyguard is hit by an attack.</p><p>The Bodyguard redirects the attack to itself, becoming the new target. The original attack roll is compared against the Bodyguard's AC to determine whether it hits.</p>"
         },
-        "source": { "custom": "Suns of Rubi" },
-        "type": { "value": "monster", "subtype": "Reaction" },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "monster",
+          "subtype": "Reaction"
+        },
         "requirements": "",
         "activities": {
           "dnd5eactReact01": {
@@ -179,9 +298,20 @@
               "value": 1,
               "condition": "An ally within 5 ft is hit by an attack"
             },
-            "consumption": { "targets": [], "scaling": { "allowed": false } },
-            "duration": { "units": "inst", "concentration": false, "override": false },
-            "range": { "override": false },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false
+              }
+            },
+            "duration": {
+              "units": "inst",
+              "concentration": false,
+              "override": false
+            },
+            "range": {
+              "override": false
+            },
             "target": {
               "template": {
                 "count": "",
@@ -201,17 +331,32 @@
               "prompt": true,
               "override": false
             },
-            "uses": { "spent": 0, "max": "", "recovery": [] },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
             "sort": 0
           }
         },
-        "activation": { "type": "reaction", "value": 1, "condition": "An ally within 5 ft is hit by an attack" },
-        "uses": { "value": null, "max": "", "per": null, "recovery": "", "prompt": false }
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "An ally within 5 ft is hit by an attack"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": "",
+          "prompt": false
+        }
       },
       "effects": [],
       "flags": {},
       "sort": 300000,
-      "_key": "!actors.items!MBGuard000001.IntrcptThrt01"
+      "_key": "!actors.items!MBGuard000001.IntrcptThrt01",
+      "_id": "IntrcptThrt01"
     },
     {
       "name": "Stun Prod / Slam",
@@ -221,19 +366,33 @@
         "description": {
           "value": "<p><em>Melee Weapon Attack.</em> The Bodyguard strikes with its integrated stun prod or chassis-reinforced fist.</p>"
         },
-        "source": { "custom": "Suns of Rubi" },
-        "type": { "value": "natural" },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "natural"
+        },
         "requirements": "",
         "equipped": true,
         "proficient": true,
         "quantity": 1,
-        "weight": { "value": 0, "units": "lb" },
-        "price": { "value": 0, "denomination": "gp" },
+        "weight": {
+          "value": 0,
+          "units": "lb"
+        },
+        "price": {
+          "value": 0,
+          "denomination": "gp"
+        },
         "rarity": "",
         "identified": true,
         "ability": "str",
         "actionType": "mwak",
-        "range": { "value": 5, "long": null, "units": "ft" },
+        "range": {
+          "value": 5,
+          "long": null,
+          "units": "ft"
+        },
         "damage": {
           "parts": [],
           "versatile": ""
@@ -249,9 +408,20 @@
               "value": 1,
               "condition": ""
             },
-            "consumption": { "targets": [], "scaling": { "allowed": false } },
-            "duration": { "units": "inst", "concentration": false, "override": false },
-            "range": { "override": false },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false
+              }
+            },
+            "duration": {
+              "units": "inst",
+              "concentration": false,
+              "override": false
+            },
+            "range": {
+              "override": false
+            },
             "target": {
               "template": {
                 "count": "",
@@ -274,7 +444,9 @@
             "attack": {
               "ability": "str",
               "bonus": "",
-              "critical": { "threshold": null },
+              "critical": {
+                "threshold": null
+              },
               "flat": false,
               "type": {
                 "value": "melee",
@@ -282,29 +454,51 @@
               }
             },
             "damage": {
-              "critical": { "bonus": "" },
+              "critical": {
+                "bonus": ""
+              },
               "includeBase": true,
               "parts": [
                 {
                   "number": 1,
                   "denomination": 4,
                   "bonus": "2 + @prof",
-                  "types": ["bludgeoning"],
-                  "custom": { "enabled": true, "formula": "1d4 + 2 + @prof" },
-                  "scaling": { "mode": "", "number": null, "formula": "" }
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": true,
+                    "formula": "1d4 + 2 + @prof"
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": null,
+                    "formula": ""
+                  }
                 }
               ]
             },
-            "uses": { "spent": 0, "max": "", "recovery": [] },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
             "sort": 0
           }
         },
-        "uses": { "value": null, "max": "", "per": null, "recovery": "", "prompt": false }
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": "",
+          "prompt": false
+        }
       },
       "effects": [],
       "flags": {},
       "sort": 400000,
-      "_key": "!actors.items!MBGuard000001.StunProdSlam1"
+      "_key": "!actors.items!MBGuard000001.StunProdSlam1",
+      "_id": "StunProdSlam1"
     },
     {
       "name": "Detain",
@@ -314,8 +508,13 @@
         "description": {
           "value": "<p>The Bodyguard attempts to seize a creature within 5 feet. The target must succeed on a <strong>Strength</strong> or <strong>Dexterity</strong> saving throw (target's choice) against the <strong>Program Save DC</strong> or become <strong>Grappled</strong>.</p><p>While grappled in this way, the creature is also <strong>Restrained</strong> if the Bodyguard is not incapacitated. The grapple ends if the Bodyguard is incapacitated or the target is moved outside its reach.</p>"
         },
-        "source": { "custom": "Suns of Rubi" },
-        "type": { "value": "monster", "subtype": "Action" },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "monster",
+          "subtype": "Action"
+        },
         "requirements": "",
         "activities": {
           "dnd5eactSave01": {
@@ -328,9 +527,20 @@
               "value": 1,
               "condition": ""
             },
-            "consumption": { "targets": [], "scaling": { "allowed": false } },
-            "duration": { "units": "inst", "concentration": false, "override": false },
-            "range": { "override": false },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false
+              }
+            },
+            "duration": {
+              "units": "inst",
+              "concentration": false,
+              "override": false
+            },
+            "range": {
+              "override": false
+            },
             "target": {
               "template": {
                 "count": "",
@@ -351,25 +561,49 @@
               "override": false
             },
             "save": {
-              "ability": ["str", "dex"],
+              "ability": [
+                "str",
+                "dex"
+              ],
               "dc": {
                 "calculation": "str",
                 "formula": ""
               }
             },
-            "damage": { "critical": { "bonus": "" }, "includeBase": false, "parts": [] },
+            "damage": {
+              "critical": {
+                "bonus": ""
+              },
+              "includeBase": false,
+              "parts": []
+            },
             "effects": [],
-            "uses": { "spent": 0, "max": "", "recovery": [] },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
             "sort": 0
           }
         },
-        "activation": { "type": "action", "value": 1, "condition": "" },
-        "uses": { "value": null, "max": "", "per": null, "recovery": "", "prompt": false }
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": "",
+          "prompt": false
+        }
       },
       "effects": [],
       "flags": {},
       "sort": 500000,
-      "_key": "!actors.items!MBGuard000001.DetainAct001"
+      "_key": "!actors.items!MBGuard000001.DetainAct001",
+      "_id": "DetainAct001"
     },
     {
       "name": "Riot Shove",
@@ -379,8 +613,13 @@
         "description": {
           "value": "<p>The Bodyguard shoves a creature within 5 feet with its reinforced chassis. The target must succeed on a <strong>Strength</strong> saving throw against the <strong>Program Save DC</strong> or be pushed <strong>5 feet</strong> away from the Bodyguard and knocked <strong>Prone</strong>.</p>"
         },
-        "source": { "custom": "Suns of Rubi" },
-        "type": { "value": "monster", "subtype": "Action" },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "monster",
+          "subtype": "Action"
+        },
         "requirements": "",
         "activities": {
           "dnd5eactSave02": {
@@ -393,9 +632,20 @@
               "value": 1,
               "condition": ""
             },
-            "consumption": { "targets": [], "scaling": { "allowed": false } },
-            "duration": { "units": "inst", "concentration": false, "override": false },
-            "range": { "override": false },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false
+              }
+            },
+            "duration": {
+              "units": "inst",
+              "concentration": false,
+              "override": false
+            },
+            "range": {
+              "override": false
+            },
             "target": {
               "template": {
                 "count": "",
@@ -416,25 +666,48 @@
               "override": false
             },
             "save": {
-              "ability": ["str"],
+              "ability": [
+                "str"
+              ],
               "dc": {
                 "calculation": "str",
                 "formula": ""
               }
             },
-            "damage": { "critical": { "bonus": "" }, "includeBase": false, "parts": [] },
+            "damage": {
+              "critical": {
+                "bonus": ""
+              },
+              "includeBase": false,
+              "parts": []
+            },
             "effects": [],
-            "uses": { "spent": 0, "max": "", "recovery": [] },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
             "sort": 0
           }
         },
-        "activation": { "type": "action", "value": 1, "condition": "" },
-        "uses": { "value": null, "max": "", "per": null, "recovery": "", "prompt": false }
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": "",
+          "prompt": false
+        }
       },
       "effects": [],
       "flags": {},
       "sort": 600000,
-      "_key": "!actors.items!MBGuard000001.RiotShove001"
+      "_key": "!actors.items!MBGuard000001.RiotShove001",
+      "_id": "RiotShove001"
     }
   ],
   "effects": [],
@@ -445,5 +718,6 @@
     "compendiumSource": null,
     "duplicateSource": null
   },
-  "_key": "!actors!MBGuard000001"
+  "_key": "!actors!MBGuard000001",
+  "_id": "MBGuard000001"
 }

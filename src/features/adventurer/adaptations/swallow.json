@@ -1,0 +1,41 @@
+{
+  "_id": "AdptSwallow00001",
+  "name": "Adaptation: Swallow",
+  "type": "feat",
+  "img": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Bio-Morph Mutation (Req: Level 13, Battle Form):</em> As an Action, you swallow a creature smaller than you that you have grappled. The swallowed creature is Blinded, Restrained, has Total Cover, and takes 3d6 Acid damage at the start of each of your turns.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "adaptation"
+    },
+    "requirements": "Adventurer 13",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AdptSwallow00001"
+}

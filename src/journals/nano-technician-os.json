@@ -1,0 +1,24 @@
+{
+  "_id": "3a374873e09c1f16",
+  "name": "Nano-Technician OS Directory",
+  "pages": [
+    {
+      "_id": "1552bed04ce5d1b2",
+      "name": "Nano-Technician OS Catalog",
+      "type": "text",
+      "text": {
+        "format": 1,
+        "content": "<h1>Nano-Technician Operating System</h1><p>This directory catalogs all compiled nano-formulas available to the <strong>Nano-Technician</strong> OS. Click any entry to inspect its telemetry, or drag the link directly onto your character sheet to install the routine into your NCU.</p><h2>Tier 0: At-Will Routines (5)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.a4746a34cb0f64e9]{Acid Splash}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.3279d7b6a6a2f5c8]{Notum Blast}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.51d51e48a01e13d6]{Plasma Bolt}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.fa0234002fa7f7aa]{Unstable Burst}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.fce1a55b6cdcafcb]{Utility Cloud}</li></ul><h2>Tier 1: Leveled Nanoprograms (15)</h2><ul><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.223521b271689331]{Accelerate Fall}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.585c68353decaca0]{Deep Scan}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.b102b24e674e85d7]{Detect Notum}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.5e1ea1066da48023]{Entangle}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.1c9090db506a374d]{Force Barrier}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.30381d2b28a1d097]{Gravity Shackle}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.57ec5068ea0b6eab]{Localized Faultline}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.be507b217645ff2c]{Memory Leak}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.267a15988af2459f]{Micro Flechette}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.e36706f4abcc6503]{Mirror Shield}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.9fe07ff9bd5ed2e9]{Phosphor Torch}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.e07029c73cd0be59]{Photon Deflector}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.ab6db64e36e4b154]{Prism Pulse}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.d1e5be6a2c69c549]{Shield}</li><li>@UUID[Compendium.suns-of-rubi-core.nanoprograms.Item.fe214ee346885ebc]{Tesla Arc}</li></ul>"
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "_key": "!journal.pages!3a374873e09c1f16.1552bed04ce5d1b2"
+    }
+  ],
+  "ownership": {
+    "default": 2
+  },
+  "_key": "!journal!3a374873e09c1f16"
+}

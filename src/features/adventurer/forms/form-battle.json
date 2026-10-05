@@ -1,0 +1,85 @@
+{
+  "_id": "FormBattle000001",
+  "name": "Bio-Morph: Battle Form",
+  "type": "feat",
+  "img": "icons/creatures/mammals/bear-roar-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your bone density thickens and hardened dermal plating erupts across your shoulders and torso:</p>\n<ul>\n  <li><strong>Hardy:</strong> The temporary hit points gained when entering this form equal <strong>twice your Adventurer level</strong> instead of your normal calculation.</li>\n  <li><strong>Pack Protection:</strong> When a friendly creature within 10 feet of you takes damage, you can use your <strong>Reaction</strong> to reduce the damage by <strong>1d8 + your Wisdom modifier</strong>.</li>\n  <li><strong>Thrash:</strong> Once per turn when you hit a creature with a melee weapon attack, you can force the target to make a Strength saving throw against your Nanoprogram Save DC or be knocked <strong>Prone</strong>.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "form"
+    },
+    "requirements": "Adventurer 1",
+    "activities": {
+      "actPackProtect01": {
+        "_id": "actPackProtect01",
+        "type": "utility",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "When an ally within 10 ft takes damage"
+        },
+        "range": {
+          "value": "10",
+          "units": "ft"
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "ally"
+          }
+        },
+        "name": "Pack Protection (Reaction)"
+      },
+      "actThrash0000001": {
+        "_id": "actThrash0000001",
+        "type": "save",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Once per turn on melee hit"
+        },
+        "range": {
+          "units": "spec",
+          "special": "Target hit in melee"
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "name": "Thrash (Knock Prone)"
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!FormBattle000001"
+}

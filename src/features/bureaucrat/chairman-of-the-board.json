@@ -6,7 +6,9 @@
     "description": {
       "value": "<p>At 20th level, your authority reaches its absolute apex.</p><h3>Ability Score Increase</h3><p>Your <strong>Charisma</strong> score increases by <strong>4</strong>. Your maximum for that score is now <strong>24</strong>.</p><h3>Secret Command Words</h3><p>You unlock classified executive override codes. You always have <strong>Power Word Heal</strong> and <strong>Power Word Kill</strong> prepared, and they do not count against your number of prepared nanoprograms.</p><h3>Secondary Designation</h3><p>When you execute <strong>Power Word Heal</strong> or <strong>Power Word Kill</strong>, you can designate a <strong>secondary target</strong> creature within <strong>30 feet</strong> of the primary target. The secondary target suffers the identical effect of the nanoprogram.</p>"
     },
-    "source": { "custom": "Suns of Rubi" },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
     "type": {
       "value": "class",
       "subtype": ""
@@ -38,25 +40,67 @@
       }
     ],
     "activities": {},
-    "activation": { "type": "", "value": null, "condition": "" },
-    "duration": { "value": "", "units": "" },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
     "cover": null,
-    "target": { "value": null, "width": null, "units": "", "type": "", "prompt": true },
-    "range": { "value": null, "long": null, "units": "" },
-    "uses": { "value": null, "max": "", "per": null, "recovery": "", "prompt": false },
-    "consume": { "type": "", "target": null, "amount": null, "scale": false },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
     "ability": null,
     "actionType": "",
     "chatFlavor": "",
-    "critical": { "threshold": null, "damage": "" },
-    "damage": { "parts": [], "versatile": "" },
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
     "formula": "",
-    "save": { "ability": "", "dc": null, "scaling": "spell" }
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
   },
   "effects": [],
   "flags": {},
   "folder": null,
   "sort": 0,
-  "_stats": { "compendiumSource": null, "duplicateSource": null },
-  "_key": "!items!ChairmanBrd001"
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ChairmanBrd001",
+  "_id": "ChairmanBrd001"
 }

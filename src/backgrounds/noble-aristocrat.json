@@ -1,0 +1,140 @@
+{
+  "_id": "BgNobleAristoc01",
+  "name": "Noble Aristocrat",
+  "type": "background",
+  "img": "icons/equipment/head/crown-gilded-ruby.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Ability Scores:</strong> INT, WIS, CHA</p>\n<p><strong>Feat:</strong> @UUID[Compendium.suns-of-rubi-core.feats.FeatInspiringLd1]{Inspiring Leader}</p>\n<p><strong>Skill Proficiencies:</strong> Choose 2 from DEC, INS, LOR, PER</p>\n<h3>Feature: Position of Privilege</h3>\n<p>Thanks to your noble birth or high-ranking corporate executive lineage, people are inclined to treat you with deference and high social standing. You are welcome in high society, and people assume you have the right to be wherever you are. Common citizens and station personnel make every effort to accommodate you and avoid your displeasure, and other people of high birth or corporate director rank treat you as a member of the same social sphere. You can secure audiences with local planetary governors, planetary magistrates, and corporate board executives.</p>\n<hr/>\n<h3>Roleplay Characteristics</h3>\n<h4>Personality Traits</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>My eloquent manners and refined diction command attention in any assembly.</td></tr>\n    <tr><td><strong>2</strong></td><td>I treat everyone with regal politeness, regardless of their social stratum.</td></tr>\n    <tr><td><strong>3</strong></td><td>I have an exquisite taste in fine vintage wines, synthesized teas, and orchestral suites.</td></tr>\n    <tr><td><strong>4</strong></td><td>I rarely show visible shock or fear; composure under pressure is the mark of good breeding.</td></tr>\n    <tr><td><strong>5</strong></td><td>I expect the finest accommodations and am quietly astonished when they are unavailable.</td></tr>\n    <tr><td><strong>6</strong></td><td>I maintain an encyclopedic knowledge of noble family heraldry and corporate board politics.</td></tr>\n  </tbody>\n</table>\n<h4>Ideals</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>Noblesse Oblige. It is the sacred duty of the privileged to protect and uplift the less fortunate. (Good)</td></tr>\n    <tr><td><strong>2</strong></td><td>Hierarchy. Order is preserved only when everyone recognizes and honors their rightful station. (Lawful)</td></tr>\n    <tr><td><strong>3</strong></td><td>Autonomy. True nobility answers to no corporate board or petty planetary decree. (Chaotic)</td></tr>\n    <tr><td><strong>4</strong></td><td>Power. Status is a weapon; I intend to ascend to the highest apex of interplanetary rule. (Evil)</td></tr>\n    <tr><td><strong>5</strong></td><td>Prestige. Family honor and dynasty reputation outweigh any temporary material setback. (Neutral)</td></tr>\n    <tr><td><strong>6</strong></td><td>Excellence. Whatever role I undertake, I must perform it with unmatched distinction. (Any)</td></tr>\n  </tbody>\n</table>\n<h4>Bonds</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I carry the signet ring and encrypted cipher key of my ancient aristocratic dynasty.</td></tr>\n    <tr><td><strong>2</strong></td><td>My family lost its corporate charter; I will restore our title and reclaimed estates.</td></tr>\n    <tr><td><strong>3</strong></td><td>I am in exile from my home system until I prove my worth to my demanding parents.</td></tr>\n    <tr><td><strong>4</strong></td><td>I hold secret correspondence proving our rivals orchestrated an orbital shuttle assassination.</td></tr>\n    <tr><td><strong>5</strong></td><td>My personal bodyguard saved my life during a coup and remains my truest confidant.</td></tr>\n    <tr><td><strong>6</strong></td><td>I am devoted to an idealistic vision of turning our family syndicate into a benign enterprise.</td></tr>\n  </tbody>\n</table>\n<h4>Flaws</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I secretly believe that most common laborers are beneath my intellectual notice.</td></tr>\n    <tr><td><strong>2</strong></td><td>I am accustomed to having servants handle mundane chores and logistics.</td></tr>\n    <tr><td><strong>3</strong></td><td>An insult to my family's heritage or lineage provokes a haughty and dangerous fury.</td></tr>\n    <tr><td><strong>4</strong></td><td>I spend money extravagantly even when our supplies and credit lines are near empty.</td></tr>\n    <tr><td><strong>5</strong></td><td>I struggle to grasp that my family's name carries no legal authority in lawless frontier rims.</td></tr>\n    <tr><td><strong>6</strong></td><td>I guard a scandalous family secret that could disgrace our entire lineage if revealed.</td></tr>\n  </tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "identifier": "noble-aristocrat",
+    "advancement": [
+      {
+        "_id": "BgNobleAristAsi1",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con"
+          ],
+          "points": 3
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "Ability Score Improvement",
+        "hint": "Your background allows you to increase your INT, WIS, CHA scores: increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      {
+        "_id": "BgNobleAristSkl1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:dec",
+                "skills:ins",
+                "skills:lor",
+                "skills:per"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Skill Proficiencies",
+        "hint": "Choose 2 skills from: dec, ins, lor, per."
+      },
+      {
+        "_id": "BgNobleAristTol1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:game:*",
+                "tool:vehicle:air",
+                "tool:vehicle:space"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Tool Proficiencies",
+        "hint": "Your background grants you tool proficiency options."
+      },
+      {
+        "_id": "BgNobleAristLng1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Languages",
+        "hint": "Choose 1 language(s)."
+      },
+      {
+        "_id": "BgNobleAristFgt1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.suns-of-rubi-core.feats.FeatInspiringLd1"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Origin Feat",
+        "hint": "Your background grants you the Inspiring Leader origin feat."
+      }
+    ]
+  },
+  "_key": "!items!BgNobleAristoc01"
+}

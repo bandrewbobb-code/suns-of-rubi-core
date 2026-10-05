@@ -1,0 +1,41 @@
+{
+  "_id": "MaTechniques0001",
+  "name": "Martial Techniques",
+  "type": "feat",
+  "img": "icons/magic/control/buff-strength-muscle-damage.webp",
+  "system": {
+    "description": {
+      "value": "<p>In your study of martial disciplines, you have unlocked Martial Techniques—specialized enhancements and biomechanical kata that alter your kinetic combat flow. At 2nd level, you gain two Martial Techniques of your choice. You gain additional techniques as shown in the Techniques Known column of the Martial Artist table (up to 10 at 18th level).</p><p>Whenever you gain a level in this class, you can choose one of the techniques you know and replace it with another technique that you could learn at that level.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Martial Artist 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MaTechniques0001"
+}

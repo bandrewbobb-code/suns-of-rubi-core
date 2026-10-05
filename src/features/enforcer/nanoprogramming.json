@@ -1,0 +1,83 @@
+{
+  "_id": "EnfNanoProg00001",
+  "name": "Nanoprogramming",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-star-pentagon-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 1st level, your internal cyberware and biomechanical reservoirs are loaded with combat-grade <strong>nanoprograms</strong> that enhance your physiological resilience and battle fury.</p><h3>Constitution Nanocasting</h3><p><strong>Constitution</strong> is your nanocasting ability for your Enforcer nanoprograms. You use Constitution whenever a program refers to your nanocasting ability.</p><ul><li><strong>Program Save DC</strong> = 8 + your proficiency bonus + your Constitution modifier</li><li><strong>Program Attack Modifier</strong> = your proficiency bonus + your Constitution modifier</li></ul><h3>Nanopool Formula</h3><p>Your internal reservoir of nanomachines is measured in <strong>Nanopool points</strong>. Your maximum Nanopool points equal your <strong>Enforcer level + your Constitution modifier</strong> (minimum 1 point). You regain all expended Nanopool points when you finish a <strong>Long Rest</strong>.</p><h3>Max Power Level</h3><p>You can execute nanoprograms up to the Max Power Level indicated on the Enforcer class table (1st-level at 1st level, scaling up to 4th-level at higher levels).</p><h3>Free Hand Requirement</h3><p>Executing an Enforcer nanoprogram requires you to have at least <strong>one hand free</strong> to channel subdermal nano-injectors or somatic biocircuitry.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Enforcer 1",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EnfNanoProg00001"
+}

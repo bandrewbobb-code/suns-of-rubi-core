@@ -1,0 +1,36 @@
+{
+  "_id": "GearSniperCartr1",
+  "name": "Sniper Heavy Cartridges",
+  "type": "consumable",
+  "img": "icons/weapons/ammunition/bullets-cartridges-brass.webp",
+  "system": {
+    "description": {
+      "value": "<p>Match-grade long-range ballistic cartridges designed for anti-materiel sniper rifles.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 30,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "quantity": 6,
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "activities": {},
+    "type": {
+      "value": "ammo"
+    }
+  },
+  "_key": "!items!GearSniperCartr1"
+}

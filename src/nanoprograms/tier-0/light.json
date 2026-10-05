@@ -1,0 +1,54 @@
+{
+  "_id": "af9498b5d20c4b85",
+  "name": "Light",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-mattercre.webp",
+  "system": {
+    "description": {
+      "value": "<p>You touch one object no larger than 10 feet in any dimension. Until the program ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet.<br><br><strong>Overclock:</strong> Bright light extends to 40 ft at 5th; duration 8 hours at 11th; maintain up to 3 lit objects at 17th.</p><p><strong>Operating Systems:</strong> Adventurer, Engineer, Keeper, Soldier</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 0 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 0,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "touch"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "3ebb75001d197d19": {
+        "_id": "3ebb75001d197d19",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        }
+      }
+    }
+  },
+  "_key": "!items!af9498b5d20c4b85"
+}

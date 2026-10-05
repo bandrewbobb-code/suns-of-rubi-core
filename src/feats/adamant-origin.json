@@ -1,0 +1,24 @@
+{
+  "_id": "3d4d0aceaece8921",
+  "_key": "!items!3d4d0aceaece8921",
+  "name": "Adamant Origin",
+  "type": "feat",
+  "img": "icons/magic/symbols/star-solid-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite:</strong> Rocky, Subterranean, or Mountain Homeworld</p><p>You have adapted to high-density crusts, crushing subterranean depths, and mountainous gravity.<ul><li><strong>Solid Foundation:</strong> You have Advantage on saving throws against being knocked Prone or moved against your will.</li><li><strong>Subdermal Density:</strong> You know the <em>Deflection</em> Tier 0 At-Will nanoprogram. You can execute it without requiring an NCU deck or somatic gestures. Intelligence, Wisdom, or Charisma is your nanocasting ability for it (chosen when you gain this feat).</li></ul></p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "type": {
+      "value": "origin",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 1
+    },
+    "requirements": "Rocky, Subterranean, or Mountain Homeworld",
+    "activities": {}
+  }
+}

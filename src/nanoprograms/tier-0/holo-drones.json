@@ -1,0 +1,55 @@
+{
+  "_id": "e5f1db48ccac424b",
+  "name": "Holo-Drones",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-sensoryimp.webp",
+  "system": {
+    "description": {
+      "value": "<p>You compile up to four palm-sized holographic projectors within range that hover and shed dim light in a 10-foot radius. As a Bonus Action, move them 60 feet, or combine into one glowing humanoid silhouette.<br><br><strong>Overclock:</strong> Range 200 ft at 5th; compile up to 6 drones at 11th; combined hologram can mimic movement and audio at 17th.</p><p><strong>Operating Systems:</strong> Agent, Engineer, Fixer</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 0 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 0,
+    "school": "ill",
+    "properties": [
+      "concentration",
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 120,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "a4b2375d3a056ffe": {
+        "_id": "a4b2375d3a056ffe",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        }
+      }
+    }
+  },
+  "_key": "!items!e5f1db48ccac424b"
+}

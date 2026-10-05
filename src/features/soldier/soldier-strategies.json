@@ -1,0 +1,41 @@
+{
+  "_id": "SolStrategies001",
+  "name": "Soldier Strategies",
+  "type": "feat",
+  "img": "icons/skills/trades/academics-study-reading-book.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 2nd level, you integrate dynamic tactical doctrines into your combat HUD. You gain two Soldier Strategies of your choice.</p>\n<p>The Strategies Known column of the Soldier table shows when you learn more Soldier Strategies (scaling up to 10 at 19th level). Whenever you gain a Soldier level, you can replace one Strategy you know with another Strategy of your choice.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Soldier 2",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!SolStrategies001"
+}

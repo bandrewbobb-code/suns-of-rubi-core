@@ -1,0 +1,76 @@
+{
+  "_id": "CstPoison0000001",
+  "name": "Cunning Strike: Poison",
+  "type": "feat",
+  "img": "icons/magic/nature/poison-bottle-skull-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Cunning Strike (Cost: 1d6 Sneak Attack Die)</em></p><p>You inject neurotoxic nanites into the strike. The target must succeed on a Constitution saving throw against your Program Save DC or be <strong>Poisoned</strong> for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "cunning-strike"
+    },
+    "requirements": "Shade 2",
+    "activities": {
+      "actCstPoison0001": {
+        "_id": "actCstPoison0001",
+        "type": "save",
+        "name": "Poison Save",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "On dealing Sneak Attack damage (Cost: 1d6)"
+        },
+        "duration": {
+          "units": "minute",
+          "value": "1"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "wis",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!CstPoison0000001"
+}

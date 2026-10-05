@@ -1,0 +1,41 @@
+{
+  "_id": "InscEchoingRupt1",
+  "name": "Inscription: Echoing Rupture",
+  "type": "feat",
+  "img": "icons/magic/fire/projectile-fireball-smoke-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Novictum Inscription (Prerequisite: Shade Level 5)</em></p><p>When you spend two or more banked Sneak Attack dice to hit an enemy and reduce that creature to 0 hit points, 1 of the expended banked dice is immediately restored to your Siphon Banking reserve.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "inscription"
+    },
+    "requirements": "Shade 5",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!InscEchoingRupt1"
+}

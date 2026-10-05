@@ -1,0 +1,75 @@
+{
+  "_id": "8b6b900cd617a441",
+  "name": "Coat of Blades",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-mattercre.webp",
+  "system": {
+    "description": {
+      "value": "<p>Trigger: You take damage from a creature within range. Reactive plating expels a volley of micro-flechettes: attacker makes a Dexterity save, taking 2d10 kinetic/fire damage on failure (half on success).<br><br><strong>Overclock:</strong> +1d10 damage per tier above 1st (+1 NP/tier).</p><p><strong>Operating Systems:</strong> Adventurer, Enforcer, Engineer, Soldier</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 2 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 1,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "reaction",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 60,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "ce5aa8b8feeb8115": {
+        "_id": "ce5aa8b8feeb8115",
+        "type": "save",
+        "activation": {
+          "type": "reaction",
+          "value": 1
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting"
+          }
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "attribute",
+              "target": "resources.primary.value",
+              "value": "2",
+              "scaling": {
+                "mode": "amount",
+                "formula": "1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "_key": "!items!8b6b900cd617a441"
+}

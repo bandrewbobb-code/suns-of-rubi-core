@@ -1,0 +1,54 @@
+{
+  "_id": "ad700434dbd55b31",
+  "name": "Source Projector",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-sensoryimp.webp",
+  "system": {
+    "description": {
+      "value": "<p>Tap into natural planetary frequencies: forecast local weather for 24 hours; instantly sprout a seed/flower; create harmless ecological sensory effects; or light/snuff a small campfire.<br><br><strong>Overclock:</strong> 48 hr forecast (5-mile radius) at 5th; reveal toxicity levels at 11th; detect seismic tremors within 10 miles at 17th.</p><p><strong>Operating Systems:</strong> Adventurer</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 0 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 0,
+    "school": "trs",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 30,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "b9dd812a8a883785": {
+        "_id": "b9dd812a8a883785",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        }
+      }
+    }
+  },
+  "_key": "!items!ad700434dbd55b31"
+}

@@ -1,0 +1,115 @@
+{
+  "_id": "BgInvestigator01",
+  "name": "Investigator",
+  "type": "background",
+  "img": "icons/tools/navigation/magnifying-glass-brass-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Ability Scores:</strong> CON, INT, WIS</p>\n<p><strong>Feat:</strong> @UUID[Compendium.suns-of-rubi-core.feats.FeatObservantOr1]{Observant}</p>\n<p><strong>Skill Proficiencies:</strong> Choose 2 from INS, INV, PRC, SUR</p>\n<h3>Feature: Forensic Eye</h3>\n<p>You have an eye for subtle inconsistencies, biological traces, and digital evidence. When examining a crime scene, industrial sabotage site, or abandoned research outpost, you can deduce the general sequence of events that transpired, the approximate number of individuals involved, and whether security logs or environmental controls were tampered with. In addition, local forensic examiners, autopsy technicians, and data-recovery specialists recognize your methodology and are willing to grant you access to archived incident reports.</p>\n<hr/>\n<h3>Roleplay Characteristics</h3>\n<h4>Personality Traits</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I ask probing questions and dissect every conversational discrepancy.</td></tr>\n    <tr><td><strong>2</strong></td><td>I constantly dictate mental case notes, often muttering observations under my breath.</td></tr>\n    <tr><td><strong>3</strong></td><td>No detail is too minor to overlook; a single scorched wire tells an entire story.</td></tr>\n    <tr><td><strong>4</strong></td><td>I remain clinically calm and detached even when examining horrific crime scenes.</td></tr>\n    <tr><td><strong>5</strong></td><td>I carry a pocket scanner everywhere and run spectro-analysis on unfamiliar substances.</td></tr>\n    <tr><td><strong>6</strong></td><td>I have little patience for bureaucratic protocol when a trail is growing cold.</td></tr>\n  </tbody>\n</table>\n<h4>Ideals</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>Truth. Facts do not care about corporate bottom lines or faction propaganda. (Neutral)</td></tr>\n    <tr><td><strong>2</strong></td><td>Justice. The innocent must be vindicated, and perpetrators must face judgment. (Good)</td></tr>\n    <tr><td><strong>3</strong></td><td>Order. A lawful society cannot endure if crime and subversion go unpunished. (Lawful)</td></tr>\n    <tr><td><strong>4</strong></td><td>Inquiry. The pursuit of mysteries and unexplored phenomena is the highest human calling. (Chaotic)</td></tr>\n    <tr><td><strong>5</strong></td><td>Leverage. Uncovering ugly secrets gives you the power to dictate terms to kings. (Evil)</td></tr>\n    <tr><td><strong>6</strong></td><td>Tenacity. Once a case is opened, I will chase the truth to the rim of the galaxy. (Any)</td></tr>\n  </tbody>\n</table>\n<h4>Bonds</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>A cold case involving a murdered loved one has haunted me for over a decade.</td></tr>\n    <tr><td><strong>2</strong></td><td>I discovered proof of an executive cover-up that cost me my official badge and pension.</td></tr>\n    <tr><td><strong>3</strong></td><td>My old partner was framed for corruption; I will find the real culprits and clear their name.</td></tr>\n    <tr><td><strong>4</strong></td><td>My archive of solved cases is my proudest achievement and greatest legacy.</td></tr>\n    <tr><td><strong>5</strong></td><td>A dangerous serial saboteur leaves cryptic clues specifically meant for me to decipher.</td></tr>\n    <tr><td><strong>6</strong></td><td>I protect an informant whose testimony could dismantle a planetary criminal empire.</td></tr>\n  </tbody>\n</table>\n<h4>Flaws</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I become obsessed with solving puzzles, neglecting sleep, nutrition, and personal safety.</td></tr>\n    <tr><td><strong>2</strong></td><td>My blunt deductions and lack of tact frequently offend important social contacts.</td></tr>\n    <tr><td><strong>3</strong></td><td>I am cynical to a fault, assuming everyone is lying until forensic evidence proves otherwise.</td></tr>\n    <tr><td><strong>4</strong></td><td>I have broken into private data vaults and secured facilities in pursuit of clues.</td></tr>\n    <tr><td><strong>5</strong></td><td>I struggle to let go of an investigation even when authoritative commanders order a halt.</td></tr>\n    <tr><td><strong>6</strong></td><td>I use stimulants and tobacco to keep my mind sharp during sleepless all-night stakeouts.</td></tr>\n  </tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "identifier": "investigator",
+    "advancement": [
+      {
+        "_id": "BgInvestigatAsi1",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "cha"
+          ],
+          "points": 3
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "Ability Score Improvement",
+        "hint": "Your background allows you to increase your CON, INT, WIS scores: increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      {
+        "_id": "BgInvestigatSkl1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:ins",
+                "skills:inv",
+                "skills:prc",
+                "skills:sur"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Skill Proficiencies",
+        "hint": "Choose 2 skills from: ins, inv, prc, sur."
+      },
+      {
+        "_id": "BgInvestigatLng1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Languages",
+        "hint": "Choose 2 language(s)."
+      },
+      {
+        "_id": "BgInvestigatFgt1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.suns-of-rubi-core.feats.FeatObservantOr1"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Origin Feat",
+        "hint": "Your background grants you the Observant origin feat."
+      }
+    ]
+  },
+  "_key": "!items!BgInvestigator01"
+}

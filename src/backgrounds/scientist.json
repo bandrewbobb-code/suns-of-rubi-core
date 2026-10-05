@@ -1,0 +1,142 @@
+{
+  "_id": "BgScientist00001",
+  "name": "Scientist",
+  "type": "background",
+  "img": "icons/equipment/neck/pendant-faceted-crystal-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Ability Scores:</strong> CON, INT, WIS</p>\n<p><strong>Feat:</strong> @UUID[Compendium.suns-of-rubi-core.feats.FeatKeenMindOrig]{Keen Mind}</p>\n<p><strong>Skill Proficiencies:</strong> Choose 2 from LOR, MED, NAT, TEC</p>\n<h3>Feature: Scientific Methodology</h3>\n<p>You are trained in empirical research, peer-reviewed academic rigor, and lab protocol. When you encounter unfamiliar nanotechnological anomalies, alien biotechnology, or precursor artifacts, you know how to establish safe sampling procedures, run diagnostic spectrographs, and isolate volatile variables. You can secure access to university laboratories, corporate research archives, and medical databases by citing academic credentials, submitting research papers, or offering peer consultations.</p>\n<hr/>\n<h3>Roleplay Characteristics</h3>\n<h4>Personality Traits</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I view every unusual encounter, monster, or anomaly as an exciting research opportunity.</td></tr>\n    <tr><td><strong>2</strong></td><td>I cite obscure scientific papers, particle physics theories, and chemical formulas in casual conversation.</td></tr>\n    <tr><td><strong>3</strong></td><td>I take obsessive notes and capture spectral sensor logs of everything in my surroundings.</td></tr>\n    <tr><td><strong>4</strong></td><td>I get lost in thought contemplating complex equations, often losing track of current danger.</td></tr>\n    <tr><td><strong>5</strong></td><td>I demand empirical evidence before accepting anyone's outrageous claims or rumors.</td></tr>\n    <tr><td><strong>6</strong></td><td>I explain mundane technical occurrences using excessively convoluted terminology.</td></tr>\n  </tbody>\n</table>\n<h4>Ideals</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>Progress. Scientific knowledge and technological advancement will save humanity. (Good)</td></tr>\n    <tr><td><strong>2</strong></td><td>Truth. The universe operates according to immutable laws waiting to be discovered. (Neutral)</td></tr>\n    <tr><td><strong>3</strong></td><td>Logic. Emotion and superstition lead to disaster; rational thought must guide our steps. (Lawful)</td></tr>\n    <tr><td><strong>4</strong></td><td>Innovation. Established dogma and orthodox theories must be shattered to make breakthroughs. (Chaotic)</td></tr>\n    <tr><td><strong>5</strong></td><td>Power. True power does not stem from blaster cannons, but from understanding how reality functions. (Evil)</td></tr>\n    <tr><td><strong>6</strong></td><td>Curiosity. The greatest sin is refusing to ask 'how' and 'why'. (Any)</td></tr>\n  </tbody>\n</table>\n<h4>Bonds</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>My life's work is a comprehensive thesis on the quantum metaphysical behavior of Notum.</td></tr>\n    <tr><td><strong>2</strong></td><td>A breakthrough experiment I led caused a laboratory catastrophe; I must fix the collateral damage.</td></tr>\n    <tr><td><strong>3</strong></td><td>My mentor was assassinated by Omni-Tek executives for refusing to weaponize a medical discovery.</td></tr>\n    <tr><td><strong>4</strong></td><td>My customized sensory scanner contains irreplaceable field research from three star systems.</td></tr>\n    <tr><td><strong>5</strong></td><td>I seek a cure for a rare genetic mutation that affects my sibling or child.</td></tr>\n    <tr><td><strong>6</strong></td><td>I will prove my revolutionary theories to the skeptical academic board that ridiculed me.</td></tr>\n  </tbody>\n</table>\n<h4>Flaws</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I am so fascinated by hazardous alien phenomena that I often disregard basic safety protocols.</td></tr>\n    <tr><td><strong>2</strong></td><td>I assume intellectual superiority over anyone who lacks rigorous scientific training.</td></tr>\n    <tr><td><strong>3</strong></td><td>I am prone to ethical blind spots when pursuing what I believe to be a monumental breakthrough.</td></tr>\n    <tr><td><strong>4</strong></td><td>I struggle to communicate empathy and emotional warmth, treating emotions like chemical glitches.</td></tr>\n    <tr><td><strong>5</strong></td><td>I panic when confronted with situations that cannot be explained or solved by rational logic.</td></tr>\n    <tr><td><strong>6</strong></td><td>I would risk my own life and the safety of my party to preserve a unique research specimen.</td></tr>\n  </tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "identifier": "scientist",
+    "advancement": [
+      {
+        "_id": "BgScientist0Asi1",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "cha"
+          ],
+          "points": 3
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "Ability Score Improvement",
+        "hint": "Your background allows you to increase your CON, INT, WIS scores: increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      {
+        "_id": "BgScientist0Skl1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:lor",
+                "skills:med",
+                "skills:nat",
+                "skills:tec"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Skill Proficiencies",
+        "hint": "Choose 2 skills from: lor, med, nat, tec."
+      },
+      {
+        "_id": "BgScientist0Tol1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tools:medkit",
+                "tools:chemists-supplies",
+                "tools:hackers-kit",
+                "tool:alch",
+                "tools:bio-med-kit"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Tool Proficiencies",
+        "hint": "Your background grants you tool proficiency options."
+      },
+      {
+        "_id": "BgScientist0Lng1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "languages:standard:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Languages",
+        "hint": "Choose 1 language(s)."
+      },
+      {
+        "_id": "BgScientist0Fgt1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.suns-of-rubi-core.feats.FeatKeenMindOrig"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Origin Feat",
+        "hint": "Your background grants you the Keen Mind origin feat."
+      }
+    ]
+  },
+  "_key": "!items!BgScientist00001"
+}

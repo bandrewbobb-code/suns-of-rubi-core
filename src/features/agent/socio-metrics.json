@@ -1,0 +1,41 @@
+{
+  "_id": "AgtSocioMetric01",
+  "name": "Socio-Metrics",
+  "type": "feat",
+  "img": "icons/magic/perception/eye-slit-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 1st level, your cold analytical assessment of micro-expressions, speech patterns, and biometrics replaces emotional persuasion. You can substitute your <strong>Wisdom modifier</strong> in place of your Charisma modifier when making <strong>Deception, Intimidation, and Persuasion checks</strong>.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Agent 1",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AgtSocioMetric01"
+}

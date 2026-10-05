@@ -1,0 +1,34 @@
+{
+  "_id": "7b683bbec6698950",
+  "_key": "!items!7b683bbec6698950",
+  "name": "Discordant Origin",
+  "type": "feat",
+  "img": "icons/magic/symbols/star-solid-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Prerequisite:</strong> Lawless Station, Industrial Cacophony, or Warp World</p><p>Raised amid crushing urban anarchy, mechanical screech, and systemic corruption.<ul><li><strong>Sensory Dampeners:</strong> You have Resistance to Acid, Cold, Lightning, or Psychic damage (chosen when you select this feat).</li><li><strong>Static Interference:</strong> You can execute the <em>Demotivational Speech</em> program once without expending Nanopool points, regaining the ability after a Long Rest. Intelligence, Wisdom, or Charisma is your nanocasting ability for it.</li></ul></p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "type": {
+      "value": "origin",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 1
+    },
+    "requirements": "Lawless Station, Industrial Cacophony, or Warp World",
+    "activities": {
+      "4a50fe254c38877b": {
+        "_id": "4a50fe254c38877b",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "name": "Discordant Origin"
+      }
+    }
+  }
+}

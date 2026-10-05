@@ -1,0 +1,70 @@
+{
+  "_id": "AdvBioMorph00001",
+  "name": "Bio-Morph",
+  "type": "feat",
+  "img": "icons/magic/nature/wolf-paw-glow-large-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 1st level, you can rewrite your cellular and genetic matrix on the fly using adaptable nanotech mutagens. As a <strong>Bonus Action</strong>, you can activate a Bio-Morph form of your choice (Ambush Form, Battle Form, or Swift Form). The transformation lasts for a number of hours equal to your <strong>Adventurer level</strong>, until you end it as a Bonus Action, or until you fall Unconscious.</p>\n<h3>Passive Form Benefits</h3>\n<p>While running any Bio-Morph protocol, you gain the following universal physical enhancements:</p>\n<ul>\n  <li><strong>Keen Senses:</strong> You gain Darkvision out to a range of <strong>60 feet</strong> (or +30 feet if you already have Darkvision). You have <strong>Advantage on Wisdom (Perception) and Wisdom (Survival) checks</strong> that rely on smell or hearing.</li>\n  <li><strong>Harden Flesh:</strong> When you transform, you immediately gain temporary hit points equal to your <strong>Adventurer level + your Wisdom modifier</strong>.</li>\n</ul>\n<h3>Uses & Recovery</h3>\n<p>You can use this feature a number of times equal to your <strong>Proficiency Bonus</strong> (`@prof`). You regain one expended use when you finish a <strong>Short Rest</strong>, and all expended uses when you finish a <strong>Long Rest</strong>.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        },
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "@scale.adventurer.biomorph-uses"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Adventurer 1",
+    "activities": {
+      "actActivateBio001": {
+        "_id": "actActivateBio001",
+        "type": "utility",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "duration": {
+          "value": "@classes.adventurer.levels",
+          "units": "hour"
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "self"
+          }
+        },
+        "name": "Activate Bio-Morph Form"
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!AdvBioMorph00001"
+}

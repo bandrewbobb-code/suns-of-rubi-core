@@ -1,0 +1,72 @@
+{
+  "_id": "ShdHesitatDefeat",
+  "name": "Hesitation is Defeat",
+  "type": "feat",
+  "img": "icons/magic/time/hourglass-tilted-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Starting at 3rd level, you capitalize instantly on the slightest hesitation in combat. In a round of combat in which you have not yet taken a turn, immediately after a friendly creature ends its turn, you can use your reaction to seize the initiative. Your turn begins immediately, and you act next in initiative order.</p><p>Your place in the initiative order permanently changes to this new position for the remainder of the encounter. Once you use this feature, you can't use it again until you finish a Long Rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Shade 3",
+    "activities": {
+      "actShdHesitatDef": {
+        "_id": "actShdHesitatDef",
+        "type": "utility",
+        "name": "Seize the Initiative",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "Immediately after a friendly creature ends its turn, before you have acted this round"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!ShdHesitatDefeat"
+}

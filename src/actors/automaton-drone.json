@@ -1,0 +1,508 @@
+{
+  "_id": "AutoDrone0000001",
+  "name": "Automaton: Drone",
+  "type": "npc",
+  "img": "icons/creatures/fey/sprite-glowing-yellow.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 8,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 16,
+        "proficient": 1
+      },
+      "con": {
+        "value": 12,
+        "proficient": 0
+      },
+      "int": {
+        "value": 5,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 14,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 6,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": null,
+        "calc": "custom",
+        "formula": "13 + @prof"
+      },
+      "hp": {
+        "value": 20,
+        "max": 20,
+        "formula": "4 + (@abilities.int.mod * @classes.engineer.levels)"
+      },
+      "movement": {
+        "walk": 10,
+        "fly": 40,
+        "burrow": 0,
+        "climb": 0,
+        "swim": 0,
+        "units": "ft",
+        "hover": true
+      },
+      "senses": {
+        "darkvision": 60,
+        "blindsight": 0,
+        "tremorsense": 0,
+        "truesight": 0,
+        "units": "ft",
+        "special": "Darkvision 60 ft"
+      }
+    },
+    "details": {
+      "biography": {
+        "value": "<p>An airborne reconnaissance and precision harassment skiff equipped with repulsorlift thrusters and an active targeting laser.</p>",
+        "public": ""
+      },
+      "alignment": "Unaligned",
+      "cr": null,
+      "spellLevel": 0,
+      "type": {
+        "value": "construct",
+        "subtype": "Automaton",
+        "swarm": "",
+        "custom": ""
+      },
+      "source": {
+        "custom": "Suns of Rubi"
+      }
+    },
+    "traits": {
+      "size": "sm",
+      "di": {
+        "value": [
+          "poison",
+          "psychic"
+        ],
+        "bypasses": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [
+          "lightning"
+        ],
+        "bypasses": [],
+        "custom": "Ion"
+      },
+      "dr": {
+        "value": [],
+        "bypasses": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhaustion",
+          "frightened",
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Understands creator's languages but cannot speak"
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Automaton: Drone",
+    "displayName": 20,
+    "displayBars": 20,
+    "actorLink": true,
+    "disposition": 1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "sight": {
+      "enabled": true,
+      "range": 60,
+      "visionMode": "darkvision"
+    },
+    "depth": 1
+  },
+  "items": [
+    {
+      "_id": "RctCoreDrone00000",
+      "name": "Reactor Core",
+      "type": "feat",
+      "img": "icons/magic/fire/orb-vortex-sun-yellow.webp",
+      "system": {
+        "description": {
+          "value": "<p><strong>Heat Management (0–10):</strong> The automaton is driven by a high-output miniaturized fusion reactor.</p>\n<ul>\n  <li><strong>Heat Buildup:</strong> At the start of each of its turns, the automaton generates <strong>+1 Heat</strong> (or <strong>+2 Heat</strong> if it is within 5 feet of one or more hostile creatures). Whenever the automaton suffers 10 or more damage from a single attack or effect, it generates <strong>+1 Heat</strong>.</li>\n  <li><strong>Meltdown Check:</strong> At the start of its turn, if its Heat is <strong>7 or higher</strong>, roll a d20. If the roll is strictly less than its current Heat (`d20 < Heat`), the core breaches in a catastrophic <strong>Meltdown</strong>:\n    <ul>\n      <li>Every creature within a <strong>10-foot radius</strong> must make a Dexterity saving throw (DC = 8 + creator's PB + creator's INT mod), taking <strong>@prof d6 fire and kinetic damage</strong> on a failed save, or half on a success.</li>\n      <li>The area becomes heavily obscured by superheated steam and radioactive exhaust until the end of the automaton's next turn.</li>\n      <li><strong>Emergency Lockout:</strong> The automaton immediately suffers Emergency Lockout: it is <strong>Incapacitated</strong> with a speed of 0 until the end of its next turn. Its Heat resets to 0.</li>\n    </ul>\n  </li>\n</ul>"
+        },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "monster",
+          "subtype": "Trait"
+        },
+        "requirements": "",
+        "activities": {
+          "actMeltdown00001": {
+            "_id": "actMeltdown00001",
+            "type": "save",
+            "activation": {
+              "type": "special",
+              "value": null,
+              "condition": "When d20 < Heat during turn start check at 7+ Heat"
+            },
+            "duration": {
+              "value": "0",
+              "units": "inst"
+            },
+            "target": {
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "template": {
+                "count": 0,
+                "contiguous": false,
+                "type": "radius",
+                "size": "10",
+                "width": 0,
+                "height": 0,
+                "units": "ft"
+              }
+            },
+            "range": {
+              "units": "self",
+              "special": ""
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "int",
+                "formula": "8 + @prof + @abilities.int.mod"
+              }
+            },
+            "damage": {
+              "critical": {
+                "allow": false,
+                "bonus": ""
+              },
+              "parts": [
+                {
+                  "custom": {
+                    "enabled": true,
+                    "formula": "@prof d6"
+                  },
+                  "types": [
+                    "fire"
+                  ],
+                  "scaling": {
+                    "mode": "whole",
+                    "number": null,
+                    "formula": ""
+                  }
+                }
+              ]
+            },
+            "name": "Reactor Meltdown",
+            "img": "",
+            "appliedEffects": []
+          }
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "sort": 100000,
+      "_key": "!actors.items!AutoDrone0000001.RctCoreDrone00000"
+    },
+    {
+      "_id": "TraitDrone00001",
+      "name": "Optical Telemetry",
+      "type": "feat",
+      "img": "icons/magic/defensive/shield-barrier-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>The Drone projects targeting data to its creator. While within 60 feet, the creator's ranged attacks ignore half cover.</p>"
+        },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "monster",
+          "subtype": "Trait"
+        },
+        "requirements": "",
+        "activities": {}
+      },
+      "effects": [],
+      "flags": {},
+      "sort": 200000,
+      "_key": "!actors.items!AutoDrone0000001.TraitDrone00001"
+    },
+    {
+      "_id": "TraitDrone00002",
+      "name": "Flyby (Level 5)",
+      "type": "feat",
+      "img": "icons/magic/defensive/shield-barrier-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>Starting at 5th level, the Drone does not provoke Opportunity Attacks when flying out of an enemy's reach.</p>"
+        },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "monster",
+          "subtype": "Trait"
+        },
+        "requirements": "",
+        "activities": {}
+      },
+      "effects": [],
+      "flags": {},
+      "sort": 210000,
+      "_key": "!actors.items!AutoDrone0000001.TraitDrone00002"
+    },
+    {
+      "_id": "ActnDrone00001",
+      "name": "Pulse Laser",
+      "type": "weapon",
+      "img": "icons/weapons/maces/mace-round-spiked-grey.webp",
+      "system": {
+        "description": {
+          "value": "<p><em>Ranged Attack:</em> Range 30/120 ft., one target. Hit: 1d4 + @prof energy damage.</p>"
+        },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "natural"
+        },
+        "requirements": "",
+        "equipped": true,
+        "proficient": true,
+        "activities": {
+          "actPulseLaser001": {
+            "_id": "actPulseLaser001",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": 1
+            },
+            "target": {
+              "affects": {
+                "count": "1",
+                "type": "creature"
+              }
+            },
+            "range": {
+              "value": "30",
+              "long": "120",
+              "units": "ft"
+            },
+            "attack": {
+              "ability": "dex",
+              "bonus": "@prof",
+              "flat": false,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "critical": {
+                "allow": true
+              },
+              "parts": [
+                {
+                  "custom": {
+                    "enabled": true,
+                    "formula": "1d4 + @prof"
+                  },
+                  "types": [
+                    "energy"
+                  ]
+                }
+              ]
+            },
+            "name": "Pulse Laser"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "sort": 300000,
+      "_key": "!actors.items!AutoDrone0000001.ActnDrone00001"
+    },
+    {
+      "_id": "ActnDrone00002",
+      "name": "Paint Target (2 Heat)",
+      "type": "weapon",
+      "img": "icons/weapons/maces/mace-round-spiked-grey.webp",
+      "system": {
+        "description": {
+          "value": "<p><em>Special Action (Generates 2 Heat):</em> Illuminates a target within 60 ft with laser telemetry. Attacks against the target have Advantage until the Drone's next turn.</p>"
+        },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "natural"
+        },
+        "requirements": "",
+        "equipped": true,
+        "proficient": true,
+        "activities": {}
+      },
+      "effects": [],
+      "flags": {},
+      "sort": 310000,
+      "_key": "!actors.items!AutoDrone0000001.ActnDrone00002"
+    },
+    {
+      "_id": "ActnDrone00003",
+      "name": "Swoop & Strip (4 Heat)",
+      "type": "weapon",
+      "img": "icons/weapons/maces/mace-round-spiked-grey.webp",
+      "system": {
+        "description": {
+          "value": "<p><em>Special Action (Generates 4 Heat):</em> Dives past a creature and snatches an unattached or carried item with Dex vs DC check.</p>"
+        },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "natural"
+        },
+        "requirements": "",
+        "equipped": true,
+        "proficient": true,
+        "activities": {}
+      },
+      "effects": [],
+      "flags": {},
+      "sort": 320000,
+      "_key": "!actors.items!AutoDrone0000001.ActnDrone00003"
+    },
+    {
+      "_id": "ActnDrone00004",
+      "name": "Razor Flurry (6 Heat)",
+      "type": "weapon",
+      "img": "icons/weapons/maces/mace-round-spiked-grey.webp",
+      "system": {
+        "description": {
+          "value": "<p><em>Signature Attack (Generates 6 Heat):</em> Ejects micro-shards in a 10-ft radius. Dex save or take 3d4 + @prof slashing damage.</p>"
+        },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "natural"
+        },
+        "requirements": "",
+        "equipped": true,
+        "proficient": true,
+        "activities": {
+          "actRazorFlurry01": {
+            "_id": "actRazorFlurry01",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": 1
+            },
+            "target": {
+              "template": {
+                "type": "radius",
+                "size": "10",
+                "units": "ft"
+              }
+            },
+            "range": {
+              "units": "self"
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "int",
+                "formula": "8 + @prof + @abilities.int.mod"
+              }
+            },
+            "damage": {
+              "parts": [
+                {
+                  "custom": {
+                    "enabled": true,
+                    "formula": "3d4 + @prof"
+                  },
+                  "types": [
+                    "slashing"
+                  ]
+                }
+              ]
+            },
+            "name": "Razor Flurry"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {},
+      "sort": 330000,
+      "_key": "!actors.items!AutoDrone0000001.ActnDrone00004"
+    },
+    {
+      "_id": "ReacDrone00001",
+      "name": "Interceptor Dive (1/LR)",
+      "type": "feat",
+      "img": "icons/magic/defensive/shield-barrier-flaming-diamond-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>When an attack is made against creator within 10 feet, Drone interposes itself and takes the attack instead.</p>"
+        },
+        "source": {
+          "custom": "Suns of Rubi"
+        },
+        "type": {
+          "value": "monster",
+          "subtype": "Reaction"
+        },
+        "requirements": "",
+        "activities": {}
+      },
+      "effects": [],
+      "flags": {},
+      "sort": 500000,
+      "_key": "!actors.items!AutoDrone0000001.ReacDrone00001"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!actors!AutoDrone0000001"
+}

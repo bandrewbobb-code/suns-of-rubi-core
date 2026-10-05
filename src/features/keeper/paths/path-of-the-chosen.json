@@ -1,0 +1,223 @@
+{
+  "_id": "PathChosen000001",
+  "name": "Path of the Chosen",
+  "type": "feat",
+  "img": "icons/magic/light/beam-rays-yellow-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>You embrace the raw, unfiltered hunger of Novictum and the darker frequencies of the Source, commanding fear and absolute supremacy.</p><h3>Source Affinity</h3><p>Your Source Affinity damage type is <strong>Necrotic</strong>.</p><h3>Scent of Ambition</h3><p>You gain proficiency in <strong>Deception or Intimidation</strong> (your choice). By speaking with a creature for 1 minute, you can make a contested Charisma check to reveal its secret ambitions, physical vulnerabilities, or personal bribe price. You gain Advantage on checks to intimidate or extort that target for 24 hours.</p><h3>Channel the Source: Unhallowed Wrath</h3><ul><li><strong>Novictum Drain (Action)</strong>: Expend 1 Channel use to target a creature within 60 feet. The target must make a <strong>Constitution saving throw</strong> against your Program Save DC. On a failure, it takes <strong>1d8 + Keeper level + Charisma modifier Necrotic damage</strong> (or half as much on a success), and you gain <strong>Temporary Hit Points equal to the damage dealt</strong>.</li><li><strong>Spiteful Transfusion (Reaction)</strong>: When an ally within 60 feet drops to 0 hit points, spend 1 Channel use. You suffer unpreventable Necrotic damage equal to <strong>2 &times; your Keeper level</strong>. Your ally drops to 1 hit point instead and gains <strong>Temporary Hit Points equal to the damage you suffered</strong>.</li></ul>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": "path"
+    },
+    "requirements": "Keeper 2",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactNovictum": {
+        "_id": "dnd5eactNovictum",
+        "type": "save",
+        "name": "Novictum Drain",
+        "img": "",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "Spend 1 Channel use"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 8,
+              "bonus": "@classes.keeper.levels + @abilities.cha.mod",
+              "types": [
+                "necrotic"
+              ],
+              "custom": {
+                "enabled": true,
+                "formula": "1d8 + @classes.keeper.levels + @abilities.cha.mod"
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      },
+      "dnd5eactTransfuse": {
+        "_id": "dnd5eactTransfuse",
+        "type": "utility",
+        "name": "Spiteful Transfusion",
+        "img": "",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "When an ally within 60 ft drops to 0 HP; spend 1 Channel use"
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "ally",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 1
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!PathChosen000001"
+}

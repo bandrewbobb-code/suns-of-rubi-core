@@ -1,0 +1,54 @@
+{
+  "_id": "3ecf772517a45927",
+  "name": "Vocal Sub-Woofer",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-mattermet.webp",
+  "system": {
+    "description": {
+      "value": "<p>Voice booms 3x louder, granting Advantage on Charisma (Intimidation) checks. Alternatively, flicker lights, rattle hatches violently, or produce an ominous localized seismic hum. Maintain up to 3 effects.<br><br><strong>Overclock:</strong> Heard at 300 ft at 5th, 1,000 ft at 11th, 1 mile at 17th.</p><p><strong>Operating Systems:</strong> Enforcer</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 0 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 0,
+    "school": "trs",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 30,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "ec9931dfac09da97": {
+        "_id": "ec9931dfac09da97",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        }
+      }
+    }
+  },
+  "_key": "!items!3ecf772517a45927"
+}

@@ -1,0 +1,67 @@
+{
+  "_id": "TechSlowFallTech",
+  "name": "Slow Fall Technique",
+  "type": "feat",
+  "img": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Martial Technique</em></p><p>You can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your Martial Artist level (<code>5 * @classes.martial-artist.levels</code>).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "technique"
+    },
+    "requirements": "Martial Artist 2",
+    "activities": {
+      "actTechSlowFall01": {
+        "_id": "actTechSlowFall01",
+        "type": "utility",
+        "name": "Slow Fall Technique",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "When you fall"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "5 * @classes.martial-artist.levels",
+          "name": "Damage Reduction"
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!TechSlowFallTech"
+}

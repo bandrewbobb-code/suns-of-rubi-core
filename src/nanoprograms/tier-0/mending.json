@@ -1,0 +1,54 @@
+{
+  "_id": "23132ad56e29826d",
+  "name": "Mending",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-timespace.webp",
+  "system": {
+    "description": {
+      "value": "<p>Repairs a single break or tear in an object you touch (broken wire, cracked datapad, torn suit seal) no larger than 1 foot in any dimension. Does not restore Hit Points.<br><br><strong>Overclock:</strong> 2 ft at 5th; execution time 1 Action at 11th; 5 ft at 17th.</p><p><strong>Operating Systems:</strong> Engineer, Fixer, Trader</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 0 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 0,
+    "school": "trs",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "minute",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "touch"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "0d525dd2245178a9": {
+        "_id": "0d525dd2245178a9",
+        "type": "utility",
+        "activation": {
+          "type": "minute",
+          "value": 1
+        }
+      }
+    }
+  },
+  "_key": "!items!23132ad56e29826d"
+}

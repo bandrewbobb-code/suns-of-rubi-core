@@ -1,0 +1,83 @@
+{
+  "_id": "DocNanoProg00001",
+  "name": "Nanoprogramming",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-star-pentagon-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 1st level, your deep medical research and bio-synthetic implants grant you full nanocasting progression in advanced biological and clinical nanoprograms, scaling smoothly from Tier 1 up to Tier 9 apex nanoprograms.</p><h3>Wisdom Nanocasting</h3><p><strong>Wisdom</strong> is your nanocasting ability for Doctor nanoprograms, reflecting your clinical diagnostic acumen and cellular observation.</p><ul><li><strong>Program Save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</li><li><strong>Program Attack Modifier</strong> = your proficiency bonus + your Wisdom modifier</li></ul><h3>Programs Known</h3><p>You know <strong>9 nanoprograms</strong> of your choice from the Doctor Operating System at 1st level, and learn additional programs as shown on the Doctor table.</p><h3>Nanopool Formula</h3><p>Your maximum Nanopool points equal <strong>(Doctor level &times; 4) + your Wisdom modifier</strong> (minimum 1 point). You regain all expended Nanopool points when you finish a <strong>Long Rest</strong>.</p><h3>Max Power Level</h3><p>The maximum tier of nanoprogram you can execute scales with your Doctor level as shown in the Max Power Level column of the Doctor table.</p><h3>Bio-Scanner / Medkit Requirement</h3><p>Executing Doctor nanoprograms requires you to have at least <strong>one hand free</strong> to operate a Bio-Scanner Rig, Medkit, or subcutaneous hypo-injector.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Doctor 1",
+    "properties": [],
+    "advancement": [],
+    "activities": {},
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DocNanoProg00001"
+}

@@ -1,0 +1,112 @@
+{
+  "_id": "WpnVibroKnucklr1",
+  "name": "Vibro-Knuckler",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-broad-serrated-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Ultrasonic knuckle duster transferring concussive shockwaves on unarmed impact.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 75,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "type": {
+      "value": "simpleM",
+      "baseItem": "vibro-knuckler"
+    },
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": 6,
+        "types": [
+          "bludgeoning"
+        ]
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": []
+      }
+    },
+    "range": {
+      "value": 5,
+      "long": null,
+      "units": "ft"
+    },
+    "mastery": "nick",
+    "properties": [
+      "hidden",
+      "lgt"
+    ],
+    "activities": {
+      "mainAttack000001": {
+        "_id": "mainAttack000001",
+        "type": "attack",
+        "name": "Strike",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "range": {
+          "value": "5",
+          "long": "",
+          "units": "ft"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false,
+          "count": 1,
+          "type": "creature"
+        },
+        "attack": {
+          "ability": "str",
+          "bonus": "",
+          "critical": {
+            "threshold": 20
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    }
+  },
+  "_key": "!items!WpnVibroKnucklr1"
+}

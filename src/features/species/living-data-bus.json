@@ -1,0 +1,54 @@
+{
+  "_id": "SpcNanLivDataBs1",
+  "name": "Living Data-Bus",
+  "type": "feat",
+  "img": "icons/commodities/tech/circuit-board-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Your brain architecture functions as a biological motherboard. You gain innate proficiency in the Technology skill.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "Nanomage",
+    "activities": {},
+    "identifier": "living-data-bus",
+    "advancement": [
+      {
+        "_id": "advNanDataBus001",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "skills:tec"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Living Data-Bus",
+        "hint": "Grants proficiency in the Technology skill."
+      }
+    ]
+  },
+  "_key": "!items!SpcNanLivDataBs1"
+}

@@ -1,0 +1,79 @@
+{
+  "_id": "EngRapidRepair01",
+  "name": "Rapid Repair",
+  "type": "feat",
+  "img": "icons/tools/screwdrivers/screwdriver-sparks.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 2nd level, you carry a pool of repair nanites represented by a pool of <strong>d6 dice equal to twice your Intelligence modifier</strong> (minimum of 2 dice).</p>\n<p>As a <strong>Bonus Action</strong>, you project nanites at a Construct, object, structure, or vehicle within <strong>30 feet</strong>. Spend any number of dice from your pool up to your Proficiency Bonus. Roll the dice: the target regains hit points equal to the total rolled. If the target is your Automaton, you can also reduce its <strong>Heat by an amount equal to the total rolled</strong>.</p>\n<p>You regain all expended Rapid Repair dice when you finish a <strong>Long Rest</strong>.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "@scale.engineer.repair-dice"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Engineer 2",
+    "activities": {
+      "actRapidRepair01": {
+        "_id": "actRapidRepair01",
+        "type": "heal",
+        "activation": {
+          "type": "bonus",
+          "value": 1
+        },
+        "range": {
+          "value": "30",
+          "units": "ft"
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "special": "Construct, object, vehicle, or structure"
+          }
+        },
+        "healing": {
+          "number": 1,
+          "denomination": 6,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "custom": {
+            "enabled": true,
+            "formula": "1d6"
+          }
+        },
+        "name": "Rapid Repair (Heal / Cool)"
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EngRapidRepair01"
+}

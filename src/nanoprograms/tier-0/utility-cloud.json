@@ -1,0 +1,54 @@
+{
+  "_id": "fce1a55b6cdcafcb",
+  "name": "Utility Cloud",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-sensoryimp.webp",
+  "system": {
+    "description": {
+      "value": "<p>Create instantaneous sensory burst; warm/chill/flavor up to 1 lb of nonliving material; clean or soil an object up to 1 cubic foot; or paint a temporary AR marker for 1 hour. Up to three effects active at once.<br><br><strong>Overclock:</strong> 4 active effects at 5th; range 30 ft at 11th; 6 active effects at 17th.</p><p><strong>Operating Systems:</strong> Bureaucrat, Nano-Technician, Trader</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 0 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 0,
+    "school": "trs",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature"
+      }
+    },
+    "range": {
+      "value": 10,
+      "units": "ft"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "bbd4d38cecd45615": {
+        "_id": "bbd4d38cecd45615",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1
+        }
+      }
+    }
+  },
+  "_key": "!items!fce1a55b6cdcafcb"
+}

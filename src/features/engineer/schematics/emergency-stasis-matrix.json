@@ -1,0 +1,41 @@
+{
+  "_id": "SchmEmergStasis1",
+  "name": "Schematic: Emergency Stasis Matrix",
+  "type": "feat",
+  "img": "icons/skills/trades/tools-wrench-screwdriver-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Installed on armor: when wearer drops to 0 HP, stasis triggers, dropping them to 1 HP instead (1/LR).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "schematic"
+    },
+    "requirements": "Engineer 5",
+    "activities": {},
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!SchmEmergStasis1"
+}

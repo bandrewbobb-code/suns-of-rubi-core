@@ -1,0 +1,63 @@
+{
+  "_id": "EngNanophotAuto1",
+  "name": "Nanophotonic Automaton",
+  "type": "feat",
+  "img": "icons/creatures/magical/construct-golem-iron-armored.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 1st level, you compile a permanent robotic companion known as an <strong>Automaton</strong>. Choose one of seven frames: <em>Android, Cyber-Hound, Drone, Gladiator, Launcher, Slayerdroid,</em> or <em>Warbot</em>.</p>\n<h3>Initiative & Commands</h3>\n<p>The Automaton shares your initiative count, taking its turn immediately after yours. It obeys your telepathic and verbal orders. If you issue no command, it takes the <strong>Dodge action</strong> and uses its movement to avoid danger. On your turn, you can command it where to move (no action required), and you can use your <strong>Action</strong> or <strong>Bonus Action</strong> to command it to take one action in its stat block.</p>\n<h3>Reactor Core & Heat</h3>\n<p>Every Automaton is driven by a high-output miniaturized reactor tracking <strong>Heat (0–10)</strong>. At the start of its turn, it gains +1 Heat (+2 if in melee). Taking 10+ damage adds +1 Heat. At 7+ Heat, roll a d20: if <code>d20 &lt; Heat</code>, a <strong>Meltdown</strong> occurs (deals `@prof d6` fire damage in a 10-ft radius, Dex save half, heavy obscurement, Emergency Lockout until next turn, Heat resets to 0).</p>\n<h3>Reconfiguration & Field Rebuild</h3>\n<p>Whenever you finish a Long Rest, you can recompile your Automaton into a different frame. If it is destroyed, you can rebuild it over a 1-hour procedure, or spend an <strong>Action and 4 Nanopool points</strong> to field-compile it back to functioning status with half its maximum hit points.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Engineer 1",
+    "activities": {
+      "actRebuildAuto01": {
+        "_id": "actRebuildAuto01",
+        "type": "heal",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "Spend 4 Nanopool to field-rebuild destroyed Automaton"
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "special": "Destroyed Automaton"
+          }
+        },
+        "range": {
+          "value": "5",
+          "units": "ft"
+        },
+        "name": "Field Rebuild Automaton"
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!EngNanophotAuto1"
+}

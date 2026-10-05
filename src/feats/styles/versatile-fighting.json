@@ -1,0 +1,34 @@
+{
+  "_id": "2c74dd3207b661b9",
+  "_key": "!items!2c74dd3207b661b9",
+  "name": "Versatile Fighting",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>While wielding a weapon with the Versatile property in one hand and no other weapons: you gain a +1 bonus to attack rolls when wielding the weapon in one hand, and a +2 bonus to attack rolls when wielding it in two hands; once per turn, when attacking a target wielding a shield while your off-hand is empty, you can pull down their shield (no action required), denying them its AC bonus against that attack.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "fightingStyle",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {},
+    "identifier": "versatile-fighting"
+  }
+}

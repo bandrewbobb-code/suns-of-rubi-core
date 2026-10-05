@@ -1,0 +1,112 @@
+{
+  "_id": "WpnHandVibroAxe1",
+  "name": "Hand Vibro-Axe",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-broad-serrated-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Lightweight hatchet with an energized micro-serrated blade edge.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 75,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "type": {
+      "value": "simpleM",
+      "baseItem": "hand-vibro-axe"
+    },
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": 6,
+        "types": [
+          "slashing"
+        ]
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": []
+      }
+    },
+    "range": {
+      "value": 20,
+      "long": 60,
+      "units": "ft"
+    },
+    "mastery": "vex",
+    "properties": [
+      "lgt",
+      "thr"
+    ],
+    "activities": {
+      "mainAttack000001": {
+        "_id": "mainAttack000001",
+        "type": "attack",
+        "name": "Strike",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "range": {
+          "value": "20",
+          "long": "60",
+          "units": "ft"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false,
+          "count": 1,
+          "type": "creature"
+        },
+        "attack": {
+          "ability": "str",
+          "bonus": "",
+          "critical": {
+            "threshold": 20
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        }
+      }
+    }
+  },
+  "_key": "!items!WpnHandVibroAxe1"
+}

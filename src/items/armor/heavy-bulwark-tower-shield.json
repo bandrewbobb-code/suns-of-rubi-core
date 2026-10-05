@@ -1,0 +1,40 @@
+{
+  "_id": "ArmHvyBulwarkSh1",
+  "name": "Heavy Bulwark Tower Shield",
+  "type": "equipment",
+  "img": "icons/equipment/shield/heater-crystal-energy-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Massive titanium tower shield granting +2 AC, plus +1 Cover AC against ranged attacks.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 500,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 15,
+      "units": "lb"
+    },
+    "type": {
+      "value": "shield",
+      "baseItem": "heavy-bulwark-tower-shield"
+    },
+    "armor": {
+      "value": 2,
+      "dex": null
+    },
+    "strength": 15,
+    "properties": [
+      "stealthDisadvantage"
+    ],
+    "equipped": false,
+    "activities": {}
+  },
+  "_key": "!items!ArmHvyBulwarkSh1"
+}

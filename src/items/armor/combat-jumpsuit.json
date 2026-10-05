@@ -1,0 +1,38 @@
+{
+  "_id": "ArmCombatJumps01",
+  "name": "Combat Jumpsuit",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-metal-banded-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>Standard durable utility flight suit woven with kinetic ballistic threading.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "price": {
+      "value": 50,
+      "denomination": "cr"
+    },
+    "weight": {
+      "value": 6,
+      "units": "lb"
+    },
+    "type": {
+      "value": "light",
+      "baseItem": "combat-jumpsuit"
+    },
+    "armor": {
+      "value": 11,
+      "dex": null
+    },
+    "strength": null,
+    "properties": [],
+    "equipped": false,
+    "activities": {}
+  },
+  "_key": "!items!ArmCombatJumps01"
+}

@@ -1,0 +1,144 @@
+{
+  "_id": "NtHumidExtract01",
+  "name": "Humidity Extractor",
+  "type": "feat",
+  "img": "icons/magic/water/water-drop-swirl-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>At 1st level, you install thermal-cycling condensation coils that reclaim energy from ambient atmospheric moisture.</p><p>Whenever you finish a <strong>Short Rest</strong>, you regain an amount of expended Nanopool points equal to <strong>half your Nano-Technician level (rounded down) + your Intelligence modifier</strong> (minimum of 1 point).</p><p>Once you use this feature, you cannot do so again until you finish a <strong>Long Rest</strong>.</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi"
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Nano-Technician 1",
+    "properties": [],
+    "advancement": [],
+    "activities": {
+      "dnd5eactHumidExt": {
+        "_id": "dnd5eactHumidExt",
+        "type": "utility",
+        "name": "Extract Atmospheric Nanopool",
+        "img": "",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "During a Short Rest (1/Long Rest)"
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "1",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "lr",
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!NtHumidExtract01"
+}

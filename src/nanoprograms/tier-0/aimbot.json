@@ -1,0 +1,58 @@
+{
+  "_id": "835e75a61e8e102c",
+  "name": "Aimbot",
+  "type": "spell",
+  "img": "modules/suns-of-rubi-core/assets/icons/nanos/plate-sensoryimp.webp",
+  "system": {
+    "description": {
+      "value": "<p>Guided by predictive telemetry, make one attack with a weapon you are holding. The attack roll and damage roll use your nanocasting ability modifier instead of Strength or Dexterity. The attack deals radiant damage or the weapon's normal damage type (your choice).<br><br><strong>Overclock:</strong> Extra 1d6 radiant at 5th, 2d6 at 11th, 3d6 at 17th level.</p><p><strong>Operating Systems:</strong> Adventurer, Agent, Fixer, Soldier, Trader</p><p><strong>NCU Footprint:</strong> 1 Slot | <strong>Base Nanopool:</strong> 0 NP</p>"
+    },
+    "source": {
+      "custom": "Suns of Rubi Core"
+    },
+    "level": 0,
+    "school": "div",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "self"
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self"
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "e820e131c0064256": {
+        "_id": "e820e131c0064256",
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1
+        },
+        "attack": {
+          "type": "ranged",
+          "classification": "weapon"
+        }
+      }
+    }
+  },
+  "_key": "!items!835e75a61e8e102c"
+}

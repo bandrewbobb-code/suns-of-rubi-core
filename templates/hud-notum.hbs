@@ -1,0 +1,49 @@
+<div class="suns-notum-hud">
+  <!-- Nanopool Status Card -->
+  <div class="notum-card notum-nanopool">
+    <div class="notum-card-header">
+      <div class="notum-card-title">
+        <i class="fas fa-atom"></i>
+        <span>NANOPOOL</span>
+      </div>
+      <button type="button" class="notum-np-cycle" title="Nanopool Cycle / Full Recharge">
+        <i class="fas fa-sync-alt"></i>
+      </button>
+    </div>
+    <div class="notum-meter-container">
+      <div class="meter-bar nanopool-bar" style="width: {{nanopool.pct}}%;"></div>
+    </div>
+    <div class="notum-card-readout">
+      <input type="number" class="notum-np-current" value="{{nanopool.value}}" min="0" max="{{nanopool.max}}" />
+      <span class="readout-divider">/</span>
+      <span class="notum-np-max">{{nanopool.max}} NP</span>
+    </div>
+  </div>
+
+  <!-- NCU Buffer Status Card -->
+  <div class="notum-card notum-ncu {{#if ncu.isOverflow}}ncu-overflow{{/if}}">
+    <div class="notum-card-header">
+      <div class="notum-card-title">
+        <i class="fas fa-microchip"></i>
+        <span>NCU BUFFER</span>
+      </div>
+      {{#if ncu.isOverflow}}
+      <span class="ncu-overflow-badge" title="NCU Bandwidth Exceeded!">
+        <i class="fas fa-exclamation-triangle"></i> OVERFLOW
+      </span>
+      {{else}}
+      <span class="ncu-avail-badge">
+        {{ncu.available}} FREE
+      </span>
+      {{/if}}
+    </div>
+    <div class="notum-meter-container">
+      <div class="meter-bar ncu-bar {{#if ncu.isOverflow}}bar-overflow{{/if}}" style="width: {{ncu.pct}}%;"></div>
+    </div>
+    <div class="notum-card-readout">
+      <span class="notum-ncu-used">{{ncu.used}}</span>
+      <span class="readout-divider">/</span>
+      <span class="notum-ncu-max">{{ncu.max}} NCU</span>
+    </div>
+  </div>
+</div>

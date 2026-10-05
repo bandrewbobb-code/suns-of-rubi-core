@@ -1,0 +1,120 @@
+{
+  "_id": "BgCriminal000001",
+  "name": "Criminal",
+  "type": "background",
+  "img": "icons/skills/melee/weapons-crossed-daggers-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Ability Scores:</strong> DEX, CON, CHA</p>\n<p><strong>Feat:</strong> @UUID[Compendium.suns-of-rubi-core.feats.FeatSkilledOrig1]{Skilled}</p>\n<p><strong>Skill Proficiencies:</strong> Choose 2 from DEC, ITM, SLT, STE</p>\n<h3>Feature: Underworld Contact</h3>\n<p>You have a reliable and trustworthy contact who acts as your liaison to a network of other criminals. You know how to get messages to and from your contact, even over great distances and across encrypted corporate subnets; specifically, you know the dead drops, back-alley comm frequencies, and recognized fence cutouts used by illicit syndicates in major population hubs.</p>\n<hr/>\n<h3>Roleplay Characteristics</h3>\n<h4>Personality Traits</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>I always have a plan for what to do when things go completely to hell.</td></tr>\n    <tr><td><strong>2</strong></td><td>I pocket loose trinkets, data chips, and loose credsticks without thinking about it.</td></tr>\n    <tr><td><strong>3</strong></td><td>I never break character while working an angle, even when staring down security droids.</td></tr>\n    <tr><td><strong>4</strong></td><td>I am always courteous to service staff; they know who enters and exits without being noticed.</td></tr>\n    <tr><td><strong>5</strong></td><td>Flattery and confidence are sharper tools than any vibroknife.</td></tr>\n    <tr><td><strong>6</strong></td><td>I refuse to look corporate peacekeepers in the eye; it draws unwanted attention.</td></tr>\n  </tbody>\n</table>\n<h4>Ideals</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>Loyalty. Never snitch, never rat out a crew member, no matter what Omni-Pol offers. (Lawful)</td></tr>\n    <tr><td><strong>2</strong></td><td>Freedom. Corrupt mega-corps own the planets; crime is the only true independence. (Chaotic)</td></tr>\n    <tr><td><strong>3</strong></td><td>Greed. I take whatever I can carry, hack, or fence. (Evil)</td></tr>\n    <tr><td><strong>4</strong></td><td>Honor. There is honor among scoundrels; I steal from the corrupt, not the desperate. (Good)</td></tr>\n    <tr><td><strong>5</strong></td><td>Self-Reliance. In the gutters of Rubi-Ka, nobody is coming to save you but you. (Neutral)</td></tr>\n    <tr><td><strong>6</strong></td><td>Aspiration. One massive score will buy me my own orbital estate, and I'll do whatever it takes. (Any)</td></tr>\n  </tbody>\n</table>\n<h4>Bonds</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>My former crew was broken up by Omni-Pol; I will reunite what is left of us.</td></tr>\n    <tr><td><strong>2</strong></td><td>A corrupt corporate executive holds incriminating security footage of my worst job.</td></tr>\n    <tr><td><strong>3</strong></td><td>Someone I love is doing hard labor in the deep mines because of a job I botched.</td></tr>\n    <tr><td><strong>4</strong></td><td>I stole a prototype datapad from Omni-Tek R&D; syndicates and corps are hunting for it.</td></tr>\n    <tr><td><strong>5</strong></td><td>The orphan network that raised me on the colony streets still receives half my earnings.</td></tr>\n    <tr><td><strong>6</strong></td><td>My custom slicer deck is the only thing linking me to my late sibling.</td></tr>\n  </tbody>\n</table>\n<h4>Flaws</h4>\n<table>\n  <thead>\n    <tr>\n      <th style=\"width: 10%;\">d6</th>\n      <th>Trait</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>1</strong></td><td>When I see something valuable sitting unguarded, my self-control evaporates.</td></tr>\n    <tr><td><strong>2</strong></td><td>I assume anyone smiling at me is trying to run a confidence game.</td></tr>\n    <tr><td><strong>3</strong></td><td>I panic and look for an escape hatch the moment corporate security enters a room.</td></tr>\n    <tr><td><strong>4</strong></td><td>An enormous bounty from an angry syndicate crime boss hangs over my head.</td></tr>\n    <tr><td><strong>5</strong></td><td>I cannot resist mocking figures of authority when they think they have the upper hand.</td></tr>\n    <tr><td><strong>6</strong></td><td>I have a compulsive gambling habit that drains my credit balances between missions.</td></tr>\n  </tbody>\n</table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "identifier": "criminal",
+    "advancement": [
+      {
+        "_id": "BgCriminal00Asi1",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "cap": 2,
+          "fixed": {
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "int": 0,
+            "wis": 0,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "int",
+            "wis"
+          ],
+          "points": 3
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": "Ability Score Improvement",
+        "hint": "Your background allows you to increase your DEX, CON, CHA scores: increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20."
+      },
+      {
+        "_id": "BgCriminal00Skl1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:dec",
+                "skills:itm",
+                "skills:slt",
+                "skills:ste"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Skill Proficiencies",
+        "hint": "Choose 2 skills from: dec, itm, slt, ste."
+      },
+      {
+        "_id": "BgCriminal00Tol1",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "tool:game:*"
+          ],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tools:demolitions",
+                "tools:security-kit",
+                "tools:hackers-kit",
+                "tools:thieves"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "title": "Tool Proficiencies",
+        "hint": "Your background grants you tool proficiency options."
+      },
+      {
+        "_id": "BgCriminal00Fgt1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.suns-of-rubi-core.feats.FeatSkilledOrig1"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Origin Feat",
+        "hint": "Your background grants you the Skilled origin feat."
+      }
+    ]
+  },
+  "_key": "!items!BgCriminal000001"
+}

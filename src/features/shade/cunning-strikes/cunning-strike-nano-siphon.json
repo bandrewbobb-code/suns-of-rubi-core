@@ -1,0 +1,67 @@
+{
+  "_id": "CstNanoSiphon001",
+  "name": "Cunning Strike: Nano Siphon",
+  "type": "feat",
+  "img": "icons/magic/symbols/circle-outer-ring-cyan.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Cunning Strike (Cost: 3d6 Sneak Attack Dice, Prerequisite: Shade Level 5)</em></p><p>You sever an opponent's nanite feedback loop. The target loses 1 Nanopool point (or highest spell slot if it has no Nanopool), and you regain 1 expended Nanopool point. A single creature can be siphoned in this way only once per Long Rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": "cunning-strike"
+    },
+    "requirements": "Shade 5",
+    "activities": {
+      "actCstNanoSiphon": {
+        "_id": "actCstNanoSiphon",
+        "type": "utility",
+        "name": "Nano Siphon",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "On dealing Sneak Attack damage (Cost: 3d6)"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!CstNanoSiphon001"
+}

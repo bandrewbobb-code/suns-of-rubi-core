@@ -1,0 +1,67 @@
+{
+  "_id": "MpNanoProg000001",
+  "name": "Nanoprogramming",
+  "type": "feat",
+  "img": "icons/magic/symbols/circle-outer-ring-cyan.webp",
+  "system": {
+    "description": {
+      "value": "<p>You learn to shape raw paracausal Notum streams into utilitarian and offensive nanoprograms.</p><p><strong>Progression:</strong> You follow a full-caster progression (Tiers 1–9).</p><p><strong>Wisdom Nanocasting:</strong> Wisdom is your nanocasting ability for your meta-physicist programs.</p><p><strong>Programs Known:</strong> You know 9 nanoprograms of 1st tier at 1st level.</p><p><strong>Nanopool Points:</strong> You possess a pool of Nanopool points equal to your Meta-Physicist Level &times; 4 + your Wisdom modifier. Expended Nanopool points are restored when you finish a Long Rest.</p><p><strong>High-Tier Limits:</strong> Nanoprograms of 6th, 7th, 8th, and 9th tier can each be compiled only once per Long Rest.</p><p><strong>Execution Requirement:</strong> Executing your nanoprograms requires at least one free hand or an attuned Notum focus stave or device.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Suns of Rubi",
+      "book": "Suns of Rubi Core Rulebook",
+      "rules": "2024"
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Meta-Physicist 1",
+    "activities": {
+      "actMpNanoRecovery": {
+        "_id": "actMpNanoRecovery",
+        "type": "utility",
+        "name": "Nanopool Recovery",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Finish a Long Rest"
+        },
+        "duration": {
+          "units": "inst",
+          "value": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affix": false
+        },
+        "roll": {
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "prerequisites": {
+      "level": null
+    },
+    "properties": []
+  },
+  "effects": [],
+  "flags": {},
+  "folder": null,
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!MpNanoProg000001"
+}
