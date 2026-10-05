@@ -1,7 +1,7 @@
 {
   "id": "suns-of-rubi-core",
   "title": "Suns of Rubi: Core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "compatibility": {
     "minimum": "12",
     "verified": "14"

@@ -1,6 +1,6 @@
 {
   "name": "suns-of-rubi-core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Suns of Rubi Core system module for Foundry VTT (v12/v14, dnd5e)",
   "main": "src/modules/notum-hud.mjs",
   "repository": {
